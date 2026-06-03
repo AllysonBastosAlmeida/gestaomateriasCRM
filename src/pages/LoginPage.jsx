@@ -34,7 +34,7 @@ export function LoginPage() {
         <span className="login-particle login-particle-e" />
       </div>
 
-      <section className="relative z-[1] flex min-h-screen items-center justify-center px-4 py-8 sm:px-6">
+      <section className="relative z-[1] flex min-h-screen items-start justify-center px-4 pb-8 pt-[10vh] sm:items-center sm:px-6 sm:py-8">
         <div className="w-full max-w-sm rounded-[28px] border border-white/10 bg-slate-950/78 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur sm:p-6">
           <div className="flex items-start gap-3">
             <div className="rounded-2xl bg-cyan-400/10 p-2.5">
