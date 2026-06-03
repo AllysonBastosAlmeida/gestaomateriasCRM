@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "version": 4,
+    "initializedAt": "2026-06-03T20:30:00.000Z",
+    "lastUpdatedAt": "2026-06-03T20:30:00.000Z",
+    "importedAt": ""
+  },
+  "users": [
+    {
+      "id": "user_admin",
+      "name": "Administrador Geral",
+      "email": "admin@gestaomateriais.local",
+      "username": "admin",
+      "passwordHash": "d41acd8a",
+      "role": "admin",
+      "active": true,
+      "createdAt": "2026-06-02T12:00:00.000Z",
+      "updatedAt": "2026-06-02T12:00:00.000Z",
+      "lastLoginAt": ""
+    },
+    {
+      "id": "user_operador1",
+      "name": "Operador Norte",
+      "email": "operador1@gestaomateriais.local",
+      "username": "operador1",
+      "passwordHash": "c8c1a52a",
+      "role": "funcionario",
+      "active": true,
+      "createdAt": "2026-06-02T12:00:00.000Z",
+      "updatedAt": "2026-06-02T12:00:00.000Z",
+      "lastLoginAt": ""
+    },
+    {
+      "id": "user_operador2",
+      "name": "Operador Sul",
+      "email": "operador2@gestaomateriais.local",
+      "username": "operador2",
+      "passwordHash": "c8c1a52a",
+      "role": "funcionario",
+      "active": true,
+      "createdAt": "2026-06-02T12:00:00.000Z",
+      "updatedAt": "2026-06-02T12:00:00.000Z",
+      "lastLoginAt": ""
+    }
+  ],
+  "clients": [],
+  "units": [],
+  "inventoryItems": [],
+  "inventoryDeletionRequests": [],
+  "stockMovements": [],
+  "auditLogs": [],
+  "settings": {
+    "storageMode": "github",
+    "theme": "workspace-dark"
+  }
+}
