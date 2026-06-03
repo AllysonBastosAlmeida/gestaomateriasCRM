@@ -1,6 +1,7 @@
 import { env } from '../utils/env'
 import { nowIso } from '../utils/date'
 import { normalizeDatabasePayload } from '../utils/database'
+import { MAX_STORED_MOVEMENTS } from '../utils/constants'
 import { readLocalDb, replaceLocalDb } from './localDb'
 
 const listeners = new Set()
@@ -150,6 +151,125 @@ function hasOperationalRecords(db) {
     .some((collectionKey) => Array.isArray(db?.[collectionKey]) && db[collectionKey].length > 0)
 }
 
+function clone(value) {
+  return typeof structuredClone === 'function'
+    ? structuredClone(value)
+    : JSON.parse(JSON.stringify(value))
+}
+
+function getLatestTimestamp(record, fields = []) {
+  return fields.reduce((latest, field) => {
+    const value = String(record?.[field] || '')
+    return value > latest ? value : latest
+  }, '')
+}
+
+function chooseLatestRecord(left, right, fields) {
+  const leftTimestamp = getLatestTimestamp(left, fields)
+  const rightTimestamp = getLatestTimestamp(right, fields)
+
+  if (rightTimestamp >= leftTimestamp) {
+    return clone(right)
+  }
+
+  return clone(left)
+}
+
+function mergeById(remoteList = [], localList = [], timestampFields = []) {
+  const merged = new Map()
+
+  for (const entry of remoteList) {
+    if (!entry?.id) continue
+    merged.set(entry.id, clone(entry))
+  }
+
+  for (const entry of localList) {
+    if (!entry?.id) continue
+    const current = merged.get(entry.id)
+    if (!current) {
+      merged.set(entry.id, clone(entry))
+      continue
+    }
+
+    merged.set(entry.id, chooseLatestRecord(current, entry, timestampFields))
+  }
+
+  return Array.from(merged.values())
+}
+
+function mergeSettings(remoteSettings = {}, localSettings = {}) {
+  const remoteTimestamp = getLatestTimestamp(remoteSettings, ['updatedAt', 'lastUpdatedAt'])
+  const localTimestamp = getLatestTimestamp(localSettings, ['updatedAt', 'lastUpdatedAt'])
+  return localTimestamp >= remoteTimestamp
+    ? { ...remoteSettings, ...localSettings }
+    : { ...localSettings, ...remoteSettings }
+}
+
+function trimMovements(movements = []) {
+  return movements
+    .slice()
+    .sort((left, right) => String(left.performedAt || '').localeCompare(String(right.performedAt || '')))
+    .slice(-MAX_STORED_MOVEMENTS)
+}
+
+function applyApprovedDeletionRequests(items = [], requests = []) {
+  const approvedAtByItemId = new Map()
+
+  for (const request of requests) {
+    if (request?.status !== 'aprovada' || !request?.itemId) continue
+    const reviewedAt = String(request.reviewedAt || request.requestedAt || '')
+    const current = approvedAtByItemId.get(request.itemId) || ''
+    if (reviewedAt > current) {
+      approvedAtByItemId.set(request.itemId, reviewedAt)
+    }
+  }
+
+  return items.filter((item) => {
+    const approvedAt = approvedAtByItemId.get(item.id)
+    if (!approvedAt) return true
+    const itemTimestamp = getLatestTimestamp(item, ['updatedAt', 'createdAt'])
+    return itemTimestamp > approvedAt
+  })
+}
+
+function mergeDatabases(remoteDb = {}, localDb = {}) {
+  const mergedUsers = mergeById(remoteDb.users, localDb.users, ['updatedAt', 'lastLoginAt', 'createdAt'])
+  const mergedClients = mergeById(remoteDb.clients, localDb.clients, ['updatedAt', 'createdAt'])
+  const mergedUnits = mergeById(remoteDb.units, localDb.units, ['updatedAt', 'createdAt'])
+  const mergedDeletionRequests = mergeById(
+    remoteDb.inventoryDeletionRequests,
+    localDb.inventoryDeletionRequests,
+    ['reviewedAt', 'requestedAt', 'createdAt'],
+  )
+  const mergedItems = applyApprovedDeletionRequests(
+    mergeById(remoteDb.inventoryItems, localDb.inventoryItems, ['updatedAt', 'createdAt']),
+    mergedDeletionRequests,
+  )
+  const mergedMovements = trimMovements(
+    mergeById(remoteDb.stockMovements, localDb.stockMovements, ['performedAt', 'createdAt']),
+  ).sort((left, right) => String(right.performedAt || '').localeCompare(String(left.performedAt || '')))
+  const mergedAuditLogs = mergeById(remoteDb.auditLogs, localDb.auditLogs, ['createdAt', 'updatedAt'])
+    .sort((left, right) => String(right.createdAt || '').localeCompare(String(left.createdAt || '')))
+
+  return normalizeDatabasePayload({
+    ...clone(remoteDb),
+    ...clone(localDb),
+    users: mergedUsers,
+    clients: mergedClients,
+    units: mergedUnits,
+    inventoryItems: mergedItems,
+    inventoryDeletionRequests: mergedDeletionRequests,
+    stockMovements: mergedMovements,
+    auditLogs: mergedAuditLogs,
+    settings: mergeSettings(remoteDb.settings, localDb.settings),
+    meta: {
+      ...(remoteDb.meta || {}),
+      ...(localDb.meta || {}),
+      lastUpdatedAt: nowIso(),
+    },
+  }, remoteDb)
+}
+
 async function readRemoteSnapshot() {
   try {
     const payload = await githubFetch(`${getContentsUrl()}?ref=${encodeURIComponent(env.github.branch)}`)
@@ -187,17 +307,19 @@ async function writeRemoteSnapshot(db, sha = '') {
 
 async function upsertRemoteDb(db) {
   const remoteSnapshot = await readRemoteSnapshot()
-  const normalizedDb = JSON.parse(JSON.stringify(db))
+  const normalizedDb = mergeDatabases(remoteSnapshot?.db || {}, db)
 
   try {
-    const payload = await writeRemoteSnapshot(normalizedDb, remoteSnapshot?.sha || '')
-    return payload
+    await writeRemoteSnapshot(normalizedDb, remoteSnapshot?.sha || '')
+    return normalizedDb
   } catch (error) {
     const normalizedError = normalizeGitHubError(error)
 
     if (normalizedError.code === 'conflict') {
       const latestSnapshot = await readRemoteSnapshot()
-      return writeRemoteSnapshot(normalizedDb, latestSnapshot?.sha || '')
+      const mergedAfterConflict = mergeDatabases(latestSnapshot?.db || {}, db)
+      await writeRemoteSnapshot(mergedAfterConflict, latestSnapshot?.sha || '')
+      return mergedAfterConflict
     }
 
     throw normalizedError
@@ -313,7 +435,8 @@ export async function pushLocalDbToGitHub(db = readLocalDb()) {
   })
 
   try {
-    await upsertRemoteDb(db)
+    const mergedDb = await upsertRemoteDb(db)
+    replaceLocalDb(mergedDb)
 
     remoteUnavailable = false
     emitStatus({
