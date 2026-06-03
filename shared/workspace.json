@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:24:33.475Z"
+    "importedAt": "2026-06-03T22:25:30.792Z"
   },
   "users": [
     {
@@ -1398,6 +1398,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780525473401_g4thf7",
+      "action": "user_updated",
+      "entityType": "user",
+      "entityId": "user_operador1",
+      "entityLabel": "Rodrigo de Farias Barbosa",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "role": "funcionario",
+        "active": true
+      },
+      "createdAt": "2026-06-03T22:24:33.401Z"
+    },
     {
       "id": "audit_1780525403435_fhd19r",
       "action": "auth_login",
