@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:21:17.607Z"
+    "importedAt": "2026-06-03T21:21:22.817Z"
   },
   "users": [
     {
@@ -542,7 +542,7 @@
     {
       "id": "item_patch_cord",
       "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "Telecomunicacao",
       "name": "Patch Cord Cat6 2.5m",
@@ -560,9 +560,9 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T00:50:39.753Z",
+      "updatedAt": "2026-06-03T21:21:22.796Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_operador1"
     },
     {
       "id": "item_punch_down",
@@ -750,6 +750,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780521682796_a5p2x7",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "sourceUnitId": "unit_1780427001685_wzi4zo",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-03T21:21:22.796Z"
+    },
     {
       "id": "mov_1780521677581_a8puke",
       "itemId": "item_telefone_ip",
@@ -1280,6 +1296,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780521682796_elkqrc",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780521682796_a5p2x7",
+      "entityLabel": "Patch Cord Cat6 2.5m",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "quantity": 80,
+        "previousQuantity": 80,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780427001685_wzi4zo",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T21:21:22.796Z"
+    },
     {
       "id": "audit_1780521677581_xkey3n",
       "action": "movement_transferencia",
