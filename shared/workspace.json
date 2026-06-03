@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:22:58.469Z"
+    "importedAt": "2026-06-03T21:41:37.979Z"
   },
   "users": [
     {
@@ -15,8 +15,8 @@
       "role": "admin",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T21:22:57.269Z",
-      "lastLoginAt": "2026-06-03T21:22:57.269Z"
+      "updatedAt": "2026-06-03T21:41:37.920Z",
+      "lastLoginAt": "2026-06-03T21:41:37.920Z"
     },
     {
       "id": "user_operador1",
