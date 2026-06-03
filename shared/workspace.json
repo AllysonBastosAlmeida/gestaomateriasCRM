@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:20:11.821Z"
+    "importedAt": "2026-06-03T21:20:22.421Z"
   },
   "users": [
     {
@@ -517,7 +517,7 @@
     {
       "id": "item_telefone_ip",
       "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "equipamento",
       "category": "Telecomunicacao",
       "name": "Telefone IP Gigabit",
@@ -535,9 +535,9 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T00:50:36.323Z",
+      "updatedAt": "2026-06-03T21:20:22.398Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_operador1"
     },
     {
       "id": "item_patch_cord",
@@ -750,6 +750,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780521622398_n5h0tw",
+      "itemId": "item_telefone_ip",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "sourceUnitId": "unit_1780427001685_wzi4zo",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 22,
+      "previousQuantity": 22,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-03T21:20:22.398Z"
+    },
     {
       "id": "mov_1780521611789_toejtf",
       "itemId": "item_alicate_bnc",
@@ -1248,6 +1264,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780521622398_mbuxb8",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780521622398_n5h0tw",
+      "entityLabel": "Telefone IP Gigabit",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "quantity": 22,
+        "previousQuantity": 22,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780427001685_wzi4zo",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T21:20:22.398Z"
+    },
     {
       "id": "audit_1780521611789_p7zrat",
       "action": "movement_transferencia",
