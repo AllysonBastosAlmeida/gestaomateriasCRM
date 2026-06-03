@@ -6,7 +6,7 @@ import { useAuth } from '../hooks/useAuth'
 import { useToast } from '../hooks/useToast'
 import { ROUTES } from '../utils/constants'
 import { env } from '../utils/env'
-import { ensureCrudCrudDbLoaded } from '../services/crudCrudSync'
+import { ensureCrudCrudDbLoaded, getCrudCrudSyncStatus } from '../services/crudCrudSync'
 
 export function LoginPage() {
   const { currentUser, login, refreshSession } = useAuth()
@@ -47,11 +47,17 @@ export function LoginPage() {
 
                   login(username, password)
                   refreshSession()
-                  toast.success(
-                    env.storageMode === 'crudcrud'
-                      ? 'Sessao iniciada e base online carregada com sucesso.'
-                      : 'Sessao iniciada com sucesso.',
-                  )
+                  const crudCrudStatus = env.storageMode === 'crudcrud' ? getCrudCrudSyncStatus() : null
+
+                  if (crudCrudStatus && !crudCrudStatus.isReady) {
+                    toast.info('Sessao iniciada em modo local. A base online esta indisponivel no momento.')
+                  } else {
+                    toast.success(
+                      env.storageMode === 'crudcrud'
+                        ? 'Sessao iniciada e base online carregada com sucesso.'
+                        : 'Sessao iniciada com sucesso.',
+                    )
+                  }
 
                   navigate(location.state?.from || ROUTES.dashboard, { replace: true })
                 } catch (error) {

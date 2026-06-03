@@ -134,7 +134,7 @@ export function SettingsPage() {
             {syncStatus ? (
               <InfoRow
                 label="Sincronizacao de status"
-                value={syncStatus.inFlight ? 'Sincronizando...' : syncStatus.isReady ? 'Conectado' : 'Aguardando configuracao'}
+                value={syncStatus.inFlight ? 'Sincronizando...' : syncStatus.isReady ? 'Conectado' : 'Fallback local ativo'}
               />
             ) : null}
             {syncStatus?.lastSyncAt ? <InfoRow label="Ultima sync" value={syncStatus.lastSyncAt} /> : null}

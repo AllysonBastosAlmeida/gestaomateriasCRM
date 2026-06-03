@@ -10,6 +10,7 @@ let pendingDb = null
 let syncInFlight = false
 let autoSyncTimer = null
 let autoSyncStarted = false
+let remoteUnavailable = false
 
 let syncStatus = {
   isReady: false,
@@ -28,24 +29,63 @@ function isConfigured() {
   return Boolean(env.crudcrud.baseUrl)
 }
 
+function createCrudCrudError(message, options = {}) {
+  const error = new Error(message)
+  error.code = options.code || ''
+  error.isTerminal = Boolean(options.isTerminal)
+  return error
+}
+
+function normalizeCrudCrudError(error) {
+  if (error?.code || error?.isTerminal) {
+    return error
+  }
+
+  if (error instanceof TypeError) {
+    return createCrudCrudError(
+      'Nao foi possivel conectar com a base online CrudCrud. O sistema segue em modo local.',
+      { code: 'network_error' },
+    )
+  }
+
+  return error
+}
+
 function hasOperationalRecords(db) {
   return ['clients', 'units', 'inventoryItems', 'inventoryDeletionRequests', 'stockMovements', 'auditLogs']
     .some((collectionKey) => Array.isArray(db?.[collectionKey]) && db[collectionKey].length > 0)
 }
 
 async function crudFetch(path = '', options = {}) {
-  const response = await fetch(`${env.crudcrud.baseUrl}${path}`, {
-    ...options,
-    headers: {
-      Accept: 'application/json',
-      ...(options.body ? { 'Content-Type': 'application/json' } : {}),
-      ...(options.headers || {}),
-    },
-  })
+  let response
+
+  try {
+    response = await fetch(`${env.crudcrud.baseUrl}${path}`, {
+      ...options,
+      headers: {
+        Accept: 'application/json',
+        ...(options.body ? { 'Content-Type': 'application/json' } : {}),
+        ...(options.headers || {}),
+      },
+    })
+  } catch (error) {
+    throw normalizeCrudCrudError(error)
+  }
 
   if (!response.ok) {
     const message = await response.text()
-    throw new Error(message || `Falha ao comunicar com CrudCrud (${response.status}).`)
+
+    if (response.status === 400 && /endpoint doesn't exist/i.test(message)) {
+      throw createCrudCrudError(
+        'A base online do CrudCrud expirou ou nao existe mais. O sistema segue em modo local.',
+        { code: 'endpoint_missing', isTerminal: true },
+      )
+    }
+
+    throw createCrudCrudError(
+      message || `Falha ao comunicar com CrudCrud (${response.status}).`,
+      { code: `http_${response.status}` },
+    )
   }
 
   if (response.status === 204) {
@@ -120,6 +160,7 @@ export async function pullCrudCrudDb({ silent = false } = {}) {
 
   try {
     const remoteEntries = await listRemoteEntries()
+    remoteUnavailable = false
     const remoteDb = stripRemoteId(remoteEntries[0] || {})
     const localSnapshot = readLocalDb()
 
@@ -152,15 +193,23 @@ export async function pullCrudCrudDb({ silent = false } = {}) {
 
     return nextDb
   } catch (error) {
+    const normalizedError = normalizeCrudCrudError(error)
+
+    if (normalizedError.isTerminal) {
+      remoteUnavailable = true
+    }
+
     if (!silent) {
       emitStatus({
         isReady: false,
         inFlight: false,
-        lastError: error.message,
-        info: 'Falha ao carregar a base online. O app continua operando localmente.',
+        lastError: normalizedError.message,
+        info: normalizedError.isTerminal
+          ? 'Base online indisponivel. O app continua operando em modo local.'
+          : 'Falha ao carregar a base online. O app continua operando localmente.',
       })
     }
-    throw error
+    throw normalizedError
   }
 }
 
@@ -177,6 +226,7 @@ export async function pushLocalDbToCrudCrud(db = readLocalDb()) {
 
   try {
     await upsertRemoteDb(db)
+    remoteUnavailable = false
 
     emitStatus({
       isReady: true,
@@ -185,13 +235,21 @@ export async function pushLocalDbToCrudCrud(db = readLocalDb()) {
       info: 'Base online atualizada com sucesso.',
     })
   } catch (error) {
+    const normalizedError = normalizeCrudCrudError(error)
+
+    if (normalizedError.isTerminal) {
+      remoteUnavailable = true
+    }
+
     emitStatus({
       isReady: false,
       inFlight: false,
-      lastError: error.message,
-      info: 'Falha ao sincronizar a base online. Os dados continuam salvos localmente.',
+      lastError: normalizedError.message,
+      info: normalizedError.isTerminal
+        ? 'Base online indisponivel. Os dados continuam salvos localmente.'
+        : 'Falha ao sincronizar a base online. Os dados continuam salvos localmente.',
     })
-    throw error
+    throw normalizedError
   }
 }
 
@@ -226,6 +284,15 @@ export function scheduleCrudCrudSync(db) {
     return
   }
 
+  if (remoteUnavailable) {
+    emitStatus({
+      isReady: false,
+      lastError: syncStatus.lastError,
+      info: 'Base online indisponivel. Novas alteracoes seguem apenas no modo local.',
+    })
+    return
+  }
+
   pendingDb = db
   void flushSyncQueue()
 }
@@ -235,6 +302,7 @@ export async function syncCrudCrudNow(db = readLocalDb()) {
     throw new Error('CrudCrud nao configurado. Defina VITE_CRUDCRUD_BASE_URL.')
   }
 
+  remoteUnavailable = false
   pendingDb = db
   await flushSyncQueue()
   return readLocalDb()
@@ -268,7 +336,11 @@ export async function ensureCrudCrudDbLoaded() {
     return readLocalDb()
   }
 
-  return bootstrapCrudCrudDb()
+  try {
+    return await bootstrapCrudCrudDb()
+  } catch {
+    return readLocalDb()
+  }
 }
 
 export function startCrudCrudAutoSync(intervalMs = 10000) {
@@ -280,6 +352,10 @@ export function startCrudCrudAutoSync(intervalMs = 10000) {
 
   const tick = async () => {
     if (syncInFlight) {
+      return
+    }
+
+    if (remoteUnavailable && !pendingDb) {
       return
     }
 
