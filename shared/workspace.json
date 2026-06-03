@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:18:09.873Z"
+    "importedAt": "2026-06-03T21:20:11.821Z"
   },
   "users": [
     {
@@ -667,7 +667,7 @@
     {
       "id": "item_alicate_bnc",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_c",
       "type": "ferramenta",
       "category": "CFTV",
       "name": "Alicate de Compressao BNC",
@@ -685,7 +685,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T11:50:42.274Z",
+      "updatedAt": "2026-06-03T21:20:11.789Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -751,452 +751,36 @@
   ],
   "stockMovements": [
     {
-      "id": "mov_seed_1",
-      "itemId": "item_serra",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 4,
-      "previousQuantity": 0,
-      "newQuantity": 4,
-      "reason": "Carga inicial do sistema",
-      "notes": "Seed MVP",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T12:00:00Z"
-    },
-    {
-      "id": "mov_1780422096417_8t39zc",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T17:41:36.417Z"
-    },
-    {
-      "id": "mov_1780422142207_o4v3mt",
-      "itemId": "item_serra",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "unit_alpha_a",
-      "destinationUnitId": "unit_alpha_b",
-      "quantity": 1,
-      "previousQuantity": 4,
-      "newQuantity": 3,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T17:42:22.207Z"
-    },
-    {
-      "id": "mov_1780422664878_frhtt1",
-      "itemId": "item_1780422096417_2v4ggy",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T17:51:04.878Z"
-    },
-    {
-      "id": "mov_1780422672822_49d074",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T17:51:12.822Z"
-    },
-    {
-      "id": "mov_1780424436671_khgljp",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T18:20:36.672Z"
-    },
-    {
-      "id": "mov_1780424440092_a1uyut",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T18:20:40.092Z"
-    },
-    {
-      "id": "mov_1780426433154_cdhte2",
-      "itemId": "item_nvr_16",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 3,
-      "previousQuantity": 3,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T18:53:53.154Z"
-    },
-    {
-      "id": "mov_1780426439782_4oaso4",
-      "itemId": "item_camera_bullet",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 36,
-      "previousQuantity": 36,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T18:53:59.782Z"
-    },
-    {
-      "id": "mov_1780426650206_qv7ocv",
-      "itemId": "item_maquina_fusao",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "sourceUnitId": "unit_alpha_b",
-      "destinationUnitId": "unit_alpha_a",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-02T18:57:30.206Z"
-    },
-    {
-      "id": "mov_1780426664528_6kf1z0",
-      "itemId": "item_nvr_16",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 3,
-      "previousQuantity": 3,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-02T18:57:44.528Z"
-    },
-    {
-      "id": "mov_1780427006864_1sryp4",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_1780427001685_wzi4zo",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:03:26.864Z"
-    },
-    {
-      "id": "mov_1780429304984_r3i8cy",
-      "itemId": "item_nvr_16",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 3,
-      "previousQuantity": 3,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:41:44.984Z"
-    },
-    {
-      "id": "mov_1780429323189_b4dccz",
-      "itemId": "item_maquina_fusao",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "unit_alpha_a",
-      "destinationUnitId": "unit_alpha_b",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:42:03.189Z"
-    },
-    {
-      "id": "mov_1780429768682_5db5oc",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "sourceUnitId": "unit_1780427001685_wzi4zo",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:49:28.682Z"
-    },
-    {
-      "id": "mov_1780447821431_p8s90g",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T00:50:21.431Z"
-    },
-    {
-      "id": "mov_1780447824803_xf9j50",
-      "itemId": "item_patch_cord",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780427001685_wzi4zo",
-      "quantity": 80,
-      "previousQuantity": 80,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T00:50:24.803Z"
-    },
-    {
-      "id": "mov_1780447832781_6yditw",
-      "itemId": "item_patch_cord",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "sourceUnitId": "unit_1780427001685_wzi4zo",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 80,
-      "previousQuantity": 80,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T00:50:32.781Z"
-    },
-    {
-      "id": "mov_1780447836323_787nn9",
-      "itemId": "item_telefone_ip",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780427001685_wzi4zo",
-      "quantity": 22,
-      "previousQuantity": 22,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T00:50:36.323Z"
-    },
-    {
-      "id": "mov_1780447839753_c1ar7g",
-      "itemId": "item_patch_cord",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780427001685_wzi4zo",
-      "quantity": 80,
-      "previousQuantity": 80,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T00:50:39.753Z"
-    },
-    {
-      "id": "mov_1780448660888_30x24c",
-      "itemId": "item_alicate_bnc",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 3,
-      "previousQuantity": 3,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T01:04:20.888Z"
-    },
-    {
-      "id": "mov_1780448666984_u9czd5",
+      "id": "mov_1780521611789_toejtf",
       "itemId": "item_alicate_bnc",
       "movementType": "transferencia",
       "clientId": "client_beta",
       "unitId": "unit_1780422089296_cf0vpa",
       "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_beta_c",
       "quantity": 3,
       "previousQuantity": 3,
       "newQuantity": 0,
       "reason": "Transferencia por arrastar e soltar",
       "notes": "",
       "performedBy": "user_admin",
-      "performedAt": "2026-06-03T01:04:26.984Z"
+      "performedAt": "2026-06-03T21:20:11.789Z"
     },
     {
-      "id": "mov_1780448731393_ayhx39",
-      "itemId": "item_torquimetro",
+      "id": "mov_1780521492301_gtvvdq",
+      "itemId": "item_1780520974612_sfgftt",
       "movementType": "transferencia",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_c",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
       "quantity": 1,
       "previousQuantity": 1,
       "newQuantity": 0,
       "reason": "Transferencia por arrastar e soltar",
       "notes": "",
       "performedBy": "user_operador1",
-      "performedAt": "2026-06-03T01:05:31.393Z"
-    },
-    {
-      "id": "mov_1780454010431_1gw9c5",
-      "itemId": "item_fonte_12v",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 14,
-      "previousQuantity": 14,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T02:33:30.431Z"
-    },
-    {
-      "id": "mov_1780487442274_77sq1g",
-      "itemId": "item_alicate_bnc",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 3,
-      "previousQuantity": 3,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T11:50:42.274Z"
-    },
-    {
-      "id": "mov_1780495234785_bsl692",
-      "itemId": "item_camera_bullet",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 36,
-      "previousQuantity": 36,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T14:00:34.785Z"
-    },
-    {
-      "id": "mov_1780496208001_o6fr80",
-      "itemId": "item_punch_down",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 4,
-      "previousQuantity": 4,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T14:16:48.001Z"
-    },
-    {
-      "id": "mov_1780496269239_bf9c5s",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T14:17:49.239Z"
+      "performedAt": "2026-06-03T21:18:12.301Z"
     },
     {
       "id": "mov_1780520928719_4hjm8e",
@@ -1215,8 +799,200 @@
       "performedAt": "2026-06-03T21:08:48.719Z"
     },
     {
-      "id": "mov_1780521492301_gtvvdq",
-      "itemId": "item_1780520974612_sfgftt",
+      "id": "mov_1780496269239_bf9c5s",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T14:17:49.239Z"
+    },
+    {
+      "id": "mov_1780496208001_o6fr80",
+      "itemId": "item_punch_down",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 4,
+      "previousQuantity": 4,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T14:16:48.001Z"
+    },
+    {
+      "id": "mov_1780495234785_bsl692",
+      "itemId": "item_camera_bullet",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 36,
+      "previousQuantity": 36,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T14:00:34.785Z"
+    },
+    {
+      "id": "mov_1780487442274_77sq1g",
+      "itemId": "item_alicate_bnc",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T11:50:42.274Z"
+    },
+    {
+      "id": "mov_1780454010431_1gw9c5",
+      "itemId": "item_fonte_12v",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 14,
+      "previousQuantity": 14,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T02:33:30.431Z"
+    },
+    {
+      "id": "mov_1780448731393_ayhx39",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-03T01:05:31.393Z"
+    },
+    {
+      "id": "mov_1780448666984_u9czd5",
+      "itemId": "item_alicate_bnc",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T01:04:26.984Z"
+    },
+    {
+      "id": "mov_1780448660888_30x24c",
+      "itemId": "item_alicate_bnc",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T01:04:20.888Z"
+    },
+    {
+      "id": "mov_1780447839753_c1ar7g",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780427001685_wzi4zo",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T00:50:39.753Z"
+    },
+    {
+      "id": "mov_1780447836323_787nn9",
+      "itemId": "item_telefone_ip",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780427001685_wzi4zo",
+      "quantity": 22,
+      "previousQuantity": 22,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T00:50:36.323Z"
+    },
+    {
+      "id": "mov_1780447832781_6yditw",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "sourceUnitId": "unit_1780427001685_wzi4zo",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T00:50:32.781Z"
+    },
+    {
+      "id": "mov_1780447824803_xf9j50",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780427001685_wzi4zo",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T00:50:24.803Z"
+    },
+    {
+      "id": "mov_1780447821431_p8s90g",
+      "itemId": "item_torquimetro",
       "movementType": "transferencia",
       "clientId": "client_beta",
       "unitId": "unit_beta_c",
@@ -1227,1004 +1003,280 @@
       "newQuantity": 0,
       "reason": "Transferencia por arrastar e soltar",
       "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T00:50:21.431Z"
+    },
+    {
+      "id": "mov_1780429768682_5db5oc",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "sourceUnitId": "unit_1780427001685_wzi4zo",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T19:49:28.682Z"
+    },
+    {
+      "id": "mov_1780429323189_b4dccz",
+      "itemId": "item_maquina_fusao",
+      "movementType": "transferencia",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "sourceUnitId": "unit_alpha_a",
+      "destinationUnitId": "unit_alpha_b",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T19:42:03.189Z"
+    },
+    {
+      "id": "mov_1780429304984_r3i8cy",
+      "itemId": "item_nvr_16",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T19:41:44.984Z"
+    },
+    {
+      "id": "mov_1780427006864_1sryp4",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_1780427001685_wzi4zo",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T19:03:26.864Z"
+    },
+    {
+      "id": "mov_1780426664528_6kf1z0",
+      "itemId": "item_nvr_16",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
       "performedBy": "user_operador1",
-      "performedAt": "2026-06-03T21:18:12.301Z"
+      "performedAt": "2026-06-02T18:57:44.528Z"
+    },
+    {
+      "id": "mov_1780426650206_qv7ocv",
+      "itemId": "item_maquina_fusao",
+      "movementType": "transferencia",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_b",
+      "sourceUnitId": "unit_alpha_b",
+      "destinationUnitId": "unit_alpha_a",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-02T18:57:30.206Z"
+    },
+    {
+      "id": "mov_1780426439782_4oaso4",
+      "itemId": "item_camera_bullet",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 36,
+      "previousQuantity": 36,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T18:53:59.782Z"
+    },
+    {
+      "id": "mov_1780426433154_cdhte2",
+      "itemId": "item_nvr_16",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T18:53:53.154Z"
+    },
+    {
+      "id": "mov_1780424440092_a1uyut",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia entre unidades",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T18:20:40.092Z"
+    },
+    {
+      "id": "mov_1780424436671_khgljp",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia entre unidades",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T18:20:36.672Z"
+    },
+    {
+      "id": "mov_1780422672822_49d074",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia entre unidades",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T17:51:12.822Z"
+    },
+    {
+      "id": "mov_1780422664878_frhtt1",
+      "itemId": "item_1780422096417_2v4ggy",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia entre unidades",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T17:51:04.878Z"
+    },
+    {
+      "id": "mov_1780422142207_o4v3mt",
+      "itemId": "item_serra",
+      "movementType": "transferencia",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "sourceUnitId": "unit_alpha_a",
+      "destinationUnitId": "unit_alpha_b",
+      "quantity": 1,
+      "previousQuantity": 4,
+      "newQuantity": 3,
+      "reason": "Transferencia entre unidades",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T17:42:22.207Z"
+    },
+    {
+      "id": "mov_1780422096417_8t39zc",
+      "itemId": "item_torquimetro",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia entre unidades",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T17:41:36.417Z"
+    },
+    {
+      "id": "mov_seed_1",
+      "itemId": "item_serra",
+      "movementType": "entrada",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Carga inicial do sistema",
+      "notes": "Seed MVP",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-02T12:00:00Z"
     }
   ],
   "auditLogs": [
     {
-      "id": "audit_seed_1",
-      "action": "seed_initialized",
-      "entityType": "system",
-      "entityId": "seed",
-      "entityLabel": "Base local inicial",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T12:00:00Z"
-    },
-    {
-      "id": "audit_1780418739110_fefhng",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T16:45:39.11Z"
-    },
-    {
-      "id": "audit_1780419782154_7vtomq",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T17:03:02.154Z"
-    },
-    {
-      "id": "audit_1780419858937_fcak7v",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T17:04:18.937Z"
-    },
-    {
-      "id": "audit_1780422089296_014w3q",
-      "action": "unit_created",
-      "entityType": "unit",
-      "entityId": "unit_1780422089296_cf0vpa",
-      "entityLabel": "Unidade 2 - CUB2",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T17:41:29.296Z"
-    },
-    {
-      "id": "audit_1780422096417_osogjt",
+      "id": "audit_1780521611789_p7zrat",
       "action": "movement_transferencia",
       "entityType": "movement",
-      "entityId": "mov_1780422096417_8t39zc",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T17:41:36.417Z"
-    },
-    {
-      "id": "audit_1780422142207_v0rxgg",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780422142207_o4v3mt",
-      "entityLabel": "Serra Circular Bosch",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T17:42:22.207Z"
-    },
-    {
-      "id": "audit_1780422664878_q0mdov",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780422664878_frhtt1",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T17:51:04.877Z"
-    },
-    {
-      "id": "audit_1780422672822_oq9bh3",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780422672822_49d074",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T17:51:12.822Z"
-    },
-    {
-      "id": "audit_1780424436672_zuji3l",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780424436671_khgljp",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:20:36.671Z"
-    },
-    {
-      "id": "audit_1780424440092_aze8jp",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780424440092_a1uyut",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:20:40.092Z"
-    },
-    {
-      "id": "audit_1780426411530_c3atsm",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:53:31.53Z"
-    },
-    {
-      "id": "audit_1780426433154_uajs4q",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780426433154_cdhte2",
-      "entityLabel": "NVR 16 Canais",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:53:53.154Z"
-    },
-    {
-      "id": "audit_1780426439782_324b6v",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780426439782_4oaso4",
-      "entityLabel": "Camera Bullet IP 4MP",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:53:59.782Z"
-    },
-    {
-      "id": "audit_1780426458438_lq0v2p",
-      "action": "client_updated",
-      "entityType": "client",
-      "entityId": "client_beta",
-      "entityLabel": "Yara Brasil",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:54:18.438Z"
-    },
-    {
-      "id": "audit_1780426631508_d14yu2",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:57:11.508Z"
-    },
-    {
-      "id": "audit_1780426640158_ty4qsg",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_operador1",
-      "entityLabel": "Operador Norte",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:57:20.158Z"
-    },
-    {
-      "id": "audit_1780426650206_wzo3nu",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780426650206_qv7ocv",
-      "entityLabel": "Maquina de Fusao",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:57:30.206Z"
-    },
-    {
-      "id": "audit_1780426664528_to4ooj",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780426664528_6kf1z0",
-      "entityLabel": "NVR 16 Canais",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:57:44.528Z"
-    },
-    {
-      "id": "audit_1780426673326_p7j8iu",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_operador1",
-      "entityLabel": "Operador Norte",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:57:53.326Z"
-    },
-    {
-      "id": "audit_1780426855776_m6np77",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:00:55.776Z"
-    },
-    {
-      "id": "audit_1780426960921_vwmni7",
-      "action": "unit_updated",
-      "entityType": "unit",
-      "entityId": "unit_beta_e",
-      "entityLabel": "Unidade 1 - CUB1",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:02:40.921Z"
-    },
-    {
-      "id": "audit_1780426967284_ue6fe4",
-      "action": "unit_updated",
-      "entityType": "unit",
-      "entityId": "unit_1780422089296_cf0vpa",
-      "entityLabel": "Unidade 2 - CUB2",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:02:47.284Z"
-    },
-    {
-      "id": "audit_1780426978051_21t04f",
-      "action": "unit_updated",
-      "entityType": "unit",
-      "entityId": "unit_beta_c",
-      "entityLabel": "Unidade 3 - CUB3",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:02:58.051Z"
-    },
-    {
-      "id": "audit_1780427001688_t2u44p",
-      "action": "unit_created",
-      "entityType": "unit",
-      "entityId": "unit_1780427001685_wzi4zo",
-      "entityLabel": "Unidade 4 - CUB4",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:03:21.688Z"
-    },
-    {
-      "id": "audit_1780427006864_8optie",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780427006864_1sryp4",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:03:26.864Z"
-    },
-    {
-      "id": "audit_1780427197891_nn1gn3",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:06:37.891Z"
-    },
-    {
-      "id": "audit_1780427199450_xt4xzg",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:06:39.45Z"
-    },
-    {
-      "id": "audit_1780427229390_nzmr3q",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:07:09.39Z"
-    },
-    {
-      "id": "audit_1780428216631_3p3f84",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:23:36.631Z"
-    },
-    {
-      "id": "audit_1780428224678_gluar1",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:23:44.678Z"
-    },
-    {
-      "id": "audit_1780429060903_b9oqo6",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:37:40.903Z"
-    },
-    {
-      "id": "audit_1780429304984_73zxya",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780429304984_r3i8cy",
-      "entityLabel": "NVR 16 Canais",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:41:44.984Z"
-    },
-    {
-      "id": "audit_1780429323189_nwpjxl",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780429323189_b4dccz",
-      "entityLabel": "Maquina de Fusao",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:42:03.189Z"
-    },
-    {
-      "id": "audit_1780429768682_47vqji",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780429768682_5db5oc",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T19:49:28.682Z"
-    },
-    {
-      "id": "audit_1780447821431_o2cv0h",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780447821431_p8s90g",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T00:50:21.43Z"
-    },
-    {
-      "id": "audit_1780447824803_bvcf52",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780447824803_xf9j50",
-      "entityLabel": "Patch Cord Cat6 2.5m",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T00:50:24.803Z"
-    },
-    {
-      "id": "audit_1780447832781_eqbyvu",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780447832781_6yditw",
-      "entityLabel": "Patch Cord Cat6 2.5m",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T00:50:32.781Z"
-    },
-    {
-      "id": "audit_1780447836323_c3owbx",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780447836323_787nn9",
-      "entityLabel": "Telefone IP Gigabit",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T00:50:36.323Z"
-    },
-    {
-      "id": "audit_1780447839753_sduljt",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780447839753_c1ar7g",
-      "entityLabel": "Patch Cord Cat6 2.5m",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T00:50:39.753Z"
-    },
-    {
-      "id": "audit_1780448660888_19gukr",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780448660888_30x24c",
-      "entityLabel": "Alicate de Compressao BNC",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T01:04:20.888Z"
-    },
-    {
-      "id": "audit_1780448666984_ag6ucr",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780448666984_u9czd5",
+      "entityId": "mov_1780521611789_toejtf",
       "entityLabel": "Alicate de Compressao BNC",
       "userId": "user_admin",
       "userName": "Administrador Geral",
       "clientId": "client_beta",
       "unitId": "unit_1780422089296_cf0vpa",
       "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T01:04:26.984Z"
-    },
-    {
-      "id": "audit_1780448711657_or12pd",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T01:05:11.657Z"
-    },
-    {
-      "id": "audit_1780448726208_4t90dz",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_operador1",
-      "entityLabel": "Operador Norte",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T01:05:26.208Z"
-    },
-    {
-      "id": "audit_1780448731393_b0cakz",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780448731393_ayhx39",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T01:05:31.392Z"
-    },
-    {
-      "id": "audit_1780450942734_0ce8tz",
-      "action": "inventory_item_created",
-      "entityType": "inventoryItem",
-      "entityId": "item_1780450942689_klydxe",
-      "entityLabel": "material sem descricao",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T01:42:22.734Z"
-    },
-    {
-      "id": "audit_1780452189945_choxm4",
-      "action": "inventory_item_deletion_requested",
-      "entityType": "inventoryDeletionRequest",
-      "entityId": "delreq_1780452189945_i2f635",
-      "entityLabel": "NVR 16 Canais",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:03:09.945Z"
-    },
-    {
-      "id": "audit_1780452197917_o4m6ma",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_operador1",
-      "entityLabel": "Operador Norte",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:03:17.917Z"
-    },
-    {
-      "id": "audit_1780452200110_mpz0pr",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:03:20.11Z"
-    },
-    {
-      "id": "audit_1780452221982_bhlcdn",
-      "action": "inventory_item_deletion_rejected",
-      "entityType": "inventoryDeletionRequest",
-      "entityId": "delreq_1780452189945_i2f635",
-      "entityLabel": "NVR 16 Canais",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:03:41.982Z"
-    },
-    {
-      "id": "audit_1780453254731_p6qtuv",
-      "action": "inventory_item_deletion_requested",
-      "entityType": "inventoryDeletionRequest",
-      "entityId": "delreq_1780453254731_kopxnk",
-      "entityLabel": "material sem descricao",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:20:54.731Z"
-    },
-    {
-      "id": "audit_1780453351593_4g07yu",
-      "action": "inventory_item_deletion_approved",
-      "entityType": "inventoryDeletionRequest",
-      "entityId": "delreq_1780453254731_kopxnk",
-      "entityLabel": "material sem descricao",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:22:31.593Z"
-    },
-    {
-      "id": "audit_1780453882553_pqxko2",
-      "action": "unit_updated",
-      "entityType": "unit",
-      "entityId": "unit_1780427001685_wzi4zo",
-      "entityLabel": "Unidade 5 - CUB5",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:31:22.553Z"
-    },
-    {
-      "id": "audit_1780454010431_6ianbv",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780454010431_1gw9c5",
-      "entityLabel": "Fonte 12V 20A",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:33:30.431Z"
-    },
-    {
-      "id": "audit_1780454405076_k706b0",
-      "action": "client_updated",
-      "entityType": "client",
-      "entityId": "client_alpha",
-      "entityLabel": "CMOC",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:40:05.076Z"
-    },
-    {
-      "id": "audit_1780454439966_srbqob",
-      "action": "client_updated",
-      "entityType": "client",
-      "entityId": "client_beta",
-      "entityLabel": "Yara Brasil",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T02:40:39.966Z"
-    },
-    {
-      "id": "audit_1780455763232_6r3kyq",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T03:02:43.232Z"
-    },
-    {
-      "id": "audit_1780458145798_7af4kl",
-      "action": "client_updated",
-      "entityType": "client",
-      "entityId": "client_beta",
-      "entityLabel": "Yara Brasil",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T03:42:25.798Z"
-    },
-    {
-      "id": "audit_1780458879343_aakrxw",
-      "action": "client_updated",
-      "entityType": "client",
-      "entityId": "client_beta",
-      "entityLabel": "Yara Brasil",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T03:54:39.343Z"
-    },
-    {
-      "id": "audit_1780484724423_iw5scz",
-      "action": "client_updated",
-      "entityType": "client",
-      "entityId": "client_alpha",
-      "entityLabel": "CMOC",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T11:05:24.423Z"
-    },
-    {
-      "id": "audit_1780487442274_jaia6u",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780487442274_77sq1g",
-      "entityLabel": "Alicate de Compressao BNC",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-03T11:50:42.274Z"
-    },
-    {
-      "id": "audit_1780495234785_evwidi",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780495234785_bsl692",
-      "entityLabel": "Camera Bullet IP 4MP",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "metadata": {
-        "quantity": 36,
-        "previousQuantity": 36,
+        "quantity": 3,
+        "previousQuantity": 3,
         "newQuantity": 0,
         "sourceUnitId": "unit_1780422089296_cf0vpa",
-        "destinationUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_beta_c",
         "reason": "Transferencia por arrastar e soltar",
         "notes": ""
       },
-      "createdAt": "2026-06-03T14:00:34.785Z"
+      "createdAt": "2026-06-03T21:20:11.789Z"
     },
     {
-      "id": "audit_1780495247516_cv7s6m",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {},
-      "createdAt": "2026-06-03T14:00:47.516Z"
-    },
-    {
-      "id": "audit_1780495249650_m7r79l",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "username": "admin"
-      },
-      "createdAt": "2026-06-03T14:00:49.65Z"
-    },
-    {
-      "id": "audit_1780496208001_89ou8y",
+      "id": "audit_1780521492301_qez6e8",
       "action": "movement_transferencia",
       "entityType": "movement",
-      "entityId": "mov_1780496208001_o6fr80",
-      "entityLabel": "Alicate Punch Down",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "metadata": {
-        "quantity": 4,
-        "previousQuantity": 4,
-        "newQuantity": 0,
-        "sourceUnitId": "unit_beta_c",
-        "destinationUnitId": "unit_beta_e",
-        "reason": "Transferencia por arrastar e soltar",
-        "notes": ""
-      },
-      "createdAt": "2026-06-03T14:16:48.001Z"
-    },
-    {
-      "id": "audit_1780496269239_kfszs7",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780496269239_bf9c5s",
-      "entityLabel": "Torquimetro Digital",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
+      "entityId": "mov_1780521492301_gtvvdq",
+      "entityLabel": "teste",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
       "clientId": "client_beta",
       "unitId": "unit_beta_c",
       "metadata": {
@@ -2232,80 +1284,27 @@
         "previousQuantity": 1,
         "newQuantity": 0,
         "sourceUnitId": "unit_beta_c",
-        "destinationUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
         "reason": "Transferencia por arrastar e soltar",
         "notes": ""
       },
-      "createdAt": "2026-06-03T14:17:49.238Z"
+      "createdAt": "2026-06-03T21:18:12.301Z"
     },
     {
-      "id": "audit_1780496405765_r3ihbr",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {},
-      "createdAt": "2026-06-03T14:20:05.765Z"
-    },
-    {
-      "id": "audit_1780496411894_twkqlv",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_operador1",
-      "entityLabel": "Operador Norte",
+      "id": "audit_1780520974615_rr7g6k",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1780520974612_sfgftt",
+      "entityLabel": "teste",
       "userId": "user_operador1",
       "userName": "Operador Norte",
-      "clientId": "",
-      "unitId": "",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
       "metadata": {
-        "username": "operador1"
+        "quantity": 1,
+        "type": "material"
       },
-      "createdAt": "2026-06-03T14:20:11.894Z"
-    },
-    {
-      "id": "audit_1780520896706_pvskt7",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_operador1",
-      "entityLabel": "Operador Norte",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {},
-      "createdAt": "2026-06-03T21:08:16.706Z"
-    },
-    {
-      "id": "audit_1780520918722_0rufiq",
-      "action": "auth_logout",
-      "entityType": "session",
-      "entityId": "user_admin",
-      "entityLabel": "Administrador Geral",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {},
-      "createdAt": "2026-06-03T21:08:38.722Z"
-    },
-    {
-      "id": "audit_1780520926093_30qhaq",
-      "action": "auth_login",
-      "entityType": "session",
-      "entityId": "user_operador1",
-      "entityLabel": "Operador Norte",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "",
-      "unitId": "",
-      "metadata": {
-        "username": "operador1"
-      },
-      "createdAt": "2026-06-03T21:08:46.093Z"
+      "createdAt": "2026-06-03T21:09:34.615Z"
     },
     {
       "id": "audit_1780520928719_qo2d1i",
@@ -2329,29 +1328,82 @@
       "createdAt": "2026-06-03T21:08:48.719Z"
     },
     {
-      "id": "audit_1780520974615_rr7g6k",
-      "action": "inventory_item_created",
-      "entityType": "inventoryItem",
-      "entityId": "item_1780520974612_sfgftt",
-      "entityLabel": "teste",
+      "id": "audit_1780520926093_30qhaq",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
       "userId": "user_operador1",
       "userName": "Operador Norte",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
+      "clientId": "",
+      "unitId": "",
       "metadata": {
-        "quantity": 1,
-        "type": "material"
+        "username": "operador1"
       },
-      "createdAt": "2026-06-03T21:09:34.615Z"
+      "createdAt": "2026-06-03T21:08:46.093Z"
     },
     {
-      "id": "audit_1780521492301_qez6e8",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780521492301_gtvvdq",
-      "entityLabel": "teste",
+      "id": "audit_1780520918722_0rufiq",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T21:08:38.722Z"
+    },
+    {
+      "id": "audit_1780520896706_pvskt7",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
       "userId": "user_operador1",
       "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T21:08:16.706Z"
+    },
+    {
+      "id": "audit_1780496411894_twkqlv",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "operador1"
+      },
+      "createdAt": "2026-06-03T14:20:11.894Z"
+    },
+    {
+      "id": "audit_1780496405765_r3ihbr",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T14:20:05.765Z"
+    },
+    {
+      "id": "audit_1780496269239_kfszs7",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780496269239_bf9c5s",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
       "clientId": "client_beta",
       "unitId": "unit_beta_c",
       "metadata": {
@@ -2359,11 +1411,996 @@
         "previousQuantity": 1,
         "newQuantity": 0,
         "sourceUnitId": "unit_beta_c",
-        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
         "reason": "Transferencia por arrastar e soltar",
         "notes": ""
       },
-      "createdAt": "2026-06-03T21:18:12.301Z"
+      "createdAt": "2026-06-03T14:17:49.238Z"
+    },
+    {
+      "id": "audit_1780496208001_89ou8y",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780496208001_o6fr80",
+      "entityLabel": "Alicate Punch Down",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 4,
+        "previousQuantity": 4,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_c",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T14:16:48.001Z"
+    },
+    {
+      "id": "audit_1780495249650_m7r79l",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "admin"
+      },
+      "createdAt": "2026-06-03T14:00:49.65Z"
+    },
+    {
+      "id": "audit_1780495247516_cv7s6m",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T14:00:47.516Z"
+    },
+    {
+      "id": "audit_1780495234785_evwidi",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780495234785_bsl692",
+      "entityLabel": "Camera Bullet IP 4MP",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 36,
+        "previousQuantity": 36,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T14:00:34.785Z"
+    },
+    {
+      "id": "audit_1780487442274_jaia6u",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780487442274_77sq1g",
+      "entityLabel": "Alicate de Compressao BNC",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T11:50:42.274Z"
+    },
+    {
+      "id": "audit_1780484724423_iw5scz",
+      "action": "client_updated",
+      "entityType": "client",
+      "entityId": "client_alpha",
+      "entityLabel": "CMOC",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T11:05:24.423Z"
+    },
+    {
+      "id": "audit_1780458879343_aakrxw",
+      "action": "client_updated",
+      "entityType": "client",
+      "entityId": "client_beta",
+      "entityLabel": "Yara Brasil",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T03:54:39.343Z"
+    },
+    {
+      "id": "audit_1780458145798_7af4kl",
+      "action": "client_updated",
+      "entityType": "client",
+      "entityId": "client_beta",
+      "entityLabel": "Yara Brasil",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T03:42:25.798Z"
+    },
+    {
+      "id": "audit_1780455763232_6r3kyq",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T03:02:43.232Z"
+    },
+    {
+      "id": "audit_1780454439966_srbqob",
+      "action": "client_updated",
+      "entityType": "client",
+      "entityId": "client_beta",
+      "entityLabel": "Yara Brasil",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:40:39.966Z"
+    },
+    {
+      "id": "audit_1780454405076_k706b0",
+      "action": "client_updated",
+      "entityType": "client",
+      "entityId": "client_alpha",
+      "entityLabel": "CMOC",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:40:05.076Z"
+    },
+    {
+      "id": "audit_1780454010431_6ianbv",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780454010431_1gw9c5",
+      "entityLabel": "Fonte 12V 20A",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:33:30.431Z"
+    },
+    {
+      "id": "audit_1780453882553_pqxko2",
+      "action": "unit_updated",
+      "entityType": "unit",
+      "entityId": "unit_1780427001685_wzi4zo",
+      "entityLabel": "Unidade 5 - CUB5",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:31:22.553Z"
+    },
+    {
+      "id": "audit_1780453351593_4g07yu",
+      "action": "inventory_item_deletion_approved",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1780453254731_kopxnk",
+      "entityLabel": "material sem descricao",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:22:31.593Z"
+    },
+    {
+      "id": "audit_1780453254731_p6qtuv",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1780453254731_kopxnk",
+      "entityLabel": "material sem descricao",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:20:54.731Z"
+    },
+    {
+      "id": "audit_1780452221982_bhlcdn",
+      "action": "inventory_item_deletion_rejected",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1780452189945_i2f635",
+      "entityLabel": "NVR 16 Canais",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:03:41.982Z"
+    },
+    {
+      "id": "audit_1780452200110_mpz0pr",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:03:20.11Z"
+    },
+    {
+      "id": "audit_1780452197917_o4m6ma",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:03:17.917Z"
+    },
+    {
+      "id": "audit_1780452189945_choxm4",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1780452189945_i2f635",
+      "entityLabel": "NVR 16 Canais",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T02:03:09.945Z"
+    },
+    {
+      "id": "audit_1780450942734_0ce8tz",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1780450942689_klydxe",
+      "entityLabel": "material sem descricao",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T01:42:22.734Z"
+    },
+    {
+      "id": "audit_1780448731393_b0cakz",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780448731393_ayhx39",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T01:05:31.392Z"
+    },
+    {
+      "id": "audit_1780448726208_4t90dz",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T01:05:26.208Z"
+    },
+    {
+      "id": "audit_1780448711657_or12pd",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T01:05:11.657Z"
+    },
+    {
+      "id": "audit_1780448666984_ag6ucr",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780448666984_u9czd5",
+      "entityLabel": "Alicate de Compressao BNC",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T01:04:26.984Z"
+    },
+    {
+      "id": "audit_1780448660888_19gukr",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780448660888_30x24c",
+      "entityLabel": "Alicate de Compressao BNC",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T01:04:20.888Z"
+    },
+    {
+      "id": "audit_1780447839753_sduljt",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780447839753_c1ar7g",
+      "entityLabel": "Patch Cord Cat6 2.5m",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T00:50:39.753Z"
+    },
+    {
+      "id": "audit_1780447836323_c3owbx",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780447836323_787nn9",
+      "entityLabel": "Telefone IP Gigabit",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T00:50:36.323Z"
+    },
+    {
+      "id": "audit_1780447832781_eqbyvu",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780447832781_6yditw",
+      "entityLabel": "Patch Cord Cat6 2.5m",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T00:50:32.781Z"
+    },
+    {
+      "id": "audit_1780447824803_bvcf52",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780447824803_xf9j50",
+      "entityLabel": "Patch Cord Cat6 2.5m",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T00:50:24.803Z"
+    },
+    {
+      "id": "audit_1780447821431_o2cv0h",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780447821431_p8s90g",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-03T00:50:21.43Z"
+    },
+    {
+      "id": "audit_1780429768682_47vqji",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780429768682_5db5oc",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:49:28.682Z"
+    },
+    {
+      "id": "audit_1780429323189_nwpjxl",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780429323189_b4dccz",
+      "entityLabel": "Maquina de Fusao",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:42:03.189Z"
+    },
+    {
+      "id": "audit_1780429304984_73zxya",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780429304984_r3i8cy",
+      "entityLabel": "NVR 16 Canais",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:41:44.984Z"
+    },
+    {
+      "id": "audit_1780429060903_b9oqo6",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:37:40.903Z"
+    },
+    {
+      "id": "audit_1780428224678_gluar1",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:23:44.678Z"
+    },
+    {
+      "id": "audit_1780428216631_3p3f84",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:23:36.631Z"
+    },
+    {
+      "id": "audit_1780427229390_nzmr3q",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:07:09.39Z"
+    },
+    {
+      "id": "audit_1780427199450_xt4xzg",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:06:39.45Z"
+    },
+    {
+      "id": "audit_1780427197891_nn1gn3",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:06:37.891Z"
+    },
+    {
+      "id": "audit_1780427006864_8optie",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780427006864_1sryp4",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:03:26.864Z"
+    },
+    {
+      "id": "audit_1780427001688_t2u44p",
+      "action": "unit_created",
+      "entityType": "unit",
+      "entityId": "unit_1780427001685_wzi4zo",
+      "entityLabel": "Unidade 4 - CUB4",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:03:21.688Z"
+    },
+    {
+      "id": "audit_1780426978051_21t04f",
+      "action": "unit_updated",
+      "entityType": "unit",
+      "entityId": "unit_beta_c",
+      "entityLabel": "Unidade 3 - CUB3",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:02:58.051Z"
+    },
+    {
+      "id": "audit_1780426967284_ue6fe4",
+      "action": "unit_updated",
+      "entityType": "unit",
+      "entityId": "unit_1780422089296_cf0vpa",
+      "entityLabel": "Unidade 2 - CUB2",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:02:47.284Z"
+    },
+    {
+      "id": "audit_1780426960921_vwmni7",
+      "action": "unit_updated",
+      "entityType": "unit",
+      "entityId": "unit_beta_e",
+      "entityLabel": "Unidade 1 - CUB1",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:02:40.921Z"
+    },
+    {
+      "id": "audit_1780426855776_m6np77",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T19:00:55.776Z"
+    },
+    {
+      "id": "audit_1780426673326_p7j8iu",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:57:53.326Z"
+    },
+    {
+      "id": "audit_1780426664528_to4ooj",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780426664528_6kf1z0",
+      "entityLabel": "NVR 16 Canais",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:57:44.528Z"
+    },
+    {
+      "id": "audit_1780426650206_wzo3nu",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780426650206_qv7ocv",
+      "entityLabel": "Maquina de Fusao",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_b",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:57:30.206Z"
+    },
+    {
+      "id": "audit_1780426640158_ty4qsg",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:57:20.158Z"
+    },
+    {
+      "id": "audit_1780426631508_d14yu2",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:57:11.508Z"
+    },
+    {
+      "id": "audit_1780426458438_lq0v2p",
+      "action": "client_updated",
+      "entityType": "client",
+      "entityId": "client_beta",
+      "entityLabel": "Yara Brasil",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:54:18.438Z"
+    },
+    {
+      "id": "audit_1780426439782_324b6v",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780426439782_4oaso4",
+      "entityLabel": "Camera Bullet IP 4MP",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:53:59.782Z"
+    },
+    {
+      "id": "audit_1780426433154_uajs4q",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780426433154_cdhte2",
+      "entityLabel": "NVR 16 Canais",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:53:53.154Z"
+    },
+    {
+      "id": "audit_1780426411530_c3atsm",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:53:31.53Z"
+    },
+    {
+      "id": "audit_1780424440092_aze8jp",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780424440092_a1uyut",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:20:40.092Z"
+    },
+    {
+      "id": "audit_1780424436672_zuji3l",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780424436671_khgljp",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T18:20:36.671Z"
+    },
+    {
+      "id": "audit_1780422672822_oq9bh3",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780422672822_49d074",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T17:51:12.822Z"
+    },
+    {
+      "id": "audit_1780422664878_q0mdov",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780422664878_frhtt1",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T17:51:04.877Z"
+    },
+    {
+      "id": "audit_1780422142207_v0rxgg",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780422142207_o4v3mt",
+      "entityLabel": "Serra Circular Bosch",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T17:42:22.207Z"
+    },
+    {
+      "id": "audit_1780422096417_osogjt",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780422096417_8t39zc",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T17:41:36.417Z"
+    },
+    {
+      "id": "audit_1780422089296_014w3q",
+      "action": "unit_created",
+      "entityType": "unit",
+      "entityId": "unit_1780422089296_cf0vpa",
+      "entityLabel": "Unidade 2 - CUB2",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T17:41:29.296Z"
+    },
+    {
+      "id": "audit_1780419858937_fcak7v",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T17:04:18.937Z"
+    },
+    {
+      "id": "audit_1780419782154_7vtomq",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T17:03:02.154Z"
+    },
+    {
+      "id": "audit_1780418739110_fefhng",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T16:45:39.11Z"
+    },
+    {
+      "id": "audit_seed_1",
+      "action": "seed_initialized",
+      "entityType": "system",
+      "entityId": "seed",
+      "entityLabel": "Base local inicial",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "raw": ""
+      },
+      "createdAt": "2026-06-02T12:00:00Z"
     }
   ],
   "settings": {
