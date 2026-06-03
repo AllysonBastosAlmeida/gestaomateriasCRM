@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:27:50.788Z"
+    "importedAt": "2026-06-03T22:28:20.084Z"
   },
   "users": [
     {
@@ -1411,6 +1411,47 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780525614601_a0wkx3",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Rodrigo de Farias Barbosa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T22:26:54.601Z"
+    },
+    {
+      "id": "audit_1780525604925_pftl3k",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Rodrigo de Farias Barbosa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "05"
+      },
+      "createdAt": "2026-06-03T22:26:44.925Z"
+    },
+    {
+      "id": "audit_1780525592325_xet0na",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T22:26:32.325Z"
+    },
     {
       "id": "audit_1780525575684_e7g3f5",
       "action": "user_created",
