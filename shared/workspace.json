@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:00:16.964Z"
+    "importedAt": "2026-06-03T22:01:15.166Z"
   },
   "users": [
     {
@@ -297,13 +297,13 @@
       "id": "item_patch_panel",
       "clientId": "client_alpha",
       "unitId": "unit_alpha_a",
-      "type": "equipamento",
+      "type": "material",
       "category": "Cabeamento estruturado",
-      "name": "Patch Panel Cat6 24 Portas",
+      "name": "Distribuicao de pontos de rede em racks e armarios de telecom.",
       "description": "Distribuicao de pontos de rede em racks e armarios de telecom.",
       "sku": "PP24-CAT6",
       "serialNumber": "",
-      "quantity": 18,
+      "quantity": 10,
       "minQuantity": 6,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -314,7 +314,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
+      "updatedAt": "2026-06-03T22:01:06.835Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -1364,6 +1364,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780524066838_eqo5dw",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_patch_panel",
+      "entityLabel": "Distribuicao de pontos de rede em racks e armarios de telecom.",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "quantity": 10,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-03T22:01:06.838Z"
+    },
     {
       "id": "audit_1780524016884_iqci83",
       "action": "inventory_item_deletion_requested",
