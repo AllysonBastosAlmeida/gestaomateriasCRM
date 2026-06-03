@@ -41,7 +41,7 @@ export function ClientCard({
           <PenSquare className="h-3.5 w-3.5" />
         </button>
       ) : null}
-      <div className={`relative z-[1] ${selector ? 'flex flex-col items-center text-center' : 'flex items-start gap-3'}`}>
+      <div className={`pointer-events-none relative z-[1] ${selector ? 'flex flex-col items-center text-center' : 'flex items-start gap-3'}`}>
         {branding.logoDataUrl ? (
           <div className={`${selector ? 'h-[88px] w-[88px] rounded-[26px]' : 'h-12 w-12 rounded-[18px] shrink-0'} overflow-hidden border border-white/10 bg-white/5 p-1`}>
             <img src={branding.logoDataUrl} alt={`Logo ${client.name}`} className="h-full w-full rounded-[inherit] object-contain" />
@@ -73,7 +73,7 @@ export function ClientCard({
       ) : null}
       {!selector ? (
         <>
-          <div className={`relative z-[1] mt-3 flex items-center gap-2 text-[12px] font-medium ${dark || selector ? 'text-slate-400' : 'text-slate-500'}`}>
+          <div className={`pointer-events-none relative z-[1] mt-3 flex items-center gap-2 text-[12px] font-medium ${dark || selector ? 'text-slate-400' : 'text-slate-500'}`}>
             <Factory className="h-4 w-4" />
             {client.cnpj}
           </div>
