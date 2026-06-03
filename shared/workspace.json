@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:22:10.319Z"
+    "importedAt": "2026-06-03T21:22:56.803Z"
   },
   "users": [
     {
@@ -1296,6 +1296,19 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780521776241_pgdztt",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T21:22:56.241Z"
+    },
     {
       "id": "audit_1780521682796_elkqrc",
       "action": "movement_transferencia",
