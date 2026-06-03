@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": 4,
-    "initializedAt": "2026-06-03T20:03:42.308Z",
-    "lastUpdatedAt": "2026-06-03T21:08:16.707Z",
-    "importedAt": "2026-06-03T21:08:15.774Z"
+    "initializedAt": "2026-06-03T20:18:48.838Z",
+    "lastUpdatedAt": "2026-06-03T21:08:38.722Z",
+    "importedAt": "2026-06-03T21:08:35.847Z"
   },
   "users": [
     {
@@ -2221,6 +2221,19 @@
       "unitId": "",
       "metadata": {},
       "createdAt": "2026-06-03T21:08:16.706Z"
+    },
+    {
+      "id": "audit_1780520918722_0rufiq",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T21:08:38.722Z"
     }
   ],
   "settings": {
