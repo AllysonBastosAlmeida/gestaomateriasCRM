@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:08:54.172Z"
+    "importedAt": "2026-06-03T22:09:51.028Z"
   },
   "users": [
     {
@@ -199,11 +199,11 @@
       "unitId": "unit_alpha_a",
       "type": "material",
       "category": "EPI",
-      "name": "Luva de Protecao",
-      "description": "Luva resistente a abrasao.",
+      "name": "Luva Multitato",
+      "description": "Luva Multitato",
       "sku": "LUV-EPI-10",
       "serialNumber": "",
-      "quantity": 38,
+      "quantity": 5,
       "minQuantity": 20,
       "unitMeasure": "pares",
       "status": "disponivel",
@@ -214,7 +214,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:08:54.103Z",
+      "updatedAt": "2026-06-03T22:09:50.954Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
