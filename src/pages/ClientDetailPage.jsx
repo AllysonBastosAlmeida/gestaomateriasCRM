@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { ArrowLeft, Boxes, Filter, PenSquare, Plus, Search, Wrench } from 'lucide-react'
+import { ArrowLeft, Boxes, Filter, Menu, PenSquare, Plus, Search, Wrench, X } from 'lucide-react'
 import { ClientFormModal } from '../components/clients/ClientFormModal'
 import { UnitFormModal } from '../components/clients/UnitFormModal'
 import { InventoryItemModal } from '../components/inventory/InventoryItemModal'
@@ -55,6 +55,7 @@ export function ClientDetailPage() {
   const [selectedItemId, setSelectedItemId] = useState(null)
   const [draggedItem, setDraggedItem] = useState(null)
   const [itemToDelete, setItemToDelete] = useState(null)
+  const [mobilePanelOpen, setMobilePanelOpen] = useState(false)
 
   const reload = useCallback(() => {
     setClient(getClientById(clientId))
@@ -126,18 +127,169 @@ export function ClientDetailPage() {
   }
 
   const branding = getClientBranding(client)
+  const metrics = [
+    ['Itens', totalItems, Boxes],
+    ['Baixo', lowStockCount, Filter],
+    ['Manut.', maintenanceCount, Wrench],
+  ]
+  const hasManageActions = canManageClients(currentUser)
+  const hasEditActions = canEditInventory(currentUser)
+
+  const closeMobilePanel = () => setMobilePanelOpen(false)
 
   return (
     <div className="space-y-2">
+      {mobilePanelOpen ? (
+        <div className="fixed inset-0 z-40 bg-slate-950/70 backdrop-blur-sm lg:hidden" onClick={closeMobilePanel} />
+      ) : null}
+
+      <aside
+        className={[
+          'fixed inset-y-0 left-0 z-50 w-[86vw] max-w-[340px] border-r border-white/10 bg-slate-950 p-3 shadow-[0_24px_80px_rgba(0,0,0,0.45)] transition-transform duration-200 lg:hidden',
+          mobilePanelOpen ? 'translate-x-0' : '-translate-x-full',
+        ].join(' ')}
+      >
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-cyan-300">Workspace do cliente</p>
+            <h2 className="mt-1 truncate font-display text-lg font-extrabold text-white">{client.name}</h2>
+            <p className="mt-1 text-[11px] leading-4 text-slate-400">
+              Acoes, filtros e resumo operacional.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={closeMobilePanel}
+            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-slate-200"
+            aria-label="Fechar menu lateral"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+
+        <div className="mt-3 space-y-3 overflow-y-auto pb-6">
+          <div className="flex flex-wrap gap-2">
+            {hasManageActions ? (
+              <>
+                {canViewMovementLog(currentUser) ? (
+                  <Link
+                    to={ROUTES.movements}
+                    onClick={closeMobilePanel}
+                    className="rounded-2xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-[12px] font-semibold text-slate-200"
+                  >
+                    Ver log
+                  </Link>
+                ) : null}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setClientModalOpen(true)
+                    closeMobilePanel()
+                  }}
+                  className="rounded-2xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-[12px] font-semibold text-slate-200"
+                >
+                  Editar cliente
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEditingUnit(null)
+                    setUnitModalOpen(true)
+                    closeMobilePanel()
+                  }}
+                  className="rounded-2xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-[12px] font-semibold text-slate-200"
+                >
+                  Nova unidade
+                </button>
+              </>
+            ) : null}
+            {hasEditActions ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setEditingItem(null)
+                  setItemModalOpen(true)
+                  closeMobilePanel()
+                }}
+                className="inline-flex items-center gap-2 rounded-2xl bg-cyan-400 px-2.5 py-1.5 text-[12px] font-semibold text-slate-950"
+              >
+                <Plus className="h-3.5 w-3.5" />
+                Novo item
+              </button>
+            ) : null}
+          </div>
+
+          <div className="space-y-2 rounded-[18px] border border-white/10 bg-white/5 p-2">
+            <label className="relative block">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-500" />
+              <input
+                value={search}
+                onChange={(event) => setSearch(event.target.value)}
+                placeholder="Buscar por item, descricao, SKU ou serial"
+                className="w-full rounded-2xl border border-white/10 bg-slate-950/55 py-1.5 pl-9 pr-3 text-[12px] text-white outline-none transition focus:border-cyan-400"
+              />
+            </label>
+            <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-slate-950/55 px-2.5 text-slate-400">
+              <Filter className="h-3.5 w-3.5 text-cyan-300" />
+              <select
+                value={typeFilter}
+                onChange={(event) => setTypeFilter(event.target.value)}
+                className="w-full appearance-none bg-transparent py-1.5 text-[12px] text-slate-200 outline-none"
+                style={{ colorScheme: 'dark' }}
+              >
+                {typeOptions.map((option) => (
+                  <option key={option.value} value={option.value}>{option.label}</option>
+                ))}
+              </select>
+            </div>
+            <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-slate-950/55 px-2.5 text-slate-400">
+              <Wrench className="h-3.5 w-3.5 text-cyan-300" />
+              <select
+                value={statusFilter}
+                onChange={(event) => setStatusFilter(event.target.value)}
+                className="w-full appearance-none bg-transparent py-1.5 text-[12px] text-slate-200 outline-none"
+                style={{ colorScheme: 'dark' }}
+              >
+                {statusOptions.map((option) => (
+                  <option key={option.value} value={option.value}>{option.label}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div className="grid gap-2">
+            {metrics.map(([label, value, Icon]) => (
+              <div key={label} className="rounded-[16px] border border-white/10 bg-white/5 px-2.5 py-2">
+                <div className="flex items-center gap-2 text-slate-300">
+                  <Icon className="h-3.5 w-3.5 text-cyan-300" />
+                  <span className="text-[10px] uppercase tracking-[0.18em]">{label}</span>
+                </div>
+                <p className="mt-0.5 font-display text-base font-extrabold text-white">{value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </aside>
+
       <section className="rounded-[20px] border border-white/10 bg-slate-950/60 p-3 shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
         <div className="flex flex-col gap-2.5 xl:flex-row xl:items-start xl:justify-between">
           <div className="flex items-start gap-3">
-            <Link
-              to={ROUTES.dashboard}
-              className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-slate-200"
-            >
-              <ArrowLeft className="h-3.5 w-3.5" />
-            </Link>
+            <div className="flex items-center gap-2">
+              <Link
+                to={ROUTES.dashboard}
+                className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-slate-200"
+              >
+                <ArrowLeft className="h-3.5 w-3.5" />
+              </Link>
+              <button
+                type="button"
+                onClick={() => setMobilePanelOpen(true)}
+                className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-slate-200 lg:hidden"
+                aria-label="Abrir menu lateral do cliente"
+              >
+                <Menu className="h-4 w-4" />
+              </button>
+            </div>
             {branding.logoDataUrl ? (
               <div className="h-10 w-10 shrink-0 overflow-hidden rounded-[16px] border border-white/10 bg-white/5 p-1">
                 <img src={branding.logoDataUrl} alt={`Logo ${client.name}`} className="h-full w-full rounded-[inherit] object-contain" />
@@ -155,8 +307,8 @@ export function ClientDetailPage() {
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {canManageClients(currentUser) ? (
+          <div className="hidden flex-wrap gap-2 lg:flex">
+            {hasManageActions ? (
               <>
                 {canViewMovementLog(currentUser) ? (
                   <Link
@@ -185,7 +337,7 @@ export function ClientDetailPage() {
                 </button>
               </>
             ) : null}
-            {canEditInventory(currentUser) ? (
+            {hasEditActions ? (
               <button
                 type="button"
                 onClick={() => {
@@ -201,7 +353,7 @@ export function ClientDetailPage() {
           </div>
         </div>
 
-        <div className="mt-2.5 grid gap-2 lg:grid-cols-[1.45fr_0.55fr]">
+        <div className="mt-2.5 hidden gap-2 lg:grid lg:grid-cols-[1.45fr_0.55fr]">
           <div className="rounded-[18px] border border-white/10 bg-white/5 p-2">
             <div className="flex flex-col gap-1.5 md:flex-row">
               <label className="relative flex-1">
@@ -243,11 +395,7 @@ export function ClientDetailPage() {
           </div>
 
           <div className="grid gap-2 sm:grid-cols-3">
-            {[
-              ['Itens', totalItems, Boxes],
-              ['Baixo', lowStockCount, Filter],
-              ['Manut.', maintenanceCount, Wrench],
-            ].map(([label, value, Icon]) => (
+            {metrics.map(([label, value, Icon]) => (
               <div key={label} className="rounded-[16px] border border-white/10 bg-white/5 px-2.5 py-2">
                 <div className="flex items-center gap-2 text-slate-300">
                   <Icon className="h-3.5 w-3.5 text-cyan-300" />
