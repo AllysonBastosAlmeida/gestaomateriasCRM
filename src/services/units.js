@@ -118,3 +118,51 @@ export function updateUnit(unitId, payload, actor) {
 
   return updated
 }
+
+export function deleteUnit(unitId, actor) {
+  const currentUnit = storage.get('units', unitId)
+  if (!currentUnit) {
+    throw new Error('Unidade nao encontrada.')
+  }
+
+  const result = storage.transaction((db) => {
+    const itemsToRemove = (db.inventoryItems || []).filter((item) => item.unitId === unitId)
+    const itemIds = new Set(itemsToRemove.map((item) => item.id))
+
+    db.units = (db.units || []).filter((unit) => unit.id !== unitId)
+    db.inventoryItems = (db.inventoryItems || []).filter((item) => item.unitId !== unitId)
+    db.inventoryDeletionRequests = (db.inventoryDeletionRequests || []).filter((request) => (
+      request.unitId !== unitId && !itemIds.has(request.itemId)
+    ))
+    db.stockMovements = (db.stockMovements || []).filter((movement) => (
+      movement.unitId !== unitId
+      && movement.sourceUnitId !== unitId
+      && movement.destinationUnitId !== unitId
+      && !itemIds.has(movement.itemId)
+    ))
+    db.auditLogs = (db.auditLogs || []).filter((log) => (
+      log.unitId !== unitId
+      && !itemIds.has(log.entityId)
+      && !(log.metadata?.requestId && (db.inventoryDeletionRequests || []).every((request) => request.id !== log.metadata.requestId))
+    ))
+
+    return {
+      removedItemsCount: itemIds.size,
+    }
+  })
+
+  createAuditEntry({
+    action: 'unit_deleted',
+    entityType: 'unit',
+    entityId: currentUnit.id,
+    entityLabel: currentUnit.name,
+    user: actor,
+    clientId: currentUnit.clientId,
+    unitId: currentUnit.id,
+    metadata: {
+      removedItemsCount: result.removedItemsCount,
+    },
+  })
+
+  return result
+}

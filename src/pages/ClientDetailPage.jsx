@@ -13,7 +13,7 @@ import { getClientById, updateClient } from '../services/clients'
 import { requestInventoryItemDeletion } from '../services/inventoryDeletionRequests'
 import { createInventoryItem, listInventoryItems, updateInventoryItem } from '../services/inventory'
 import { listItemMovementHistory, performMovement } from '../services/movements'
-import { createUnit, listUnits, updateUnit } from '../services/units'
+import { createUnit, deleteUnit, listUnits, updateUnit } from '../services/units'
 import { getClientBranding } from '../utils/clientBranding'
 import { canEditInventory, canManageClients, canViewMovementLog } from '../utils/permissions'
 import { ITEM_TYPES, ROUTES } from '../utils/constants'
@@ -55,6 +55,7 @@ export function ClientDetailPage() {
   const [selectedItemId, setSelectedItemId] = useState(null)
   const [draggedItem, setDraggedItem] = useState(null)
   const [itemToDelete, setItemToDelete] = useState(null)
+  const [unitToDelete, setUnitToDelete] = useState(null)
   const [mobilePanelOpen, setMobilePanelOpen] = useState(false)
 
   const reload = useCallback(() => {
@@ -525,6 +526,10 @@ export function ClientDetailPage() {
         open={unitModalOpen}
         unit={editingUnit}
         clientId={client.id}
+        onDelete={editingUnit ? () => {
+          setUnitModalOpen(false)
+          setUnitToDelete(editingUnit)
+        } : undefined}
         onClose={() => {
           setUnitModalOpen(false)
           setEditingUnit(null)
@@ -539,6 +544,28 @@ export function ClientDetailPage() {
               toast.success('Unidade criada.')
             }
             setUnitModalOpen(false)
+            setEditingUnit(null)
+            reload()
+          } catch (error) {
+            toast.error(error.message)
+          }
+        }}
+      />
+
+      <ConfirmDialog
+        open={Boolean(unitToDelete)}
+        title="Excluir unidade?"
+        description="Deseja excluir esta unidade mesmo? Todos os itens, movimentacoes e pendencias vinculados a ela serao removidos."
+        confirmLabel="Excluir unidade"
+        onClose={() => {
+          setUnitToDelete(null)
+          setEditingUnit(null)
+        }}
+        onConfirm={() => {
+          try {
+            const summary = deleteUnit(unitToDelete.id, currentUser)
+            toast.success(`Unidade excluida. ${summary.removedItemsCount} item(ns) removido(s).`)
+            setUnitToDelete(null)
             setEditingUnit(null)
             reload()
           } catch (error) {
