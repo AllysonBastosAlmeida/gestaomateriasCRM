@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": 4,
-    "initializedAt": "2026-06-02T12:00:00.000Z",
-    "lastUpdatedAt": "2026-06-03T14:29:13.409Z",
-    "importedAt": "2026-06-03T14:29:13.407Z"
+    "initializedAt": "2026-06-03T20:03:42.308Z",
+    "lastUpdatedAt": "2026-06-03T21:08:16.707Z",
+    "importedAt": "2026-06-03T21:08:15.774Z"
   },
   "users": [
     {
@@ -688,6 +688,40 @@
       "updatedAt": "2026-06-03T11:50:42.274Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
+    }
+  ],
+  "inventoryDeletionRequests": [
+    {
+      "id": "delreq_1780452189945_i2f635",
+      "itemId": "item_nvr_16",
+      "itemName": "NVR 16 Canais",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "recusada",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Operador Norte",
+      "requestedAt": "2026-06-03T02:03:09.945Z",
+      "reviewedBy": "user_admin",
+      "reviewedByName": "Administrador Geral",
+      "reviewedAt": "2026-06-03T02:03:41.982Z",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_nvr_16\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"equipamento\",\"category\":\"CFTV\",\"name\":\"NVR 16 Canais\",\"description\":\"Gravador em rede para sistemas de monitoramento IP.\",\"sku\":\"NVR-16CH-4K\",\"serialNumber\":\"NVR-1644\",\"quantity\":3,\"minQuantity\":1,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Estoque CFTV / Rack 1\",\"notes\":\"\",\"createdAt\":\"2026-06-02T12:00:00.000Z\",\"updatedAt\":\"2026-06-02T19:41:44.984Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\"}"
+    },
+    {
+      "id": "delreq_1780453254731_kopxnk",
+      "itemId": "item_1780450942689_klydxe",
+      "itemName": "material sem descricao",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "aprovada",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-03T02:20:54.731Z",
+      "reviewedBy": "user_admin",
+      "reviewedByName": "Administrador Geral",
+      "reviewedAt": "2026-06-03T02:22:31.593Z",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1780450942689_klydxe\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"material sem descricao\",\"description\":\"\",\"sku\":\"\",\"serialNumber\":\"teste\",\"quantity\":0,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"createdAt\":\"2026-06-03T01:42:22.689Z\",\"updatedAt\":\"2026-06-03T01:42:22.689Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\"}"
     }
   ],
   "stockMovements": [
@@ -2174,44 +2208,23 @@
         "username": "operador1"
       },
       "createdAt": "2026-06-03T14:20:11.894Z"
+    },
+    {
+      "id": "audit_1780520896706_pvskt7",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T21:08:16.706Z"
     }
   ],
   "settings": {
     "storageMode": "local",
     "theme": "workspace-light"
-  },
-  "inventoryDeletionRequests": [
-    {
-      "id": "delreq_1780452189945_i2f635",
-      "itemId": "item_nvr_16",
-      "itemName": "NVR 16 Canais",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "status": "recusada",
-      "requestedBy": "user_operador1",
-      "requestedByName": "Operador Norte",
-      "requestedAt": "2026-06-03T02:03:09.945Z",
-      "reviewedBy": "user_admin",
-      "reviewedByName": "Administrador Geral",
-      "reviewedAt": "2026-06-03T02:03:41.982Z",
-      "reviewNotes": "",
-      "itemSnapshotJson": "{\"id\":\"item_nvr_16\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"equipamento\",\"category\":\"CFTV\",\"name\":\"NVR 16 Canais\",\"description\":\"Gravador em rede para sistemas de monitoramento IP.\",\"sku\":\"NVR-16CH-4K\",\"serialNumber\":\"NVR-1644\",\"quantity\":3,\"minQuantity\":1,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Estoque CFTV / Rack 1\",\"notes\":\"\",\"createdAt\":\"2026-06-02T12:00:00.000Z\",\"updatedAt\":\"2026-06-02T19:41:44.984Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\"}"
-    },
-    {
-      "id": "delreq_1780453254731_kopxnk",
-      "itemId": "item_1780450942689_klydxe",
-      "itemName": "material sem descricao",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "status": "aprovada",
-      "requestedBy": "user_admin",
-      "requestedByName": "Administrador Geral",
-      "requestedAt": "2026-06-03T02:20:54.731Z",
-      "reviewedBy": "user_admin",
-      "reviewedByName": "Administrador Geral",
-      "reviewedAt": "2026-06-03T02:22:31.593Z",
-      "reviewNotes": "",
-      "itemSnapshotJson": "{\"id\":\"item_1780450942689_klydxe\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"material sem descricao\",\"description\":\"\",\"sku\":\"\",\"serialNumber\":\"teste\",\"quantity\":0,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"createdAt\":\"2026-06-03T01:42:22.689Z\",\"updatedAt\":\"2026-06-03T01:42:22.689Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\"}"
-    }
-  ]
+  }
 }
