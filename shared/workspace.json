@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:28:47.244Z"
+    "importedAt": "2026-06-03T22:29:21.602Z"
   },
   "users": [
     {
@@ -15,8 +15,8 @@
       "role": "admin",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:23:23.431Z",
-      "lastLoginAt": "2026-06-03T22:23:23.431Z",
+      "updatedAt": "2026-06-03T22:28:35.690Z",
+      "lastLoginAt": "2026-06-03T22:28:35.690Z",
       "password": "Yara@123456"
     },
     {
@@ -586,7 +586,7 @@
     {
       "id": "item_punch_down",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "ferramenta",
       "category": "Telecomunicacao",
       "name": "Alicate Punch Down",
@@ -604,7 +604,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T14:16:48.001Z",
+      "updatedAt": "2026-06-03T22:29:20.901Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -817,6 +817,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780525760901_286jc0",
+      "itemId": "item_punch_down",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 4,
+      "previousQuantity": 4,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T22:29:20.901Z"
+    },
     {
       "id": "mov_1780524600178_cu530c",
       "itemId": "item_caixa_emenda",
@@ -1411,6 +1427,42 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780525760901_izlksr",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780525760901_286jc0",
+      "entityLabel": "Alicate Punch Down",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "previousQuantity": 4,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T22:29:20.901Z"
+    },
+    {
+      "id": "audit_1780525715694_z3alok",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "01"
+      },
+      "createdAt": "2026-06-03T22:28:35.694Z"
+    },
     {
       "id": "audit_1780525670764_gg7144",
       "action": "auth_login",
