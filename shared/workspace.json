@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:05:09.708Z"
+    "importedAt": "2026-06-03T22:06:06.171Z"
   },
   "users": [
     {
@@ -1364,6 +1364,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780524309635_jor2y0",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_patch_panel",
+      "entityLabel": "Patch Panel CAT6 Furukawa",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "quantity": 10,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-03T22:05:09.635Z"
+    },
     {
       "id": "audit_1780524066838_eqo5dw",
       "action": "inventory_item_updated",
