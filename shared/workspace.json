@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:09:51.028Z"
+    "importedAt": "2026-06-03T22:10:28.024Z"
   },
   "users": [
     {
@@ -371,7 +371,7 @@
     {
       "id": "item_caixa_emenda",
       "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
+      "unitId": "unit_alpha_a",
       "type": "equipamento",
       "category": "Fibra optica",
       "name": "Caixa de Emenda Optica 24FO",
@@ -389,7 +389,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
+      "updatedAt": "2026-06-03T22:10:00.178Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -802,6 +802,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780524600178_cu530c",
+      "itemId": "item_caixa_emenda",
+      "movementType": "transferencia",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_b",
+      "sourceUnitId": "unit_alpha_b",
+      "destinationUnitId": "unit_alpha_a",
+      "quantity": 10,
+      "previousQuantity": 10,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T22:10:00.178Z"
+    },
     {
       "id": "mov_1780524534104_c48a88",
       "itemId": "item_luva",
@@ -1380,6 +1396,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780524600178_aceezu",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780524600178_cu530c",
+      "entityLabel": "Caixa de Emenda Optica 24FO",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_b",
+      "metadata": {
+        "quantity": 10,
+        "previousQuantity": 10,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_alpha_b",
+        "destinationUnitId": "unit_alpha_a",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T22:10:00.178Z"
+    },
     {
       "id": "audit_1780524534104_byzxf3",
       "action": "movement_transferencia",
