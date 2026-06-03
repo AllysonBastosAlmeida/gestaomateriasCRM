@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:23:30.968Z"
+    "importedAt": "2026-06-03T22:24:33.475Z"
   },
   "users": [
     {
@@ -21,15 +21,16 @@
     },
     {
       "id": "user_operador1",
-      "name": "Operador Norte",
-      "email": "operador1@gestaomateriais.local",
-      "username": "operador1",
-      "passwordHash": "c8c1a52a",
+      "name": "Rodrigo de Farias Barbosa",
+      "email": "",
+      "username": "05",
+      "passwordHash": "c8a4f281",
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T21:08:46.091Z",
-      "lastLoginAt": "2026-06-03T21:08:46.091Z"
+      "updatedAt": "2026-06-03T22:24:33.393Z",
+      "lastLoginAt": "2026-06-03T21:08:46.091Z",
+      "password": "102030"
     },
     {
       "id": "user_operador2",
