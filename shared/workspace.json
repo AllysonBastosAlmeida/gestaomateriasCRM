@@ -2,7 +2,7 @@
   "meta": {
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
-    "lastUpdatedAt": "2026-06-03T21:09:34.613Z",
+    "lastUpdatedAt": "2026-06-03T21:09:34.615Z",
     "importedAt": "2026-06-03T21:08:35.847Z"
   },
   "users": [
@@ -2311,6 +2311,22 @@
         "notes": ""
       },
       "createdAt": "2026-06-03T21:08:48.719Z"
+    },
+    {
+      "id": "audit_1780520974615_rr7g6k",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1780520974612_sfgftt",
+      "entityLabel": "teste",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-06-03T21:09:34.615Z"
     }
   ],
   "settings": {
