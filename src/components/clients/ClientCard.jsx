@@ -19,10 +19,14 @@ export function ClientCard({
       : 'border-white/70 bg-white/80 shadow-panel hover:shadow-2xl'
 
   return (
-    <Link
-      to={`/clientes/${client.id}`}
-      className={`relative rounded-[20px] border transition hover:-translate-y-0.5 ${selector ? 'w-[178px] p-3.5' : 'p-3.5'} ${shellClass}`}
+    <div
+      className={`relative overflow-hidden rounded-[20px] border transition hover:-translate-y-0.5 ${selector ? 'w-[178px] p-3.5' : 'p-3.5'} ${shellClass}`}
     >
+      <Link
+        to={`/clientes/${client.id}`}
+        aria-label={`Abrir cliente ${client.name}`}
+        className="absolute inset-0 z-0"
+      />
       {onEdit ? (
         <button
           type="button"
@@ -31,13 +35,13 @@ export function ClientCard({
             event.stopPropagation()
             onEdit()
           }}
-          className="absolute right-3 top-3 inline-flex h-7 w-7 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 transition hover:border-white/20 hover:text-white"
+          className="absolute right-3 top-3 z-10 inline-flex h-7 w-7 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 transition hover:border-white/20 hover:text-white"
           aria-label={`Editar ${client.name}`}
         >
           <PenSquare className="h-3.5 w-3.5" />
         </button>
       ) : null}
-      <div className={selector ? 'flex flex-col items-center text-center' : 'flex items-start gap-3'}>
+      <div className={`relative z-[1] ${selector ? 'flex flex-col items-center text-center' : 'flex items-start gap-3'}`}>
         {branding.logoDataUrl ? (
           <div className={`${selector ? 'h-[88px] w-[88px] rounded-[26px]' : 'h-12 w-12 rounded-[18px] shrink-0'} overflow-hidden border border-white/10 bg-white/5 p-1`}>
             <img src={branding.logoDataUrl} alt={`Logo ${client.name}`} className="h-full w-full rounded-[inherit] object-contain" />
@@ -69,12 +73,12 @@ export function ClientCard({
       ) : null}
       {!selector ? (
         <>
-          <div className={`mt-3 flex items-center gap-2 text-[12px] font-medium ${dark || selector ? 'text-slate-400' : 'text-slate-500'}`}>
+          <div className={`relative z-[1] mt-3 flex items-center gap-2 text-[12px] font-medium ${dark || selector ? 'text-slate-400' : 'text-slate-500'}`}>
             <Factory className="h-4 w-4" />
             {client.cnpj}
           </div>
         </>
       ) : null}
-    </Link>
+    </div>
   )
 }
