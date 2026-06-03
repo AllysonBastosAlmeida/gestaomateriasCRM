@@ -155,19 +155,19 @@ export function ClientFormModal({ open, client, onClose, onSubmit }) {
             className="form-textarea-dark"
           />
         </label>
-        <div className="md:col-span-2 flex justify-end gap-3">
+        <div className="sticky bottom-0 z-[1] -mx-3 mt-1 grid grid-cols-2 gap-2 border-t border-white/10 bg-[#050b16] px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-2 sm:static sm:mx-0 sm:flex sm:justify-end sm:gap-3 sm:border-0 sm:bg-transparent sm:px-0 sm:pb-0 sm:pt-0 md:col-span-2">
           <button
             type="button"
             onClick={onClose}
             disabled={isSubmitting}
-            className="form-button-secondary-dark disabled:cursor-not-allowed disabled:opacity-50"
+            className="form-button-secondary-dark min-h-10 disabled:cursor-not-allowed disabled:opacity-50"
           >
             Cancelar
           </button>
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-flex items-center gap-2 rounded-xl bg-ink px-3 py-2 text-[13px] font-semibold text-white disabled:cursor-not-allowed disabled:opacity-70"
+            className="inline-flex min-h-10 items-center justify-center gap-2 rounded-xl bg-ink px-3 py-2 text-[13px] font-semibold text-white disabled:cursor-not-allowed disabled:opacity-70"
           >
             {isSubmitting ? <LoaderCircle className="h-4 w-4 animate-spin" /> : null}
             {isSubmitting ? 'Salvando...' : 'Salvar'}
