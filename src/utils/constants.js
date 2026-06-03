@@ -31,6 +31,7 @@ export const MOVEMENT_TYPES = [
 export const STORAGE_MODES = {
   local: 'local',
   excel: 'excel',
+  github: 'github',
   crudcrud: 'crudcrud',
 }
 

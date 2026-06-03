@@ -1,6 +1,7 @@
 import { createContext, useEffect, useMemo, useState } from 'react'
 import { getCurrentUser, login as loginService, logout as logoutService } from '../services/auth'
 import { ensureCrudCrudDbLoaded } from '../services/crudCrudSync'
+import { ensureGitHubDbLoaded } from '../services/githubSync'
 import { env } from '../utils/env'
 
 export const AuthContext = createContext(null)
@@ -12,6 +13,14 @@ export function AuthProvider({ children }) {
     let cancelled = false
 
     const restoreSession = async () => {
+      if (env.storageMode === 'github') {
+        try {
+          await ensureGitHubDbLoaded()
+        } catch {
+          // keep login page usable; remote sync can retry on submit
+        }
+      }
+
       if (env.storageMode === 'crudcrud') {
         try {
           await ensureCrudCrudDbLoaded()

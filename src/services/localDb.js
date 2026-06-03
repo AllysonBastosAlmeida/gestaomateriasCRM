@@ -35,13 +35,13 @@ function createSharePointBootstrapDatabase() {
 }
 
 function createInitialDatabase() {
-  return env.storageMode === STORAGE_MODES.crudcrud
+  return [STORAGE_MODES.crudcrud, STORAGE_MODES.github].includes(env.storageMode)
     ? createSharePointBootstrapDatabase()
     : createSeedDatabase()
 }
 
 function mergeSeedDatabase(currentDb) {
-  if (env.storageMode === STORAGE_MODES.crudcrud) {
+  if ([STORAGE_MODES.crudcrud, STORAGE_MODES.github].includes(env.storageMode)) {
     const nextDb = clone(currentDb)
     let changed = false
 

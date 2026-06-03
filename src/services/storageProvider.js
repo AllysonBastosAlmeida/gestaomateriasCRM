@@ -9,6 +9,7 @@ import {
 } from './localDb'
 import { crudCrudAdapter } from './crudCrudAdapter'
 import { excelAdapter } from './excelAdapter'
+import { githubAdapter } from './githubAdapter'
 import { env } from '../utils/env'
 import { STORAGE_MODES } from '../utils/constants'
 
@@ -31,6 +32,8 @@ export function getStorageProvider() {
   switch (env.storageMode) {
     case STORAGE_MODES.excel:
       return excelAdapter
+    case STORAGE_MODES.github:
+      return githubAdapter
     case STORAGE_MODES.crudcrud:
       return crudCrudAdapter
     default:

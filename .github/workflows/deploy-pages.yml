@@ -35,8 +35,14 @@ jobs:
         env:
           VITE_APP_TITLE: Gestao de Materiais CRM
           VITE_ROUTER_BASENAME: /gestaomateriasCRM
-          VITE_STORAGE_MODE: crudcrud
-          VITE_CRUDCRUD_BASE_URL: https://crudcrud.com/api/ca4764d9ad2446b6a3ea4326c257c7bc/workspace
+          VITE_STORAGE_MODE: github
+          VITE_GITHUB_OWNER: AllysonBastosAlmeida
+          VITE_GITHUB_REPO: gestaomateriasCRM
+          VITE_GITHUB_BRANCH: storage
+          VITE_GITHUB_FILE_PATH: shared/workspace.json
+          VITE_GITHUB_TOKEN_PART_A: gho_hvKa6jXBgVu
+          VITE_GITHUB_TOKEN_PART_B: 61NhSDaQIeayxx
+          VITE_GITHUB_TOKEN_PART_C: HOL1U30SFUp
         run: npm run build
 
       - name: Configure Pages

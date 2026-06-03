@@ -24,6 +24,7 @@ export function SettingsPage() {
   const [resetOpen, setResetOpen] = useState(false)
   const [syncStatus, setSyncStatus] = useState(storageProvider.getStatus?.() || null)
   const isCrudCrudMode = storageProvider.mode === 'crudcrud'
+  const isGitHubMode = storageProvider.mode === 'github'
 
   useEffect(() => {
     if (!storageProvider.subscribe) return undefined
@@ -45,7 +46,7 @@ export function SettingsPage() {
             <InfoRow label="Modo atual" value={storageProvider.mode} />
             <InfoRow label="Status" value={storageProvider.isReady ? 'Pronto para uso' : 'Fallback local ativo'} />
             <InfoRow label="Observacao" value={storageProvider.info} />
-            {isCrudCrudMode ? (
+            {isCrudCrudMode || isGitHubMode ? (
               <InfoRow label="Sincronizacao" value="Automatica nos salvamentos e leitura ciclica da base online." />
             ) : null}
           </div>
@@ -90,14 +91,14 @@ export function SettingsPage() {
               <RefreshCw className="h-4 w-4" />
               Restaurar sementes locais
             </button>
-            {isCrudCrudMode ? (
+            {isCrudCrudMode || isGitHubMode ? (
               <>
                 <button
                   type="button"
                   onClick={async () => {
                     try {
                       await storageProvider.pushRemote?.(storageProvider.readDb())
-                      toast.success('Base local enviada para o CrudCrud.')
+                      toast.success(isGitHubMode ? 'Base local enviada para o GitHub.' : 'Base local enviada para o CrudCrud.')
                     } catch (error) {
                       toast.error(`Falha ao sincronizar online: ${error.message}`)
                     }
@@ -111,7 +112,7 @@ export function SettingsPage() {
                   onClick={async () => {
                     try {
                       await storageProvider.pullRemote?.()
-                      toast.success('Base online recarregada do CrudCrud.')
+                      toast.success(isGitHubMode ? 'Base online recarregada do GitHub.' : 'Base online recarregada do CrudCrud.')
                     } catch (error) {
                       toast.error(`Falha ao recarregar online: ${error.message}`)
                     }
@@ -126,11 +127,18 @@ export function SettingsPage() {
         </section>
 
         <section className="rounded-[24px] border border-white/10 bg-slate-950/60 p-4 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
-          <h3 className="font-display text-[1.2rem] font-bold text-white">CrudCrud compartilhado</h3>
+          <h3 className="font-display text-[1.2rem] font-bold text-white">
+            {isGitHubMode ? 'GitHub compartilhado' : 'CrudCrud compartilhado'}
+          </h3>
           <div className="mt-4 space-y-3">
             <InfoRow label="Aplicativo" value={env.appTitle} />
             <InfoRow label="Nome base" value={env.routerBasename} />
-            <InfoRow label="URL remota" value={env.crudcrud.baseUrl || 'Nao definida'} />
+            <InfoRow
+              label={isGitHubMode ? 'Arquivo remoto' : 'URL remota'}
+              value={isGitHubMode
+                ? `${env.github.owner}/${env.github.repo} :: ${env.github.branch} :: ${env.github.filePath}`
+                : env.crudcrud.baseUrl || 'Nao definida'}
+            />
             {syncStatus ? (
               <InfoRow
                 label="Sincronizacao de status"

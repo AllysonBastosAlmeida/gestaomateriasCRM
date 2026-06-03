@@ -7,6 +7,7 @@ import { useToast } from '../hooks/useToast'
 import { ROUTES } from '../utils/constants'
 import { env } from '../utils/env'
 import { ensureCrudCrudDbLoaded, getCrudCrudSyncStatus } from '../services/crudCrudSync'
+import { ensureGitHubDbLoaded, getGitHubSyncStatus } from '../services/githubSync'
 
 export function LoginPage() {
   const { currentUser, login, refreshSession } = useAuth()
@@ -41,19 +42,27 @@ export function LoginPage() {
                 try {
                   setLoading(true)
 
+                  if (env.storageMode === 'github') {
+                    await ensureGitHubDbLoaded()
+                  }
+
                   if (env.storageMode === 'crudcrud') {
                     await ensureCrudCrudDbLoaded()
                   }
 
                   login(username, password)
                   refreshSession()
-                  const crudCrudStatus = env.storageMode === 'crudcrud' ? getCrudCrudSyncStatus() : null
+                  const remoteStatus = env.storageMode === 'github'
+                    ? getGitHubSyncStatus()
+                    : env.storageMode === 'crudcrud'
+                      ? getCrudCrudSyncStatus()
+                      : null
 
-                  if (crudCrudStatus && !crudCrudStatus.isReady) {
+                  if (remoteStatus && !remoteStatus.isReady) {
                     toast.info('Sessao iniciada em modo local. A base online esta indisponivel no momento.')
                   } else {
                     toast.success(
-                      env.storageMode === 'crudcrud'
+                      env.storageMode === 'github' || env.storageMode === 'crudcrud'
                         ? 'Sessao iniciada e base online carregada com sucesso.'
                         : 'Sessao iniciada com sucesso.',
                     )
