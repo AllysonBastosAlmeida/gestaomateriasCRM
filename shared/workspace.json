@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:58:51.737Z"
+    "importedAt": "2026-06-03T21:59:40.325Z"
   },
   "users": [
     {
@@ -184,12 +184,12 @@
       "status": "disponivel",
       "internalLocation": "Almoxarifado 01 / Prateleira A",
       "notes": "Revisao trimestral.",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1780523980243_aln6iv",
+      "pendingDeletionRequestedAt": "2026-06-03T21:59:40.243Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T17:42:22.207Z",
+      "updatedAt": "2026-06-03T21:59:40.243Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -767,6 +767,22 @@
       "reviewedAt": "",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1780520974612_sfgftt\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"teste\",\"description\":\"teste\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-03T21:09:34.612Z\",\"updatedAt\":\"2026-06-03T21:18:12.301Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}"
+    },
+    {
+      "id": "delreq_1780523980243_aln6iv",
+      "itemId": "item_serra",
+      "itemName": "Serra Circular Bosch",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-03T21:59:40.243Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_serra\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"ferramenta\",\"category\":\"Corte\",\"name\":\"Serra Circular Bosch\",\"description\":\"Ferramenta eletrica para corte de chapas.\",\"sku\":\"SCB-220\",\"serialNumber\":\"BRX-001\",\"quantity\":3,\"minQuantity\":2,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Almoxarifado 01 / Prateleira A\",\"notes\":\"Revisao trimestral.\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-02T17:42:22.207Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\"}"
     }
   ],
   "stockMovements": [
@@ -1332,6 +1348,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780523980243_yzzukx",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1780523980243_aln6iv",
+      "entityLabel": "Serra Circular Bosch",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "requestId": "delreq_1780523980243_aln6iv",
+        "requestStatus": "pendente"
+      },
+      "createdAt": "2026-06-03T21:59:40.243Z"
+    },
     {
       "id": "audit_1780523782337_glwu0l",
       "action": "client_updated",
