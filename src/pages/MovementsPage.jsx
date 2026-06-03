@@ -37,7 +37,7 @@ export function MovementsPage() {
   }, [deferredSearch, filters])
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       <PageSection
         eyebrow="Area administrativa"
         title="Registros"
@@ -105,8 +105,34 @@ export function MovementsPage() {
       </PageSection>
 
       {movements.length ? (
-        <div className="overflow-hidden rounded-[24px] border border-white/10 bg-slate-950/60 shadow-[0_16px_40px_rgba(0,0,0,0.18)]">
-          <div className="overflow-x-auto">
+        <>
+          <div className="space-y-2 md:hidden">
+            {movements.map((movement) => (
+              <article
+                key={movement.id}
+                className="rounded-[18px] border border-white/10 bg-slate-950/60 p-3 shadow-[0_16px_40px_rgba(0,0,0,0.18)]"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-cyan-200">
+                    {movement.movementType}
+                  </span>
+                  <p className="text-[11px] text-slate-500">{formatDateTime(movement.performedAt)}</p>
+                </div>
+                <p className="mt-2 text-[13px] font-semibold text-white">{itemsMap[movement.itemId]?.name || 'Item removido'}</p>
+                <div className="mt-2 grid gap-1 text-[12px] text-slate-300">
+                  <p>{clients.find((client) => client.id === movement.clientId)?.name || '-'}</p>
+                  <p className="text-slate-400">{units.find((unit) => unit.id === movement.unitId)?.name || '-'}</p>
+                  <p className="text-white">{movement.quantity} un</p>
+                  <p className="text-slate-400">{users.find((user) => user.id === movement.performedBy)?.name || movement.performedBy}</p>
+                  <p className="text-slate-500">{movement.previousQuantity} {'->'} {movement.newQuantity}</p>
+                  <p className="truncate text-slate-400">{movement.reason || 'Nao informado'}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="hidden overflow-hidden rounded-[24px] border border-white/10 bg-slate-950/60 shadow-[0_16px_40px_rgba(0,0,0,0.18)] md:block">
+            <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-white/10 text-[13px]">
               <thead className="bg-white/[0.03]">
                 <tr className="text-left text-[11px] uppercase tracking-[0.16em] text-slate-400">
@@ -157,7 +183,8 @@ export function MovementsPage() {
               </tbody>
             </table>
           </div>
-        </div>
+          </div>
+        </>
       ) : (
         <EmptyState
           title="Nenhum log encontrado"

@@ -12,7 +12,7 @@ import { importWorkbookFile } from '../utils/importXlsx'
 
 function InfoRow({ label, value }) {
   return (
-    <p className="text-sm text-slate-300">
+    <p className="text-[12px] leading-5 text-slate-300 sm:text-sm">
       <strong className="text-slate-100">{label}:</strong> {value}
     </p>
   )
@@ -32,17 +32,17 @@ export function SettingsPage() {
   }, [storageProvider])
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <PageSection
         eyebrow="Integracao"
         title="Configuracoes"
         description="Controles compactos da persistencia local e da base online compartilhada."
       />
 
-      <div className="grid gap-4 xl:grid-cols-[1fr_1fr]">
-        <section className="rounded-[24px] border border-white/10 bg-slate-950/60 p-4 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
-          <h3 className="font-display text-[1.2rem] font-bold text-white">Persistencia</h3>
-          <div className="mt-4 space-y-3">
+      <div className="grid gap-3 sm:gap-4 xl:grid-cols-[1fr_1fr]">
+        <section className="rounded-[20px] border border-white/10 bg-slate-950/60 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:rounded-[24px] sm:p-4">
+          <h3 className="font-display text-[1rem] font-bold text-white sm:text-[1.2rem]">Persistencia</h3>
+          <div className="mt-3 space-y-2.5 sm:mt-4 sm:space-y-3">
             <InfoRow label="Modo atual" value={storageProvider.mode} />
             <InfoRow label="Status" value={storageProvider.isReady ? 'Pronto para uso' : 'Fallback local ativo'} />
             <InfoRow label="Observacao" value={storageProvider.info} />
@@ -50,16 +50,16 @@ export function SettingsPage() {
               <InfoRow label="Sincronizacao" value="Automatica nos salvamentos e leitura ciclica da base online." />
             ) : null}
           </div>
-          <div className="mt-4 flex flex-wrap gap-2.5">
+          <div className="mt-3 flex flex-wrap gap-2 sm:mt-4 sm:gap-2.5">
             <button
               type="button"
               onClick={() => exportDatabaseToXlsx(storageProvider.readDb())}
-              className="inline-flex items-center gap-2 rounded-xl bg-ink px-3 py-2.5 text-[13px] font-semibold text-white"
+              className="inline-flex items-center gap-2 rounded-xl bg-ink px-3 py-2 text-[12px] font-semibold text-white sm:py-2.5 sm:text-[13px]"
             >
               <Download className="h-4 w-4" />
               Exportar XLSX
             </button>
-            <label className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 text-[13px] font-semibold text-slate-200 transition hover:border-white/20 hover:text-white">
+            <label className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-[12px] font-semibold text-slate-200 transition hover:border-white/20 hover:text-white sm:py-2.5 sm:text-[13px]">
               <Upload className="h-4 w-4" />
               Importar XLSX
               <input
@@ -86,7 +86,7 @@ export function SettingsPage() {
             <button
               type="button"
               onClick={() => setResetOpen(true)}
-              className="inline-flex items-center gap-2 rounded-xl border border-coral/30 bg-coral/10 px-3 py-2.5 text-[13px] font-semibold text-coral"
+              className="inline-flex items-center gap-2 rounded-xl border border-coral/30 bg-coral/10 px-3 py-2 text-[12px] font-semibold text-coral sm:py-2.5 sm:text-[13px]"
             >
               <RefreshCw className="h-4 w-4" />
               Restaurar sementes locais
@@ -103,7 +103,7 @@ export function SettingsPage() {
                       toast.error(`Falha ao sincronizar online: ${error.message}`)
                     }
                   }}
-                  className="inline-flex items-center gap-2 rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-3 py-2.5 text-[13px] font-semibold text-cyan-200"
+                  className="inline-flex items-center gap-2 rounded-xl border border-cyan-400/30 bg-cyan-400/10 px-3 py-2 text-[12px] font-semibold text-cyan-200 sm:py-2.5 sm:text-[13px]"
                 >
                   Sincronizar agora
                 </button>
@@ -117,7 +117,7 @@ export function SettingsPage() {
                       toast.error(`Falha ao recarregar online: ${error.message}`)
                     }
                   }}
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 text-[13px] font-semibold text-slate-200 transition hover:border-white/20 hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-[12px] font-semibold text-slate-200 transition hover:border-white/20 hover:text-white sm:py-2.5 sm:text-[13px]"
                 >
                   Recarregar base online
                 </button>
@@ -126,11 +126,11 @@ export function SettingsPage() {
           </div>
         </section>
 
-        <section className="rounded-[24px] border border-white/10 bg-slate-950/60 p-4 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
-          <h3 className="font-display text-[1.2rem] font-bold text-white">
+        <section className="rounded-[20px] border border-white/10 bg-slate-950/60 p-3 shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:rounded-[24px] sm:p-4">
+          <h3 className="font-display text-[1rem] font-bold text-white sm:text-[1.2rem]">
             {isGitHubMode ? 'GitHub compartilhado' : 'CrudCrud compartilhado'}
           </h3>
-          <div className="mt-4 space-y-3">
+          <div className="mt-3 space-y-2.5 sm:mt-4 sm:space-y-3">
             <InfoRow label="Aplicativo" value={env.appTitle} />
             <InfoRow label="Nome base" value={env.routerBasename} />
             <InfoRow
@@ -148,9 +148,9 @@ export function SettingsPage() {
             {syncStatus?.lastSyncAt ? <InfoRow label="Ultima sync" value={syncStatus.lastSyncAt} /> : null}
             {syncStatus?.lastError ? <InfoRow label="Ultimo erro" value={syncStatus.lastError} /> : null}
           </div>
-          <div className="mt-4 rounded-[22px] border border-white/10 bg-white/[0.03] p-3">
-            <p className="text-sm font-semibold text-white">Modelo da base</p>
-            <p className="mt-3 text-xs text-slate-400">
+          <div className="mt-3 rounded-[18px] border border-white/10 bg-white/[0.03] p-3 sm:mt-4 sm:rounded-[22px]">
+            <p className="text-[13px] font-semibold text-white sm:text-sm">Modelo da base</p>
+            <p className="mt-2 text-[11px] leading-5 text-slate-400 sm:mt-3 sm:text-xs">
               O sistema publica um snapshot JSON compartilhado com clientes, unidades, itens, usuarios, exclusoes, auditoria e movimentacoes.
             </p>
           </div>

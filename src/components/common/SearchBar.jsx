@@ -8,7 +8,7 @@ export function SearchBar({ value, onChange, placeholder = 'Buscar...' }) {
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-white/10 bg-slate-950/70 py-2.5 pl-9 pr-3 text-[13px] text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-400"
+        className="w-full rounded-xl border border-white/10 bg-slate-950/70 py-2 pl-9 pr-3 text-[12px] text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-400 sm:py-2.5 sm:text-[13px]"
       />
     </div>
   )

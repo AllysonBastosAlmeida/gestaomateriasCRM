@@ -25,7 +25,7 @@ export function UsersPage() {
   }, [])
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4 sm:space-y-6">
       <PageSection
         eyebrow="Administracao local"
         title="Usuarios"
@@ -37,7 +37,7 @@ export function UsersPage() {
               setEditingUser(null)
               setModalOpen(true)
             }}
-            className="inline-flex items-center gap-2 rounded-xl bg-ink px-3 py-2.5 text-[13px] font-semibold text-white"
+            className="inline-flex items-center gap-2 rounded-xl bg-ink px-3 py-2 text-[12px] font-semibold text-white sm:py-2.5 sm:text-[13px]"
           >
             <Plus className="h-4 w-4" />
             Novo usuario
@@ -46,7 +46,7 @@ export function UsersPage() {
       />
 
       {users.length ? (
-        <div className="grid gap-3 xl:grid-cols-2">
+        <div className="grid gap-2.5 sm:gap-3 xl:grid-cols-2">
           {users.map((user) => (
             <button
               key={user.id}
@@ -55,18 +55,18 @@ export function UsersPage() {
                 setEditingUser(user)
                 setModalOpen(true)
               }}
-              className="rounded-[24px] border border-white/10 bg-slate-950/60 p-4 text-left shadow-[0_16px_40px_rgba(0,0,0,0.18)] transition hover:-translate-y-0.5 hover:border-cyan-300/20"
+              className="rounded-[18px] border border-white/10 bg-slate-950/60 p-3 text-left shadow-[0_16px_40px_rgba(0,0,0,0.18)] transition hover:-translate-y-0.5 hover:border-cyan-300/20 sm:rounded-[24px] sm:p-4"
             >
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="font-display text-xl font-bold text-white">{user.name}</p>
-                  <p className="mt-1 text-sm text-slate-400">{user.username} / {user.email}</p>
+                  <p className="font-display text-lg font-bold text-white sm:text-xl">{user.name}</p>
+                  <p className="mt-1 text-[12px] text-slate-400 sm:text-sm">{user.username} / {user.email}</p>
                 </div>
-                <span className={`rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] ${user.active ? 'border-emerald-400/20 bg-emerald-400/10 text-emerald-200' : 'border-white/10 bg-white/5 text-slate-300'}`}>
+                <span className={`rounded-full border px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] sm:px-3 sm:text-xs sm:tracking-[0.18em] ${user.active ? 'border-emerald-400/20 bg-emerald-400/10 text-emerald-200' : 'border-white/10 bg-white/5 text-slate-300'}`}>
                   {user.active ? 'Ativo' : 'Inativo'}
                 </span>
               </div>
-              <div className="mt-4 grid gap-2 text-sm text-slate-400 md:grid-cols-2">
+              <div className="mt-3 grid gap-1.5 text-[12px] text-slate-400 sm:mt-4 sm:gap-2 sm:text-sm md:grid-cols-2">
                 <p>Perfil: {ROLE_LABELS[user.role]}</p>
                 <p>Ultimo login: {user.lastLoginAt ? formatDateTime(user.lastLoginAt) : 'Ainda nao acessou'}</p>
               </div>

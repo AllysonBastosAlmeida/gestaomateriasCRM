@@ -14,12 +14,12 @@ export function FiltersBar({
   )
 
   return (
-    <div className="rounded-[22px] border border-white/10 bg-slate-950/45 p-2.5">
+    <div className="rounded-[18px] border border-white/10 bg-slate-950/45 p-2 sm:rounded-[22px] sm:p-2.5">
       <div className="flex items-center justify-between gap-3">
         <button
           type="button"
           onClick={() => setExpanded((current) => !current)}
-          className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-[12px] font-semibold text-slate-200 transition hover:border-white/20 hover:text-white"
+          className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] font-semibold text-slate-200 transition hover:border-white/20 hover:text-white sm:px-3 sm:py-2 sm:text-[12px]"
         >
           <SlidersHorizontal className="h-3.5 w-3.5 text-cyan-300" />
           {toggleLabel}
@@ -40,7 +40,7 @@ export function FiltersBar({
       </div>
 
       {expanded ? (
-        <div className="mt-2.5 space-y-2.5 border-t border-white/10 pt-2.5">
+        <div className="mt-2 space-y-2 border-t border-white/10 pt-2 sm:mt-2.5 sm:space-y-2.5 sm:pt-2.5">
           <div className="grid gap-2 md:grid-cols-2 xl:grid-cols-5">
             {filters.map((filter) => (
               <label key={filter.name} className="form-label-dark">
