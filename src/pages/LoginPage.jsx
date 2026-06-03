@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Navigate, useLocation, useNavigate } from 'react-router-dom'
-import { ChevronRight, ShieldCheck } from 'lucide-react'
+import { ShieldCheck } from 'lucide-react'
 import { LoginForm } from '../components/auth/LoginForm'
 import { useAuth } from '../hooks/useAuth'
 import { useToast } from '../hooks/useToast'
@@ -21,8 +21,20 @@ export function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.10),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.08),transparent_22%),linear-gradient(180deg,#07101d_0%,#0a1324_55%,#060c17_100%)]">
-      <section className="flex min-h-screen items-center justify-center px-4 py-8 sm:px-6">
+    <div className="login-stage min-h-screen overflow-hidden">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="login-orb login-orb-a" />
+        <div className="login-orb login-orb-b" />
+        <div className="login-orb login-orb-c" />
+        <div className="login-grid" />
+        <span className="login-particle login-particle-a" />
+        <span className="login-particle login-particle-b" />
+        <span className="login-particle login-particle-c" />
+        <span className="login-particle login-particle-d" />
+        <span className="login-particle login-particle-e" />
+      </div>
+
+      <section className="relative z-[1] flex min-h-screen items-center justify-center px-4 py-8 sm:px-6">
         <div className="w-full max-w-sm rounded-[28px] border border-white/10 bg-slate-950/78 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur sm:p-6">
           <div className="flex items-start gap-3">
             <div className="rounded-2xl bg-cyan-400/10 p-2.5">
@@ -76,18 +88,6 @@ export function LoginPage() {
                 }
               }}
             />
-          </div>
-
-          <div className="mt-4 rounded-[24px] border border-white/10 bg-white/[0.03] p-4 text-sm text-slate-300">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Usuarios seed</p>
-            <div className="mt-2.5 space-y-2">
-              {['admin / admin123', 'operador1 / 123456', 'operador2 / 123456'].map((credential) => (
-                <div key={credential} className="flex items-center gap-2 text-[13px]">
-                  <ChevronRight className="h-4 w-4 text-cyan-300" />
-                  <span>{credential}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>

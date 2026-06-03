@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export function LoginForm({ onSubmit, loading = false }) {
-  const [form, setForm] = useState({ username: 'admin', password: 'admin123' })
+  const [form, setForm] = useState({ username: '', password: '' })
 
   return (
     <form

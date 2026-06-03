@@ -33,6 +33,136 @@ body {
   box-sizing: border-box;
 }
 
+.login-stage {
+  position: relative;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.1), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.09), transparent 22%),
+    linear-gradient(180deg, #07101d 0%, #0a1324 55%, #060c17 100%);
+}
+
+.login-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(18px);
+  opacity: 0.55;
+  animation: login-orb-float 16s ease-in-out infinite;
+}
+
+.login-orb-a {
+  top: 8%;
+  left: -4rem;
+  height: 14rem;
+  width: 14rem;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.2) 0%, rgba(34, 211, 238, 0) 72%);
+}
+
+.login-orb-b {
+  right: -3rem;
+  top: 18%;
+  height: 12rem;
+  width: 12rem;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(99, 102, 241, 0) 74%);
+  animation-delay: -5s;
+}
+
+.login-orb-c {
+  left: 18%;
+  bottom: -2rem;
+  height: 11rem;
+  width: 11rem;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, rgba(16, 185, 129, 0) 74%);
+  animation-delay: -9s;
+}
+
+.login-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.55) 18%, rgba(0, 0, 0, 0.7) 82%, transparent 100%);
+}
+
+.login-particle {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.16);
+  animation: login-particle-rise linear infinite;
+}
+
+.login-particle-a {
+  left: 12%;
+  bottom: -1.5rem;
+  height: 0.4rem;
+  width: 0.4rem;
+  animation-duration: 17s;
+}
+
+.login-particle-b {
+  left: 28%;
+  bottom: -2rem;
+  height: 0.35rem;
+  width: 0.35rem;
+  animation-duration: 20s;
+  animation-delay: -4s;
+}
+
+.login-particle-c {
+  right: 18%;
+  bottom: -1.5rem;
+  height: 0.45rem;
+  width: 0.45rem;
+  animation-duration: 18s;
+  animation-delay: -9s;
+}
+
+.login-particle-d {
+  right: 34%;
+  bottom: -2rem;
+  height: 0.32rem;
+  width: 0.32rem;
+  animation-duration: 22s;
+  animation-delay: -6s;
+}
+
+.login-particle-e {
+  left: 52%;
+  bottom: -1.5rem;
+  height: 0.38rem;
+  width: 0.38rem;
+  animation-duration: 19s;
+  animation-delay: -11s;
+}
+
+@keyframes login-orb-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, 18px, 0) scale(1.04);
+  }
+}
+
+@keyframes login-particle-rise {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(0, -112vh, 0);
+    opacity: 0;
+  }
+}
+
 @layer components {
   .form-label-dark {
     @apply space-y-1.5 text-[12px] text-white/75;
