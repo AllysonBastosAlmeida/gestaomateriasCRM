@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:23:05.415Z"
+    "importedAt": "2026-06-03T22:23:30.968Z"
   },
   "users": [
     {
@@ -15,8 +15,8 @@
       "role": "admin",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:23:05.331Z",
-      "lastLoginAt": "2026-06-03T22:21:14.741Z",
+      "updatedAt": "2026-06-03T22:23:23.431Z",
+      "lastLoginAt": "2026-06-03T22:23:23.431Z",
       "password": "Yara@123456"
     },
     {
@@ -1397,6 +1397,34 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780525403435_fhd19r",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "01"
+      },
+      "createdAt": "2026-06-03T22:23:23.435Z"
+    },
+    {
+      "id": "audit_1780525394078_fk14fz",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T22:23:14.078Z"
+    },
     {
       "id": "audit_1780525274746_l2mod2",
       "action": "auth_login",
