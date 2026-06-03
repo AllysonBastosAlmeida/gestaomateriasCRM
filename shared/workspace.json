@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:39:23.284Z"
+    "importedAt": "2026-06-03T22:40:21.037Z"
   },
   "users": [
     {
@@ -15,8 +15,8 @@
       "role": "admin",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:28:35.690Z",
-      "lastLoginAt": "2026-06-03T22:28:35.690Z",
+      "updatedAt": "2026-06-03T22:40:06.719Z",
+      "lastLoginAt": "2026-06-03T22:40:06.719Z",
       "password": "Yara@123456"
     },
     {
@@ -28,8 +28,8 @@
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:27:50.760Z",
-      "lastLoginAt": "2026-06-03T22:27:50.760Z",
+      "updatedAt": "2026-06-03T22:39:33.548Z",
+      "lastLoginAt": "2026-06-03T22:39:33.548Z",
       "password": "102030"
     },
     {
@@ -586,7 +586,7 @@
     {
       "id": "item_punch_down",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_1780427001685_wzi4zo",
       "type": "ferramenta",
       "category": "Telecomunicacao",
       "name": "Alicate Punch Down",
@@ -604,9 +604,9 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:29:20.901Z",
+      "updatedAt": "2026-06-03T22:39:41.928Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_operador1"
     },
     {
       "id": "item_nvr_16",
@@ -817,6 +817,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780526381929_jza63k",
+      "itemId": "item_punch_down",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_1780427001685_wzi4zo",
+      "quantity": 4,
+      "previousQuantity": 4,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-03T22:39:41.929Z"
+    },
     {
       "id": "mov_1780525760901_286jc0",
       "itemId": "item_punch_down",
@@ -1427,6 +1443,70 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780526406724_ki0vmv",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "01"
+      },
+      "createdAt": "2026-06-03T22:40:06.724Z"
+    },
+    {
+      "id": "audit_1780526394592_wkcij3",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Rodrigo de Farias Barbosa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T22:39:54.592Z"
+    },
+    {
+      "id": "audit_1780526381929_qxu72d",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780526381929_jza63k",
+      "entityLabel": "Alicate Punch Down",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 4,
+        "previousQuantity": 4,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_1780427001685_wzi4zo",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T22:39:41.928Z"
+    },
+    {
+      "id": "audit_1780526373552_0edmc2",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Rodrigo de Farias Barbosa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "05"
+      },
+      "createdAt": "2026-06-03T22:39:33.552Z"
+    },
     {
       "id": "audit_1780526363223_3nlzbk",
       "action": "auth_logout",
