@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #e5eef5;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 28%),
+    linear-gradient(180deg, #08111f 0%, #0b1324 48%, #050b16 100%);
+  font-family: 'DM Sans', sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 28%),
+    linear-gradient(180deg, #08111f 0%, #0b1324 48%, #050b16 100%);
+  color: #e5eef5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  .form-label-dark {
+    @apply space-y-1.5 text-[12px] text-white/75;
+  }
+
+  .form-input-dark {
+    @apply w-full rounded-xl px-3 py-2 text-[13px] outline-none transition;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(2, 8, 23, 0.8);
+    color: #ffffff;
+    color-scheme: dark;
+  }
+
+  .form-select-dark {
+    @apply w-full appearance-none rounded-xl px-3 py-2 text-[13px] outline-none transition;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(2, 8, 23, 0.8);
+    color: #ffffff;
+    color-scheme: dark;
+  }
+
+  .form-textarea-dark {
+    @apply w-full rounded-xl px-3 py-2 text-[13px] outline-none transition;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(2, 8, 23, 0.8);
+    color: #ffffff;
+    color-scheme: dark;
+  }
+
+  .form-checkbox-dark {
+    @apply flex items-center gap-3 rounded-xl px-3 py-2 text-[13px] text-white/80;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(2, 8, 23, 0.7);
+  }
+
+  .form-button-secondary-dark {
+    @apply rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-[13px] font-semibold text-white/80 transition hover:border-white/20 hover:text-white;
+  }
+
+  .form-input-dark::placeholder,
+  .form-textarea-dark::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .form-input-dark:focus,
+  .form-select-dark:focus,
+  .form-textarea-dark:focus {
+    border-color: rgb(34, 211, 238);
+  }
+}
