@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { LoaderCircle } from 'lucide-react'
 import { ModalShell } from '../common/ModalShell'
+import { readFileAsDataUrl } from '../../utils/logoUpload'
 
 const initialState = {
   name: '',
@@ -123,7 +124,7 @@ export function ClientFormModal({ open, client, onClose, onSubmit }) {
               accept="image/png,image/jpeg,image/webp,image/svg+xml"
               disabled={isSubmitting}
               className="form-input-dark file:mr-3 file:rounded-lg file:border-0 file:bg-cyan-400/15 file:px-3 file:py-1.5 file:text-[12px] file:font-semibold file:text-cyan-200"
-              onChange={(event) => {
+              onChange={async (event) => {
                 const nextFile = event.target.files?.[0] || null
                 setLogoFile(nextFile)
                 setRemoveLogo(false)
@@ -133,9 +134,13 @@ export function ClientFormModal({ open, client, onClose, onSubmit }) {
                   return
                 }
 
-                const reader = new FileReader()
-                reader.onload = () => setLogoPreview(String(reader.result || ''))
-                reader.readAsDataURL(nextFile)
+                try {
+                  const previewDataUrl = await readFileAsDataUrl(nextFile)
+                  setLogoPreview(previewDataUrl)
+                } catch {
+                  setLogoFile(null)
+                  setLogoPreview(form.logoDataUrl || '')
+                }
               }}
             />
           </div>
