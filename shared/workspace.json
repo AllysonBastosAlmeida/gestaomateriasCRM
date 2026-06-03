@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:41:37.979Z"
+    "importedAt": "2026-06-03T21:44:47.401Z"
   },
   "users": [
     {
@@ -617,7 +617,7 @@
     {
       "id": "item_camera_bullet",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780427001685_wzi4zo",
       "type": "equipamento",
       "category": "CFTV",
       "name": "Camera Bullet IP 4MP",
@@ -635,7 +635,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T14:00:34.785Z",
+      "updatedAt": "2026-06-03T21:41:57.977Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -705,14 +705,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1780522931277_65del5",
+      "pendingDeletionRequestedAt": "2026-06-03T21:42:11.277Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-03T21:09:34.612Z",
-      "updatedAt": "2026-06-03T21:18:12.301Z",
+      "updatedAt": "2026-06-03T21:42:11.277Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_admin"
     }
   ],
   "inventoryDeletionRequests": [
@@ -747,9 +747,41 @@
       "reviewedAt": "2026-06-03T02:22:31.593Z",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1780450942689_klydxe\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"material sem descricao\",\"description\":\"\",\"sku\":\"\",\"serialNumber\":\"teste\",\"quantity\":0,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"createdAt\":\"2026-06-03T01:42:22.689Z\",\"updatedAt\":\"2026-06-03T01:42:22.689Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\"}"
+    },
+    {
+      "id": "delreq_1780522931277_65del5",
+      "itemId": "item_1780520974612_sfgftt",
+      "itemName": "teste",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-03T21:42:11.277Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1780520974612_sfgftt\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"teste\",\"description\":\"teste\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-03T21:09:34.612Z\",\"updatedAt\":\"2026-06-03T21:18:12.301Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}"
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780522917977_1l5stj",
+      "itemId": "item_camera_bullet",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780427001685_wzi4zo",
+      "quantity": 36,
+      "previousQuantity": 36,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-03T21:41:57.977Z"
+    },
     {
       "id": "mov_1780521682796_a5p2x7",
       "itemId": "item_patch_cord",
@@ -1296,6 +1328,43 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780522931277_w2cot0",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1780522931277_65del5",
+      "entityLabel": "teste",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1780522931277_65del5",
+        "requestStatus": "pendente"
+      },
+      "createdAt": "2026-06-03T21:42:11.277Z"
+    },
+    {
+      "id": "audit_1780522917977_aw5mqz",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780522917977_1l5stj",
+      "entityLabel": "Camera Bullet IP 4MP",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 36,
+        "previousQuantity": 36,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780427001685_wzi4zo",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T21:41:57.977Z"
+    },
     {
       "id": "audit_1780521777272_8rsy21",
       "action": "auth_login",
