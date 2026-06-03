@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T22:25:30.792Z"
+    "importedAt": "2026-06-03T22:26:30.894Z"
   },
   "users": [
     {
@@ -34,14 +34,27 @@
     },
     {
       "id": "user_operador2",
-      "name": "Operador Sul",
-      "email": "operador2@gestaomateriais.local",
-      "username": "operador2",
-      "passwordHash": "c8c1a52a",
+      "name": "Nathan Andrade Fernandes",
+      "email": "",
+      "username": "06",
+      "passwordHash": "ca5a3f9e",
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
+      "updatedAt": "2026-06-03T22:25:38.665Z",
+      "lastLoginAt": "",
+      "password": "203040"
+    },
+    {
+      "id": "user_1780525575681_uw22rd",
+      "name": "Wellington Peixoto",
+      "email": "",
+      "username": "07",
+      "passwordHash": "cc0f8cbb",
+      "role": "funcionario",
+      "active": true,
+      "createdAt": "2026-06-03T22:26:15.681Z",
+      "updatedAt": "2026-06-03T22:26:15.681Z",
       "lastLoginAt": ""
     }
   ],
@@ -1398,6 +1411,37 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780525575684_e7g3f5",
+      "action": "user_created",
+      "entityType": "user",
+      "entityId": "user_1780525575681_uw22rd",
+      "entityLabel": "Wellington Peixoto",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "role": "funcionario"
+      },
+      "createdAt": "2026-06-03T22:26:15.684Z"
+    },
+    {
+      "id": "audit_1780525538670_whbmbs",
+      "action": "user_updated",
+      "entityType": "user",
+      "entityId": "user_operador2",
+      "entityLabel": "Nathan Andrade Fernandes",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "role": "funcionario",
+        "active": true
+      },
+      "createdAt": "2026-06-03T22:25:38.670Z"
+    },
     {
       "id": "audit_1780525473401_g4thf7",
       "action": "user_updated",
