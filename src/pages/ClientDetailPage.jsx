@@ -145,7 +145,7 @@ export function ClientDetailPage() {
 
       <aside
         className={[
-          'fixed inset-y-0 left-0 z-50 w-[86vw] max-w-[340px] border-r border-white/10 bg-slate-950 p-3 shadow-[0_24px_80px_rgba(0,0,0,0.45)] transition-transform duration-200 lg:hidden',
+          'fixed inset-y-0 left-0 z-50 w-[86vw] max-w-[340px] border-r border-cyan-400/10 bg-[linear-gradient(180deg,rgba(6,11,27,0.98)_0%,rgba(9,18,39,0.99)_52%,rgba(7,13,30,1)_100%)] p-3 shadow-[0_24px_80px_rgba(0,0,0,0.45)] transition-transform duration-200 lg:hidden',
           mobilePanelOpen ? 'translate-x-0' : '-translate-x-full',
         ].join(' ')}
       >
@@ -299,7 +299,7 @@ export function ClientDetailPage() {
                 {branding.logoText}
               </div>
             )}
-            <div>
+            <div className="hidden lg:block">
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-cyan-300">Workspace do cliente</p>
               <h1 className="mt-1 font-display text-[1.1rem] font-extrabold leading-tight text-white sm:text-[1.35rem]">{client.name}</h1>
               <p className="mt-0.5 text-[11px] leading-4 text-slate-400">
