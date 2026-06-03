@@ -15,12 +15,12 @@ export function ModalShell({
   if (!open) return null
 
   return (
-    <div className={`fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/75 p-3 md:items-center ${overlayClassName}`}>
-      <div className={`flex max-h-[84vh] w-full max-w-2xl flex-col overflow-hidden rounded-[24px] border border-white/10 bg-[#050b16] shadow-[0_24px_90px_rgba(0,0,0,0.5)] ${panelClassName}`}>
-        <div className={`sticky top-0 z-10 flex items-start justify-between gap-3 border-b border-white/10 bg-[#050b16] px-4 py-3 ${headerClassName}`}>
-          <div>
-            <h2 className="font-display text-lg font-extrabold text-white md:text-xl">{title}</h2>
-            {description ? <p className="mt-0.5 text-[12px] text-slate-400">{description}</p> : null}
+    <div className={`fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/80 p-2 sm:p-3 md:items-center ${overlayClassName}`}>
+      <div className={`flex max-h-[88vh] w-full max-w-2xl flex-col overflow-hidden rounded-[20px] border border-white/10 bg-[#050b16] shadow-[0_24px_90px_rgba(0,0,0,0.5)] sm:rounded-[24px] ${panelClassName}`}>
+        <div className={`sticky top-0 z-10 flex items-start justify-between gap-2 border-b border-white/10 bg-[#050b16] px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3 ${headerClassName}`}>
+          <div className="min-w-0">
+            <h2 className="font-display text-[15px] font-extrabold leading-tight text-white sm:text-lg md:text-xl">{title}</h2>
+            {description ? <p className="mt-0.5 text-[11px] leading-4 text-slate-400 sm:text-[12px]">{description}</p> : null}
           </div>
           <button
             type="button"
@@ -31,7 +31,7 @@ export function ModalShell({
             <X className="h-4 w-4" />
           </button>
         </div>
-        <div className={`overflow-y-auto px-4 py-3 ${bodyClassName}`}>
+        <div className={`overflow-y-auto px-3 py-2.5 sm:px-4 sm:py-3 ${bodyClassName}`}>
           {children}
         </div>
       </div>
