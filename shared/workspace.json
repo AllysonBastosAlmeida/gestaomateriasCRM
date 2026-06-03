@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-03T21:56:22.374Z"
+    "importedAt": "2026-06-03T21:57:13.550Z"
   },
   "users": [
     {
@@ -1330,6 +1330,19 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780523782337_glwu0l",
+      "action": "client_updated",
+      "entityType": "client",
+      "entityId": "client_beta",
+      "entityLabel": "Yara Brasil",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-03T21:56:22.337Z"
+    },
     {
       "id": "audit_1780523152889_qng09e",
       "action": "client_updated",
