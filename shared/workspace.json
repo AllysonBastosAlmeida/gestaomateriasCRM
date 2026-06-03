@@ -2,7 +2,7 @@
   "meta": {
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
-    "lastUpdatedAt": "2026-06-03T21:08:38.722Z",
+    "lastUpdatedAt": "2026-06-03T21:09:34.613Z",
     "importedAt": "2026-06-03T21:08:35.847Z"
   },
   "users": [
@@ -27,8 +27,8 @@
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T14:20:11.889Z",
-      "lastLoginAt": "2026-06-03T14:20:11.889Z"
+      "updatedAt": "2026-06-03T21:08:46.091Z",
+      "lastLoginAt": "2026-06-03T21:08:46.091Z"
     },
     {
       "id": "user_operador2",
@@ -592,7 +592,7 @@
     {
       "id": "item_nvr_16",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_c",
       "type": "equipamento",
       "category": "CFTV",
       "name": "NVR 16 Canais",
@@ -610,9 +610,9 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T02:03:41.982Z",
+      "updatedAt": "2026-06-03T21:08:48.719Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_operador1"
     },
     {
       "id": "item_camera_bullet",
@@ -688,6 +688,31 @@
       "updatedAt": "2026-06-03T11:50:42.274Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1780520974612_sfgftt",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "teste",
+      "description": "teste",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-03T21:09:34.612Z",
+      "updatedAt": "2026-06-03T21:09:34.612Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1172,6 +1197,22 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-03T14:17:49.239Z"
+    },
+    {
+      "id": "mov_1780520928719_4hjm8e",
+      "itemId": "item_nvr_16",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-03T21:08:48.719Z"
     }
   ],
   "auditLogs": [
@@ -2234,6 +2275,42 @@
       "unitId": "",
       "metadata": {},
       "createdAt": "2026-06-03T21:08:38.722Z"
+    },
+    {
+      "id": "audit_1780520926093_30qhaq",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Operador Norte",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "operador1"
+      },
+      "createdAt": "2026-06-03T21:08:46.093Z"
+    },
+    {
+      "id": "audit_1780520928719_qo2d1i",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780520928719_4hjm8e",
+      "entityLabel": "NVR 16 Canais",
+      "userId": "user_operador1",
+      "userName": "Operador Norte",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 3,
+        "previousQuantity": 3,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-03T21:08:48.719Z"
     }
   ],
   "settings": {
