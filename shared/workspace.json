@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:51:52.393Z"
+    "importedAt": "2026-06-04T12:52:47.551Z"
   },
   "users": [
     {
@@ -1295,6 +1295,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780577512287_g2moa1",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_cabo_drop",
+      "entityLabel": "Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "quantity": 20,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-04T12:51:52.287Z"
+    },
     {
       "id": "audit_1780577396990_03198r",
       "action": "unit_deleted",
