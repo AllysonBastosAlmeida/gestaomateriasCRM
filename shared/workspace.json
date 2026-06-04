@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T23:20:14.472Z"
+    "importedAt": "2026-06-04T23:21:08.545Z"
   },
   "users": [
     {
@@ -343,12 +343,12 @@
       "status": "manutencao",
       "internalLocation": "Sala Tecnica",
       "notes": "Aguardando calibracao.",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1780615237506_v4yvdv",
+      "pendingDeletionRequestedAt": "2026-06-04T23:20:37.506Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T14:17:49.238Z",
+      "updatedAt": "2026-06-04T23:20:37.506Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -758,6 +758,22 @@
       "reviewedAt": "",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_cabo_cat6\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"material\",\"category\":\"Cabeamento estruturado\",\"name\":\"Cabo UTP Cat6 Caixa 305m\",\"description\":\"Bobina para lancamento de rede estruturada em ambientes corporativos.\",\"sku\":\"CAT6-305-AZ\",\"serialNumber\":\"\",\"quantity\":12,\"minQuantity\":4,\"unitMeasure\":\"cx\",\"status\":\"disponivel\",\"internalLocation\":\"Rua A / Porta-palete 01\",\"notes\":\"Uso recorrente em implantacoes de rede.\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-02T12:00:00Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\"}"
+    },
+    {
+      "id": "delreq_1780615237506_v4yvdv",
+      "itemId": "item_torquimetro",
+      "itemName": "Torquimetro Digital",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-04T23:20:37.506Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_torquimetro\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"ferramenta\",\"category\":\"Medicao\",\"name\":\"Torquimetro Digital\",\"description\":\"Controle de torque na linha de montagem.\",\"sku\":\"TRQ-DIG-01\",\"serialNumber\":\"TRQ-9981\",\"quantity\":1,\"minQuantity\":1,\"unitMeasure\":\"un\",\"status\":\"manutencao\",\"internalLocation\":\"Sala Tecnica\",\"notes\":\"Aguardando calibracao.\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T14:17:49.238Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\"}"
     }
   ],
   "stockMovements": [
@@ -1323,6 +1339,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780615237506_iy9ji7",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1780615237506_v4yvdv",
+      "entityLabel": "Torquimetro Digital",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "requestId": "delreq_1780615237506_v4yvdv",
+        "requestStatus": "pendente"
+      },
+      "createdAt": "2026-06-04T23:20:37.506Z"
+    },
     {
       "id": "audit_1780615139204_fo93yp",
       "action": "movement_transferencia",
