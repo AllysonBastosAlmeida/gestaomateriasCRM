@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:39:44.835Z"
+    "importedAt": "2026-06-04T12:43:30.110Z"
   },
   "users": [
     {
@@ -250,18 +250,6 @@
       "notes": "",
       "createdAt": "2026-06-02T17:41:29.296Z",
       "updatedAt": "2026-06-02T19:02:47.283Z"
-    },
-    {
-      "id": "unit_alpha_d",
-      "clientId": "client_alpha",
-      "name": "Hub Audiovisual",
-      "code": "ALPHA-D",
-      "address": "Rua Projetores, 88",
-      "city": "Barueri",
-      "state": "SP",
-      "notes": "Equipamentos de audiovisual e sonorizacao.",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z"
     },
     {
       "id": "unit_beta_e",
@@ -555,81 +543,6 @@
       "status": "em_uso",
       "internalLocation": "Maleta de Testes",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin"
-    },
-    {
-      "id": "item_projetor_laser",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_d",
-      "type": "equipamento",
-      "category": "Audiovisual",
-      "name": "Projetor Laser 6000 ANSI",
-      "description": "Projetor para salas de reuniao, auditorios e eventos corporativos.",
-      "sku": "PRJ-LSR-6000",
-      "serialNumber": "PJ-6000-12",
-      "quantity": 2,
-      "minQuantity": 1,
-      "unitMeasure": "un",
-      "status": "disponivel",
-      "internalLocation": "Estoque AV / Nicho 2",
-      "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin"
-    },
-    {
-      "id": "item_hdmi_15m",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_d",
-      "type": "material",
-      "category": "Audiovisual",
-      "name": "Cabo HDMI 15m",
-      "description": "Interligacao de projetores, telas e matrizes de video.",
-      "sku": "HDMI-15M-4K",
-      "serialNumber": "",
-      "quantity": 16,
-      "minQuantity": 6,
-      "unitMeasure": "un",
-      "status": "disponivel",
-      "internalLocation": "Estoque AV / Gaveta 5",
-      "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin"
-    },
-    {
-      "id": "item_mesa_som",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_d",
-      "type": "equipamento",
-      "category": "Audiovisual",
-      "name": "Mesa de Som 12 Canais",
-      "description": "Mixagem de audio para salas, eventos e sistemas de conferencia.",
-      "sku": "MIX-12CH",
-      "serialNumber": "MX-1207",
-      "quantity": 1,
-      "minQuantity": 1,
-      "unitMeasure": "un",
-      "status": "manutencao",
-      "internalLocation": "Oficina AV",
-      "notes": "Canal 3 com ruido intermitente.",
       "pendingDeletion": false,
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
@@ -1604,21 +1517,6 @@
         "removedItemsCount": 4
       },
       "createdAt": "2026-06-03T22:40:54.597Z"
-    },
-    {
-      "id": "audit_1780526451923_mmet30",
-      "action": "unit_deleted",
-      "entityType": "unit",
-      "entityId": "unit_alpha_d",
-      "entityLabel": "Hub Audiovisual",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_d",
-      "metadata": {
-        "removedItemsCount": 3
-      },
-      "createdAt": "2026-06-03T22:40:51.923Z"
     },
     {
       "id": "audit_1780526406724_ki0vmv",
@@ -3339,5 +3237,35 @@
   "settings": {
     "storageMode": "local",
     "theme": "workspace-light"
+  },
+  "deletionMarks": {
+    "units": [
+      {
+        "id": "unit_alpha_d",
+        "deletedAt": "2026-06-04T12:43:30.041Z"
+      }
+    ],
+    "inventoryItems": [
+      {
+        "id": "item_projetor_laser",
+        "deletedAt": "2026-06-04T12:43:30.041Z"
+      },
+      {
+        "id": "item_hdmi_15m",
+        "deletedAt": "2026-06-04T12:43:30.041Z"
+      },
+      {
+        "id": "item_mesa_som",
+        "deletedAt": "2026-06-04T12:43:30.041Z"
+      }
+    ],
+    "inventoryDeletionRequests": [],
+    "stockMovements": [],
+    "auditLogs": [
+      {
+        "id": "audit_1780526451923_mmet30",
+        "deletedAt": "2026-06-04T12:43:30.041Z"
+      }
+    ]
   }
 }
