@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:49:49.127Z"
+    "importedAt": "2026-06-04T12:50:35.265Z"
   },
   "users": [
     {
@@ -216,18 +216,6 @@
       ]
     },
     {
-      "id": "unit_alpha_b",
-      "clientId": "client_alpha",
-      "name": "Fabrica B",
-      "code": "ALPHA-B",
-      "address": "Avenida Industrial, 540",
-      "city": "Campinas",
-      "state": "SP",
-      "notes": "Recebe transferencias de apoio.",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z"
-    },
-    {
       "id": "unit_beta_c",
       "clientId": "client_beta",
       "name": "Unidade 3 - CUB3",
@@ -353,31 +341,6 @@
       "updatedBy": "user_admin"
     },
     {
-      "id": "item_1780422142207_vwq0gy",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "type": "ferramenta",
-      "category": "Corte",
-      "name": "Serra Circular Bosch",
-      "description": "Ferramenta eletrica para corte de chapas.",
-      "sku": "SCB-220",
-      "serialNumber": "BRX-001",
-      "quantity": 1,
-      "minQuantity": 2,
-      "unitMeasure": "un",
-      "status": "disponivel",
-      "internalLocation": "Almoxarifado 01 / Prateleira A",
-      "notes": "Revisao trimestral.",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
-      "createdAt": "2026-06-02T17:42:22.207Z",
-      "updatedAt": "2026-06-02T17:42:22.207Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin"
-    },
-    {
       "id": "item_cabo_cat6",
       "clientId": "client_alpha",
       "unitId": "unit_alpha_a",
@@ -499,56 +462,6 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T22:10:46.603Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin"
-    },
-    {
-      "id": "item_maquina_fusao",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "type": "equipamento",
-      "category": "Fibra optica",
-      "name": "Maquina de Fusao",
-      "description": "Equipamento de fusao optica para manutencao e implantacao de enlaces.",
-      "sku": "FUS-OPT-01",
-      "serialNumber": "FSM-7750",
-      "quantity": 2,
-      "minQuantity": 1,
-      "unitMeasure": "un",
-      "status": "disponivel",
-      "internalLocation": "Sala Fibra / Bancada 2",
-      "notes": "Manter bateria carregada e limpa.",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T19:42:03.189Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin"
-    },
-    {
-      "id": "item_power_meter",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "type": "ferramenta",
-      "category": "Fibra optica",
-      "name": "Power Meter Optico",
-      "description": "Medicao de potencia optica em enlaces e testes de ativacao.",
-      "sku": "PM-1310-1550",
-      "serialNumber": "PM-8832",
-      "quantity": 3,
-      "minQuantity": 1,
-      "unitMeasure": "un",
-      "status": "em_uso",
-      "internalLocation": "Maleta de Testes",
-      "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -837,22 +750,6 @@
   ],
   "stockMovements": [
     {
-      "id": "mov_1780577389037_6nvlt7",
-      "itemId": "item_cabo_drop",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "sourceUnitId": "unit_alpha_b",
-      "destinationUnitId": "unit_alpha_a",
-      "quantity": 24,
-      "previousQuantity": 24,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-04T12:49:49.037Z"
-    },
-    {
       "id": "mov_1780526381929_jza63k",
       "itemId": "item_punch_down",
       "movementType": "transferencia",
@@ -883,38 +780,6 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-03T22:29:20.901Z"
-    },
-    {
-      "id": "mov_1780524600178_cu530c",
-      "itemId": "item_caixa_emenda",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "sourceUnitId": "unit_alpha_b",
-      "destinationUnitId": "unit_alpha_a",
-      "quantity": 10,
-      "previousQuantity": 10,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T22:10:00.178Z"
-    },
-    {
-      "id": "mov_1780524534104_c48a88",
-      "itemId": "item_luva",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "sourceUnitId": "unit_alpha_b",
-      "destinationUnitId": "unit_alpha_a",
-      "quantity": 38,
-      "previousQuantity": 38,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T22:08:54.104Z"
     },
     {
       "id": "mov_1780522917977_1l5stj",
@@ -1253,22 +1118,6 @@
       "performedAt": "2026-06-02T19:49:28.682Z"
     },
     {
-      "id": "mov_1780429323189_b4dccz",
-      "itemId": "item_maquina_fusao",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "unit_alpha_a",
-      "destinationUnitId": "unit_alpha_b",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:42:03.189Z"
-    },
-    {
       "id": "mov_1780429304984_r3i8cy",
       "itemId": "item_nvr_16",
       "movementType": "transferencia",
@@ -1315,22 +1164,6 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-02T18:57:44.528Z"
-    },
-    {
-      "id": "mov_1780426650206_qv7ocv",
-      "itemId": "item_maquina_fusao",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "sourceUnitId": "unit_alpha_b",
-      "destinationUnitId": "unit_alpha_a",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-02T18:57:30.206Z"
     },
     {
       "id": "mov_1780426439782_4oaso4",
@@ -1429,22 +1262,6 @@
       "performedAt": "2026-06-02T17:51:04.878Z"
     },
     {
-      "id": "mov_1780422142207_o4v3mt",
-      "itemId": "item_serra",
-      "movementType": "transferencia",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "unit_alpha_a",
-      "destinationUnitId": "unit_alpha_b",
-      "quantity": 1,
-      "previousQuantity": 4,
-      "newQuantity": 3,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T17:42:22.207Z"
-    },
-    {
       "id": "mov_1780422096417_8t39zc",
       "itemId": "item_torquimetro",
       "movementType": "transferencia",
@@ -1479,28 +1296,7 @@
   ],
   "auditLogs": [
     {
-      "id": "audit_1780577389037_s169lt",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780577389037_6nvlt7",
-      "entityLabel": "Cabo Drop 2FO",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "metadata": {
-        "quantity": 24,
-        "previousQuantity": 24,
-        "newQuantity": 0,
-        "sourceUnitId": "unit_alpha_b",
-        "destinationUnitId": "unit_alpha_a",
-        "reason": "Transferencia por arrastar e soltar",
-        "notes": ""
-      },
-      "createdAt": "2026-06-04T12:49:49.036Z"
-    },
-    {
-      "id": "audit_1780576335001_ks373a",
+      "id": "audit_1780577396990_03198r",
       "action": "unit_deleted",
       "entityType": "unit",
       "entityId": "unit_alpha_b",
@@ -1510,9 +1306,9 @@
       "clientId": "client_alpha",
       "unitId": "unit_alpha_b",
       "metadata": {
-        "removedItemsCount": 4
+        "removedItemsCount": 3
       },
-      "createdAt": "2026-06-04T12:32:15.001Z"
+      "createdAt": "2026-06-04T12:49:56.990Z"
     },
     {
       "id": "audit_1780526478981_zs9aoj",
@@ -1539,21 +1335,6 @@
       "unitId": "unit_alpha_a",
       "metadata": {},
       "createdAt": "2026-06-03T22:41:08.198Z"
-    },
-    {
-      "id": "audit_1780526454597_ugn1w1",
-      "action": "unit_deleted",
-      "entityType": "unit",
-      "entityId": "unit_alpha_b",
-      "entityLabel": "Fabrica B",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "metadata": {
-        "removedItemsCount": 4
-      },
-      "createdAt": "2026-06-03T22:40:54.597Z"
     },
     {
       "id": "audit_1780526406724_ki0vmv",
@@ -1855,48 +1636,6 @@
         "status": "disponivel"
       },
       "createdAt": "2026-06-03T22:10:46.607Z"
-    },
-    {
-      "id": "audit_1780524600178_aceezu",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780524600178_cu530c",
-      "entityLabel": "Caixa de Emenda Optica 24FO",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "metadata": {
-        "quantity": 10,
-        "previousQuantity": 10,
-        "newQuantity": 0,
-        "sourceUnitId": "unit_alpha_b",
-        "destinationUnitId": "unit_alpha_a",
-        "reason": "Transferencia por arrastar e soltar",
-        "notes": ""
-      },
-      "createdAt": "2026-06-03T22:10:00.178Z"
-    },
-    {
-      "id": "audit_1780524534104_byzxf3",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780524534104_c48a88",
-      "entityLabel": "Luva de Protecao",
-      "userId": "user_admin",
-      "userName": "Administrador Geral",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "metadata": {
-        "quantity": 38,
-        "previousQuantity": 38,
-        "newQuantity": 0,
-        "sourceUnitId": "unit_alpha_b",
-        "destinationUnitId": "unit_alpha_a",
-        "reason": "Transferencia por arrastar e soltar",
-        "notes": ""
-      },
-      "createdAt": "2026-06-03T22:08:54.103Z"
     },
     {
       "id": "audit_1780524309635_jor2y0",
@@ -3001,21 +2740,6 @@
       "createdAt": "2026-06-02T18:57:44.528Z"
     },
     {
-      "id": "audit_1780426650206_wzo3nu",
-      "action": "movement_transferencia",
-      "entityType": "movement",
-      "entityId": "mov_1780426650206_qv7ocv",
-      "entityLabel": "Maquina de Fusao",
-      "userId": "user_operador1",
-      "userName": "Operador Norte",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
-      "metadata": {
-        "raw": ""
-      },
-      "createdAt": "2026-06-02T18:57:30.206Z"
-    },
-    {
       "id": "audit_1780426640158_ty4qsg",
       "action": "auth_login",
       "entityType": "session",
@@ -3280,6 +3004,10 @@
       {
         "id": "unit_alpha_d",
         "deletedAt": "2026-06-04T12:43:49.344Z"
+      },
+      {
+        "id": "unit_alpha_b",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
       }
     ],
     "inventoryItems": [
@@ -3294,14 +3022,75 @@
       {
         "id": "item_mesa_som",
         "deletedAt": "2026-06-04T12:43:49.344Z"
+      },
+      {
+        "id": "item_1780422142207_vwq0gy",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "item_maquina_fusao",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "item_power_meter",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
       }
     ],
     "inventoryDeletionRequests": [],
-    "stockMovements": [],
+    "stockMovements": [
+      {
+        "id": "mov_1780577389037_6nvlt7",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "mov_1780524600178_cu530c",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "mov_1780524534104_c48a88",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "mov_1780429323189_b4dccz",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "mov_1780426650206_qv7ocv",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "mov_1780422142207_o4v3mt",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      }
+    ],
     "auditLogs": [
       {
         "id": "audit_1780526451923_mmet30",
         "deletedAt": "2026-06-04T12:43:49.344Z"
+      },
+      {
+        "id": "audit_1780577389037_s169lt",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "audit_1780576335001_ks373a",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "audit_1780526454597_ugn1w1",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "audit_1780524600178_aceezu",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "audit_1780524534104_byzxf3",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
+      },
+      {
+        "id": "audit_1780426650206_wzo3nu",
+        "deletedAt": "2026-06-04T12:49:56.984Z"
       }
     ]
   }
