@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:52:47.551Z"
+    "importedAt": "2026-06-04T12:54:46.880Z"
   },
   "users": [
     {
@@ -262,6 +262,18 @@
       "notes": "",
       "createdAt": "2026-06-02T19:03:21.685Z",
       "updatedAt": "2026-06-03T02:31:22.514Z"
+    },
+    {
+      "id": "unit_1780577686830_hqekug",
+      "clientId": "client_alpha",
+      "name": "teste",
+      "code": "3",
+      "address": "",
+      "city": "",
+      "state": "",
+      "notes": "",
+      "createdAt": "2026-06-04T12:54:46.829Z",
+      "updatedAt": "2026-06-04T12:54:46.829Z"
     }
   ],
   "inventoryItems": [
