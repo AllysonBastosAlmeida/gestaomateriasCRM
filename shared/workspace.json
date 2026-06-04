@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:50:35.265Z"
+    "importedAt": "2026-06-04T12:51:52.393Z"
   },
   "users": [
     {
@@ -421,22 +421,22 @@
       "unitId": "unit_alpha_a",
       "type": "material",
       "category": "Fibra optica",
-      "name": "Cabo Drop 2FO",
+      "name": "Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.",
       "description": "Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.",
       "sku": "DROP-2FO-BR",
       "serialNumber": "",
-      "quantity": 24,
+      "quantity": 20,
       "minQuantity": 8,
-      "unitMeasure": "bob",
+      "unitMeasure": "m",
       "status": "disponivel",
-      "internalLocation": "Sala Fibra / Estante 1",
+      "internalLocation": "",
       "notes": "",
       "pendingDeletion": false,
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-04T12:49:49.036Z",
+      "updatedAt": "2026-06-04T12:51:52.279Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
