@@ -33,6 +33,20 @@ body {
   box-sizing: border-box;
 }
 
+@layer base {
+  select,
+  option,
+  optgroup {
+    color-scheme: dark;
+  }
+
+  select option,
+  select optgroup {
+    background-color: #0f1726;
+    color: #e5eef5;
+  }
+}
+
 .login-stage {
   position: relative;
   background:
@@ -181,6 +195,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(2, 8, 23, 0.8);
     color: #ffffff;
+    color-scheme: dark;
+  }
+
+  .workspace-inline-select {
+    @apply w-full appearance-none bg-transparent py-1.5 text-[12px] outline-none;
+    color: #e2e8f0;
     color-scheme: dark;
   }
 

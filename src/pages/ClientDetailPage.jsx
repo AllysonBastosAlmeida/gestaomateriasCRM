@@ -235,8 +235,7 @@ export function ClientDetailPage() {
               <select
                 value={typeFilter}
                 onChange={(event) => setTypeFilter(event.target.value)}
-                className="w-full appearance-none bg-transparent py-1.5 text-[12px] text-slate-200 outline-none"
-                style={{ colorScheme: 'dark' }}
+                className="workspace-inline-select"
               >
                 {typeOptions.map((option) => (
                   <option key={option.value} value={option.value}>{option.label}</option>
@@ -248,8 +247,7 @@ export function ClientDetailPage() {
               <select
                 value={statusFilter}
                 onChange={(event) => setStatusFilter(event.target.value)}
-                className="w-full appearance-none bg-transparent py-1.5 text-[12px] text-slate-200 outline-none"
-                style={{ colorScheme: 'dark' }}
+                className="workspace-inline-select"
               >
                 {statusOptions.map((option) => (
                   <option key={option.value} value={option.value}>{option.label}</option>
@@ -371,8 +369,7 @@ export function ClientDetailPage() {
                 <select
                   value={typeFilter}
                   onChange={(event) => setTypeFilter(event.target.value)}
-                  className="appearance-none bg-transparent py-1.5 text-[12px] text-slate-200 outline-none"
-                  style={{ colorScheme: 'dark' }}
+                  className="workspace-inline-select"
                 >
                   {typeOptions.map((option) => (
                     <option key={option.value} value={option.value}>{option.label}</option>
@@ -384,8 +381,7 @@ export function ClientDetailPage() {
                 <select
                   value={statusFilter}
                   onChange={(event) => setStatusFilter(event.target.value)}
-                  className="appearance-none bg-transparent py-1.5 text-[12px] text-slate-200 outline-none"
-                  style={{ colorScheme: 'dark' }}
+                  className="workspace-inline-select"
                 >
                   {statusOptions.map((option) => (
                     <option key={option.value} value={option.value}>{option.label}</option>
