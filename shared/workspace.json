@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:43:49.876Z"
+    "importedAt": "2026-06-04T12:49:49.127Z"
   },
   "users": [
     {
@@ -455,7 +455,7 @@
     {
       "id": "item_cabo_drop",
       "clientId": "client_alpha",
-      "unitId": "unit_alpha_b",
+      "unitId": "unit_alpha_a",
       "type": "material",
       "category": "Fibra optica",
       "name": "Cabo Drop 2FO",
@@ -473,7 +473,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
+      "updatedAt": "2026-06-04T12:49:49.036Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
@@ -836,6 +836,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780577389037_6nvlt7",
+      "itemId": "item_cabo_drop",
+      "movementType": "transferencia",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_b",
+      "sourceUnitId": "unit_alpha_b",
+      "destinationUnitId": "unit_alpha_a",
+      "quantity": 24,
+      "previousQuantity": 24,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-04T12:49:49.037Z"
+    },
     {
       "id": "mov_1780526381929_jza63k",
       "itemId": "item_punch_down",
@@ -1462,6 +1478,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780577389037_s169lt",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780577389037_6nvlt7",
+      "entityLabel": "Cabo Drop 2FO",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_b",
+      "metadata": {
+        "quantity": 24,
+        "previousQuantity": 24,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_alpha_b",
+        "destinationUnitId": "unit_alpha_a",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-04T12:49:49.036Z"
+    },
     {
       "id": "audit_1780576335001_ks373a",
       "action": "unit_deleted",
