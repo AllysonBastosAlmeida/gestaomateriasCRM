@@ -1,6 +1,8 @@
 import { nowIso } from './date'
 
 export function normalizeDatabasePayload(data, currentDb = {}) {
+  const sourceDeletionMarks = data.deletionMarks || currentDb.deletionMarks || {}
+
   return {
     ...currentDb,
     ...data,
@@ -11,6 +13,13 @@ export function normalizeDatabasePayload(data, currentDb = {}) {
     settings: {
       ...(currentDb.settings || {}),
       ...(data.settings || {}),
+    },
+    deletionMarks: {
+      units: Array.isArray(sourceDeletionMarks.units) ? sourceDeletionMarks.units : [],
+      inventoryItems: Array.isArray(sourceDeletionMarks.inventoryItems) ? sourceDeletionMarks.inventoryItems : [],
+      inventoryDeletionRequests: Array.isArray(sourceDeletionMarks.inventoryDeletionRequests) ? sourceDeletionMarks.inventoryDeletionRequests : [],
+      stockMovements: Array.isArray(sourceDeletionMarks.stockMovements) ? sourceDeletionMarks.stockMovements : [],
+      auditLogs: Array.isArray(sourceDeletionMarks.auditLogs) ? sourceDeletionMarks.auditLogs : [],
     },
     clients: (data.clients || []).map((client) => ({
       ...client,

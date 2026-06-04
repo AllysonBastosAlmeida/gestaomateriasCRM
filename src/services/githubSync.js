@@ -205,6 +205,38 @@ function mergeSettings(remoteSettings = {}, localSettings = {}) {
     : { ...localSettings, ...remoteSettings }
 }
 
+function mergeDeletionMarks(remoteMarks = {}, localMarks = {}) {
+  const collections = ['units', 'inventoryItems', 'inventoryDeletionRequests', 'stockMovements', 'auditLogs']
+  const nextMarks = {}
+
+  for (const collection of collections) {
+    nextMarks[collection] = mergeById(
+      remoteMarks?.[collection] || [],
+      localMarks?.[collection] || [],
+      ['deletedAt'],
+    )
+  }
+
+  return nextMarks
+}
+
+function applyDeletionMarks(collection = [], marks = []) {
+  if (!Array.isArray(collection) || !collection.length) {
+    return []
+  }
+
+  if (!Array.isArray(marks) || !marks.length) {
+    return collection
+  }
+
+  const deletedIds = new Set(marks.map((mark) => mark?.id).filter(Boolean))
+  if (!deletedIds.size) {
+    return collection
+  }
+
+  return collection.filter((entry) => !deletedIds.has(entry?.id))
+}
+
 function trimMovements(movements = []) {
   return movements
     .slice()
@@ -233,23 +265,40 @@ function applyApprovedDeletionRequests(items = [], requests = []) {
 }
 
 function mergeDatabases(remoteDb = {}, localDb = {}) {
+  const mergedDeletionMarks = mergeDeletionMarks(remoteDb.deletionMarks, localDb.deletionMarks)
   const mergedUsers = mergeById(remoteDb.users, localDb.users, ['updatedAt', 'lastLoginAt', 'createdAt'])
   const mergedClients = mergeById(remoteDb.clients, localDb.clients, ['updatedAt', 'createdAt'])
-  const mergedUnits = mergeById(remoteDb.units, localDb.units, ['updatedAt', 'createdAt'])
+  const mergedUnits = applyDeletionMarks(
+    mergeById(remoteDb.units, localDb.units, ['updatedAt', 'createdAt']),
+    mergedDeletionMarks.units,
+  )
   const mergedDeletionRequests = mergeById(
     remoteDb.inventoryDeletionRequests,
     localDb.inventoryDeletionRequests,
     ['reviewedAt', 'requestedAt', 'createdAt'],
   )
   const mergedItems = applyApprovedDeletionRequests(
-    mergeById(remoteDb.inventoryItems, localDb.inventoryItems, ['updatedAt', 'createdAt']),
+    applyDeletionMarks(
+      mergeById(remoteDb.inventoryItems, localDb.inventoryItems, ['updatedAt', 'createdAt']),
+      mergedDeletionMarks.inventoryItems,
+    ),
     mergedDeletionRequests,
   )
   const mergedMovements = trimMovements(
-    mergeById(remoteDb.stockMovements, localDb.stockMovements, ['performedAt', 'createdAt']),
+    applyDeletionMarks(
+      mergeById(remoteDb.stockMovements, localDb.stockMovements, ['performedAt', 'createdAt']),
+      mergedDeletionMarks.stockMovements,
+    ),
   ).sort((left, right) => String(right.performedAt || '').localeCompare(String(left.performedAt || '')))
-  const mergedAuditLogs = mergeById(remoteDb.auditLogs, localDb.auditLogs, ['createdAt', 'updatedAt'])
+  const mergedAuditLogs = applyDeletionMarks(
+    mergeById(remoteDb.auditLogs, localDb.auditLogs, ['createdAt', 'updatedAt']),
+    mergedDeletionMarks.auditLogs,
+  )
     .sort((left, right) => String(right.createdAt || '').localeCompare(String(left.createdAt || '')))
+  const filteredDeletionRequests = applyDeletionMarks(
+    mergedDeletionRequests,
+    mergedDeletionMarks.inventoryDeletionRequests,
+  )
 
   return normalizeDatabasePayload({
     ...clone(remoteDb),
@@ -258,9 +307,10 @@ function mergeDatabases(remoteDb = {}, localDb = {}) {
     clients: mergedClients,
     units: mergedUnits,
     inventoryItems: mergedItems,
-    inventoryDeletionRequests: mergedDeletionRequests,
+    inventoryDeletionRequests: filteredDeletionRequests,
     stockMovements: mergedMovements,
     auditLogs: mergedAuditLogs,
+    deletionMarks: mergedDeletionMarks,
     settings: mergeSettings(remoteDb.settings, localDb.settings),
     meta: {
       ...(remoteDb.meta || {}),

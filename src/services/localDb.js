@@ -20,6 +20,13 @@ function createSharePointBootstrapDatabase() {
     inventoryDeletionRequests: [],
     stockMovements: [],
     auditLogs: [],
+    deletionMarks: {
+      units: [],
+      inventoryItems: [],
+      inventoryDeletionRequests: [],
+      stockMovements: [],
+      auditLogs: [],
+    },
     settings: {
       ...(seedDb.settings || {}),
       storageMode: env.storageMode,
@@ -49,6 +56,24 @@ function mergeSeedDatabase(currentDb) {
       if (!Array.isArray(nextDb[collection])) {
         nextDb[collection] = []
         changed = true
+      }
+    }
+
+    if (!nextDb.deletionMarks || typeof nextDb.deletionMarks !== 'object') {
+      nextDb.deletionMarks = {
+        units: [],
+        inventoryItems: [],
+        inventoryDeletionRequests: [],
+        stockMovements: [],
+        auditLogs: [],
+      }
+      changed = true
+    } else {
+      for (const collection of ['units', 'inventoryItems', 'inventoryDeletionRequests', 'stockMovements', 'auditLogs']) {
+        if (!Array.isArray(nextDb.deletionMarks[collection])) {
+          nextDb.deletionMarks[collection] = []
+          changed = true
+        }
       }
     }
 
