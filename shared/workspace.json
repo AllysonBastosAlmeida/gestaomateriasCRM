@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T23:18:30.495Z"
+    "importedAt": "2026-06-04T23:19:14.831Z"
   },
   "users": [
     {
@@ -505,7 +505,7 @@
     {
       "id": "item_patch_cord",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "material",
       "category": "Telecomunicacao",
       "name": "Patch Cord Cat6 2.5m",
@@ -523,7 +523,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T21:21:22.796Z",
+      "updatedAt": "2026-06-04T23:18:59.204Z",
       "createdBy": "user_admin",
       "updatedBy": "user_operador1"
     },
@@ -761,6 +761,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1780615139204_s5zyk8",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-04T23:18:59.204Z"
+    },
     {
       "id": "mov_1780526381929_jza63k",
       "itemId": "item_punch_down",
@@ -1307,6 +1323,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780615139204_fo93yp",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1780615139204_s5zyk8",
+      "entityLabel": "Patch Cord Cat6 2.5m",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 80,
+        "previousQuantity": 80,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-04T23:18:59.204Z"
+    },
     {
       "id": "audit_1780577512287_g2moa1",
       "action": "inventory_item_updated",
