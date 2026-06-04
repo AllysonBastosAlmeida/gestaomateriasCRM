@@ -594,11 +594,6 @@ export async function ensureGitHubDbLoaded() {
     return readLocalDb()
   }
 
-  const localSnapshot = readLocalDb()
-  if (localSnapshot?.meta?.importedAt && hasOperationalRecords(localSnapshot)) {
-    return localSnapshot
-  }
-
   try {
     return await bootstrapGitHubDb()
   } catch {
