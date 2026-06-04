@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:43:30.110Z"
+    "importedAt": "2026-06-04T12:43:49.876Z"
   },
   "users": [
     {
@@ -3242,21 +3242,21 @@
     "units": [
       {
         "id": "unit_alpha_d",
-        "deletedAt": "2026-06-04T12:43:30.041Z"
+        "deletedAt": "2026-06-04T12:43:49.344Z"
       }
     ],
     "inventoryItems": [
       {
         "id": "item_projetor_laser",
-        "deletedAt": "2026-06-04T12:43:30.041Z"
+        "deletedAt": "2026-06-04T12:43:49.344Z"
       },
       {
         "id": "item_hdmi_15m",
-        "deletedAt": "2026-06-04T12:43:30.041Z"
+        "deletedAt": "2026-06-04T12:43:49.344Z"
       },
       {
         "id": "item_mesa_som",
-        "deletedAt": "2026-06-04T12:43:30.041Z"
+        "deletedAt": "2026-06-04T12:43:49.344Z"
       }
     ],
     "inventoryDeletionRequests": [],
@@ -3264,7 +3264,7 @@
     "auditLogs": [
       {
         "id": "audit_1780526451923_mmet30",
-        "deletedAt": "2026-06-04T12:43:30.041Z"
+        "deletedAt": "2026-06-04T12:43:49.344Z"
       }
     ]
   }
