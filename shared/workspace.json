@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-04T12:32:15.431Z"
+    "importedAt": "2026-06-04T12:32:17.533Z"
   },
   "users": [
     {
@@ -1549,6 +1549,21 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1780576335001_ks373a",
+      "action": "unit_deleted",
+      "entityType": "unit",
+      "entityId": "unit_alpha_b",
+      "entityLabel": "Fabrica B",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_b",
+      "metadata": {
+        "removedItemsCount": 4
+      },
+      "createdAt": "2026-06-04T12:32:15.001Z"
+    },
     {
       "id": "audit_1780526478981_zs9aoj",
       "action": "unit_updated",
