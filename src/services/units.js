@@ -2,26 +2,9 @@ import { createId } from '../utils/ids'
 import { nowIso } from '../utils/date'
 import { getStorageProvider } from './storageProvider'
 import { createAuditEntry } from './audit'
+import { requestUnitDeletion } from './inventoryDeletionRequests'
 
 const storage = getStorageProvider()
-
-function appendDeletionMarks(target, collection, records, deletedAt) {
-  if (!Array.isArray(records) || !records.length) return
-
-  if (!target.deletionMarks || typeof target.deletionMarks !== 'object') {
-    target.deletionMarks = {}
-  }
-
-  if (!Array.isArray(target.deletionMarks[collection])) {
-    target.deletionMarks[collection] = []
-  }
-
-  const existingIds = new Set(target.deletionMarks[collection].map((record) => record.id))
-  for (const record of records) {
-    if (!record?.id || existingIds.has(record.id)) continue
-    target.deletionMarks[collection].push({ id: record.id, deletedAt })
-  }
-}
 
 function normalizeText(value) {
   return String(value || '').trim().toLowerCase()
@@ -138,72 +121,5 @@ export function updateUnit(unitId, payload, actor) {
 }
 
 export function deleteUnit(unitId, actor) {
-  const currentUnit = storage.get('units', unitId)
-  if (!currentUnit) {
-    throw new Error('Unidade nao encontrada.')
-  }
-
-  const result = storage.transaction((db) => {
-    const deletedAt = nowIso()
-    const unitsToRemove = (db.units || []).filter((unit) => unit.id === unitId)
-    const itemsToRemove = (db.inventoryItems || []).filter((item) => item.unitId === unitId)
-    const itemIds = new Set(itemsToRemove.map((item) => item.id))
-    const requestsToRemove = (db.inventoryDeletionRequests || []).filter((request) => (
-      request.unitId === unitId || itemIds.has(request.itemId)
-    ))
-    const requestIds = new Set(requestsToRemove.map((request) => request.id))
-    const movementsToRemove = (db.stockMovements || []).filter((movement) => (
-      movement.unitId === unitId
-      || movement.sourceUnitId === unitId
-      || movement.destinationUnitId === unitId
-      || itemIds.has(movement.itemId)
-    ))
-    const auditLogsToRemove = (db.auditLogs || []).filter((log) => (
-      log.unitId === unitId
-      || itemIds.has(log.entityId)
-      || (log.metadata?.requestId && requestIds.has(log.metadata.requestId))
-    ))
-
-    appendDeletionMarks(db, 'units', unitsToRemove, deletedAt)
-    appendDeletionMarks(db, 'inventoryItems', itemsToRemove, deletedAt)
-    appendDeletionMarks(db, 'inventoryDeletionRequests', requestsToRemove, deletedAt)
-    appendDeletionMarks(db, 'stockMovements', movementsToRemove, deletedAt)
-    appendDeletionMarks(db, 'auditLogs', auditLogsToRemove, deletedAt)
-
-    db.units = (db.units || []).filter((unit) => unit.id !== unitId)
-    db.inventoryItems = (db.inventoryItems || []).filter((item) => item.unitId !== unitId)
-    db.inventoryDeletionRequests = (db.inventoryDeletionRequests || []).filter((request) => (
-      request.unitId !== unitId && !itemIds.has(request.itemId)
-    ))
-    db.stockMovements = (db.stockMovements || []).filter((movement) => (
-      movement.unitId !== unitId
-      && movement.sourceUnitId !== unitId
-      && movement.destinationUnitId !== unitId
-      && !itemIds.has(movement.itemId)
-    ))
-    db.auditLogs = (db.auditLogs || []).filter((log) => (
-      log.unitId !== unitId
-      && !itemIds.has(log.entityId)
-      && !(log.metadata?.requestId && requestIds.has(log.metadata.requestId))
-    ))
-
-    return {
-      removedItemsCount: itemIds.size,
-    }
-  })
-
-  createAuditEntry({
-    action: 'unit_deleted',
-    entityType: 'unit',
-    entityId: currentUnit.id,
-    entityLabel: currentUnit.name,
-    user: actor,
-    clientId: currentUnit.clientId,
-    unitId: currentUnit.id,
-    metadata: {
-      removedItemsCount: result.removedItemsCount,
-    },
-  })
-
-  return result
+  return requestUnitDeletion(unitId, actor)
 }

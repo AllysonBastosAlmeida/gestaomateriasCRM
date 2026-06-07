@@ -264,6 +264,39 @@ function applyApprovedDeletionRequests(items = [], requests = []) {
   })
 }
 
+function getPendingOrApprovedUnitIds(requests = []) {
+  return new Set(
+    (requests || [])
+      .filter((request) => (
+        request?.requestType === 'unit'
+        && ['pendente', 'aprovada'].includes(request.status)
+        && request.unitId
+      ))
+      .map((request) => request.unitId),
+  )
+}
+
+function applyUnitDeletionRequests(units = [], items = [], requests = []) {
+  const hiddenUnitIds = getPendingOrApprovedUnitIds(requests)
+  if (!hiddenUnitIds.size) {
+    return {
+      units,
+      items,
+      requests,
+    }
+  }
+
+  return {
+    units: units.filter((unit) => !hiddenUnitIds.has(unit.id)),
+    items: items.filter((item) => !hiddenUnitIds.has(item.unitId)),
+    requests: requests.filter((request) => !(
+      request?.requestType === 'item'
+      && request.unitId
+      && hiddenUnitIds.has(request.unitId)
+    )),
+  }
+}
+
 function mergeDatabases(remoteDb = {}, localDb = {}) {
   const mergedDeletionMarks = mergeDeletionMarks(remoteDb.deletionMarks, localDb.deletionMarks)
   const mergedUsers = mergeById(remoteDb.users, localDb.users, ['updatedAt', 'lastLoginAt', 'createdAt'])
@@ -295,9 +328,14 @@ function mergeDatabases(remoteDb = {}, localDb = {}) {
     mergedDeletionMarks.auditLogs,
   )
     .sort((left, right) => String(right.createdAt || '').localeCompare(String(left.createdAt || '')))
-  const filteredDeletionRequests = applyDeletionMarks(
+  const mergedDeletionRequestsVisible = applyDeletionMarks(
     mergedDeletionRequests,
     mergedDeletionMarks.inventoryDeletionRequests,
+  )
+  const unitDeletionAdjusted = applyUnitDeletionRequests(
+    mergedUnits,
+    mergedItems,
+    mergedDeletionRequestsVisible,
   )
 
   return normalizeDatabasePayload({
@@ -305,9 +343,9 @@ function mergeDatabases(remoteDb = {}, localDb = {}) {
     ...clone(localDb),
     users: mergedUsers,
     clients: mergedClients,
-    units: mergedUnits,
-    inventoryItems: mergedItems,
-    inventoryDeletionRequests: filteredDeletionRequests,
+    units: unitDeletionAdjusted.units,
+    inventoryItems: unitDeletionAdjusted.items,
+    inventoryDeletionRequests: unitDeletionAdjusted.requests,
     stockMovements: mergedMovements,
     auditLogs: mergedAuditLogs,
     deletionMarks: mergedDeletionMarks,

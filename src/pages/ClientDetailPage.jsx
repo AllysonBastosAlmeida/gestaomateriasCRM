@@ -550,9 +550,9 @@ export function ClientDetailPage() {
 
       <ConfirmDialog
         open={Boolean(unitToDelete)}
-        title="Excluir unidade?"
-        description="Deseja excluir esta unidade mesmo? Todos os itens, movimentacoes e pendencias vinculados a ela serao removidos."
-        confirmLabel="Excluir unidade"
+        title="Enviar unidade para exclusao?"
+        description="Deseja enviar esta unidade para exclusao? Ela some agora da operacao e vai para a fila de aprovacao do admin com todos os itens vinculados."
+        confirmLabel="Enviar para exclusao"
         onClose={() => {
           setUnitToDelete(null)
           setEditingUnit(null)
@@ -560,7 +560,7 @@ export function ClientDetailPage() {
         onConfirm={() => {
           try {
             const summary = deleteUnit(unitToDelete.id, currentUser)
-            toast.success(`Unidade excluida. ${summary.removedItemsCount} item(ns) removido(s).`)
+            toast.success(`Unidade enviada para aprovacao. ${summary.removedItemsCount} item(ns) ocultado(s).`)
             setUnitToDelete(null)
             setEditingUnit(null)
             reload()
