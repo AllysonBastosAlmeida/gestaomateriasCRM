@@ -9,7 +9,7 @@ import { QuickTransferModal } from '../components/inventory/QuickTransferModal'
 import { ConfirmDialog } from '../components/common/ConfirmDialog'
 import { useAuth } from '../hooks/useAuth'
 import { useToast } from '../hooks/useToast'
-import { getClientById, updateClient } from '../services/clients'
+import { getClientById, listClients, updateClient } from '../services/clients'
 import { requestInventoryItemDeletion } from '../services/inventoryDeletionRequests'
 import { createInventoryItem, listInventoryItems, updateInventoryItem } from '../services/inventory'
 import { listItemMovementHistory, performMovement } from '../services/movements'
@@ -39,8 +39,10 @@ export function ClientDetailPage() {
   const { currentUser } = useAuth()
   const toast = useToast()
   const [client, setClient] = useState(null)
+  const [allClients, setAllClients] = useState([])
   const [isReady, setIsReady] = useState(false)
   const [units, setUnits] = useState([])
+  const [allUnits, setAllUnits] = useState([])
   const [items, setItems] = useState([])
   const [search, setSearch] = useState('')
   const [typeFilter, setTypeFilter] = useState('todos')
@@ -60,6 +62,8 @@ export function ClientDetailPage() {
 
   const reload = useCallback(() => {
     setClient(getClientById(clientId))
+    setAllClients(listClients())
+    setAllUnits(listUnits())
     setUnits(listUnits({ clientId }))
     setItems(listInventoryItems({ clientId }))
     setIsReady(true)
@@ -622,7 +626,8 @@ export function ClientDetailPage() {
       <QuickTransferModal
         open={quickTransferOpen}
         item={selectedItem}
-        units={units}
+        units={allUnits}
+        clients={allClients}
         onClose={() => setQuickTransferOpen(false)}
         onSubmit={(form) => {
           try {
