@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T16:51:01.733Z"
+    "importedAt": "2026-06-09T16:52:05.138Z"
   },
   "users": [
     {
@@ -912,7 +912,7 @@
       "description": "Eletroduto",
       "sku": "",
       "serialNumber": "",
-      "quantity": 7,
+      "quantity": 11,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -923,7 +923,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:45:06.572Z",
-      "updatedAt": "2026-06-09T14:45:06.572Z",
+      "updatedAt": "2026-06-09T16:51:52.712Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2521,6 +2521,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781023912715_8tori4",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016306572_v796jn",
+      "entityLabel": "Eletroduto",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 11,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T16:51:52.715Z"
+    },
     {
       "id": "audit_1781021001214_vclq9g",
       "action": "auth_login",
