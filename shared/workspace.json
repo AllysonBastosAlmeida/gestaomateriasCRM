@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:12:14.759Z"
+    "importedAt": "2026-06-09T15:13:18.326Z"
   },
   "users": [
     {
@@ -1401,6 +1401,31 @@
       "updatedAt": "2026-06-09T15:12:14.043Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017973217_3rbvdx",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Cinta de Ferramentas",
+      "description": "Cinta de Ferramentas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:12:53.217Z",
+      "updatedAt": "2026-06-09T15:12:53.217Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2096,6 +2121,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781017973223_pu21ha",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017973217_3rbvdx",
+      "entityLabel": "Cinta de Ferramentas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T15:12:53.223Z"
+    },
     {
       "id": "audit_1781017817092_58l8lz",
       "action": "inventory_item_created",
