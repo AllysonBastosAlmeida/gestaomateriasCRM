@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T16:55:18.960Z"
+    "importedAt": "2026-06-09T16:56:20.967Z"
   },
   "users": [
     {
@@ -1133,8 +1133,8 @@
       "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
-      "name": "Tampa Duas Entradas RJ45",
-      "description": "Tampa Duas Entradas RJ45",
+      "name": "Espelho Duas Entradas RJ45",
+      "description": "Espelho Duas Entradas RJ45",
       "sku": "",
       "serialNumber": "",
       "quantity": 3,
@@ -1148,7 +1148,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:57:18.888Z",
-      "updatedAt": "2026-06-09T14:57:18.888Z",
+      "updatedAt": "2026-06-09T16:55:29.092Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2571,6 +2571,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781024129096_kg8uws",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017038888_h4f13k",
+      "entityLabel": "Espelho Duas Entradas RJ45",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 3,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T16:55:29.096Z"
+    },
     {
       "id": "audit_1781024095585_s94mmo",
       "action": "inventory_item_created",
