@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T16:56:20.967Z"
+    "importedAt": "2026-06-09T16:57:23.844Z"
   },
   "users": [
     {
@@ -1874,6 +1874,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:54:55.579Z",
       "updatedAt": "2026-06-09T16:54:55.579Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781024243095_bjpk1i",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Braçadeira",
+      "description": "Braçadeira",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T16:57:23.095Z",
+      "updatedAt": "2026-06-09T16:57:23.095Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
