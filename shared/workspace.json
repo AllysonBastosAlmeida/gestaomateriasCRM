@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:55:05.233Z"
+    "importedAt": "2026-06-09T14:56:05.593Z"
   },
   "users": [
     {
@@ -1076,6 +1076,31 @@
       "updatedAt": "2026-06-09T14:54:35.219Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016951306_f273c4",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Fita Helleman Pequeno (Pacote)",
+      "description": "Fita Helleman Pequeno (Pacote)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:55:51.306Z",
+      "updatedAt": "2026-06-09T14:55:51.306Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1771,6 +1796,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016951312_r65l2u",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016951306_f273c4",
+      "entityLabel": "Fita Helleman Pequeno (Pacote)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:55:51.312Z"
+    },
     {
       "id": "audit_1781016875225_h0ihzl",
       "action": "inventory_item_created",
