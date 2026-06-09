@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:15:25.463Z"
+    "importedAt": "2026-06-09T15:16:36.859Z"
   },
   "users": [
     {
@@ -1526,6 +1526,31 @@
       "updatedAt": "2026-06-09T15:15:13.153Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781018182846_ued2to",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate Universal",
+      "description": "Alicate Universal",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:16:22.846Z",
+      "updatedAt": "2026-06-09T15:16:22.846Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2221,6 +2246,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781018182853_7niocy",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018182846_ued2to",
+      "entityLabel": "Alicate Universal",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T15:16:22.853Z"
+    },
     {
       "id": "audit_1781018113159_kdu46p",
       "action": "inventory_item_created",
