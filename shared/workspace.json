@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:02:43.404Z"
+    "importedAt": "2026-06-09T15:03:21.766Z"
   },
   "users": [
     {
@@ -1226,6 +1226,31 @@
       "updatedAt": "2026-06-09T15:02:43.362Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017394117_ifqu7y",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Tesoura",
+      "description": "Tesoura",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:03:14.117Z",
+      "updatedAt": "2026-06-09T15:03:14.117Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1921,6 +1946,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781017394124_36vy84",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017394117_ifqu7y",
+      "entityLabel": "Tesoura",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T15:03:14.124Z"
+    },
     {
       "id": "audit_1781017242533_p6dji4",
       "action": "inventory_item_created",
