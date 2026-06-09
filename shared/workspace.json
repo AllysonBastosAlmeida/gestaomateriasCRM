@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:11:03.083Z"
+    "importedAt": "2026-06-09T15:12:14.759Z"
   },
   "users": [
     {
@@ -1374,6 +1374,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:10:17.086Z",
       "updatedAt": "2026-06-09T15:10:17.086Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017934043_bn2crr",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Pote de Parafusos e Buchas",
+      "description": "Pote de Parafusos e Buchas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:12:14.043Z",
+      "updatedAt": "2026-06-09T15:12:14.043Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
