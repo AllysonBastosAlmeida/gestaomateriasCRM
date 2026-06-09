@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:33:27.752Z"
+    "importedAt": "2026-06-09T14:34:57.926Z"
   },
   "users": [
     {
@@ -698,7 +698,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:28:35.653Z",
-      "updatedAt": "2026-06-09T14:32:05.439Z",
+      "updatedAt": "2026-06-09T14:33:41.566Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -1396,6 +1396,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781015621570_7n797z",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015315653_90rlvu",
+      "entityLabel": "Condoletes",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 21,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T14:33:41.570Z"
+    },
     {
       "id": "audit_1781015579251_keffdf",
       "action": "inventory_item_updated",
