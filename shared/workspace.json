@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:40:26.581Z"
+    "importedAt": "2026-06-09T14:41:27.432Z"
   },
   "users": [
     {
@@ -776,6 +776,31 @@
       "updatedAt": "2026-06-09T14:39:48.756Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016060005_7il9pb",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Luva",
+      "description": "Luva",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 16,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:41:00.005Z",
+      "updatedAt": "2026-06-09T14:41:00.005Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1471,6 +1496,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016060011_1jcgs4",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016060005_7il9pb",
+      "entityLabel": "Luva",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 16,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:41:00.011Z"
+    },
     {
       "id": "audit_1781015988763_xbxw6l",
       "action": "inventory_item_created",
