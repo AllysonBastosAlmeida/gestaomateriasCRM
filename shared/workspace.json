@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T16:53:11.348Z"
+    "importedAt": "2026-06-09T16:54:18.748Z"
   },
   "users": [
     {
@@ -1826,6 +1826,31 @@
       "updatedAt": "2026-06-09T15:26:58.809Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781024005958_l7ad6h",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Curvas de 3/4",
+      "description": "Curvas de 3/4",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T16:53:25.958Z",
+      "updatedAt": "2026-06-09T16:53:25.958Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2521,6 +2546,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781024005965_6tyosd",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024005958_l7ad6h",
+      "entityLabel": "Curvas de 3/4",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T16:53:25.965Z"
+    },
     {
       "id": "audit_1781023955927_ixqsot",
       "action": "inventory_item_updated",
