@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:03:21.766Z"
+    "importedAt": "2026-06-09T15:06:00.200Z"
   },
   "users": [
     {
@@ -1249,6 +1249,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:03:14.117Z",
       "updatedAt": "2026-06-09T15:03:14.117Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017560159_3ee3ax",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Tester (Patch Cord)",
+      "description": "Tester (Patch Cord)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:06:00.159Z",
+      "updatedAt": "2026-06-09T15:06:00.159Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
