@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T17:03:49.056Z"
+    "importedAt": "2026-06-09T17:04:50.599Z"
   },
   "users": [
     {
@@ -2026,6 +2026,31 @@
       "updatedAt": "2026-06-09T17:03:27.414Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781024683918_0z62tu",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Kit de Brocas",
+      "description": "Kit de Brocas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T17:04:43.918Z",
+      "updatedAt": "2026-06-09T17:04:43.918Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2721,6 +2746,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781024683924_468vkl",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024683918_0z62tu",
+      "entityLabel": "Kit de Brocas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T17:04:43.924Z"
+    },
     {
       "id": "audit_1781024607420_s55d3v",
       "action": "inventory_item_created",
