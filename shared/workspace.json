@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:18:38.716Z"
+    "importedAt": "2026-06-09T15:19:39.718Z"
   },
   "users": [
     {
@@ -1437,7 +1437,7 @@
       "description": "Alicate Decapador",
       "sku": "",
       "serialNumber": "",
-      "quantity": 1,
+      "quantity": 2,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1448,7 +1448,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:13:22.387Z",
-      "updatedAt": "2026-06-09T15:13:22.387Z",
+      "updatedAt": "2026-06-09T15:18:53.347Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -1624,6 +1624,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:18:31.114Z",
       "updatedAt": "2026-06-09T15:18:31.114Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781018373645_hko91n",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate Decapador de Fibra",
+      "description": "Alicate Decapador de Fibra",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:19:33.645Z",
+      "updatedAt": "2026-06-09T15:19:33.645Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -2321,6 +2346,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781018373652_9ds8ht",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018373645_hko91n",
+      "entityLabel": "Alicate Decapador de Fibra",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T15:19:33.652Z"
+    },
+    {
+      "id": "audit_1781018333350_rwbds1",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018002387_0jzz3t",
+      "entityLabel": "Alicate Decapador",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T15:18:53.351Z"
+    },
     {
       "id": "audit_1781018311120_t7f0pi",
       "action": "inventory_item_created",
