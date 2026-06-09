@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:34:57.926Z"
+    "importedAt": "2026-06-09T14:38:01.176Z"
   },
   "users": [
     {
@@ -699,6 +699,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:28:35.653Z",
       "updatedAt": "2026-06-09T14:33:41.566Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781015881139_g5c5sn",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Tampa Cega para Condoletes",
+      "description": "Tampa Cega para Condoletes",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 29,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:38:01.139Z",
+      "updatedAt": "2026-06-09T14:38:01.139Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
