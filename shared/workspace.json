@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:39:26.172Z"
+    "importedAt": "2026-06-09T14:40:26.581Z"
   },
   "users": [
     {
@@ -751,6 +751,31 @@
       "updatedAt": "2026-06-09T14:39:06.409Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781015988756_o56ka0",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Unidute",
+      "description": "Unidute",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 55,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:39:48.756Z",
+      "updatedAt": "2026-06-09T14:39:48.756Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1446,6 +1471,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781015988763_xbxw6l",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015988756_o56ka0",
+      "entityLabel": "Unidute",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 55,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:39:48.763Z"
+    },
     {
       "id": "audit_1781015946415_yn1szt",
       "action": "inventory_item_created",
