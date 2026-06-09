@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:47:52.408Z"
+    "importedAt": "2026-06-09T14:48:52.332Z"
   },
   "users": [
     {
@@ -976,6 +976,31 @@
       "updatedAt": "2026-06-09T14:46:50.942Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016487416_lpuc2p",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Caixa de passagem",
+      "description": "Caixa de passagem",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:48:07.416Z",
+      "updatedAt": "2026-06-09T14:48:07.416Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1671,6 +1696,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016487421_aaaxu1",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016487416_lpuc2p",
+      "entityLabel": "Caixa de passagem",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:48:07.421Z"
+    },
     {
       "id": "audit_1781016410949_dec9pp",
       "action": "inventory_item_created",
