@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:50:53.486Z"
+    "importedAt": "2026-06-09T14:52:22.358Z"
   },
   "users": [
     {
@@ -1024,6 +1024,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:48:57.955Z",
       "updatedAt": "2026-06-09T14:48:57.955Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016742320_2nvlij",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Rolo de Fibra Óptica- 1",
+      "description": "Rolo de Fibra Óptica- 1",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 200,
+      "minQuantity": 0,
+      "unitMeasure": "Metros ",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:52:22.320Z",
+      "updatedAt": "2026-06-09T14:52:22.320Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
