@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:58:16.701Z"
+    "importedAt": "2026-06-09T15:00:42.565Z"
   },
   "users": [
     {
@@ -1174,6 +1174,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:57:54.086Z",
       "updatedAt": "2026-06-09T14:57:54.086Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017242526_bim07d",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Patch Code (1,5m)",
+      "description": "Patch Code (1,5m)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 7,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:00:42.526Z",
+      "updatedAt": "2026-06-09T15:00:42.526Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
