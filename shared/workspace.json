@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T17:04:50.599Z"
+    "importedAt": "2026-06-09T17:06:02.482Z"
   },
   "users": [
     {
@@ -2051,6 +2051,31 @@
       "updatedAt": "2026-06-09T17:04:43.918Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781024739510_ctru2h",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Cat6 10m",
+      "description": "Cat6 10m",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T17:05:39.510Z",
+      "updatedAt": "2026-06-09T17:05:39.510Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2746,6 +2771,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781024739516_qhtcpg",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024739510_ctru2h",
+      "entityLabel": "Cat6 10m",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T17:05:39.516Z"
+    },
     {
       "id": "audit_1781024683924_468vkl",
       "action": "inventory_item_created",
