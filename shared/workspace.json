@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:17:36.967Z"
+    "importedAt": "2026-06-09T15:18:38.716Z"
   },
   "users": [
     {
@@ -1576,6 +1576,56 @@
       "updatedAt": "2026-06-09T15:17:19.624Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781018268159_rz8qeq",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Marreta de Borracha",
+      "description": "Marreta de Borracha",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:17:48.159Z",
+      "updatedAt": "2026-06-09T15:17:48.159Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781018311114_m6pdqm",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate de Corte (Precisão)",
+      "description": "Alicate de Corte (Precisão)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:18:31.114Z",
+      "updatedAt": "2026-06-09T15:18:31.114Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2271,6 +2321,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781018311120_t7f0pi",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018311114_m6pdqm",
+      "entityLabel": "Alicate de Corte (Precisão)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T15:18:31.120Z"
+    },
+    {
+      "id": "audit_1781018268165_g58pos",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018268159_rz8qeq",
+      "entityLabel": "Marreta de Borracha",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T15:17:48.165Z"
+    },
     {
       "id": "audit_1781018239630_s5m5nk",
       "action": "inventory_item_created",
