@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:29:03.236Z"
+    "importedAt": "2026-06-09T14:32:05.469Z"
   },
   "users": [
     {
@@ -698,7 +698,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:28:35.653Z",
-      "updatedAt": "2026-06-09T14:28:35.653Z",
+      "updatedAt": "2026-06-09T14:32:05.439Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
