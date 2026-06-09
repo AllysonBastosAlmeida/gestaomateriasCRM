@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:57:16.595Z"
+    "importedAt": "2026-06-09T14:58:16.701Z"
   },
   "users": [
     {
@@ -1126,6 +1126,56 @@
       "updatedAt": "2026-06-09T14:56:36.920Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017038888_h4f13k",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Tampa Duas Entradas RJ45",
+      "description": "Tampa Duas Entradas RJ45",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:57:18.888Z",
+      "updatedAt": "2026-06-09T14:57:18.888Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017074086_teubul",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Máquina de Fusão de Fibra",
+      "description": "Máquina de Fusão de Fibra",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:57:54.086Z",
+      "updatedAt": "2026-06-09T14:57:54.086Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1821,6 +1871,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781017074092_tmmcf5",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017074086_teubul",
+      "entityLabel": "Máquina de Fusão de Fibra",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T14:57:54.092Z"
+    },
+    {
+      "id": "audit_1781017038895_x6ebth",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017038888_h4f13k",
+      "entityLabel": "Tampa Duas Entradas RJ45",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 3,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:57:18.895Z"
+    },
     {
       "id": "audit_1781016996926_gs5csj",
       "action": "inventory_item_created",
