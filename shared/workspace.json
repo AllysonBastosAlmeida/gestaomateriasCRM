@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:10:17.129Z"
+    "importedAt": "2026-06-09T15:11:03.083Z"
   },
   "users": [
     {
@@ -2071,6 +2071,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781017817092_58l8lz",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017817086_6cin1n",
+      "entityLabel": "Martelo",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T15:10:17.092Z"
+    },
     {
       "id": "audit_1781017729807_ta1t6p",
       "action": "inventory_item_created",
