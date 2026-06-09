@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:45:46.481Z"
+    "importedAt": "2026-06-09T14:46:47.622Z"
   },
   "users": [
     {
@@ -926,6 +926,31 @@
       "updatedAt": "2026-06-09T14:45:06.572Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016370332_dfeah5",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Fita Dupla Faces",
+      "description": "Fita Dupla Faces",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:46:10.332Z",
+      "updatedAt": "2026-06-09T14:46:10.332Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1621,6 +1646,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016370338_towdpr",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016370332_dfeah5",
+      "entityLabel": "Fita Dupla Faces",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:46:10.338Z"
+    },
     {
       "id": "audit_1781016306575_29k8bq",
       "action": "inventory_item_created",
