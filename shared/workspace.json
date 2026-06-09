@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:00:42.565Z"
+    "importedAt": "2026-06-09T15:01:17.285Z"
   },
   "users": [
     {
@@ -1896,6 +1896,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781017242533_p6dji4",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017242526_bim07d",
+      "entityLabel": "Patch Code (1,5m)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 7,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T15:00:42.533Z"
+    },
     {
       "id": "audit_1781017074092_tmmcf5",
       "action": "inventory_item_created",
