@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:06:50.837Z"
+    "importedAt": "2026-06-09T15:07:51.479Z"
   },
   "users": [
     {
@@ -1276,6 +1276,31 @@
       "updatedAt": "2026-06-09T15:06:00.159Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017652002_tlb4uk",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Chaves Phillips",
+      "description": "Chaves Phillips",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:07:32.002Z",
+      "updatedAt": "2026-06-09T15:07:32.002Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1971,6 +1996,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781017652008_1czond",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017652002_tlb4uk",
+      "entityLabel": "Chaves Phillips",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-09T15:07:32.008Z"
+    },
     {
       "id": "audit_1781017560165_vd9ghm",
       "action": "inventory_item_created",
