@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:46:47.622Z"
+    "importedAt": "2026-06-09T14:47:52.408Z"
   },
   "users": [
     {
@@ -951,6 +951,31 @@
       "updatedAt": "2026-06-09T14:46:10.332Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016410942_gx7s5n",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Espelho RJ45",
+      "description": "Espelho RJ45",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:46:50.942Z",
+      "updatedAt": "2026-06-09T14:46:50.942Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1646,6 +1671,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016410949_dec9pp",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016410942_gx7s5n",
+      "entityLabel": "Espelho RJ45",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 3,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:46:50.949Z"
+    },
     {
       "id": "audit_1781016370338_towdpr",
       "action": "inventory_item_created",
