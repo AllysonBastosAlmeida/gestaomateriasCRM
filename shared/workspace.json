@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T16:59:35.971Z"
+    "importedAt": "2026-06-09T17:00:37.490Z"
   },
   "users": [
     {
@@ -1951,6 +1951,56 @@
       "updatedAt": "2026-06-09T16:59:04.284Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781024384839_3i32yf",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "HDMI Fêmea",
+      "description": "HDMI Fêmea",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T16:59:44.839Z",
+      "updatedAt": "2026-06-09T16:59:44.839Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781024436965_vs8goz",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate Volver",
+      "description": "Alicate Volver",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T17:00:36.965Z",
+      "updatedAt": "2026-06-09T17:00:36.965Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2646,6 +2696,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781024384845_4b13k8",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024384839_3i32yf",
+      "entityLabel": "HDMI Fêmea",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T16:59:44.845Z"
+    },
     {
       "id": "audit_1781024344290_fwq1b3",
       "action": "inventory_item_created",
