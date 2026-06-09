@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T16:57:23.844Z"
+    "importedAt": "2026-06-09T16:58:32.931Z"
   },
   "users": [
     {
@@ -1587,7 +1587,7 @@
       "description": "Marreta de Borracha",
       "sku": "",
       "serialNumber": "",
-      "quantity": 1,
+      "quantity": 2,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1598,7 +1598,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:17:48.159Z",
-      "updatedAt": "2026-06-09T15:17:48.159Z",
+      "updatedAt": "2026-06-09T16:57:59.573Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2596,6 +2596,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781024279577_eu7cfn",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018268159_rz8qeq",
+      "entityLabel": "Marreta de Borracha",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T16:57:59.577Z"
+    },
     {
       "id": "audit_1781024129096_kg8uws",
       "action": "inventory_item_updated",
