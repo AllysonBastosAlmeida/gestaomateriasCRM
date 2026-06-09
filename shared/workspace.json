@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:41:27.432Z"
+    "importedAt": "2026-06-09T14:42:29.656Z"
   },
   "users": [
     {
@@ -801,6 +801,31 @@
       "updatedAt": "2026-06-09T14:41:00.005Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016109967_6ucsxf",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Mata Junta Interna",
+      "description": "Mata Junta Interna",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 12,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:41:49.967Z",
+      "updatedAt": "2026-06-09T14:41:49.967Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1496,6 +1521,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016109972_aq1be3",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016109967_6ucsxf",
+      "entityLabel": "Mata Junta Interna",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 12,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:41:49.972Z"
+    },
     {
       "id": "audit_1781016060011_1jcgs4",
       "action": "inventory_item_created",
