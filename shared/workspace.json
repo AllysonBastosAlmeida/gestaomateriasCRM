@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T17:07:04.133Z"
+    "importedAt": "2026-06-09T17:08:04.180Z"
   },
   "users": [
     {
@@ -737,7 +737,7 @@
       "description": "Curva Grande",
       "sku": "",
       "serialNumber": "",
-      "quantity": 27,
+      "quantity": 24,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -748,7 +748,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:39:06.409Z",
-      "updatedAt": "2026-06-09T17:06:46.555Z",
+      "updatedAt": "2026-06-09T17:07:43.692Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -1833,11 +1833,11 @@
       "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
-      "name": "Curvas de 3/4",
-      "description": "Curvas de 3/4",
+      "name": "Curva pequena",
+      "description": "Curva pequena",
       "sku": "",
       "serialNumber": "",
-      "quantity": 4,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1848,7 +1848,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:53:25.958Z",
-      "updatedAt": "2026-06-09T16:53:25.958Z",
+      "updatedAt": "2026-06-09T17:07:18.037Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2771,6 +2771,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781024863696_u8u00s",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015946409_aqj3o8",
+      "entityLabel": "Curva Grande",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 24,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T17:07:43.696Z"
+    },
+    {
+      "id": "audit_1781024838041_3pnoxh",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024005958_l7ad6h",
+      "entityLabel": "Curva pequena",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T17:07:18.041Z"
+    },
     {
       "id": "audit_1781024806559_fl4ork",
       "action": "inventory_item_updated",
