@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:28:03.248Z"
+    "importedAt": "2026-06-09T14:29:03.236Z"
   },
   "users": [
     {
@@ -523,7 +523,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-09T14:27:23.402Z",
+      "updatedAt": "2026-06-09T14:28:55.805Z",
       "createdBy": "user_admin",
       "updatedBy": "user_operador1"
     },
@@ -676,6 +676,31 @@
       "updatedAt": "2026-06-03T21:42:11.277Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1781015315653_90rlvu",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Condoletes",
+      "description": "Condoletes",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 21,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:28:35.653Z",
+      "updatedAt": "2026-06-09T14:28:35.653Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -777,6 +802,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781015335805_mu7zta",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-09T14:28:55.805Z"
+    },
     {
       "id": "mov_1781015243402_e1d7y2",
       "itemId": "item_patch_cord",
@@ -1355,6 +1396,43 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781015335805_krn5a9",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1781015335805_mu7zta",
+      "entityLabel": "Patch Cord Cat6 2.5m",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 80,
+        "previousQuantity": 80,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-09T14:28:55.805Z"
+    },
+    {
+      "id": "audit_1781015315658_wktmxl",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015315653_90rlvu",
+      "entityLabel": "Condoletes",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 21,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:28:35.658Z"
+    },
     {
       "id": "audit_1781015243402_btwkm7",
       "action": "movement_transferencia",
