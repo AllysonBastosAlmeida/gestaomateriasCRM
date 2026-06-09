@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:32:16.650Z"
+    "importedAt": "2026-06-09T14:33:27.752Z"
   },
   "users": [
     {
@@ -508,7 +508,7 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "Telecomunicacao",
-      "name": "Patch Cord Cat6 2.5m",
+      "name": "Interligacao de switches, voice gateways e racks de telecom.",
       "description": "Interligacao de switches, voice gateways e racks de telecom.",
       "sku": "PC-CAT6-2M5",
       "serialNumber": "",
@@ -523,7 +523,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-09T14:28:55.805Z",
+      "updatedAt": "2026-06-09T14:32:59.247Z",
       "createdBy": "user_admin",
       "updatedBy": "user_operador1"
     },
@@ -1396,6 +1396,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781015579251_keffdf",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_patch_cord",
+      "entityLabel": "Interligacao de switches, voice gateways e racks de telecom.",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 80,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T14:32:59.251Z"
+    },
     {
       "id": "audit_1781015525441_b0z15m",
       "action": "inventory_item_updated",
