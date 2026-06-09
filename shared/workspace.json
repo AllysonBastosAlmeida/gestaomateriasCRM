@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:38:01.176Z"
+    "importedAt": "2026-06-09T14:38:21.952Z"
   },
   "users": [
     {
@@ -1421,6 +1421,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781015881145_t8ycyk",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015881139_g5c5sn",
+      "entityLabel": "Tampa Cega para Condoletes",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 29,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:38:01.145Z"
+    },
     {
       "id": "audit_1781015621570_7n797z",
       "action": "inventory_item_updated",
