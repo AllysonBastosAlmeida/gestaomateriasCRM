@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T15:01:17.285Z"
+    "importedAt": "2026-06-09T15:02:43.404Z"
   },
   "users": [
     {
@@ -1199,6 +1199,31 @@
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:00:42.526Z",
       "updatedAt": "2026-06-09T15:00:42.526Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781017363362_56diw8",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Soquetes magnéticos (5 Peças)",
+      "description": "Soquetes magnéticos (5 Peças)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T15:02:43.362Z",
+      "updatedAt": "2026-06-09T15:02:43.362Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
