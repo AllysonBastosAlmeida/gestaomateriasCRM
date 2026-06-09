@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:44:39.440Z"
+    "importedAt": "2026-06-09T14:45:46.481Z"
   },
   "users": [
     {
@@ -901,6 +901,31 @@
       "updatedAt": "2026-06-09T14:44:38.737Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016306572_v796jn",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Eletroduto",
+      "description": "Eletroduto",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 7,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:45:06.572Z",
+      "updatedAt": "2026-06-09T14:45:06.572Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -1596,6 +1621,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016306575_29k8bq",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016306572_v796jn",
+      "entityLabel": "Eletroduto",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 7,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:45:06.575Z"
+    },
     {
       "id": "audit_1781016219368_e1v6q5",
       "action": "inventory_item_created",
