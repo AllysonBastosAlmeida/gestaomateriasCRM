@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T14:48:52.332Z"
+    "importedAt": "2026-06-09T14:49:52.340Z"
   },
   "users": [
     {
@@ -983,8 +983,8 @@
       "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
-      "name": "Caixa de passagem",
-      "description": "Caixa de passagem",
+      "name": "Caixa de Passagem",
+      "description": "Caixa de Passagem",
       "sku": "",
       "serialNumber": "",
       "quantity": 2,
@@ -998,7 +998,32 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:48:07.416Z",
-      "updatedAt": "2026-06-09T14:48:07.416Z",
+      "updatedAt": "2026-06-09T14:49:26.140Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781016537955_axxlrx",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Conjunto Isolador de Porcelana",
+      "description": "Conjunto Isolador de Porcelana",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "createdAt": "2026-06-09T14:48:57.955Z",
+      "updatedAt": "2026-06-09T14:48:57.955Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -1696,6 +1721,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781016566144_d9l5ds",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016487416_lpuc2p",
+      "entityLabel": "Caixa de Passagem",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-09T14:49:26.144Z"
+    },
+    {
+      "id": "audit_1781016537962_4139o5",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016537955_axxlrx",
+      "entityLabel": "Conjunto Isolador de Porcelana",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 3,
+        "type": "material"
+      },
+      "createdAt": "2026-06-09T14:48:57.962Z"
+    },
     {
       "id": "audit_1781016487421_aaaxu1",
       "action": "inventory_item_created",
