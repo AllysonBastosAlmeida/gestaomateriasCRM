@@ -10,14 +10,27 @@ import { ensureCrudCrudDbLoaded, getCrudCrudSyncStatus } from '../services/crudC
 import { ensureGitHubDbLoaded, getGitHubSyncStatus } from '../services/githubSync'
 
 export function LoginPage() {
-  const { currentUser, login, refreshSession } = useAuth()
+  const { currentUser, isInitializing, login, refreshSession } = useAuth()
   const toast = useToast()
   const navigate = useNavigate()
   const location = useLocation()
   const [loading, setLoading] = useState(false)
+  const nextRoute = location.state?.from || ROUTES.dashboard
+
+  if (isInitializing) {
+    return (
+      <div className="login-stage min-h-screen overflow-hidden">
+        <section className="relative z-[1] flex min-h-screen items-start justify-center px-4 pb-8 pt-[10vh] sm:items-center sm:px-6 sm:py-8">
+          <div className="w-full max-w-sm rounded-[28px] border border-white/10 bg-slate-950/78 p-5 text-center text-sm text-slate-300 shadow-[0_24px_80px_rgba(0,0,0,0.34)] backdrop-blur sm:p-6">
+            Restaurando sessao...
+          </div>
+        </section>
+      </div>
+    )
+  }
 
   if (currentUser) {
-    return <Navigate to={ROUTES.dashboard} replace />
+    return <Navigate to={nextRoute} replace />
   }
 
   return (
@@ -80,7 +93,7 @@ export function LoginPage() {
                     )
                   }
 
-                  navigate(location.state?.from || ROUTES.dashboard, { replace: true })
+                  navigate(nextRoute, { replace: true })
                 } catch (error) {
                   toast.error(error.message)
                 } finally {

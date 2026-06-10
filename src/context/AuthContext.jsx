@@ -8,6 +8,7 @@ export const AuthContext = createContext(null)
 
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null)
+  const [isInitializing, setIsInitializing] = useState(true)
 
   useEffect(() => {
     let cancelled = false
@@ -31,6 +32,7 @@ export function AuthProvider({ children }) {
 
       if (!cancelled) {
         setCurrentUser(getCurrentUser())
+        setIsInitializing(false)
       }
     }
 
@@ -43,6 +45,7 @@ export function AuthProvider({ children }) {
 
   const value = useMemo(() => ({
     currentUser,
+    isInitializing,
     isAuthenticated: Boolean(currentUser),
     login(username, password) {
       const user = loginService(username, password)
@@ -56,7 +59,7 @@ export function AuthProvider({ children }) {
     refreshSession() {
       setCurrentUser(getCurrentUser())
     },
-  }), [currentUser])
+  }), [currentUser, isInitializing])
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }
