@@ -639,7 +639,7 @@ export async function ensureGitHubDbLoaded() {
   }
 }
 
-export function startGitHubAutoSync(intervalMs = 12000) {
+export function startGitHubAutoSync(intervalMs = 5000) {
   if (autoSyncStarted || !isConfigured()) {
     return () => {}
   }
@@ -675,10 +675,28 @@ export function startGitHubAutoSync(intervalMs = 12000) {
     void tick()
   }, intervalMs)
 
+  const handleVisibilityOrFocus = () => {
+    void tick()
+  }
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('focus', handleVisibilityOrFocus)
+  }
+
+  if (typeof document !== 'undefined') {
+    document.addEventListener('visibilitychange', handleVisibilityOrFocus)
+  }
+
   return () => {
     if (autoSyncTimer) {
       window.clearInterval(autoSyncTimer)
       autoSyncTimer = null
+    }
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('focus', handleVisibilityOrFocus)
+    }
+    if (typeof document !== 'undefined') {
+      document.removeEventListener('visibilitychange', handleVisibilityOrFocus)
     }
     autoSyncStarted = false
   }
