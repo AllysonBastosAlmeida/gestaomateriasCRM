@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T02:30:02.525Z"
+    "importedAt": "2026-06-10T02:31:03.091Z"
   },
   "users": [
     {
@@ -1144,7 +1144,7 @@
     {
       "id": "item_1781016951306_f273c4",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
       "name": "Fita Helleman Pequeno (Pacote)",
@@ -1162,11 +1162,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:55:51.306Z",
-      "updatedAt": "2026-06-09T14:55:51.306Z",
+      "updatedAt": "2026-06-10T02:30:54.272Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-06-10T02:30:54.272Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781016996920_z9mk29",
@@ -2403,6 +2403,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1781058654273_huyecd",
+      "itemId": "item_1781016951306_f273c4",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-10T02:30:54.273Z"
+    },
+    {
       "id": "mov_1781055213548_ylu2kg",
       "itemId": "item_patch_cord",
       "movementType": "transferencia",
@@ -3044,6 +3060,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781058654273_exl092",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1781058654273_huyecd",
+      "entityLabel": "Fita Helleman Pequeno (Pacote)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-10T02:30:54.272Z"
+    },
     {
       "id": "audit_1781058542600_dmtqsl",
       "action": "auth_login",
