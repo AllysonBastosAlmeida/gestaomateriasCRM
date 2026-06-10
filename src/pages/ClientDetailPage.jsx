@@ -14,6 +14,7 @@ import { getClientById, listClients, updateClient } from '../services/clients'
 import { DELETION_REQUEST_STATUSES, listInventoryDeletionRequests, rejectDeletionRequest, requestInventoryItemDeletion } from '../services/inventoryDeletionRequests'
 import { createInventoryItem, listInventoryItems, updateInventoryItem } from '../services/inventory'
 import { listItemMovementHistory, performMovement } from '../services/movements'
+import { getStorageProvider } from '../services/storageProvider'
 import { createUnit, deleteUnit, listUnits, updateUnit } from '../services/units'
 import { getClientBranding } from '../utils/clientBranding'
 import { canEditInventory, canManageClients, canViewMovementLog } from '../utils/permissions'
@@ -40,6 +41,7 @@ export function ClientDetailPage() {
   const { clientId } = useParams()
   const { currentUser } = useAuth()
   const toast = useToast()
+  const storageProvider = useMemo(() => getStorageProvider(), [])
   const [client, setClient] = useState(null)
   const [allClients, setAllClients] = useState([])
   const [isReady, setIsReady] = useState(false)
@@ -139,6 +141,14 @@ export function ClientDetailPage() {
     }),
     [clientId, currentUser?.id],
   )
+
+  const flushWorkspaceSync = useCallback(async () => {
+    if (typeof storageProvider.pushRemote !== 'function') {
+      return
+    }
+
+    await storageProvider.pushRemote(storageProvider.readDb())
+  }, [storageProvider])
 
   if (!isReady) {
     return (
@@ -613,7 +623,7 @@ export function ClientDetailPage() {
           setUnitModalOpen(false)
           setEditingUnit(null)
         }}
-        onSubmit={(form) => {
+        onSubmit={async (form) => {
           try {
             if (editingUnit) {
               updateUnit(editingUnit.id, form, currentUser)
@@ -622,6 +632,7 @@ export function ClientDetailPage() {
               createUnit({ ...form, clientId: client.id }, currentUser)
               toast.success('Unidade criada.')
             }
+            await flushWorkspaceSync()
             setUnitModalOpen(false)
             setEditingUnit(null)
             reload()
@@ -640,9 +651,10 @@ export function ClientDetailPage() {
           setUnitToDelete(null)
           setEditingUnit(null)
         }}
-        onConfirm={() => {
+        onConfirm={async () => {
           try {
             const summary = deleteUnit(unitToDelete.id, currentUser)
+            await flushWorkspaceSync()
             toast.success(`Unidade enviada para aprovacao. ${summary.removedItemsCount} item(ns) ocultado(s).`)
             setUnitToDelete(null)
             setEditingUnit(null)
@@ -663,7 +675,7 @@ export function ClientDetailPage() {
           setItemModalOpen(false)
           setEditingItem(null)
         }}
-        onSubmit={(form) => {
+        onSubmit={async (form) => {
           try {
             if (editingItem) {
               updateInventoryItem(editingItem.id, form, currentUser)
@@ -672,6 +684,7 @@ export function ClientDetailPage() {
               createInventoryItem(form, currentUser)
               toast.success('Item criado.')
             }
+            await flushWorkspaceSync()
             setItemModalOpen(false)
             setEditingItem(null)
             reload()
@@ -708,9 +721,10 @@ export function ClientDetailPage() {
         units={allUnits}
         clients={allClients}
         onClose={() => setQuickTransferOpen(false)}
-        onSubmit={(form) => {
+        onSubmit={async (form) => {
           try {
             performMovement({ itemId: selectedItem.id, ...form }, currentUser)
+            await flushWorkspaceSync()
             toast.success('Item remanejado com sucesso.')
             setQuickTransferOpen(false)
             reload()
@@ -724,9 +738,10 @@ export function ClientDetailPage() {
         open={trashModalOpen}
         requests={myPendingDeletionRequests}
         onClose={() => setTrashModalOpen(false)}
-        onRestore={(request) => {
+        onRestore={async (request) => {
           try {
             rejectDeletionRequest(request.id, currentUser)
+            await flushWorkspaceSync()
             toast.success(request.requestType === 'unit' ? 'Unidade restaurada.' : 'Item restaurado.')
             reload()
           } catch (error) {
@@ -741,9 +756,10 @@ export function ClientDetailPage() {
         description="O item some da lista operacional agora e fica aguardando aprovacao final do administrador."
         confirmLabel="Excluir item"
         onClose={() => setItemToDelete(null)}
-        onConfirm={() => {
+        onConfirm={async () => {
           try {
             requestInventoryItemDeletion(itemToDelete.id, currentUser)
+            await flushWorkspaceSync()
             toast.success('Item enviado para a fila de exclusao.')
             setItemToDelete(null)
             setSelectedItemId(null)
