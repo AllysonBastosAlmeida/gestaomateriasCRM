@@ -51,6 +51,7 @@ export function ClientDetailPage() {
   const [clientModalOpen, setClientModalOpen] = useState(false)
   const [unitModalOpen, setUnitModalOpen] = useState(false)
   const [itemModalOpen, setItemModalOpen] = useState(false)
+  const [itemModalDefaults, setItemModalDefaults] = useState({ clientId: '', unitId: '' })
   const [itemDetailsOpen, setItemDetailsOpen] = useState(false)
   const [quickTransferOpen, setQuickTransferOpen] = useState(false)
   const [editingUnit, setEditingUnit] = useState(null)
@@ -154,6 +155,15 @@ export function ClientDetailPage() {
 
   const closeMobilePanel = () => setMobilePanelOpen(false)
 
+  const openNewItemModal = (defaultUnitId = '') => {
+    setEditingItem(null)
+    setItemModalDefaults({
+      clientId: client.id,
+      unitId: defaultUnitId || units[0]?.id || '',
+    })
+    setItemModalOpen(true)
+  }
+
   return (
     <div className="space-y-2">
       {mobilePanelOpen ? (
@@ -221,14 +231,13 @@ export function ClientDetailPage() {
               </>
             ) : null}
             {hasEditActions ? (
-              <button
-                type="button"
-                onClick={() => {
-                  setEditingItem(null)
-                  setItemModalOpen(true)
-                  closeMobilePanel()
-                }}
-                className="inline-flex items-center gap-2 rounded-2xl bg-cyan-400 px-2.5 py-1.5 text-[12px] font-semibold text-slate-950"
+                <button
+                  type="button"
+                  onClick={() => {
+                    openNewItemModal()
+                    closeMobilePanel()
+                  }}
+                  className="inline-flex items-center gap-2 rounded-2xl bg-cyan-400 px-2.5 py-1.5 text-[12px] font-semibold text-slate-950"
               >
                 <Plus className="h-3.5 w-3.5" />
                 Novo item
@@ -356,8 +365,7 @@ export function ClientDetailPage() {
               <button
                 type="button"
                 onClick={() => {
-                  setEditingItem(null)
-                  setItemModalOpen(true)
+                  openNewItemModal()
                 }}
                 className="inline-flex items-center gap-2 rounded-2xl bg-cyan-400 px-2.5 py-1.5 text-[12px] font-semibold text-slate-950"
               >
@@ -461,6 +469,17 @@ export function ClientDetailPage() {
                   <div className="rounded-2xl border border-white/10 bg-white/5 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.18em] text-cyan-300">
                     {unit.rows.length} itens
                   </div>
+                  {hasEditActions ? (
+                    <button
+                      type="button"
+                      onClick={() => openNewItemModal(unit.id)}
+                      className="inline-flex h-7 w-7 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/10 text-cyan-200 transition hover:border-cyan-300/35 hover:text-white"
+                      aria-label={`Adicionar item em ${unit.name}`}
+                      title="Adicionar item"
+                    >
+                      <Plus className="h-3.5 w-3.5" />
+                    </button>
+                  ) : null}
                   {canManageClients(currentUser) ? (
                     <button
                       type="button"
@@ -605,7 +624,7 @@ export function ClientDetailPage() {
         item={editingItem}
         clients={[client]}
         units={units}
-        defaults={{ clientId: client.id, unitId: units[0]?.id || '' }}
+        defaults={itemModalDefaults}
         onClose={() => {
           setItemModalOpen(false)
           setEditingItem(null)
