@@ -6,6 +6,25 @@ import { createAuditEntry } from './audit'
 
 const storage = getStorageProvider()
 
+function createInitialMovementEntry(item, actor) {
+  return {
+    id: createId('mov'),
+    itemId: item.id,
+    movementType: 'entrada',
+    clientId: item.clientId,
+    unitId: item.unitId,
+    sourceUnitId: '',
+    destinationUnitId: '',
+    quantity: Number(item.quantity || 0),
+    previousQuantity: 0,
+    newQuantity: Number(item.quantity || 0),
+    reason: 'Cadastro inicial do item',
+    notes: '',
+    performedBy: actor.id,
+    performedAt: item.createdAt,
+  }
+}
+
 function normalizeDescription(value) {
   return value?.trim() || ''
 }
@@ -134,6 +153,9 @@ export function createInventoryItem(payload, actor) {
   }
 
   storage.insert('inventoryItems', item)
+  if (item.quantity > 0) {
+    storage.insert('stockMovements', createInitialMovementEntry(item, actor))
+  }
   createAuditEntry({
     action: 'inventory_item_created',
     entityType: 'inventoryItem',
