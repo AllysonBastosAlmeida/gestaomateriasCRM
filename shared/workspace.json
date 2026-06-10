@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T01:44:48.404Z"
+    "importedAt": "2026-06-10T01:45:55.891Z"
   },
   "users": [
     {
@@ -15,8 +15,8 @@
       "role": "admin",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-10T01:44:48.314Z",
-      "lastLoginAt": "2026-06-10T01:44:48.314Z",
+      "updatedAt": "2026-06-10T01:45:55.306Z",
+      "lastLoginAt": "2026-06-10T01:45:55.306Z",
       "password": "Yara@123456"
     },
     {
@@ -41,8 +41,8 @@
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:25:38.665Z",
-      "lastLoginAt": "",
+      "updatedAt": "2026-06-10T01:45:08.663Z",
+      "lastLoginAt": "2026-06-10T01:45:08.663Z",
       "password": "203040"
     },
     {
@@ -2220,6 +2220,33 @@
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
       "activityHighlightType": ""
+    },
+    {
+      "id": "item_1781055933939_qnn08k",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "teste",
+      "description": "teste",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-10T01:45:33.939Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-10T01:45:33.939Z",
+      "updatedAt": "2026-06-10T01:45:33.939Z",
+      "createdBy": "user_operador2",
+      "updatedBy": "user_operador2"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2963,6 +2990,63 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781055945271_afb4ot",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador2",
+      "entityLabel": "Nathan Andrade Fernandes",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-10T01:45:45.271Z"
+    },
+    {
+      "id": "audit_1781055933949_wrge3u",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781055933939_qnn08k",
+      "entityLabel": "teste",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-06-10T01:45:33.949Z"
+    },
+    {
+      "id": "audit_1781055908674_jnvtjy",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador2",
+      "entityLabel": "Nathan Andrade Fernandes",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "06"
+      },
+      "createdAt": "2026-06-10T01:45:08.674Z"
+    },
+    {
+      "id": "audit_1781055894602_pveto8",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-10T01:44:54.602Z"
+    },
     {
       "id": "audit_1781055578302_10skpb",
       "action": "auth_logout",
