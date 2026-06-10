@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T01:47:00.994Z"
+    "importedAt": "2026-06-10T01:48:00.927Z"
   },
   "users": [
     {
@@ -41,8 +41,8 @@
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-10T01:45:08.663Z",
-      "lastLoginAt": "2026-06-10T01:45:08.663Z",
+      "updatedAt": "2026-06-10T01:47:03.671Z",
+      "lastLoginAt": "2026-06-10T01:47:03.671Z",
       "password": "203040"
     },
     {
@@ -2237,14 +2237,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781056043039_8ruebx",
+      "pendingDeletionRequestedAt": "2026-06-10T01:47:23.038Z",
+      "pendingDeletionRequestedBy": "user_operador2",
       "activityHighlightAt": "2026-06-10T01:45:33.939Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-10T01:45:33.939Z",
-      "updatedAt": "2026-06-10T01:45:33.939Z",
+      "updatedAt": "2026-06-10T01:47:23.038Z",
       "createdBy": "user_operador2",
       "updatedBy": "user_operador2"
     }
@@ -2345,6 +2345,24 @@
       "reviewedAt": "",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_torquimetro\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"ferramenta\",\"category\":\"Medicao\",\"name\":\"Torquimetro Digital\",\"description\":\"Controle de torque na linha de montagem.\",\"sku\":\"TRQ-DIG-01\",\"serialNumber\":\"TRQ-9981\",\"quantity\":1,\"minQuantity\":1,\"unitMeasure\":\"un\",\"status\":\"manutencao\",\"internalLocation\":\"Sala Tecnica\",\"notes\":\"Aguardando calibracao.\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T14:17:49.238Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\"}"
+    },
+    {
+      "id": "delreq_1781056043039_8ruebx",
+      "requestType": "item",
+      "itemId": "item_1781055933939_qnn08k",
+      "itemName": "teste",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador2",
+      "requestedByName": "Nathan Andrade Fernandes",
+      "requestedAt": "2026-06-10T01:47:23.038Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781055933939_qnn08k\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"teste\",\"description\":\"teste\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-10T01:45:33.939Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-10T01:45:33.939Z\",\"updatedAt\":\"2026-06-10T01:45:33.939Z\",\"createdBy\":\"user_operador2\",\"updatedBy\":\"user_operador2\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -2990,6 +3008,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781056043039_k38mvs",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781056043039_8ruebx",
+      "entityLabel": "teste",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781056043039_8ruebx",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-10T01:47:23.039Z"
+    },
+    {
+      "id": "audit_1781056023682_jna74z",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador2",
+      "entityLabel": "Nathan Andrade Fernandes",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "06"
+      },
+      "createdAt": "2026-06-10T01:47:03.682Z"
+    },
     {
       "id": "audit_1781056020903_n183p8",
       "action": "auth_logout",
