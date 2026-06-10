@@ -35,6 +35,7 @@ const statusOptions = [
 ]
 
 export function ClientDetailPage() {
+  const HIGHLIGHT_WINDOW_MS = 3 * 60 * 1000
   const { clientId } = useParams()
   const { currentUser } = useAuth()
   const toast = useToast()
@@ -59,6 +60,7 @@ export function ClientDetailPage() {
   const [itemToDelete, setItemToDelete] = useState(null)
   const [unitToDelete, setUnitToDelete] = useState(null)
   const [mobilePanelOpen, setMobilePanelOpen] = useState(false)
+  const [highlightTick, setHighlightTick] = useState(0)
 
   const reload = useCallback(() => {
     setClient(getClientById(clientId))
@@ -81,6 +83,15 @@ export function ClientDetailPage() {
     }
   }, [items, selectedItemId])
 
+  useEffect(() => {
+    setHighlightTick(Date.now())
+    const timer = window.setInterval(() => {
+      setHighlightTick(Date.now())
+    }, 30000)
+
+    return () => window.clearInterval(timer)
+  }, [])
+
   const searchableTerm = search.trim().toLowerCase()
   const filteredItems = items.filter((item) => {
     if (typeFilter !== 'todos' && item.type !== typeFilter) return false
@@ -99,7 +110,8 @@ export function ClientDetailPage() {
     ...unit,
     rows: filteredItems
       .filter((item) => item.unitId === unit.id)
-      .map((item) => ({ ...item, unitName: unit.name })),
+      .map((item) => ({ ...item, unitName: unit.name }))
+      .sort((left, right) => left.name.localeCompare(right.name, 'pt-BR', { sensitivity: 'base' })),
   }))
 
   const totalItems = filteredItems.length
@@ -467,6 +479,16 @@ export function ClientDetailPage() {
 
                 <div className="flex-1 space-y-1">
                   {unit.rows.length ? unit.rows.map((item) => (
+                    (() => {
+                      const highlightAge = item.activityHighlightAt
+                        ? highlightTick - new Date(item.activityHighlightAt).getTime()
+                        : Number.POSITIVE_INFINITY
+                      const isRecentlyHighlighted = Number.isFinite(highlightAge) && highlightAge >= 0 && highlightAge <= HIGHLIGHT_WINDOW_MS
+                      const highlightClass = item.activityHighlightType === 'created'
+                        ? 'border-emerald-300/35 bg-emerald-400/10'
+                        : 'border-amber-300/35 bg-amber-300/10'
+
+                      return (
                     <button
                       key={item.id}
                     type="button"
@@ -484,7 +506,9 @@ export function ClientDetailPage() {
                       'flex w-full cursor-pointer items-center gap-2 rounded-[11px] border px-2.5 py-1 text-left transition md:cursor-grab',
                       selectedItemId === item.id
                         ? 'border-cyan-300/40 bg-cyan-400/10'
-                        : 'border-white/10 bg-white/5 hover:border-white/20',
+                        : isRecentlyHighlighted
+                          ? highlightClass
+                          : 'border-white/10 bg-white/5 hover:border-white/20',
                       draggedItem === item.id ? 'ring-1 ring-cyan-300/30' : '',
                     ].join(' ')}
                     >
@@ -495,6 +519,8 @@ export function ClientDetailPage() {
                         </p>
                       </div>
                     </button>
+                      )
+                    })()
                   )) : (
                   <div className="rounded-[14px] border border-dashed border-white/10 bg-white/[0.03] px-3 py-4 text-center text-[11px] text-slate-500">
                     Solte itens aqui para transferir para esta unidade.

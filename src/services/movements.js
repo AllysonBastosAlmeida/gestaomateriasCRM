@@ -191,6 +191,8 @@ export function performMovement({ itemId, movementType, quantity, reason, notes,
         destinationItem.quantity = Number(destinationItem.quantity) + parsedQuantity
         destinationItem.updatedAt = timestamp
         destinationItem.updatedBy = actor.id
+        destinationItem.activityHighlightAt = timestamp
+        destinationItem.activityHighlightType = 'moved'
 
         if (item.quantity === 0) {
           const sourceIndex = items.findIndex((entry) => entry.id === item.id)
@@ -203,6 +205,8 @@ export function performMovement({ itemId, movementType, quantity, reason, notes,
         item.unitId = destinationUnit.id
         item.updatedAt = timestamp
         item.updatedBy = actor.id
+        item.activityHighlightAt = timestamp
+        item.activityHighlightType = 'moved'
       } else {
         item.quantity = currentQuantity - parsedQuantity
         item.updatedAt = timestamp
@@ -214,6 +218,8 @@ export function performMovement({ itemId, movementType, quantity, reason, notes,
           clientId: destinationUnit.clientId,
           unitId: destinationUnit.id,
           quantity: parsedQuantity,
+          activityHighlightAt: timestamp,
+          activityHighlightType: 'moved',
           createdAt: timestamp,
           updatedAt: timestamp,
           createdBy: actor.id,

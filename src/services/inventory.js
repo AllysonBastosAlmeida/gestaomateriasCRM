@@ -125,6 +125,8 @@ export function createInventoryItem(payload, actor) {
     pendingDeletionRequestId: '',
     pendingDeletionRequestedAt: '',
     pendingDeletionRequestedBy: '',
+    activityHighlightAt: timestamp,
+    activityHighlightType: 'created',
     createdAt: timestamp,
     updatedAt: timestamp,
     createdBy: actor.id,

@@ -37,6 +37,8 @@ export function normalizeDatabasePayload(data, currentDb = {}) {
       quantity: Number(item.quantity || 0),
       minQuantity: Number(item.minQuantity || 0),
       pendingDeletion: item.pendingDeletion === true || item.pendingDeletion === 'true' || item.pendingDeletion === '1',
+      activityHighlightAt: item.activityHighlightAt || '',
+      activityHighlightType: item.activityHighlightType || '',
     })),
     inventoryDeletionRequests: (data.inventoryDeletionRequests || []).map((request) => ({
       ...request,
