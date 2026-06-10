@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T02:05:42.401Z"
+    "importedAt": "2026-06-10T02:06:45.257Z"
   },
   "users": [
     {
@@ -536,12 +536,12 @@
       "status": "disponivel",
       "internalLocation": "Sala Telecom / Caixa 7",
       "notes": "",
-      "pendingDeletion": true,
-      "pendingDeletionRequestId": "delreq_1781057142307_afeuvs",
-      "pendingDeletionRequestedAt": "2026-06-10T02:05:42.307Z",
-      "pendingDeletionRequestedBy": "user_operador2",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-10T02:05:42.307Z",
+      "updatedAt": "2026-06-10T02:06:45.152Z",
       "createdBy": "user_admin",
       "updatedBy": "user_operador2",
       "activityHighlightAt": "2026-06-10T01:33:33.548Z",
@@ -2389,13 +2389,13 @@
       "itemName": "Interligacao de switches, voice gateways e racks de telecom.",
       "clientId": "client_beta",
       "unitId": "unit_1780422089296_cf0vpa",
-      "status": "pendente",
+      "status": "recusada",
       "requestedBy": "user_operador2",
       "requestedByName": "Nathan Andrade Fernandes",
       "requestedAt": "2026-06-10T02:05:42.307Z",
-      "reviewedBy": "",
-      "reviewedByName": "",
-      "reviewedAt": "",
+      "reviewedBy": "user_operador2",
+      "reviewedByName": "Nathan Andrade Fernandes",
+      "reviewedAt": "2026-06-10T02:06:45.152Z",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_patch_cord\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"Telecomunicacao\",\"name\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"description\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"sku\":\"PC-CAT6-2M5\",\"serialNumber\":\"\",\"quantity\":80,\"minQuantity\":25,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Caixa 7\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-10T01:59:34.419Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_operador2\",\"activityHighlightAt\":\"2026-06-10T01:33:33.548Z\",\"activityHighlightType\":\"moved\"}",
       "unitSnapshotJson": ""
@@ -3044,6 +3044,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781057205152_q72n54",
+      "action": "inventory_item_deletion_rejected",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781057142307_afeuvs",
+      "entityLabel": "Interligacao de switches, voice gateways e racks de telecom.",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781057142307_afeuvs",
+        "requestStatus": "recusada",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-10T02:06:45.152Z"
+    },
     {
       "id": "audit_1781057142307_i0p9qu",
       "action": "inventory_item_deletion_requested",
