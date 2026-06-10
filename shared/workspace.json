@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T01:59:34.492Z"
+    "importedAt": "2026-06-10T02:05:42.401Z"
   },
   "users": [
     {
@@ -536,12 +536,12 @@
       "status": "disponivel",
       "internalLocation": "Sala Telecom / Caixa 7",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781057142307_afeuvs",
+      "pendingDeletionRequestedAt": "2026-06-10T02:05:42.307Z",
+      "pendingDeletionRequestedBy": "user_operador2",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-10T01:59:34.419Z",
+      "updatedAt": "2026-06-10T02:05:42.307Z",
       "createdBy": "user_admin",
       "updatedBy": "user_operador2",
       "activityHighlightAt": "2026-06-10T01:33:33.548Z",
@@ -2381,6 +2381,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_patch_cord\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"Telecomunicacao\",\"name\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"description\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"sku\":\"PC-CAT6-2M5\",\"serialNumber\":\"\",\"quantity\":80,\"minQuantity\":25,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Caixa 7\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-10T01:33:33.548Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"2026-06-10T01:33:33.548Z\",\"activityHighlightType\":\"moved\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781057142307_afeuvs",
+      "requestType": "item",
+      "itemId": "item_patch_cord",
+      "itemName": "Interligacao de switches, voice gateways e racks de telecom.",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador2",
+      "requestedByName": "Nathan Andrade Fernandes",
+      "requestedAt": "2026-06-10T02:05:42.307Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_patch_cord\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"Telecomunicacao\",\"name\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"description\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"sku\":\"PC-CAT6-2M5\",\"serialNumber\":\"\",\"quantity\":80,\"minQuantity\":25,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Caixa 7\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-10T01:59:34.419Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_operador2\",\"activityHighlightAt\":\"2026-06-10T01:33:33.548Z\",\"activityHighlightType\":\"moved\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -3026,6 +3044,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781057142307_i0p9qu",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781057142307_afeuvs",
+      "entityLabel": "Interligacao de switches, voice gateways e racks de telecom.",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781057142307_afeuvs",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-10T02:05:42.307Z"
+    },
     {
       "id": "audit_1781056774420_ibhsbm",
       "action": "inventory_item_deletion_rejected",
