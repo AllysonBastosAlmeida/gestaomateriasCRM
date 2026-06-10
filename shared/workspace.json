@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T01:56:59.093Z"
+    "importedAt": "2026-06-10T01:57:42.869Z"
   },
   "users": [
     {
@@ -2237,14 +2237,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": true,
-      "pendingDeletionRequestId": "delreq_1781056043039_8ruebx",
-      "pendingDeletionRequestedAt": "2026-06-10T01:47:23.038Z",
-      "pendingDeletionRequestedBy": "user_operador2",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
       "activityHighlightAt": "2026-06-10T01:45:33.939Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-10T01:45:33.939Z",
-      "updatedAt": "2026-06-10T01:47:23.038Z",
+      "updatedAt": "2026-06-10T01:57:42.188Z",
       "createdBy": "user_operador2",
       "updatedBy": "user_operador2"
     }
@@ -2353,13 +2353,13 @@
       "itemName": "teste",
       "clientId": "client_beta",
       "unitId": "unit_1780422089296_cf0vpa",
-      "status": "pendente",
+      "status": "recusada",
       "requestedBy": "user_operador2",
       "requestedByName": "Nathan Andrade Fernandes",
       "requestedAt": "2026-06-10T01:47:23.038Z",
-      "reviewedBy": "",
-      "reviewedByName": "",
-      "reviewedAt": "",
+      "reviewedBy": "user_operador2",
+      "reviewedByName": "Nathan Andrade Fernandes",
+      "reviewedAt": "2026-06-10T01:57:42.188Z",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781055933939_qnn08k\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"teste\",\"description\":\"teste\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-10T01:45:33.939Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-10T01:45:33.939Z\",\"updatedAt\":\"2026-06-10T01:45:33.939Z\",\"createdBy\":\"user_operador2\",\"updatedBy\":\"user_operador2\"}",
       "unitSnapshotJson": ""
@@ -3026,6 +3026,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781056662188_zckej9",
+      "action": "inventory_item_deletion_rejected",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781056043039_8ruebx",
+      "entityLabel": "teste",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781056043039_8ruebx",
+        "requestStatus": "recusada",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-10T01:57:42.188Z"
+    },
     {
       "id": "audit_1781056619000_gfacxy",
       "action": "inventory_item_deletion_requested",
