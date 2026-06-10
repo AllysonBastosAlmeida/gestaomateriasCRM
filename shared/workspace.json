@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T01:33:18.472Z"
+    "importedAt": "2026-06-10T01:34:24.902Z"
   },
   "users": [
     {
@@ -523,7 +523,7 @@
     {
       "id": "item_patch_cord",
       "clientId": "client_beta",
-      "unitId": "unit_beta_c",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "Telecomunicacao",
       "name": "Interligacao de switches, voice gateways e racks de telecom.",
@@ -541,10 +541,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-10T01:33:18.379Z",
+      "updatedAt": "2026-06-10T01:33:33.548Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin",
-      "activityHighlightAt": "2026-06-10T01:33:18.379Z",
+      "activityHighlightAt": "2026-06-10T01:33:33.548Z",
       "activityHighlightType": "moved"
     },
     {
@@ -2322,6 +2322,38 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1781055213548_ylu2kg",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-10T01:33:33.548Z"
+    },
+    {
+      "id": "mov_1781055209145_wzp6p6",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-10T01:33:29.145Z"
+    },
+    {
       "id": "mov_1781055198379_5fkuet",
       "itemId": "item_patch_cord",
       "movementType": "transferencia",
@@ -2931,6 +2963,48 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781055213548_tf3515",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1781055213548_ylu2kg",
+      "entityLabel": "Interligacao de switches, voice gateways e racks de telecom.",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 80,
+        "previousQuantity": 80,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_c",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-10T01:33:33.548Z"
+    },
+    {
+      "id": "audit_1781055209145_d30vpq",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1781055209145_wzp6p6",
+      "entityLabel": "Interligacao de switches, voice gateways e racks de telecom.",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 80,
+        "previousQuantity": 80,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-10T01:33:29.145Z"
+    },
     {
       "id": "audit_1781055198379_0kk1an",
       "action": "movement_transferencia",
