@@ -1,16 +1,17 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import { ArrowLeft, Boxes, Filter, Menu, PenSquare, Plus, Search, Wrench, X } from 'lucide-react'
+import { ArrowLeft, Boxes, Filter, Menu, PenSquare, Plus, Search, Trash2, Wrench, X } from 'lucide-react'
 import { ClientFormModal } from '../components/clients/ClientFormModal'
 import { UnitFormModal } from '../components/clients/UnitFormModal'
 import { InventoryItemModal } from '../components/inventory/InventoryItemModal'
 import { ItemDetailsModal } from '../components/inventory/ItemDetailsModal'
+import { DeletionTrashModal } from '../components/inventory/DeletionTrashModal'
 import { QuickTransferModal } from '../components/inventory/QuickTransferModal'
 import { ConfirmDialog } from '../components/common/ConfirmDialog'
 import { useAuth } from '../hooks/useAuth'
 import { useToast } from '../hooks/useToast'
 import { getClientById, listClients, updateClient } from '../services/clients'
-import { requestInventoryItemDeletion } from '../services/inventoryDeletionRequests'
+import { DELETION_REQUEST_STATUSES, listInventoryDeletionRequests, rejectDeletionRequest, requestInventoryItemDeletion } from '../services/inventoryDeletionRequests'
 import { createInventoryItem, listInventoryItems, updateInventoryItem } from '../services/inventory'
 import { listItemMovementHistory, performMovement } from '../services/movements'
 import { createUnit, deleteUnit, listUnits, updateUnit } from '../services/units'
@@ -53,6 +54,7 @@ export function ClientDetailPage() {
   const [itemModalOpen, setItemModalOpen] = useState(false)
   const [itemModalDefaults, setItemModalDefaults] = useState({ clientId: '', unitId: '' })
   const [itemDetailsOpen, setItemDetailsOpen] = useState(false)
+  const [trashModalOpen, setTrashModalOpen] = useState(false)
   const [quickTransferOpen, setQuickTransferOpen] = useState(false)
   const [editingUnit, setEditingUnit] = useState(null)
   const [editingItem, setEditingItem] = useState(null)
@@ -129,6 +131,14 @@ export function ClientDetailPage() {
     : null
 
   const selectedItemHistory = selectedItem ? listItemMovementHistory(selectedItem.id).slice(0, 6) : []
+  const myPendingDeletionRequests = useMemo(
+    () => listInventoryDeletionRequests({
+      status: DELETION_REQUEST_STATUSES.pending,
+      clientId,
+      requestedBy: currentUser?.id || '',
+    }),
+    [clientId, currentUser?.id],
+  )
 
   if (!isReady) {
     return (
@@ -229,6 +239,18 @@ export function ClientDetailPage() {
                   Nova unidade
                 </button>
               </>
+            ) : null}
+            {hasEditActions ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setTrashModalOpen(true)
+                  closeMobilePanel()
+                }}
+                className="rounded-2xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-[12px] font-semibold text-slate-200"
+              >
+                Lixeira
+              </button>
             ) : null}
             {hasEditActions ? (
                 <button
@@ -360,6 +382,18 @@ export function ClientDetailPage() {
                   Nova unidade
                 </button>
               </>
+            ) : null}
+            {hasEditActions ? (
+              <button
+                type="button"
+                onClick={() => setTrashModalOpen(true)}
+                className="rounded-2xl border border-white/10 bg-white/5 px-2.5 py-1.5 text-[12px] font-semibold text-slate-200"
+              >
+                <span className="inline-flex items-center gap-2">
+                  <Trash2 className="h-3.5 w-3.5" />
+                  Lixeira
+                </span>
+              </button>
             ) : null}
             {hasEditActions ? (
               <button
@@ -679,6 +713,21 @@ export function ClientDetailPage() {
             performMovement({ itemId: selectedItem.id, ...form }, currentUser)
             toast.success('Item remanejado com sucesso.')
             setQuickTransferOpen(false)
+            reload()
+          } catch (error) {
+            toast.error(error.message)
+          }
+        }}
+      />
+
+      <DeletionTrashModal
+        open={trashModalOpen}
+        requests={myPendingDeletionRequests}
+        onClose={() => setTrashModalOpen(false)}
+        onRestore={(request) => {
+          try {
+            rejectDeletionRequest(request.id, currentUser)
+            toast.success(request.requestType === 'unit' ? 'Unidade restaurada.' : 'Item restaurado.')
             reload()
           } catch (error) {
             toast.error(error.message)

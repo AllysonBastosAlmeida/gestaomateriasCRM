@@ -79,6 +79,7 @@ export function listInventoryDeletionRequests(filters = {}) {
     status = '',
     clientId = '',
     unitId = '',
+    requestedBy = '',
     search = '',
   } = filters
   const term = search.trim().toLowerCase()
@@ -98,6 +99,7 @@ export function listInventoryDeletionRequests(filters = {}) {
       if (status && request.status !== status) return false
       if (clientId && request.clientId !== clientId) return false
       if (unitId && request.unitId !== unitId) return false
+      if (requestedBy && request.requestedBy !== requestedBy) return false
       if (!term) return true
 
       return [
