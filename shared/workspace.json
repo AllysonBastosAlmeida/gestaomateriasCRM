@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-09T17:09:04.090Z"
+    "importedAt": "2026-06-10T01:33:18.472Z"
   },
   "users": [
     {
@@ -300,7 +300,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T21:59:40.243Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_luva",
@@ -325,7 +327,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T22:09:50.954Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_torquimetro",
@@ -350,7 +354,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-04T23:20:37.506Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_cabo_cat6",
@@ -375,7 +381,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T22:00:16.884Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_patch_panel",
@@ -400,7 +408,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T22:05:09.632Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_alicate_rj45",
@@ -425,7 +435,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-02T12:00:00Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_cabo_drop",
@@ -450,7 +462,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-04T12:51:52.279Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_caixa_emenda",
@@ -475,7 +489,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T22:10:46.603Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_telefone_ip",
@@ -500,12 +516,14 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T21:21:17.581Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_patch_cord",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_c",
       "type": "material",
       "category": "Telecomunicacao",
       "name": "Interligacao de switches, voice gateways e racks de telecom.",
@@ -523,9 +541,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-09T14:32:59.247Z",
+      "updatedAt": "2026-06-10T01:33:18.379Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "2026-06-10T01:33:18.379Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_punch_down",
@@ -550,7 +570,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T22:39:41.928Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_nvr_16",
@@ -575,7 +597,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T21:08:48.719Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_camera_bullet",
@@ -600,7 +624,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T21:41:57.977Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_fonte_12v",
@@ -625,7 +651,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T02:33:30.431Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_alicate_bnc",
@@ -650,7 +678,9 @@
       "createdAt": "2026-06-02T12:00:00Z",
       "updatedAt": "2026-06-03T21:20:11.789Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1780520974612_sfgftt",
@@ -675,7 +705,9 @@
       "createdAt": "2026-06-03T21:09:34.612Z",
       "updatedAt": "2026-06-03T21:42:11.277Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_admin"
+      "updatedBy": "user_admin",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781015315653_90rlvu",
@@ -700,7 +732,9 @@
       "createdAt": "2026-06-09T14:28:35.653Z",
       "updatedAt": "2026-06-09T16:52:35.923Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781015881139_g5c5sn",
@@ -725,7 +759,9 @@
       "createdAt": "2026-06-09T14:38:01.139Z",
       "updatedAt": "2026-06-09T14:49:57.108Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781015946409_aqj3o8",
@@ -750,7 +786,9 @@
       "createdAt": "2026-06-09T14:39:06.409Z",
       "updatedAt": "2026-06-09T17:08:06.363Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781015988756_o56ka0",
@@ -775,7 +813,9 @@
       "createdAt": "2026-06-09T14:39:48.756Z",
       "updatedAt": "2026-06-09T14:39:48.756Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016060005_7il9pb",
@@ -800,7 +840,9 @@
       "createdAt": "2026-06-09T14:41:00.005Z",
       "updatedAt": "2026-06-09T17:02:32.552Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016109967_6ucsxf",
@@ -825,7 +867,9 @@
       "createdAt": "2026-06-09T14:41:49.967Z",
       "updatedAt": "2026-06-09T14:41:49.967Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016156338_oj2rgi",
@@ -850,7 +894,9 @@
       "createdAt": "2026-06-09T14:42:36.338Z",
       "updatedAt": "2026-06-09T14:42:36.338Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016219362_7ph8qk",
@@ -875,7 +921,9 @@
       "createdAt": "2026-06-09T14:43:39.362Z",
       "updatedAt": "2026-06-09T14:43:39.362Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016278737_xgm04h",
@@ -900,7 +948,9 @@
       "createdAt": "2026-06-09T14:44:38.737Z",
       "updatedAt": "2026-06-09T14:44:38.737Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016306572_v796jn",
@@ -925,7 +975,9 @@
       "createdAt": "2026-06-09T14:45:06.572Z",
       "updatedAt": "2026-06-09T16:51:52.712Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016370332_dfeah5",
@@ -950,7 +1002,9 @@
       "createdAt": "2026-06-09T14:46:10.332Z",
       "updatedAt": "2026-06-09T14:46:10.332Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016410942_gx7s5n",
@@ -975,7 +1029,9 @@
       "createdAt": "2026-06-09T14:46:50.942Z",
       "updatedAt": "2026-06-09T14:46:50.942Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016487416_lpuc2p",
@@ -1000,7 +1056,9 @@
       "createdAt": "2026-06-09T14:48:07.416Z",
       "updatedAt": "2026-06-09T14:49:26.140Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016537955_axxlrx",
@@ -1025,7 +1083,9 @@
       "createdAt": "2026-06-09T14:48:57.955Z",
       "updatedAt": "2026-06-09T14:48:57.955Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016742320_2nvlij",
@@ -1050,7 +1110,9 @@
       "createdAt": "2026-06-09T14:52:22.320Z",
       "updatedAt": "2026-06-09T14:53:18.905Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016875219_r09zvr",
@@ -1075,7 +1137,9 @@
       "createdAt": "2026-06-09T14:54:35.219Z",
       "updatedAt": "2026-06-09T14:54:35.219Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016951306_f273c4",
@@ -1100,7 +1164,9 @@
       "createdAt": "2026-06-09T14:55:51.306Z",
       "updatedAt": "2026-06-09T14:55:51.306Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781016996920_z9mk29",
@@ -1125,7 +1191,9 @@
       "createdAt": "2026-06-09T14:56:36.920Z",
       "updatedAt": "2026-06-09T14:56:36.920Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017038888_h4f13k",
@@ -1150,7 +1218,9 @@
       "createdAt": "2026-06-09T14:57:18.888Z",
       "updatedAt": "2026-06-09T16:55:29.092Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017074086_teubul",
@@ -1175,7 +1245,9 @@
       "createdAt": "2026-06-09T14:57:54.086Z",
       "updatedAt": "2026-06-09T14:57:54.086Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017242526_bim07d",
@@ -1200,7 +1272,9 @@
       "createdAt": "2026-06-09T15:00:42.526Z",
       "updatedAt": "2026-06-09T15:00:42.526Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017363362_56diw8",
@@ -1225,7 +1299,9 @@
       "createdAt": "2026-06-09T15:02:43.362Z",
       "updatedAt": "2026-06-09T15:02:43.362Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017394117_ifqu7y",
@@ -1250,7 +1326,9 @@
       "createdAt": "2026-06-09T15:03:14.117Z",
       "updatedAt": "2026-06-09T15:03:14.117Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017560159_3ee3ax",
@@ -1275,7 +1353,9 @@
       "createdAt": "2026-06-09T15:06:00.159Z",
       "updatedAt": "2026-06-09T15:06:00.159Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017652002_tlb4uk",
@@ -1300,7 +1380,9 @@
       "createdAt": "2026-06-09T15:07:32.002Z",
       "updatedAt": "2026-06-09T15:07:32.002Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017683103_4vhukt",
@@ -1325,7 +1407,9 @@
       "createdAt": "2026-06-09T15:08:03.103Z",
       "updatedAt": "2026-06-09T15:08:03.103Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017729801_2k48is",
@@ -1350,7 +1434,9 @@
       "createdAt": "2026-06-09T15:08:49.801Z",
       "updatedAt": "2026-06-09T15:08:49.801Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017817086_6cin1n",
@@ -1375,7 +1461,9 @@
       "createdAt": "2026-06-09T15:10:17.086Z",
       "updatedAt": "2026-06-09T15:10:17.086Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017934043_bn2crr",
@@ -1400,7 +1488,9 @@
       "createdAt": "2026-06-09T15:12:14.043Z",
       "updatedAt": "2026-06-09T17:01:04.293Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781017973217_3rbvdx",
@@ -1425,7 +1515,9 @@
       "createdAt": "2026-06-09T15:12:53.217Z",
       "updatedAt": "2026-06-09T15:12:53.217Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018002387_0jzz3t",
@@ -1450,7 +1542,9 @@
       "createdAt": "2026-06-09T15:13:22.387Z",
       "updatedAt": "2026-06-09T15:18:53.347Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018040150_5teswn",
@@ -1475,7 +1569,9 @@
       "createdAt": "2026-06-09T15:14:00.150Z",
       "updatedAt": "2026-06-09T15:14:00.150Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018078855_03eflr",
@@ -1500,7 +1596,9 @@
       "createdAt": "2026-06-09T15:14:38.855Z",
       "updatedAt": "2026-06-09T15:14:38.855Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018113153_e0wmwc",
@@ -1525,7 +1623,9 @@
       "createdAt": "2026-06-09T15:15:13.153Z",
       "updatedAt": "2026-06-09T15:15:13.153Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018182846_ued2to",
@@ -1550,7 +1650,9 @@
       "createdAt": "2026-06-09T15:16:22.846Z",
       "updatedAt": "2026-06-09T15:16:22.846Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018239624_lqfpp7",
@@ -1575,7 +1677,9 @@
       "createdAt": "2026-06-09T15:17:19.624Z",
       "updatedAt": "2026-06-09T15:17:19.624Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018268159_rz8qeq",
@@ -1600,7 +1704,9 @@
       "createdAt": "2026-06-09T15:17:48.159Z",
       "updatedAt": "2026-06-09T16:57:59.573Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018311114_m6pdqm",
@@ -1625,7 +1731,9 @@
       "createdAt": "2026-06-09T15:18:31.114Z",
       "updatedAt": "2026-06-09T15:18:31.114Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018373645_hko91n",
@@ -1650,7 +1758,9 @@
       "createdAt": "2026-06-09T15:19:33.645Z",
       "updatedAt": "2026-06-09T15:19:33.645Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018397329_zsmb3u",
@@ -1675,7 +1785,9 @@
       "createdAt": "2026-06-09T15:19:57.329Z",
       "updatedAt": "2026-06-09T15:19:57.329Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018422223_7rk99p",
@@ -1700,7 +1812,9 @@
       "createdAt": "2026-06-09T15:20:22.223Z",
       "updatedAt": "2026-06-09T17:03:01.208Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018461147_mztd2a",
@@ -1725,7 +1839,9 @@
       "createdAt": "2026-06-09T15:21:01.147Z",
       "updatedAt": "2026-06-09T15:21:01.147Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018576626_hmhsul",
@@ -1750,7 +1866,9 @@
       "createdAt": "2026-06-09T15:22:56.626Z",
       "updatedAt": "2026-06-09T15:22:56.626Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018695328_jtqcrc",
@@ -1775,7 +1893,9 @@
       "createdAt": "2026-06-09T15:24:55.328Z",
       "updatedAt": "2026-06-09T15:24:55.328Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018786739_tgihs4",
@@ -1800,7 +1920,9 @@
       "createdAt": "2026-06-09T15:26:26.739Z",
       "updatedAt": "2026-06-09T15:26:26.739Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781018818809_8sm6wd",
@@ -1825,7 +1947,9 @@
       "createdAt": "2026-06-09T15:26:58.809Z",
       "updatedAt": "2026-06-09T15:26:58.809Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024005958_l7ad6h",
@@ -1850,7 +1974,9 @@
       "createdAt": "2026-06-09T16:53:25.958Z",
       "updatedAt": "2026-06-09T17:07:18.037Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024095579_kzu7do",
@@ -1875,7 +2001,9 @@
       "createdAt": "2026-06-09T16:54:55.579Z",
       "updatedAt": "2026-06-09T16:54:55.579Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024243095_bjpk1i",
@@ -1900,7 +2028,9 @@
       "createdAt": "2026-06-09T16:57:23.095Z",
       "updatedAt": "2026-06-09T17:08:57.503Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024314944_z8p6wm",
@@ -1925,7 +2055,9 @@
       "createdAt": "2026-06-09T16:58:34.944Z",
       "updatedAt": "2026-06-09T16:58:34.944Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024344284_yxced2",
@@ -1950,7 +2082,9 @@
       "createdAt": "2026-06-09T16:59:04.284Z",
       "updatedAt": "2026-06-09T16:59:04.284Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024384839_3i32yf",
@@ -1975,7 +2109,9 @@
       "createdAt": "2026-06-09T16:59:44.839Z",
       "updatedAt": "2026-06-09T16:59:44.839Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024436965_vs8goz",
@@ -2000,7 +2136,9 @@
       "createdAt": "2026-06-09T17:00:36.965Z",
       "updatedAt": "2026-06-09T17:00:36.965Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024607414_jjmdk7",
@@ -2025,7 +2163,9 @@
       "createdAt": "2026-06-09T17:03:27.414Z",
       "updatedAt": "2026-06-09T17:03:27.414Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024683918_0z62tu",
@@ -2050,7 +2190,9 @@
       "createdAt": "2026-06-09T17:04:43.918Z",
       "updatedAt": "2026-06-09T17:04:43.918Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     },
     {
       "id": "item_1781024739510_ctru2h",
@@ -2075,7 +2217,9 @@
       "createdAt": "2026-06-09T17:05:39.510Z",
       "updatedAt": "2026-06-09T17:05:39.510Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador1",
+      "activityHighlightAt": "",
+      "activityHighlightType": ""
     }
   ],
   "inventoryDeletionRequests": [
@@ -2177,6 +2321,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781055198379_5fkuet",
+      "itemId": "item_patch_cord",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 80,
+      "previousQuantity": 80,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-10T01:33:18.379Z"
+    },
     {
       "id": "mov_1781015335805_mu7zta",
       "itemId": "item_patch_cord",
@@ -2771,6 +2931,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781055198379_0kk1an",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1781055198379_5fkuet",
+      "entityLabel": "Interligacao de switches, voice gateways e racks de telecom.",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 80,
+        "previousQuantity": 80,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-10T01:33:18.379Z"
+    },
     {
       "id": "audit_1781024937507_8mnawy",
       "action": "inventory_item_updated",
