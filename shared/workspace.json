@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-11T17:48:10.570Z"
+    "importedAt": "2026-06-11T17:49:06.978Z"
   },
   "users": [
     {
@@ -1043,7 +1043,7 @@
       "description": "Caixa de Passagem",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1054,7 +1054,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:48:07.416Z",
-      "updatedAt": "2026-06-09T14:49:26.140Z",
+      "updatedAt": "2026-06-11T17:48:38.893Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3076,6 +3076,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781200118898_ks5saz",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016487416_lpuc2p",
+      "entityLabel": "Caixa de Passagem",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-11T17:48:38.898Z"
+    },
     {
       "id": "audit_1781177894745_4sv9x1",
       "action": "inventory_item_updated",
