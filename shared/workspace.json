@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-10T02:32:02.795Z"
+    "importedAt": "2026-06-11T11:38:14.814Z"
   },
   "users": [
     {
@@ -1226,7 +1226,7 @@
       "id": "item_1781017074086_teubul",
       "clientId": "client_beta",
       "unitId": "unit_beta_e",
-      "type": "ferramenta",
+      "type": "equipamento",
       "category": "",
       "name": "Máquina de Fusão de Fibra",
       "description": "Máquina de Fusão de Fibra",
@@ -1243,9 +1243,9 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:57:54.086Z",
-      "updatedAt": "2026-06-09T14:57:54.086Z",
+      "updatedAt": "2026-06-11T11:38:14.742Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1",
+      "updatedBy": "user_operador2",
       "activityHighlightAt": "",
       "activityHighlightType": ""
     },
