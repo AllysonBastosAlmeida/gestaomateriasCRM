@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-11T17:49:06.978Z"
+    "importedAt": "2026-06-11T17:50:07.322Z"
   },
   "users": [
     {
@@ -773,7 +773,7 @@
       "description": "Curva Grande",
       "sku": "",
       "serialNumber": "",
-      "quantity": 27,
+      "quantity": 25,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -784,7 +784,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:39:06.409Z",
-      "updatedAt": "2026-06-09T17:08:06.363Z",
+      "updatedAt": "2026-06-11T17:49:16.419Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -827,7 +827,7 @@
       "description": "Luva",
       "sku": "",
       "serialNumber": "",
-      "quantity": 17,
+      "quantity": 14,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -838,7 +838,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:41:00.005Z",
-      "updatedAt": "2026-06-09T17:02:32.552Z",
+      "updatedAt": "2026-06-11T17:49:38.135Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -962,7 +962,7 @@
       "description": "Eletroduto",
       "sku": "",
       "serialNumber": "",
-      "quantity": 11,
+      "quantity": 5,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -973,7 +973,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:45:06.572Z",
-      "updatedAt": "2026-06-09T16:51:52.712Z",
+      "updatedAt": "2026-06-11T17:50:00.736Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3076,6 +3076,54 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781200200741_qsprg1",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016306572_v796jn",
+      "entityLabel": "Eletroduto",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 5,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-11T17:50:00.741Z"
+    },
+    {
+      "id": "audit_1781200178140_qbn2bb",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016060005_7il9pb",
+      "entityLabel": "Luva",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 14,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-11T17:49:38.140Z"
+    },
+    {
+      "id": "audit_1781200156424_5elit4",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015946409_aqj3o8",
+      "entityLabel": "Curva Grande",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 25,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-11T17:49:16.424Z"
+    },
     {
       "id": "audit_1781200118898_ks5saz",
       "action": "inventory_item_updated",
