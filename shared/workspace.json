@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-11T17:51:08.248Z"
+    "importedAt": "2026-06-11T17:52:09.833Z"
   },
   "users": [
     {
@@ -2247,6 +2247,33 @@
       "updatedAt": "2026-06-10T01:57:42.188Z",
       "createdBy": "user_operador2",
       "updatedBy": "user_operador2"
+    },
+    {
+      "id": "item_1781200313400_g38n9n",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Roldana de Plástico",
+      "description": "Roldana de Plástico",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-11T17:51:53.400Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-11T17:51:53.400Z",
+      "updatedAt": "2026-06-11T17:51:53.400Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2402,6 +2429,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781200313407_58qvl4",
+      "itemId": "item_1781200313400_g38n9n",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-11T17:51:53.400Z"
+    },
     {
       "id": "mov_1781058662893_tn9h3v",
       "itemId": "item_1781016951306_f273c4",
@@ -3076,6 +3119,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781200313413_34kxzu",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781200313400_g38n9n",
+      "entityLabel": "Roldana de Plástico",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-06-11T17:51:53.413Z"
+    },
     {
       "id": "audit_1781200240562_ywdwvf",
       "action": "inventory_item_updated",
