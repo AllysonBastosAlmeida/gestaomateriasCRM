@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-11T11:38:14.814Z"
+    "importedAt": "2026-06-11T11:38:27.300Z"
   },
   "users": [
     {
@@ -3076,6 +3076,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781177894745_4sv9x1",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017074086_teubul",
+      "entityLabel": "Máquina de Fusão de Fibra",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-11T11:38:14.745Z"
+    },
     {
       "id": "audit_1781058662893_dq5p41",
       "action": "movement_transferencia",
