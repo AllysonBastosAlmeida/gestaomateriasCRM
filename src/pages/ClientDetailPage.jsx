@@ -330,7 +330,7 @@ export function ClientDetailPage() {
       <section className="rounded-[20px] border border-white/10 bg-slate-950/60 p-3 shadow-[0_18px_60px_rgba(0,0,0,0.18)]">
         <div className="flex flex-col gap-2.5 xl:flex-row xl:items-start xl:justify-between">
           <div className="flex items-start gap-3">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 lg:items-start">
               <Link
                 to={ROUTES.dashboard}
                 className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-slate-200"
@@ -346,15 +346,32 @@ export function ClientDetailPage() {
                 <Menu className="h-4 w-4" />
               </button>
             </div>
-            {branding.logoDataUrl ? (
-              <div className="h-10 w-10 shrink-0 overflow-hidden rounded-[16px] border border-white/10 bg-white/5 p-1">
-                <img src={branding.logoDataUrl} alt={`Logo ${client.name}`} className="h-full w-full rounded-[inherit] object-contain" />
+            <div className="flex min-w-0 flex-1 items-center gap-2">
+              {branding.logoDataUrl ? (
+                <div className="h-10 w-10 shrink-0 overflow-hidden rounded-[16px] border border-white/10 bg-white/5 p-1">
+                  <img src={branding.logoDataUrl} alt={`Logo ${client.name}`} className="h-full w-full rounded-[inherit] object-contain" />
+                </div>
+              ) : (
+                <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-[16px] bg-gradient-to-br ${branding.gradient} text-sm font-extrabold text-white`}>
+                  {branding.logoText}
+                </div>
+              )}
+              <div className="flex min-w-0 flex-1 items-center gap-2 lg:hidden">
+                <div className="flex min-w-0 flex-1 items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-2.5 text-slate-400">
+                  <Filter className="h-3.5 w-3.5 shrink-0 text-cyan-300" />
+                  <select
+                    value={typeFilter}
+                    onChange={(event) => setTypeFilter(event.target.value)}
+                    className="workspace-inline-select min-w-0 flex-1"
+                    aria-label="Filtrar itens por tipo"
+                  >
+                    {typeOptions.map((option) => (
+                      <option key={option.value} value={option.value}>{option.label}</option>
+                    ))}
+                  </select>
+                </div>
               </div>
-            ) : (
-              <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-[16px] bg-gradient-to-br ${branding.gradient} text-sm font-extrabold text-white`}>
-                {branding.logoText}
-              </div>
-            )}
+            </div>
             <div className="hidden lg:block">
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-cyan-300">Workspace do cliente</p>
               <h1 className="mt-1 font-display text-[1.1rem] font-extrabold leading-tight text-white sm:text-[1.35rem]">{client.name}</h1>
