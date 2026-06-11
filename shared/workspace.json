@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-11T17:50:07.322Z"
+    "importedAt": "2026-06-11T17:51:08.248Z"
   },
   "users": [
     {
@@ -2015,7 +2015,7 @@
       "description": "Abraçadeira",
       "sku": "",
       "serialNumber": "",
-      "quantity": 3,
+      "quantity": 12,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -2026,7 +2026,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:57:23.095Z",
-      "updatedAt": "2026-06-09T17:08:57.503Z",
+      "updatedAt": "2026-06-11T17:50:40.557Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3076,6 +3076,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781200240562_ywdwvf",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024243095_bjpk1i",
+      "entityLabel": "Abraçadeira",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 12,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-06-11T17:50:40.562Z"
+    },
     {
       "id": "audit_1781200200741_qsprg1",
       "action": "inventory_item_updated",
