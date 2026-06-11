@@ -49,7 +49,7 @@ export function ClientDetailPage() {
   const [allUnits, setAllUnits] = useState([])
   const [items, setItems] = useState([])
   const [search, setSearch] = useState('')
-  const [typeFilter, setTypeFilter] = useState('todos')
+  const [typeFilter, setTypeFilter] = useState('ferramenta')
   const [statusFilter, setStatusFilter] = useState('todos')
   const [clientModalOpen, setClientModalOpen] = useState(false)
   const [unitModalOpen, setUnitModalOpen] = useState(false)
