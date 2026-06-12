@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:21:52.600Z"
+    "importedAt": "2026-06-12T16:22:53.883Z"
   },
   "users": [
     {
@@ -3015,6 +3015,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1781281312553_tcle15",
+      "itemId": "item_1781281312544_ff0cyt",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:21:52.544Z"
+    },
+    {
       "id": "mov_1781281189256_6zyxi5",
       "itemId": "item_1781281189247_gl6ywa",
       "movementType": "entrada",
@@ -3912,6 +3928,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781281312560_sx2zku",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781281312544_ff0cyt",
+      "entityLabel": "Broca Serra Copo",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-12T16:21:52.560Z"
+    },
     {
       "id": "audit_1781281189263_wryunc",
       "action": "inventory_item_created",
