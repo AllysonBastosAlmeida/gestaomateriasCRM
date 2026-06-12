@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:04:30.783Z"
+    "importedAt": "2026-06-12T16:05:07.690Z"
   },
   "users": [
     {
@@ -2700,6 +2700,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1781280270735_evem7p",
+      "itemId": "item_1781280270726_5unjhf",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:04:30.726Z"
+    },
+    {
       "id": "mov_1781280174483_b4e83c",
       "itemId": "item_1781280174475_uy3p1a",
       "movementType": "entrada",
@@ -3485,6 +3501,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781280270742_65lq03",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781280270726_5unjhf",
+      "entityLabel": "Chave Philips",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-12T16:04:30.742Z"
+    },
     {
       "id": "audit_1781280174489_1td6u0",
       "action": "inventory_item_created",
