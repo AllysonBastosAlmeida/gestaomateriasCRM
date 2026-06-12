@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:22:53.883Z"
+    "importedAt": "2026-06-12T16:23:53.502Z"
   },
   "users": [
     {
@@ -2642,14 +2642,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781281421846_2qd44o",
+      "pendingDeletionRequestedAt": "2026-06-12T16:23:41.846Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-06-12T16:17:29.144Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:17:29.144Z",
-      "updatedAt": "2026-06-12T16:17:29.144Z",
+      "updatedAt": "2026-06-12T16:23:41.846Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2696,14 +2696,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781281427236_g6spnb",
+      "pendingDeletionRequestedAt": "2026-06-12T16:23:47.236Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-06-12T16:19:49.247Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:19:49.247Z",
-      "updatedAt": "2026-06-12T16:19:49.247Z",
+      "updatedAt": "2026-06-12T16:23:47.236Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3010,6 +3010,42 @@
       "reviewedAt": "",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781280383061_7qj60m\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Etiquetadora\",\"description\":\"Etiquetadora\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T16:06:23.061Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T16:06:23.061Z\",\"updatedAt\":\"2026-06-12T16:06:23.061Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
+      "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781281421846_2qd44o",
+      "requestType": "item",
+      "itemId": "item_1781281049144_dwt751",
+      "itemName": "Badisco",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T16:23:41.846Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781281049144_dwt751\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Badisco\",\"description\":\"Badisco\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":4,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T16:17:29.144Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T16:17:29.144Z\",\"updatedAt\":\"2026-06-12T16:17:29.144Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
+      "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781281427236_g6spnb",
+      "requestType": "item",
+      "itemId": "item_1781281189247_gl6ywa",
+      "itemName": "Broca Serra/Copo",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T16:23:47.236Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781281189247_gl6ywa\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Broca Serra/Copo\",\"description\":\"Broca Serra/Copo\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T16:19:49.247Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T16:19:49.247Z\",\"updatedAt\":\"2026-06-12T16:19:49.247Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
     }
   ],
@@ -3928,6 +3964,40 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781281427236_qplz6w",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781281427236_g6spnb",
+      "entityLabel": "Broca Serra/Copo",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781281427236_g6spnb",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T16:23:47.236Z"
+    },
+    {
+      "id": "audit_1781281421847_yl3q9c",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781281421846_2qd44o",
+      "entityLabel": "Badisco",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781281421846_2qd44o",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T16:23:41.847Z"
+    },
     {
       "id": "audit_1781281312560_sx2zku",
       "action": "inventory_item_created",
