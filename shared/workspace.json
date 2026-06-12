@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T15:57:38.890Z"
+    "importedAt": "2026-06-12T15:59:03.733Z"
   },
   "users": [
     {
@@ -2382,6 +2382,33 @@
       "updatedAt": "2026-06-12T15:56:19.547Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781279873093_3t5d2j",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Punch Down (Telefonia)",
+      "description": "Punch Down (Telefonia)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T15:57:53.093Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T15:57:53.093Z",
+      "updatedAt": "2026-06-12T15:57:53.093Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2555,6 +2582,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781279873101_xbyfal",
+      "itemId": "item_1781279873093_3t5d2j",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T15:57:53.093Z"
+    },
     {
       "id": "mov_1781279779556_zui1tc",
       "itemId": "item_1781279779547_t8syyk",
@@ -3293,6 +3336,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781279873108_pnqea1",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781279873093_3t5d2j",
+      "entityLabel": "Punch Down (Telefonia)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-12T15:57:53.108Z"
+    },
     {
       "id": "audit_1781279779563_z1lly0",
       "action": "inventory_item_created",
