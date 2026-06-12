@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:38:30.124Z"
+    "importedAt": "2026-06-12T16:39:30.614Z"
   },
   "users": [
     {
@@ -2868,6 +2868,60 @@
       "updatedAt": "2026-06-12T16:38:12.455Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781282316098_xapumu",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Curvas Grande",
+      "description": "Curvas Grande",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:38:36.098Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:38:36.098Z",
+      "updatedAt": "2026-06-12T16:38:36.098Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781282356508_uvvs2r",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Curvinha",
+      "description": "Curvinha",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:39:16.508Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:39:16.508Z",
+      "updatedAt": "2026-06-12T16:39:16.508Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3185,6 +3239,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781282356517_5rgnpk",
+      "itemId": "item_1781282356508_uvvs2r",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:39:16.508Z"
+    },
+    {
+      "id": "mov_1781282316108_1rlyds",
+      "itemId": "item_1781282316098_xapumu",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:38:36.098Z"
+    },
     {
       "id": "mov_1781282292464_tkvvu9",
       "itemId": "item_1781282292455_a56yr3",
@@ -4179,6 +4265,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781282356525_g8s3ag",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781282356508_uvvs2r",
+      "entityLabel": "Curvinha",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T16:39:16.525Z"
+    },
+    {
+      "id": "audit_1781282316116_q7a17j",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781282316098_xapumu",
+      "entityLabel": "Curvas Grande",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T16:38:36.116Z"
+    },
     {
       "id": "audit_1781282292471_b2od9y",
       "action": "inventory_item_created",
