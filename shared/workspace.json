@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:39:30.614Z"
+    "importedAt": "2026-06-12T16:49:11.841Z"
   },
   "users": [
     {
@@ -2920,6 +2920,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:39:16.508Z",
       "updatedAt": "2026-06-12T16:39:16.508Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781282951774_okejzu",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Condolete",
+      "description": "Condolete",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:49:11.774Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:49:11.774Z",
+      "updatedAt": "2026-06-12T16:49:11.774Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
