@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T15:52:07.651Z"
+    "importedAt": "2026-06-12T15:53:07.131Z"
   },
   "users": [
     {
@@ -2274,6 +2274,60 @@
       "updatedAt": "2026-06-11T17:51:53.400Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781279551875_sj87nh",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Organizador de Cabo/Rede",
+      "description": "Organizador de Cabo/Rede",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T15:52:31.875Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T15:52:31.875Z",
+      "updatedAt": "2026-06-12T15:52:31.875Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781279581320_l1equ0",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Espatula",
+      "description": "Espatula",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T15:53:01.320Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T15:53:01.320Z",
+      "updatedAt": "2026-06-12T15:53:01.320Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2447,6 +2501,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781279581325_09iwbs",
+      "itemId": "item_1781279581320_l1equ0",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T15:53:01.320Z"
+    },
+    {
+      "id": "mov_1781279551881_6c0sxi",
+      "itemId": "item_1781279551875_sj87nh",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T15:52:31.875Z"
+    },
     {
       "id": "mov_1781200313407_58qvl4",
       "itemId": "item_1781200313400_g38n9n",
@@ -3137,6 +3223,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781279581329_w2m7bv",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781279581320_l1equ0",
+      "entityLabel": "Espatula",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T15:53:01.329Z"
+    },
+    {
+      "id": "audit_1781279551887_0efsxi",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781279551875_sj87nh",
+      "entityLabel": "Organizador de Cabo/Rede",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-12T15:52:31.887Z"
+    },
     {
       "id": "audit_1781279415133_5p88z8",
       "action": "auth_login",
