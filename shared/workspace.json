@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:20:36.811Z"
+    "importedAt": "2026-06-12T16:21:52.600Z"
   },
   "users": [
     {
@@ -2704,6 +2704,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:19:49.247Z",
       "updatedAt": "2026-06-12T16:19:49.247Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781281312544_ff0cyt",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Broca Serra Copo",
+      "description": "Broca Serra Copo",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:21:52.544Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:21:52.544Z",
+      "updatedAt": "2026-06-12T16:21:52.544Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
