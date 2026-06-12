@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:06:06.944Z"
+    "importedAt": "2026-06-12T16:07:07.987Z"
   },
   "users": [
     {
@@ -671,14 +671,14 @@
       "status": "disponivel",
       "internalLocation": "Maleta CFTV",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781280401237_udn0y7",
+      "pendingDeletionRequestedAt": "2026-06-12T16:06:41.237Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T21:20:11.789Z",
+      "updatedAt": "2026-06-12T16:06:41.237Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin",
+      "updatedBy": "user_operador1",
       "activityHighlightAt": "",
       "activityHighlightType": ""
     },
@@ -2517,6 +2517,60 @@
       "updatedAt": "2026-06-12T16:05:57.922Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781280383061_7qj60m",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Etiquetadora",
+      "description": "Etiquetadora",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:06:23.061Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:06:23.061Z",
+      "updatedAt": "2026-06-12T16:06:23.061Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781280424091_4598bj",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Etiquetadora",
+      "description": "Etiquetadora",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:07:04.091Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:07:04.091Z",
+      "updatedAt": "2026-06-12T16:07:04.091Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2759,9 +2813,43 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_fonte_12v\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"CFTV\",\"name\":\"Fonte 12V 20A\",\"description\":\"Alimentacao de cameras, distribuidores e caixas de protecao.\",\"sku\":\"FNT-12V-20A\",\"serialNumber\":\"\",\"quantity\":14,\"minQuantity\":5,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Estoque CFTV / Caixa 3\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T02:33:30.431Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781280401237_udn0y7",
+      "requestType": "item",
+      "itemId": "item_alicate_bnc",
+      "itemName": "Alicate de Compressao BNC",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T16:06:41.237Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_alicate_bnc\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_c\",\"type\":\"ferramenta\",\"category\":\"CFTV\",\"name\":\"Alicate de Compressao BNC\",\"description\":\"Conectorizacao de cabos para kits de monitoramento e retrofit.\",\"sku\":\"BNC-COMP\",\"serialNumber\":\"BNC-9910\",\"quantity\":3,\"minQuantity\":1,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Maleta CFTV\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:20:11.789Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781280383070_td7yj4",
+      "itemId": "item_1781280383061_7qj60m",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:06:23.061Z"
+    },
     {
       "id": "mov_1781280357930_r5n1ot",
       "itemId": "item_1781280357922_6uc64t",
@@ -3580,6 +3668,39 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781280401237_5fv3m9",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781280401237_udn0y7",
+      "entityLabel": "Alicate de Compressao BNC",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "requestId": "delreq_1781280401237_udn0y7",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T16:06:41.237Z"
+    },
+    {
+      "id": "audit_1781280383077_uik4k7",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781280383061_7qj60m",
+      "entityLabel": "Etiquetadora",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T16:06:23.077Z"
+    },
     {
       "id": "audit_1781280357937_s6708b",
       "action": "inventory_item_created",
