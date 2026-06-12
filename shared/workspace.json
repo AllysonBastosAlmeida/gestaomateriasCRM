@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:59:06.588Z"
+    "importedAt": "2026-06-12T16:59:46.820Z"
   },
   "users": [
     {
@@ -3246,6 +3246,33 @@
       "updatedAt": "2026-06-12T16:59:06.527Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781283570334_yv4jn4",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Eletrodutos",
+      "description": "Eletrodutos",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:59:30.334Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:59:30.334Z",
+      "updatedAt": "2026-06-12T16:59:30.334Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3563,6 +3590,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781283570343_ypi7uz",
+      "itemId": "item_1781283570334_yv4jn4",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:59:30.334Z"
+    },
     {
       "id": "mov_1781283398805_wvv083",
       "itemId": "item_1781283398795_8lt6ui",
@@ -4733,6 +4776,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781283570352_xkmvz8",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781283570334_yv4jn4",
+      "entityLabel": "Eletrodutos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T16:59:30.352Z"
+    },
     {
       "id": "audit_1781283398814_lnhyxm",
       "action": "inventory_item_created",
