@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:56:06.647Z"
+    "importedAt": "2026-06-12T16:57:07.630Z"
   },
   "users": [
     {
@@ -3165,6 +3165,60 @@
       "updatedAt": "2026-06-12T16:55:38.405Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781283371052_71cm5c",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Fita Dupla Face",
+      "description": "Fita Dupla Face",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:56:11.052Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:56:11.052Z",
+      "updatedAt": "2026-06-12T16:56:11.052Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781283398795_8lt6ui",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "equipamento",
+      "category": "",
+      "name": "Conversor de Mídia",
+      "description": "Conversor de Mídia",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 7,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:56:38.795Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:56:38.795Z",
+      "updatedAt": "2026-06-12T16:56:38.795Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3482,6 +3536,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781283398805_wvv083",
+      "itemId": "item_1781283398795_8lt6ui",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 7,
+      "previousQuantity": 0,
+      "newQuantity": 7,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:56:38.795Z"
+    },
+    {
+      "id": "mov_1781283371063_42ubxa",
+      "itemId": "item_1781283371052_71cm5c",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:56:11.052Z"
+    },
     {
       "id": "mov_1781283338415_qrq2qf",
       "itemId": "item_1781283338405_yrqcaj",
@@ -4620,6 +4706,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781283398814_lnhyxm",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781283398795_8lt6ui",
+      "entityLabel": "Conversor de Mídia",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 7,
+        "type": "equipamento"
+      },
+      "createdAt": "2026-06-12T16:56:38.814Z"
+    },
+    {
+      "id": "audit_1781283371070_rzhlx0",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781283371052_71cm5c",
+      "entityLabel": "Fita Dupla Face",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T16:56:11.070Z"
+    },
     {
       "id": "audit_1781283338422_s8vk60",
       "action": "inventory_item_created",
