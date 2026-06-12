@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-11T17:52:09.833Z"
+    "importedAt": "2026-06-12T14:55:57.957Z"
   },
   "users": [
     {
@@ -28,8 +28,8 @@
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-11T17:48:10.542Z",
-      "lastLoginAt": "2026-06-11T17:48:10.542Z",
+      "updatedAt": "2026-06-12T14:55:57.926Z",
+      "lastLoginAt": "2026-06-12T14:55:57.926Z",
       "password": "102030"
     },
     {
