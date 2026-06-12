@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:57:07.630Z"
+    "importedAt": "2026-06-12T16:59:06.588Z"
   },
   "users": [
     {
@@ -3217,6 +3217,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:56:38.795Z",
       "updatedAt": "2026-06-12T16:56:38.795Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781283546527_t9h8ud",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "equipamento",
+      "category": "",
+      "name": "Fontes Conversor",
+      "description": "Fontes Conversor",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 9,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:59:06.527Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:59:06.527Z",
+      "updatedAt": "2026-06-12T16:59:06.527Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
