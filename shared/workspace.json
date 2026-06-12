@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:00:08.845Z"
+    "importedAt": "2026-06-12T16:01:09.544Z"
   },
   "users": [
     {
@@ -536,14 +536,14 @@
       "status": "disponivel",
       "internalLocation": "Sala Telecom / Caixa 7",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781280020102_khimga",
+      "pendingDeletionRequestedAt": "2026-06-12T16:00:20.102Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-10T02:06:45.152Z",
+      "updatedAt": "2026-06-12T16:00:20.102Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_operador2",
+      "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-06-10T01:33:33.548Z",
       "activityHighlightType": "moved"
     },
@@ -2597,6 +2597,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781279581320_l1equ0\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Espatula\",\"description\":\"Espatula\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T15:53:01.320Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T15:53:01.320Z\",\"updatedAt\":\"2026-06-12T15:53:01.320Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781280020102_khimga",
+      "requestType": "item",
+      "itemId": "item_patch_cord",
+      "itemName": "Interligacao de switches, voice gateways e racks de telecom.",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T16:00:20.102Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_patch_cord\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"Telecomunicacao\",\"name\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"description\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"sku\":\"PC-CAT6-2M5\",\"serialNumber\":\"\",\"quantity\":80,\"minQuantity\":25,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Caixa 7\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-10T02:06:45.152Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_operador2\",\"activityHighlightAt\":\"2026-06-10T01:33:33.548Z\",\"activityHighlightType\":\"moved\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -3354,6 +3372,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781280020102_2qe4rw",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781280020102_khimga",
+      "entityLabel": "Interligacao de switches, voice gateways e racks de telecom.",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781280020102_khimga",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T16:00:20.102Z"
+    },
     {
       "id": "audit_1781279935876_obi7hj",
       "action": "inventory_item_deletion_requested",
