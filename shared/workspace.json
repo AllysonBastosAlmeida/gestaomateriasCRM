@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T15:55:37.277Z"
+    "importedAt": "2026-06-12T15:57:38.890Z"
   },
   "users": [
     {
@@ -2355,6 +2355,33 @@
       "updatedAt": "2026-06-12T15:55:37.220Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781279779547_t8syyk",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Chave Fenda",
+      "description": "Chave Fenda",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T15:56:19.547Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T15:56:19.547Z",
+      "updatedAt": "2026-06-12T15:56:19.547Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2528,6 +2555,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781279779556_zui1tc",
+      "itemId": "item_1781279779547_t8syyk",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T15:56:19.547Z"
+    },
     {
       "id": "mov_1781279581325_09iwbs",
       "itemId": "item_1781279581320_l1equ0",
@@ -3250,6 +3293,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781279779563_z1lly0",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781279779547_t8syyk",
+      "entityLabel": "Chave Fenda",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-12T15:56:19.563Z"
+    },
     {
       "id": "audit_1781279581329_w2m7bv",
       "action": "inventory_item_created",
