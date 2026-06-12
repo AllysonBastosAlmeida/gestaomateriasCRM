@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:05:07.690Z"
+    "importedAt": "2026-06-12T16:06:06.944Z"
   },
   "users": [
     {
@@ -644,14 +644,14 @@
       "status": "disponivel",
       "internalLocation": "Estoque CFTV / Caixa 3",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781280325584_ejr4kw",
+      "pendingDeletionRequestedAt": "2026-06-12T16:05:25.584Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T02:33:30.431Z",
+      "updatedAt": "2026-06-12T16:05:25.584Z",
       "createdBy": "user_admin",
-      "updatedBy": "user_admin",
+      "updatedBy": "user_operador1",
       "activityHighlightAt": "",
       "activityHighlightType": ""
     },
@@ -2237,16 +2237,16 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781280314319_94tgsn",
+      "pendingDeletionRequestedAt": "2026-06-12T16:05:14.319Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-06-10T01:45:33.939Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-10T01:45:33.939Z",
-      "updatedAt": "2026-06-10T01:57:42.188Z",
+      "updatedAt": "2026-06-12T16:05:14.319Z",
       "createdBy": "user_operador2",
-      "updatedBy": "user_operador2"
+      "updatedBy": "user_operador1"
     },
     {
       "id": "item_1781200313400_g38n9n",
@@ -2490,6 +2490,33 @@
       "updatedAt": "2026-06-12T16:04:30.726Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781280357922_6uc64t",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Identificador de Fibra Ativa",
+      "description": "Identificador de Fibra Ativa",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:05:57.922Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:05:57.922Z",
+      "updatedAt": "2026-06-12T16:05:57.922Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2696,9 +2723,61 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_patch_cord\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"Telecomunicacao\",\"name\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"description\":\"Interligacao de switches, voice gateways e racks de telecom.\",\"sku\":\"PC-CAT6-2M5\",\"serialNumber\":\"\",\"quantity\":80,\"minQuantity\":25,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Caixa 7\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-10T02:06:45.152Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_operador2\",\"activityHighlightAt\":\"2026-06-10T01:33:33.548Z\",\"activityHighlightType\":\"moved\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781280314319_94tgsn",
+      "requestType": "item",
+      "itemId": "item_1781055933939_qnn08k",
+      "itemName": "teste",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T16:05:14.319Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781055933939_qnn08k\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"teste\",\"description\":\"teste\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-10T01:45:33.939Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-10T01:45:33.939Z\",\"updatedAt\":\"2026-06-10T01:57:42.188Z\",\"createdBy\":\"user_operador2\",\"updatedBy\":\"user_operador2\"}",
+      "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781280325584_ejr4kw",
+      "requestType": "item",
+      "itemId": "item_fonte_12v",
+      "itemName": "Fonte 12V 20A",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T16:05:25.584Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_fonte_12v\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"CFTV\",\"name\":\"Fonte 12V 20A\",\"description\":\"Alimentacao de cameras, distribuidores e caixas de protecao.\",\"sku\":\"FNT-12V-20A\",\"serialNumber\":\"\",\"quantity\":14,\"minQuantity\":5,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Estoque CFTV / Caixa 3\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T02:33:30.431Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781280357930_r5n1ot",
+      "itemId": "item_1781280357922_6uc64t",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:05:57.922Z"
+    },
     {
       "id": "mov_1781280270735_evem7p",
       "itemId": "item_1781280270726_5unjhf",
@@ -3501,6 +3580,56 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781280357937_s6708b",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781280357922_6uc64t",
+      "entityLabel": "Identificador de Fibra Ativa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-12T16:05:57.937Z"
+    },
+    {
+      "id": "audit_1781280325584_7nktss",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781280325584_ejr4kw",
+      "entityLabel": "Fonte 12V 20A",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781280325584_ejr4kw",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T16:05:25.584Z"
+    },
+    {
+      "id": "audit_1781280314319_3rl6ii",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781280314319_94tgsn",
+      "entityLabel": "teste",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781280314319_94tgsn",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T16:05:14.319Z"
+    },
     {
       "id": "audit_1781280270742_65lq03",
       "action": "inventory_item_created",
