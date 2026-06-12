@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:09:38.319Z"
+    "importedAt": "2026-06-12T16:14:59.416Z"
   },
   "users": [
     {
@@ -2571,6 +2571,33 @@
       "updatedAt": "2026-06-12T16:07:04.091Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781280619906_dnmybq",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Passador de Cabos",
+      "description": "Passador de Cabos",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:10:19.906Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:10:19.906Z",
+      "updatedAt": "2026-06-12T16:10:19.906Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2852,6 +2879,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781280619915_ce5cpv",
+      "itemId": "item_1781280619906_dnmybq",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:10:19.906Z"
+    },
     {
       "id": "mov_1781280383070_td7yj4",
       "itemId": "item_1781280383061_7qj60m",
@@ -3686,6 +3729,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781280619922_cq7z3l",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781280619906_dnmybq",
+      "entityLabel": "Passador de Cabos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-06-12T16:10:19.922Z"
+    },
     {
       "id": "audit_1781280448317_t552vt",
       "action": "inventory_item_deletion_requested",
