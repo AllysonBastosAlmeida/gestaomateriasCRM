@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T15:59:03.733Z"
+    "importedAt": "2026-06-12T16:00:08.845Z"
   },
   "users": [
     {
@@ -2318,14 +2318,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781279935876_jlasdh",
+      "pendingDeletionRequestedAt": "2026-06-12T15:58:55.876Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-06-12T15:53:01.320Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T15:53:01.320Z",
-      "updatedAt": "2026-06-12T15:53:01.320Z",
+      "updatedAt": "2026-06-12T15:58:55.876Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2578,6 +2578,24 @@
       "reviewedAt": "",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_punch_down\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780427001685_wzi4zo\",\"type\":\"ferramenta\",\"category\":\"Telecomunicacao\",\"name\":\"Alicate Punch Down\",\"description\":\"Terminacao de blocos e modulos em distribuidores de telecom.\",\"sku\":\"PUNCH-110\",\"serialNumber\":\"PN-4411\",\"quantity\":4,\"minQuantity\":1,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Maleta Telecom\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T22:39:41.928Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781279935876_jlasdh",
+      "requestType": "item",
+      "itemId": "item_1781279581320_l1equ0",
+      "itemName": "Espatula",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T15:58:55.876Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781279581320_l1equ0\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Espatula\",\"description\":\"Espatula\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T15:53:01.320Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T15:53:01.320Z\",\"updatedAt\":\"2026-06-12T15:53:01.320Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
     }
   ],
@@ -3336,6 +3354,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781279935876_obi7hj",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781279935876_jlasdh",
+      "entityLabel": "Espatula",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781279935876_jlasdh",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T15:58:55.876Z"
+    },
     {
       "id": "audit_1781279873108_pnqea1",
       "action": "inventory_item_created",
