@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:07:07.987Z"
+    "importedAt": "2026-06-12T16:09:38.319Z"
   },
   "users": [
     {
@@ -2534,14 +2534,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781280448317_co4ogm",
+      "pendingDeletionRequestedAt": "2026-06-12T16:07:28.317Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-06-12T16:06:23.061Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:06:23.061Z",
-      "updatedAt": "2026-06-12T16:06:23.061Z",
+      "updatedAt": "2026-06-12T16:07:28.317Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2830,6 +2830,24 @@
       "reviewedAt": "",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_alicate_bnc\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_c\",\"type\":\"ferramenta\",\"category\":\"CFTV\",\"name\":\"Alicate de Compressao BNC\",\"description\":\"Conectorizacao de cabos para kits de monitoramento e retrofit.\",\"sku\":\"BNC-COMP\",\"serialNumber\":\"BNC-9910\",\"quantity\":3,\"minQuantity\":1,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Maleta CFTV\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:20:11.789Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781280448317_co4ogm",
+      "requestType": "item",
+      "itemId": "item_1781280383061_7qj60m",
+      "itemName": "Etiquetadora",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-06-12T16:07:28.317Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781280383061_7qj60m\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Etiquetadora\",\"description\":\"Etiquetadora\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T16:06:23.061Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T16:06:23.061Z\",\"updatedAt\":\"2026-06-12T16:06:23.061Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
     }
   ],
@@ -3668,6 +3686,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781280448317_t552vt",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781280448317_co4ogm",
+      "entityLabel": "Etiquetadora",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1781280448317_co4ogm",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-12T16:07:28.317Z"
+    },
     {
       "id": "audit_1781280401237_5fv3m9",
       "action": "inventory_item_deletion_requested",
