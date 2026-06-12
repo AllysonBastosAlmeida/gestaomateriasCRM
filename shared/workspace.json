@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:16:53.341Z"
+    "importedAt": "2026-06-12T16:17:34.259Z"
   },
   "users": [
     {
@@ -2625,6 +2625,33 @@
       "updatedAt": "2026-06-12T16:16:53.284Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781281049144_dwt751",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Badisco",
+      "description": "Badisco",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:17:29.144Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:17:29.144Z",
+      "updatedAt": "2026-06-12T16:17:29.144Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -2906,6 +2933,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781281049152_qlq8jm",
+      "itemId": "item_1781281049144_dwt751",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:17:29.144Z"
+    },
     {
       "id": "mov_1781280619915_ce5cpv",
       "itemId": "item_1781280619906_dnmybq",
@@ -3756,6 +3799,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781281049159_wpie67",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781281049144_dwt751",
+      "entityLabel": "Badisco",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T16:17:29.159Z"
+    },
     {
       "id": "audit_1781280619922_cq7z3l",
       "action": "inventory_item_created",
