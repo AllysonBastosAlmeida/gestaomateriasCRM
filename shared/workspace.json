@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:37:29.367Z"
+    "importedAt": "2026-06-12T16:38:30.124Z"
   },
   "users": [
     {
@@ -2841,6 +2841,33 @@
       "updatedAt": "2026-06-12T16:36:26.772Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781282292455_a56yr3",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Curvas Grande",
+      "description": "Curvas Grande",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-12T16:38:12.455Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-12T16:38:12.455Z",
+      "updatedAt": "2026-06-12T16:38:12.455Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3158,6 +3185,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781282292464_tkvvu9",
+      "itemId": "item_1781282292455_a56yr3",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-06-12T16:38:12.455Z"
+    },
     {
       "id": "mov_1781282186780_oifpcn",
       "itemId": "item_1781282186772_n7v7k1",
@@ -4136,6 +4179,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781282292471_b2od9y",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781282292455_a56yr3",
+      "entityLabel": "Curvas Grande",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-06-12T16:38:12.471Z"
+    },
     {
       "id": "audit_1781282186788_rtuvdw",
       "action": "inventory_item_created",
