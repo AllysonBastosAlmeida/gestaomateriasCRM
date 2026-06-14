@@ -54,7 +54,7 @@ export function ClientDetailPage() {
   const [clientModalOpen, setClientModalOpen] = useState(false)
   const [unitModalOpen, setUnitModalOpen] = useState(false)
   const [itemModalOpen, setItemModalOpen] = useState(false)
-  const [itemModalDefaults, setItemModalDefaults] = useState({ clientId: '', unitId: '' })
+  const [itemModalDefaults, setItemModalDefaults] = useState({ clientId: '', unitId: '', type: 'material' })
   const [itemDetailsOpen, setItemDetailsOpen] = useState(false)
   const [trashModalOpen, setTrashModalOpen] = useState(false)
   const [quickTransferOpen, setQuickTransferOpen] = useState(false)
@@ -180,6 +180,7 @@ export function ClientDetailPage() {
     setItemModalDefaults({
       clientId: client.id,
       unitId: defaultUnitId || units[0]?.id || '',
+      type: typeFilter !== 'todos' ? typeFilter : 'material',
     })
     setItemModalOpen(true)
   }
