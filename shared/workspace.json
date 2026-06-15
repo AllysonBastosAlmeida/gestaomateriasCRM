@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-15T11:48:20.528Z"
+    "importedAt": "2026-06-15T11:49:07.466Z"
   },
   "users": [
     {
@@ -2710,7 +2710,7 @@
     {
       "id": "item_1781281312544_ff0cyt",
       "clientId": "client_beta",
-      "unitId": "unit_beta_c",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "ferramenta",
       "category": "",
       "name": "Broca Serra Copo",
@@ -2727,10 +2727,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-15T11:48:20.444Z",
+      "activityHighlightAt": "2026-06-15T11:49:07.337Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:21:52.544Z",
-      "updatedAt": "2026-06-15T11:48:20.444Z",
+      "updatedAt": "2026-06-15T11:49:07.337Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador2"
     },
@@ -3590,6 +3590,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781524147337_9o8d08",
+      "itemId": "item_1781281312544_ff0cyt",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador2",
+      "performedAt": "2026-06-15T11:49:07.337Z"
+    },
     {
       "id": "mov_1781524100444_xyc1va",
       "itemId": "item_1781281312544_ff0cyt",
@@ -4792,6 +4808,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781524147337_g0v3cz",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1781524147337_9o8d08",
+      "entityLabel": "Broca Serra Copo",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_c",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-15T11:49:07.337Z"
+    },
     {
       "id": "audit_1781524100445_t9r7ul",
       "action": "movement_transferencia",
