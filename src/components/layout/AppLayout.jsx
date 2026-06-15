@@ -4,7 +4,6 @@ import { Sidebar } from './Sidebar'
 import { Header } from './Header'
 import { MobileNav } from './MobileNav'
 import { useAuth } from '../../hooks/useAuth'
-import { SyncStatusPill } from '../system/SyncStatusPill'
 
 export function AppLayout() {
   const location = useLocation()
@@ -13,16 +12,10 @@ export function AppLayout() {
   const isClientPicker = location.pathname === '/'
   const isClientWorkspace = /^\/clientes\/[^/]+$/.test(location.pathname)
   const isMinimalShell = isClientPicker || isClientWorkspace
-  const minimalShellSyncStatus = (
-    <div className="fixed right-3 top-[calc(0.75rem+env(safe-area-inset-top))] z-[60] sm:right-4">
-      <SyncStatusPill />
-    </div>
-  )
 
   if (isMinimalShell) {
     return (
       <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(45,212,191,0.10),transparent_22%),radial-gradient(circle_at_top_right,rgba(59,130,246,0.10),transparent_24%),linear-gradient(180deg,#08111f_0%,#0b1324_48%,#050b16_100%)]">
-        {minimalShellSyncStatus}
         <main className="mx-auto min-h-screen max-w-[1560px] px-4 py-4 sm:px-6 lg:px-8">
           <Outlet />
         </main>
