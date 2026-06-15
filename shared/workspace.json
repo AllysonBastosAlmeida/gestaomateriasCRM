@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-12T16:59:46.820Z"
+    "importedAt": "2026-06-15T11:48:20.528Z"
   },
   "users": [
     {
@@ -2710,7 +2710,7 @@
     {
       "id": "item_1781281312544_ff0cyt",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_c",
       "type": "ferramenta",
       "category": "",
       "name": "Broca Serra Copo",
@@ -2727,12 +2727,12 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T16:21:52.544Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-06-15T11:48:20.444Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:21:52.544Z",
-      "updatedAt": "2026-06-12T16:21:52.544Z",
+      "updatedAt": "2026-06-15T11:48:20.444Z",
       "createdBy": "user_operador1",
-      "updatedBy": "user_operador1"
+      "updatedBy": "user_operador2"
     },
     {
       "id": "item_1781281647347_cgcz05",
@@ -3590,6 +3590,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781524100444_xyc1va",
+      "itemId": "item_1781281312544_ff0cyt",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador2",
+      "performedAt": "2026-06-15T11:48:20.445Z"
+    },
     {
       "id": "mov_1781283570343_ypi7uz",
       "itemId": "item_1781283570334_yv4jn4",
@@ -4776,6 +4792,27 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781524100445_t9r7ul",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1781524100444_xyc1va",
+      "entityLabel": "Broca Serra Copo",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-06-15T11:48:20.444Z"
+    },
     {
       "id": "audit_1781283570352_xkmvz8",
       "action": "inventory_item_created",
