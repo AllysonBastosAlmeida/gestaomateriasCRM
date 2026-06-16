@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-16T16:58:47.573Z"
+    "importedAt": "2026-06-16T16:59:45.391Z"
   },
   "users": [
     {
@@ -15,8 +15,8 @@
       "role": "admin",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-10T01:45:55.306Z",
-      "lastLoginAt": "2026-06-10T01:45:55.306Z",
+      "updatedAt": "2026-06-16T16:59:06.985Z",
+      "lastLoginAt": "2026-06-16T16:59:06.985Z",
       "password": "Yara@123456"
     },
     {
@@ -4808,6 +4808,34 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781629147010_naatz0",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_admin",
+      "entityLabel": "Administrador Geral",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "01"
+      },
+      "createdAt": "2026-06-16T16:59:07.010Z"
+    },
+    {
+      "id": "audit_1781629143636_niwkju",
+      "action": "auth_logout",
+      "entityType": "session",
+      "entityId": "user_operador2",
+      "entityLabel": "Nathan Andrade Fernandes",
+      "userId": "user_operador2",
+      "userName": "Nathan Andrade Fernandes",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {},
+      "createdAt": "2026-06-16T16:59:03.636Z"
+    },
     {
       "id": "audit_1781524147337_g0v3cz",
       "action": "movement_transferencia",
