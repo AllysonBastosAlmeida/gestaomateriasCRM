@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-16T16:59:45.391Z"
+    "importedAt": "2026-06-16T17:04:34.006Z"
   },
   "users": [
     {
@@ -509,12 +509,12 @@
       "status": "disponivel",
       "internalLocation": "Sala Telecom / Prateleira 2",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781629473683_j6up0k",
+      "pendingDeletionRequestedAt": "2026-06-16T17:04:33.683Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T21:21:17.581Z",
+      "updatedAt": "2026-06-16T17:04:33.683Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin",
       "activityHighlightAt": "",
@@ -3587,6 +3587,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781281189247_gl6ywa\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Broca Serra/Copo\",\"description\":\"Broca Serra/Copo\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T16:19:49.247Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T16:19:49.247Z\",\"updatedAt\":\"2026-06-12T16:19:49.247Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781629473683_j6up0k",
+      "requestType": "item",
+      "itemId": "item_telefone_ip",
+      "itemName": "Telefone IP Gigabit",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-16T17:04:33.683Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_telefone_ip\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780427001685_wzi4zo\",\"type\":\"equipamento\",\"category\":\"Telecomunicacao\",\"name\":\"Telefone IP Gigabit\",\"description\":\"Aparelho SIP para ambientes corporativos e operacoes.\",\"sku\":\"TEL-IP-GIG\",\"serialNumber\":\"\",\"quantity\":22,\"minQuantity\":8,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Prateleira 2\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:21:17.581Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -4808,6 +4826,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781629473683_qfsg9s",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781629473683_j6up0k",
+      "entityLabel": "Telefone IP Gigabit",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "requestId": "delreq_1781629473683_j6up0k",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-16T17:04:33.683Z"
+    },
     {
       "id": "audit_1781629147010_naatz0",
       "action": "auth_login",
