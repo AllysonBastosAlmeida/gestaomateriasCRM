@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-16T17:07:15.481Z"
+    "importedAt": "2026-06-16T17:08:15.414Z"
   },
   "users": [
     {
@@ -3354,6 +3354,33 @@
       "updatedAt": "2026-06-16T17:07:15.367Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1781629678389_edhpbq",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Rolo Fibra Optica",
+      "description": "Rolo Fibra Optica",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 200,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-16T17:07:58.389Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-16T17:07:58.389Z",
+      "updatedAt": "2026-06-16T17:07:58.389Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3707,6 +3734,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781629678410_vn3m7a",
+      "itemId": "item_1781629678389_edhpbq",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 200,
+      "previousQuantity": 0,
+      "newQuantity": 200,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-16T17:07:58.389Z"
+    },
     {
       "id": "mov_1781629514516_r12i2i",
       "itemId": "item_1781629514491_o5b3hs",
@@ -4957,6 +5000,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781629678425_e5nocn",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781629678389_edhpbq",
+      "entityLabel": "Rolo Fibra Optica",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 200,
+        "type": "material"
+      },
+      "createdAt": "2026-06-16T17:07:58.425Z"
+    },
     {
       "id": "audit_1781629514530_g9hwyo",
       "action": "inventory_item_created",
