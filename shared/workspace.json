@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-16T17:08:15.414Z"
+    "importedAt": "2026-06-16T17:09:15.968Z"
   },
   "users": [
     {
@@ -494,33 +494,6 @@
       "activityHighlightType": ""
     },
     {
-      "id": "item_telefone_ip",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "type": "equipamento",
-      "category": "Telecomunicacao",
-      "name": "Telefone IP Gigabit",
-      "description": "Aparelho SIP para ambientes corporativos e operacoes.",
-      "sku": "TEL-IP-GIG",
-      "serialNumber": "",
-      "quantity": 22,
-      "minQuantity": 8,
-      "unitMeasure": "un",
-      "status": "disponivel",
-      "internalLocation": "Sala Telecom / Prateleira 2",
-      "notes": "",
-      "pendingDeletion": true,
-      "pendingDeletionRequestId": "delreq_1781629473683_j6up0k",
-      "pendingDeletionRequestedAt": "2026-06-16T17:04:33.683Z",
-      "pendingDeletionRequestedBy": "user_admin",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-16T17:04:33.683Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
-    },
-    {
       "id": "item_patch_cord",
       "clientId": "client_beta",
       "unitId": "unit_1780422089296_cf0vpa",
@@ -598,33 +571,6 @@
       "updatedAt": "2026-06-03T21:08:48.719Z",
       "createdBy": "user_admin",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
-    },
-    {
-      "id": "item_camera_bullet",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "type": "equipamento",
-      "category": "CFTV",
-      "name": "Camera Bullet IP 4MP",
-      "description": "Camera para monitoramento perimetral e areas externas.",
-      "sku": "CAM-BLT-4MP",
-      "serialNumber": "",
-      "quantity": 36,
-      "minQuantity": 12,
-      "unitMeasure": "un",
-      "status": "disponivel",
-      "internalLocation": "Estoque CFTV / Prateleira 6",
-      "notes": "",
-      "pendingDeletion": true,
-      "pendingDeletionRequestId": "delreq_1781629478684_slual1",
-      "pendingDeletionRequestedAt": "2026-06-16T17:04:38.684Z",
-      "pendingDeletionRequestedBy": "user_admin",
-      "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-16T17:04:38.684Z",
-      "createdBy": "user_admin",
-      "updatedBy": "user_admin",
       "activityHighlightAt": "",
       "activityHighlightType": ""
     },
@@ -3703,13 +3649,13 @@
       "itemName": "Telefone IP Gigabit",
       "clientId": "client_beta",
       "unitId": "unit_1780427001685_wzi4zo",
-      "status": "pendente",
+      "status": "aprovada",
       "requestedBy": "user_admin",
       "requestedByName": "Administrador Geral",
       "requestedAt": "2026-06-16T17:04:33.683Z",
-      "reviewedBy": "",
-      "reviewedByName": "",
-      "reviewedAt": "",
+      "reviewedBy": "user_admin",
+      "reviewedByName": "Administrador Geral",
+      "reviewedAt": "2026-06-16T17:09:05.176Z",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_telefone_ip\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780427001685_wzi4zo\",\"type\":\"equipamento\",\"category\":\"Telecomunicacao\",\"name\":\"Telefone IP Gigabit\",\"description\":\"Aparelho SIP para ambientes corporativos e operacoes.\",\"sku\":\"TEL-IP-GIG\",\"serialNumber\":\"\",\"quantity\":22,\"minQuantity\":8,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Prateleira 2\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:21:17.581Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
@@ -3721,13 +3667,13 @@
       "itemName": "Camera Bullet IP 4MP",
       "clientId": "client_beta",
       "unitId": "unit_1780427001685_wzi4zo",
-      "status": "pendente",
+      "status": "aprovada",
       "requestedBy": "user_admin",
       "requestedByName": "Administrador Geral",
       "requestedAt": "2026-06-16T17:04:38.684Z",
-      "reviewedBy": "",
-      "reviewedByName": "",
-      "reviewedAt": "",
+      "reviewedBy": "user_admin",
+      "reviewedByName": "Administrador Geral",
+      "reviewedAt": "2026-06-16T17:09:03.524Z",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_camera_bullet\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780427001685_wzi4zo\",\"type\":\"equipamento\",\"category\":\"CFTV\",\"name\":\"Camera Bullet IP 4MP\",\"description\":\"Camera para monitoramento perimetral e areas externas.\",\"sku\":\"CAM-BLT-4MP\",\"serialNumber\":\"\",\"quantity\":36,\"minQuantity\":12,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Estoque CFTV / Prateleira 6\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:41:57.977Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
@@ -5000,6 +4946,40 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781629745177_fok6id",
+      "action": "inventory_item_deletion_approved",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781629473683_j6up0k",
+      "entityLabel": "Telefone IP Gigabit",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "requestId": "delreq_1781629473683_j6up0k",
+        "requestStatus": "aprovada",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-16T17:09:05.177Z"
+    },
+    {
+      "id": "audit_1781629743524_80kq5t",
+      "action": "inventory_item_deletion_approved",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781629478684_slual1",
+      "entityLabel": "Camera Bullet IP 4MP",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "requestId": "delreq_1781629478684_slual1",
+        "requestStatus": "aprovada",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-16T17:09:03.524Z"
+    },
     {
       "id": "audit_1781629678425_e5nocn",
       "action": "inventory_item_created",
