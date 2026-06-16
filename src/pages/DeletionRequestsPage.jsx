@@ -1,5 +1,6 @@
 import { useCallback, useDeferredValue, useEffect, useState } from 'react'
 import { ArchiveX, Building2, Check, Clock3, Package2, RotateCcw, User2 } from 'lucide-react'
+import { ConfirmDialog } from '../components/common/ConfirmDialog'
 import { EmptyState } from '../components/common/EmptyState'
 import { FiltersBar } from '../components/common/FiltersBar'
 import { PageSection } from '../components/common/PageSection'
@@ -8,6 +9,7 @@ import { useAuth } from '../hooks/useAuth'
 import { useToast } from '../hooks/useToast'
 import {
   approveDeletionRequest,
+  approveDeletionRequestsBulk,
   DELETION_REQUEST_TYPES,
   DELETION_REQUEST_STATUSES,
   listInventoryDeletionRequests,
@@ -66,6 +68,7 @@ export function DeletionRequestsPage() {
   const [requests, setRequests] = useState([])
   const [clients, setClients] = useState([])
   const [units, setUnits] = useState([])
+  const [approveAllOpen, setApproveAllOpen] = useState(false)
 
   const reload = useCallback(() => {
     setClients(listClients())
@@ -78,6 +81,7 @@ export function DeletionRequestsPage() {
   }, [reload])
 
   const pendingCount = listInventoryDeletionRequests({ status: DELETION_REQUEST_STATUSES.pending }).length
+  const visiblePendingRequests = requests.filter((request) => request.status === DELETION_REQUEST_STATUSES.pending)
 
   return (
     <div className="space-y-6">
@@ -113,9 +117,21 @@ export function DeletionRequestsPage() {
               },
             ]}
           />
-          <div className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-300">
-            <ArchiveX className="h-4 w-4 text-cyan-300" />
-            <span>{pendingCount} pendente(s) de aprovacao</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-300">
+              <ArchiveX className="h-4 w-4 text-cyan-300" />
+              <span>{pendingCount} pendente(s) de aprovacao</span>
+            </div>
+            {visiblePendingRequests.length ? (
+              <button
+                type="button"
+                onClick={() => setApproveAllOpen(true)}
+                className="inline-flex items-center gap-2 rounded-2xl border border-rose-400/20 bg-rose-400/10 px-3 py-2 text-sm font-semibold text-rose-100"
+              >
+                <Check className="h-4 w-4" />
+                Aprovar todos
+              </button>
+            ) : null}
           </div>
         </div>
       </PageSection>
@@ -256,6 +272,27 @@ export function DeletionRequestsPage() {
           description="Itens e unidades excluidos por operadores aparecerao aqui para aprovacao do administrador."
         />
       )}
+
+      <ConfirmDialog
+        open={approveAllOpen}
+        title="Aprovar todas as exclusoes visiveis?"
+        description={`Deseja aprovar definitivamente ${visiblePendingRequests.length} solicitacao(oes) pendente(s) que estao filtradas nesta tela?`}
+        confirmLabel="Aprovar todas"
+        onClose={() => setApproveAllOpen(false)}
+        onConfirm={() => {
+          try {
+            const result = approveDeletionRequestsBulk(
+              visiblePendingRequests.map((request) => request.id),
+              currentUser,
+            )
+            toast.success(`${result.approvedCount} solicitacao(oes) aprovada(s) definitivamente.`)
+            setApproveAllOpen(false)
+            reload()
+          } catch (error) {
+            toast.error(error.message)
+          }
+        }}
+      />
     </div>
   )
 }

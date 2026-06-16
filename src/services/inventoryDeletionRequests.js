@@ -322,6 +322,41 @@ export function approveDeletionRequest(requestId, actor, reviewNotes = '') {
   })
 }
 
+export function approveDeletionRequestsBulk(requestIds = [], actor, reviewNotes = '') {
+  const ids = Array.from(new Set((requestIds || []).filter(Boolean)))
+
+  if (!ids.length) {
+    throw new Error('Nenhuma solicitacao pendente selecionada.')
+  }
+
+  return storage.transaction((db) => {
+    const requests = db.inventoryDeletionRequests || []
+    let approvedCount = 0
+
+    for (const requestId of ids) {
+      const request = requests.find((entry) => entry.id === requestId)
+
+      if (!request || request.status !== DELETION_REQUEST_STATUSES.pending) {
+        continue
+      }
+
+      if (request.requestType === DELETION_REQUEST_TYPES.unit) {
+        approveUnitDeletionRequest(db, request, actor, reviewNotes)
+      } else {
+        approveItemDeletionRequest(db, request, actor, reviewNotes)
+      }
+
+      approvedCount += 1
+    }
+
+    if (!approvedCount) {
+      throw new Error('Nenhuma solicitacao pendente disponivel para aprovacao.')
+    }
+
+    return { approvedCount }
+  })
+}
+
 function rejectItemDeletionRequest(db, request, actor, reviewNotes) {
   const timestamp = nowIso()
   const snapshot = parseJsonSnapshot(request.itemSnapshotJson)
