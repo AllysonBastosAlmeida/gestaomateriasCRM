@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-16T17:05:35.467Z"
+    "importedAt": "2026-06-16T17:07:15.481Z"
   },
   "users": [
     {
@@ -3325,6 +3325,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-06-16T17:05:14.491Z",
       "updatedAt": "2026-06-16T17:05:14.491Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1781629635367_cucyde",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "equipamento",
+      "category": "",
+      "name": "Switch Intelbras POE SF802AF",
+      "description": "Switch Intelbras POE SF802AF",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-16T17:07:15.367Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-16T17:07:15.367Z",
+      "updatedAt": "2026-06-16T17:07:15.367Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     }
