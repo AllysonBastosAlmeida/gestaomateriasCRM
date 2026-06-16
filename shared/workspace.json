@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-16T17:04:34.006Z"
+    "importedAt": "2026-06-16T17:05:35.467Z"
   },
   "users": [
     {
@@ -617,12 +617,12 @@
       "status": "disponivel",
       "internalLocation": "Estoque CFTV / Prateleira 6",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1781629478684_slual1",
+      "pendingDeletionRequestedAt": "2026-06-16T17:04:38.684Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T21:41:57.977Z",
+      "updatedAt": "2026-06-16T17:04:38.684Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin",
       "activityHighlightAt": "",
@@ -3273,6 +3273,60 @@
       "updatedAt": "2026-06-12T16:59:30.334Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1781629498995_n1l97y",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "equipamento",
+      "category": "",
+      "name": "DIO Fibracem 12F",
+      "description": "DIO Fibracem 12F",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-16T17:04:58.995Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-16T17:04:58.995Z",
+      "updatedAt": "2026-06-16T17:04:58.995Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1781629514491_o5b3hs",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "equipamento",
+      "category": "",
+      "name": "NVR Vivotek POE ND8422p 16 Canal",
+      "description": "NVR Vivotek POE ND8422p 16 Canal",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-16T17:05:14.491Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-16T17:05:14.491Z",
+      "updatedAt": "2026-06-16T17:05:14.491Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3605,9 +3659,59 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_telefone_ip\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780427001685_wzi4zo\",\"type\":\"equipamento\",\"category\":\"Telecomunicacao\",\"name\":\"Telefone IP Gigabit\",\"description\":\"Aparelho SIP para ambientes corporativos e operacoes.\",\"sku\":\"TEL-IP-GIG\",\"serialNumber\":\"\",\"quantity\":22,\"minQuantity\":8,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Sala Telecom / Prateleira 2\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:21:17.581Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1781629478684_slual1",
+      "requestType": "item",
+      "itemId": "item_camera_bullet",
+      "itemName": "Camera Bullet IP 4MP",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-16T17:04:38.684Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_camera_bullet\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780427001685_wzi4zo\",\"type\":\"equipamento\",\"category\":\"CFTV\",\"name\":\"Camera Bullet IP 4MP\",\"description\":\"Camera para monitoramento perimetral e areas externas.\",\"sku\":\"CAM-BLT-4MP\",\"serialNumber\":\"\",\"quantity\":36,\"minQuantity\":12,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Estoque CFTV / Prateleira 6\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:41:57.977Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1781629514516_r12i2i",
+      "itemId": "item_1781629514491_o5b3hs",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-16T17:05:14.491Z"
+    },
+    {
+      "id": "mov_1781629499009_ztwkqu",
+      "itemId": "item_1781629498995_n1l97y",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-16T17:04:58.995Z"
+    },
     {
       "id": "mov_1781524147337_9o8d08",
       "itemId": "item_1781281312544_ff0cyt",
@@ -4826,6 +4930,55 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1781629514530_g9hwyo",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781629514491_o5b3hs",
+      "entityLabel": "NVR Vivotek POE ND8422p 16 Canal",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "equipamento"
+      },
+      "createdAt": "2026-06-16T17:05:14.530Z"
+    },
+    {
+      "id": "audit_1781629499020_wkdadk",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781629498995_n1l97y",
+      "entityLabel": "DIO Fibracem 12F",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "equipamento"
+      },
+      "createdAt": "2026-06-16T17:04:59.020Z"
+    },
+    {
+      "id": "audit_1781629478684_123kaa",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1781629478684_slual1",
+      "entityLabel": "Camera Bullet IP 4MP",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_beta",
+      "unitId": "unit_1780427001685_wzi4zo",
+      "metadata": {
+        "requestId": "delreq_1781629478684_slual1",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-16T17:04:38.684Z"
+    },
     {
       "id": "audit_1781629473683_qfsg9s",
       "action": "inventory_item_deletion_requested",
