@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-22T10:32:14.516Z"
+    "importedAt": "2026-06-22T10:33:15.194Z"
   },
   "users": [
     {
@@ -262,18 +262,6 @@
       "notes": "",
       "createdAt": "2026-06-02T19:03:21.685Z",
       "updatedAt": "2026-06-03T02:31:22.514Z"
-    },
-    {
-      "id": "unit_1780577686830_hqekug",
-      "clientId": "client_alpha",
-      "name": "teste",
-      "code": "3",
-      "address": "",
-      "city": "",
-      "state": "",
-      "notes": "",
-      "createdAt": "2026-06-04T12:54:46.829Z",
-      "updatedAt": "2026-06-04T12:54:46.829Z"
     }
   ],
   "inventoryItems": [
@@ -428,12 +416,12 @@
       "status": "disponivel",
       "internalLocation": "Armario Ferramental / Gaveta 2",
       "notes": "Separar um kit por equipe de campo.",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782124387701_ina3xe",
+      "pendingDeletionRequestedAt": "2026-06-22T10:33:07.701Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-02T12:00:00Z",
+      "updatedAt": "2026-06-22T10:33:07.701Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin",
       "activityHighlightAt": "",
@@ -3677,6 +3665,42 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_camera_bullet\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780427001685_wzi4zo\",\"type\":\"equipamento\",\"category\":\"CFTV\",\"name\":\"Camera Bullet IP 4MP\",\"description\":\"Camera para monitoramento perimetral e areas externas.\",\"sku\":\"CAM-BLT-4MP\",\"serialNumber\":\"\",\"quantity\":36,\"minQuantity\":12,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Estoque CFTV / Prateleira 6\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T21:41:57.977Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782124378428_gvffle",
+      "requestType": "unit",
+      "itemId": "",
+      "itemName": "teste",
+      "clientId": "client_alpha",
+      "unitId": "unit_1780577686830_hqekug",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-22T10:32:58.428Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "",
+      "unitSnapshotJson": "{\"unit\":{\"id\":\"unit_1780577686830_hqekug\",\"clientId\":\"client_alpha\",\"name\":\"teste\",\"code\":\"3\",\"address\":\"\",\"city\":\"\",\"state\":\"\",\"notes\":\"\",\"createdAt\":\"2026-06-04T12:54:46.829Z\",\"updatedAt\":\"2026-06-04T12:54:46.829Z\"},\"items\":[]}"
+    },
+    {
+      "id": "delreq_1782124387701_ina3xe",
+      "requestType": "item",
+      "itemId": "item_alicate_rj45",
+      "itemName": "Alicate de Crimpagem RJ45",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-22T10:33:07.701Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_alicate_rj45\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"ferramenta\",\"category\":\"Cabeamento estruturado\",\"name\":\"Alicate de Crimpagem RJ45\",\"description\":\"Ferramenta para conectorizacao de patch cords e tomadas RJ45.\",\"sku\":\"ALC-RJ45-PRO\",\"serialNumber\":\"CRP-22031\",\"quantity\":5,\"minQuantity\":2,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Armario Ferramental / Gaveta 2\",\"notes\":\"Separar um kit por equipe de campo.\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-02T12:00:00Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -4946,6 +4970,41 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782124387701_9wayh2",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782124387701_ina3xe",
+      "entityLabel": "Alicate de Crimpagem RJ45",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "requestId": "delreq_1782124387701_ina3xe",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-22T10:33:07.701Z"
+    },
+    {
+      "id": "audit_1782124378428_0tvwui",
+      "action": "unit_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782124378428_gvffle",
+      "entityLabel": "teste",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_1780577686830_hqekug",
+      "metadata": {
+        "requestId": "delreq_1782124378428_gvffle",
+        "requestStatus": "pendente",
+        "requestType": "unit",
+        "removedItemsCount": 0
+      },
+      "createdAt": "2026-06-22T10:32:58.428Z"
+    },
     {
       "id": "audit_1782124302054_ac6y4p",
       "action": "auth_login",
