@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-22T10:34:25.734Z"
+    "importedAt": "2026-06-22T10:35:19.586Z"
   },
   "users": [
     {
@@ -443,12 +443,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782124472854_jlks7h",
+      "pendingDeletionRequestedAt": "2026-06-22T10:34:32.854Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-04T12:51:52.279Z",
+      "updatedAt": "2026-06-22T10:34:32.854Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin",
       "activityHighlightAt": "",
@@ -3315,6 +3315,60 @@
       "updatedAt": "2026-06-16T17:07:58.389Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1782124493434_f5vxma",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "type": "material",
+      "category": "",
+      "name": "Mini DIO 12FO fibersul s/ pigtail",
+      "description": "Mini DIO 12FO fibersul s/ pigtail",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 10,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-22T10:34:53.434Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-22T10:34:53.434Z",
+      "updatedAt": "2026-06-22T10:34:53.434Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1782124515040_5ijqkg",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "type": "material",
+      "category": "",
+      "name": "PatchCord Cat6 Furukawa 1.5m",
+      "description": "PatchCord Cat6 Furukawa 1.5m",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 229,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-22T10:35:15.040Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-22T10:35:15.040Z",
+      "updatedAt": "2026-06-22T10:35:15.040Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3719,9 +3773,59 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_luva\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"material\",\"category\":\"EPI\",\"name\":\"Luva Multitato\",\"description\":\"Luva Multitato\",\"sku\":\"LUV-EPI-10\",\"serialNumber\":\"\",\"quantity\":5,\"minQuantity\":20,\"unitMeasure\":\"pares\",\"status\":\"disponivel\",\"internalLocation\":\"Deposito B / Gaveta 03\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T22:09:50.954Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782124472854_jlks7h",
+      "requestType": "item",
+      "itemId": "item_cabo_drop",
+      "itemName": "Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-22T10:34:32.854Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_cabo_drop\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"material\",\"category\":\"Fibra optica\",\"name\":\"Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.\",\"description\":\"Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.\",\"sku\":\"DROP-2FO-BR\",\"serialNumber\":\"\",\"quantity\":20,\"minQuantity\":8,\"unitMeasure\":\"m\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-04T12:51:52.279Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782124515048_86tcjy",
+      "itemId": "item_1782124515040_5ijqkg",
+      "movementType": "entrada",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 229,
+      "previousQuantity": 0,
+      "newQuantity": 229,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-22T10:35:15.040Z"
+    },
+    {
+      "id": "mov_1782124493442_vqt3z3",
+      "itemId": "item_1782124493434_f5vxma",
+      "movementType": "entrada",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 10,
+      "previousQuantity": 0,
+      "newQuantity": 10,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-22T10:34:53.434Z"
+    },
     {
       "id": "mov_1781629678410_vn3m7a",
       "itemId": "item_1781629678389_edhpbq",
@@ -4969,25 +5073,58 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-02T17:41:36.417Z"
-    },
-    {
-      "id": "mov_seed_1",
-      "itemId": "item_serra",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 4,
-      "previousQuantity": 0,
-      "newQuantity": 4,
-      "reason": "Carga inicial do sistema",
-      "notes": "Seed MVP",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T12:00:00Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782124515058_pw5k8h",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782124515040_5ijqkg",
+      "entityLabel": "PatchCord Cat6 Furukawa 1.5m",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "quantity": 229,
+        "type": "material"
+      },
+      "createdAt": "2026-06-22T10:35:15.058Z"
+    },
+    {
+      "id": "audit_1782124493452_d1ldzg",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782124493434_f5vxma",
+      "entityLabel": "Mini DIO 12FO fibersul s/ pigtail",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "quantity": 10,
+        "type": "material"
+      },
+      "createdAt": "2026-06-22T10:34:53.452Z"
+    },
+    {
+      "id": "audit_1782124472854_78diqz",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782124472854_jlks7h",
+      "entityLabel": "Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "requestId": "delreq_1782124472854_jlks7h",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-22T10:34:32.854Z"
+    },
     {
       "id": "audit_1782124465664_rnvndb",
       "action": "inventory_item_deletion_requested",
