@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-22T10:33:15.194Z"
+    "importedAt": "2026-06-22T10:34:25.734Z"
   },
   "users": [
     {
@@ -308,12 +308,12 @@
       "status": "disponivel",
       "internalLocation": "Deposito B / Gaveta 03",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782124465664_z0gj5g",
+      "pendingDeletionRequestedAt": "2026-06-22T10:34:25.664Z",
+      "pendingDeletionRequestedBy": "user_admin",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:09:50.954Z",
+      "updatedAt": "2026-06-22T10:34:25.664Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin",
       "activityHighlightAt": "",
@@ -3701,6 +3701,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_alicate_rj45\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"ferramenta\",\"category\":\"Cabeamento estruturado\",\"name\":\"Alicate de Crimpagem RJ45\",\"description\":\"Ferramenta para conectorizacao de patch cords e tomadas RJ45.\",\"sku\":\"ALC-RJ45-PRO\",\"serialNumber\":\"CRP-22031\",\"quantity\":5,\"minQuantity\":2,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"Armario Ferramental / Gaveta 2\",\"notes\":\"Separar um kit por equipe de campo.\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-02T12:00:00Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782124465664_z0gj5g",
+      "requestType": "item",
+      "itemId": "item_luva",
+      "itemName": "Luva Multitato",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "status": "pendente",
+      "requestedBy": "user_admin",
+      "requestedByName": "Administrador Geral",
+      "requestedAt": "2026-06-22T10:34:25.664Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_luva\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"material\",\"category\":\"EPI\",\"name\":\"Luva Multitato\",\"description\":\"Luva Multitato\",\"sku\":\"LUV-EPI-10\",\"serialNumber\":\"\",\"quantity\":5,\"minQuantity\":20,\"unitMeasure\":\"pares\",\"status\":\"disponivel\",\"internalLocation\":\"Deposito B / Gaveta 03\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-03T22:09:50.954Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -4970,6 +4988,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782124465664_rnvndb",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782124465664_z0gj5g",
+      "entityLabel": "Luva Multitato",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "requestId": "delreq_1782124465664_z0gj5g",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-06-22T10:34:25.664Z"
+    },
     {
       "id": "audit_1782124387701_9wayh2",
       "action": "inventory_item_deletion_requested",
