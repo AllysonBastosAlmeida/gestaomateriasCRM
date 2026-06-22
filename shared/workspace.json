@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-22T10:36:21.128Z"
+    "importedAt": "2026-06-22T10:37:23.118Z"
   },
   "users": [
     {
@@ -3421,6 +3421,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-06-22T10:35:52.183Z",
       "updatedAt": "2026-06-22T10:35:52.183Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1782124642447_6lxmtu",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "type": "material",
+      "category": "",
+      "name": "Cordão Optico DX MM SC PC SX / LC PC SX",
+      "description": "Cordão Optico DX MM SC PC SX / LC PC SX",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 11,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-22T10:37:22.447Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-22T10:37:22.447Z",
+      "updatedAt": "2026-06-22T10:37:22.447Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     }
