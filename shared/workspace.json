@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-22T10:35:19.586Z"
+    "importedAt": "2026-06-22T10:36:21.128Z"
   },
   "users": [
     {
@@ -458,7 +458,7 @@
       "id": "item_caixa_emenda",
       "clientId": "client_alpha",
       "unitId": "unit_alpha_a",
-      "type": "equipamento",
+      "type": "material",
       "category": "Fibra optica",
       "name": "Caixa de emenda 12FO subterrâneo",
       "description": "Caixa de emenda 12FO subterrâneo",
@@ -475,7 +475,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-03T22:10:46.603Z",
+      "updatedAt": "2026-06-22T10:36:20.463Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin",
       "activityHighlightAt": "",
@@ -3369,6 +3369,60 @@
       "updatedAt": "2026-06-22T10:35:15.040Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1782124537899_jmjqvz",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "type": "material",
+      "category": "",
+      "name": "Pigtail Dúplex MM LC PC 2,50m",
+      "description": "Pigtail Dúplex MM LC PC 2,50m",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 24,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-22T10:35:37.899Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-22T10:35:37.899Z",
+      "updatedAt": "2026-06-22T10:35:37.899Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1782124552183_ilg2pr",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "type": "material",
+      "category": "",
+      "name": "Pigtail Dúplex MM SC PC 2,50m",
+      "description": "Pigtail Dúplex MM SC PC 2,50m",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 24,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-06-22T10:35:52.183Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-06-22T10:35:52.183Z",
+      "updatedAt": "2026-06-22T10:35:52.183Z",
+      "createdBy": "user_admin",
+      "updatedBy": "user_admin"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3794,6 +3848,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782124552191_ww7arc",
+      "itemId": "item_1782124552183_ilg2pr",
+      "movementType": "entrada",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 24,
+      "previousQuantity": 0,
+      "newQuantity": 24,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-22T10:35:52.183Z"
+    },
+    {
+      "id": "mov_1782124537908_llcknk",
+      "itemId": "item_1782124537899_jmjqvz",
+      "movementType": "entrada",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 24,
+      "previousQuantity": 0,
+      "newQuantity": 24,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_admin",
+      "performedAt": "2026-06-22T10:35:37.899Z"
+    },
     {
       "id": "mov_1782124515048_86tcjy",
       "itemId": "item_1782124515040_5ijqkg",
@@ -5041,41 +5127,41 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-02T17:51:12.822Z"
-    },
-    {
-      "id": "mov_1780422664878_frhtt1",
-      "itemId": "item_1780422096417_2v4ggy",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T17:51:04.878Z"
-    },
-    {
-      "id": "mov_1780422096417_8t39zc",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia entre unidades",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T17:41:36.417Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782124552201_1rg0gy",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782124552183_ilg2pr",
+      "entityLabel": "Pigtail Dúplex MM SC PC 2,50m",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "quantity": 24,
+        "type": "material"
+      },
+      "createdAt": "2026-06-22T10:35:52.201Z"
+    },
+    {
+      "id": "audit_1782124537918_w3id7l",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782124537899_jmjqvz",
+      "entityLabel": "Pigtail Dúplex MM LC PC 2,50m",
+      "userId": "user_admin",
+      "userName": "Administrador Geral",
+      "clientId": "client_alpha",
+      "unitId": "unit_alpha_a",
+      "metadata": {
+        "quantity": 24,
+        "type": "material"
+      },
+      "createdAt": "2026-06-22T10:35:37.918Z"
+    },
     {
       "id": "audit_1782124515058_pw5k8h",
       "action": "inventory_item_created",
