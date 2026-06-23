@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-22T10:41:19.638Z"
+    "importedAt": "2026-06-23T13:17:58.433Z"
   },
   "users": [
     {
@@ -15,8 +15,8 @@
       "role": "admin",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-06-22T10:31:42.046Z",
-      "lastLoginAt": "2026-06-22T10:31:42.046Z",
+      "updatedAt": "2026-06-23T13:17:58.181Z",
+      "lastLoginAt": "2026-06-23T13:17:58.181Z",
       "password": "Yara@123456"
     },
     {
