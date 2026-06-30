@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-06-24T12:31:32.098Z"
+    "importedAt": "2026-06-30T00:01:37.156Z"
   },
   "users": [
     {
@@ -3002,7 +3002,7 @@
       "description": "Cordão Optico DX MM SC PC SX / LC PC SX",
       "sku": "",
       "serialNumber": "",
-      "quantity": 11,
+      "quantity": 8,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -3015,7 +3015,7 @@
       "activityHighlightAt": "2026-06-22T10:37:22.447Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-22T10:37:22.447Z",
-      "updatedAt": "2026-06-22T10:37:22.447Z",
+      "updatedAt": "2026-06-30T00:01:37.056Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
     },
