@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:02:19.732Z"
+    "importedAt": "2026-07-01T13:03:20.453Z"
   },
   "users": [
     {
@@ -464,7 +464,7 @@
       "description": "Luva",
       "sku": "",
       "serialNumber": "",
-      "quantity": 8,
+      "quantity": 14,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -475,7 +475,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:41:00.005Z",
-      "updatedAt": "2026-07-01T13:01:41.049Z",
+      "updatedAt": "2026-07-01T13:02:41.582Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -815,7 +815,7 @@
       "description": "Pacote de Luvas Multitato EPI",
       "sku": "",
       "serialNumber": "",
-      "quantity": 6,
+      "quantity": 8,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -826,7 +826,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:56:36.920Z",
-      "updatedAt": "2026-06-09T14:56:36.920Z",
+      "updatedAt": "2026-07-01T13:02:59.138Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -5094,6 +5094,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910979146_asy3ey",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016996920_z9mk29",
+      "entityLabel": "Pacote de Luvas Multitato EPI",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 8,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:02:59.146Z"
+    },
+    {
+      "id": "audit_1782910961589_tshhjo",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016060005_7il9pb",
+      "entityLabel": "Luva",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 14,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:02:41.590Z"
+    },
     {
       "id": "audit_1782910932380_wcpvt9",
       "action": "inventory_item_updated",
