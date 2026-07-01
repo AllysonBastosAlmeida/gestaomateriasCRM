@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:57:15.981Z"
+    "importedAt": "2026-07-01T12:58:20.036Z"
   },
   "users": [
     {
@@ -2590,7 +2590,7 @@
     {
       "id": "item_1781283257212_j5q7xc",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
       "name": "•Kit 4 Pilhas Palitos Recarregáveis",
@@ -2607,10 +2607,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-01T12:57:09.639Z",
+      "activityHighlightAt": "2026-07-01T12:57:50.995Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:54:17.212Z",
-      "updatedAt": "2026-07-01T12:57:09.639Z",
+      "updatedAt": "2026-07-01T12:57:50.995Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3740,6 +3740,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782910670995_g14jxa",
+      "itemId": "item_1781283257212_j5q7xc",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:57:50.995Z"
+    },
     {
       "id": "mov_1782910629639_bzpswc",
       "itemId": "item_1781283257212_j5q7xc",
@@ -5003,25 +5019,30 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T15:53:01.320Z"
-    },
-    {
-      "id": "mov_1781279551881_6c0sxi",
-      "itemId": "item_1781279551875_sj87nh",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T15:52:31.875Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910670995_mgjwri",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782910670995_g14jxa",
+      "entityLabel": "•Kit 4 Pilhas Palitos Recarregáveis",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:57:50.995Z"
+    },
     {
       "id": "audit_1782910629639_ccaftl",
       "action": "movement_transferencia",
