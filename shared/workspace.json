@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:44:23.613Z"
+    "importedAt": "2026-07-01T12:45:12.335Z"
   },
   "users": [
     {
@@ -4986,6 +4986,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782909863561_icfnau",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024243095_bjpk1i",
+      "entityLabel": "Abraçadeira",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 7,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:44:23.561Z"
+    },
     {
       "id": "audit_1782909486943_1ewe5v",
       "action": "movement_transferencia",
