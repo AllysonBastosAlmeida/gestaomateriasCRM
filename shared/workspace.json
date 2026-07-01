@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:51:08.684Z"
+    "importedAt": "2026-07-01T12:53:40.589Z"
   },
   "users": [
     {
@@ -653,7 +653,7 @@
       "description": "Espelho RJ45",
       "sku": "",
       "serialNumber": "",
-      "quantity": 3,
+      "quantity": 5,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -664,7 +664,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:46:50.942Z",
-      "updatedAt": "2026-06-09T14:46:50.942Z",
+      "updatedAt": "2026-07-01T12:53:40.530Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
