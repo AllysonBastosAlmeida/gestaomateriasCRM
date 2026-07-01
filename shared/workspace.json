@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:18:55.071Z"
+    "importedAt": "2026-07-01T12:19:55.130Z"
   },
   "users": [
     {
@@ -1274,7 +1274,7 @@
       "description": "Alicate Universal",
       "sku": "",
       "serialNumber": "",
-      "quantity": 1,
+      "quantity": 2,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1285,7 +1285,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:16:22.846Z",
-      "updatedAt": "2026-06-09T15:16:22.846Z",
+      "updatedAt": "2026-07-01T12:19:31.589Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -4887,6 +4887,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782908371596_d7ko61",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018182846_ued2to",
+      "entityLabel": "Alicate Universal",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:19:31.596Z"
+    },
     {
       "id": "audit_1782908326000_74rfk8",
       "action": "inventory_item_updated",
