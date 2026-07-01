@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:34:08.138Z"
+    "importedAt": "2026-07-01T12:34:48.931Z"
   },
   "users": [
     {
@@ -4968,6 +4968,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782909248089_weka1w",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024436965_vs8goz",
+      "entityLabel": "Tesoura de Eletroduto",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:34:08.089Z"
+    },
     {
       "id": "audit_1782909119457_dwtmuv",
       "action": "inventory_item_created",
