@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:31:59.506Z"
+    "importedAt": "2026-07-01T12:32:47.189Z"
   },
   "users": [
     {
@@ -3687,6 +3687,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1782909119447_icrw1r",
+      "itemId": "item_1782909119435_s3zvcg",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:31:59.435Z"
+    },
+    {
       "id": "mov_1782908802624_p9jki4",
       "itemId": "item_1782908802614_szmmws",
       "movementType": "entrada",
@@ -4949,25 +4965,25 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-03T00:50:24.803Z"
-    },
-    {
-      "id": "mov_1780447821431_p8s90g",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-03T00:50:21.431Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782909119457_dwtmuv",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782909119435_s3zvcg",
+      "entityLabel": "Tesoura",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-01T12:31:59.457Z"
+    },
     {
       "id": "audit_1782908901692_ro2wgn",
       "action": "inventory_item_updated",
