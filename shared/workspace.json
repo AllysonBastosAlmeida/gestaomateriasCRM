@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:34:48.931Z"
+    "importedAt": "2026-07-01T12:35:49.147Z"
   },
   "users": [
     {
@@ -1361,12 +1361,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782909319722_9pisry",
+      "pendingDeletionRequestedAt": "2026-07-01T12:35:19.722Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T15:18:31.114Z",
-      "updatedAt": "2026-07-01T12:18:45.992Z",
+      "updatedAt": "2026-07-01T12:35:19.722Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3683,6 +3683,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_cabo_drop\",\"clientId\":\"client_alpha\",\"unitId\":\"unit_alpha_a\",\"type\":\"material\",\"category\":\"Fibra optica\",\"name\":\"Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.\",\"description\":\"Cabo optico para acesso e distribuicao em projetos FTTH e corporativos.\",\"sku\":\"DROP-2FO-BR\",\"serialNumber\":\"\",\"quantity\":20,\"minQuantity\":8,\"unitMeasure\":\"m\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-02T12:00:00Z\",\"updatedAt\":\"2026-06-04T12:51:52.279Z\",\"createdBy\":\"user_admin\",\"updatedBy\":\"user_admin\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782909319722_9pisry",
+      "requestType": "item",
+      "itemId": "item_1781018311114_m6pdqm",
+      "itemName": "Alicate de Corte (Precisão)",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-01T12:35:19.722Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781018311114_m6pdqm\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Alicate de Corte (Precisão)\",\"description\":\"Alicate de Corte (Precisão)\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":0,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:18:31.114Z\",\"updatedAt\":\"2026-07-01T12:18:45.992Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -4968,6 +4986,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782909319722_z8m1ih",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782909319722_9pisry",
+      "entityLabel": "Alicate de Corte (Precisão)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "requestId": "delreq_1782909319722_9pisry",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-01T12:35:19.722Z"
+    },
     {
       "id": "audit_1782909248089_weka1w",
       "action": "inventory_item_updated",
