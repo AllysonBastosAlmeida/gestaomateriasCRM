@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:00:25.629Z"
+    "importedAt": "2026-07-01T13:01:20.122Z"
   },
   "users": [
     {
@@ -3795,6 +3795,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1782910825570_ewfj6w",
+      "itemId": "item_1782910825555_jvs4aw",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 6,
+      "previousQuantity": 0,
+      "newQuantity": 6,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T13:00:25.555Z"
+    },
+    {
       "id": "mov_1782910728064_2g8myz",
       "itemId": "item_1782910728051_ngcop2",
       "movementType": "entrada",
@@ -5057,25 +5073,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T15:57:53.093Z"
-    },
-    {
-      "id": "mov_1781279779556_zui1tc",
-      "itemId": "item_1781279779547_t8syyk",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T15:56:19.547Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910825580_z5b8l0",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782910825555_jvs4aw",
+      "entityLabel": "Fita Isolante",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 6,
+        "type": "material"
+      },
+      "createdAt": "2026-07-01T13:00:25.580Z"
+    },
     {
       "id": "audit_1782910728074_3f6hqj",
       "action": "inventory_item_created",
