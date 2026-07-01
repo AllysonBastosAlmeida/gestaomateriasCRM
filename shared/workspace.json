@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:59:20.003Z"
+    "importedAt": "2026-07-01T13:00:25.629Z"
   },
   "users": [
     {
@@ -3286,6 +3286,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-01T12:58:48.051Z",
       "updatedAt": "2026-07-01T12:58:48.051Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1782910825555_jvs4aw",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Fita Isolante",
+      "description": "Fita Isolante",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 6,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-01T13:00:25.555Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-01T13:00:25.555Z",
+      "updatedAt": "2026-07-01T13:00:25.555Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
