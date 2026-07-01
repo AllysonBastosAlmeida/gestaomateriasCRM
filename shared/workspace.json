@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:14:32.847Z"
+    "importedAt": "2026-07-01T12:18:46.048Z"
   },
   "users": [
     {
@@ -1355,7 +1355,7 @@
       "description": "Alicate de Corte (Precisão)",
       "sku": "",
       "serialNumber": "",
-      "quantity": 1,
+      "quantity": 0,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1366,7 +1366,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:18:31.114Z",
-      "updatedAt": "2026-06-09T15:18:31.114Z",
+      "updatedAt": "2026-07-01T12:18:45.992Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
