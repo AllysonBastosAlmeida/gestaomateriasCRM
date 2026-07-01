@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:03:20.453Z"
+    "importedAt": "2026-07-01T13:04:20.008Z"
   },
   "users": [
     {
@@ -907,7 +907,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:00:42.526Z",
-      "updatedAt": "2026-06-09T15:00:42.526Z",
+      "updatedAt": "2026-07-01T13:03:39.442Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3315,6 +3315,33 @@
       "updatedAt": "2026-07-01T13:00:25.555Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1782911039004_afhtxm",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Patch Code (Fibra)",
+      "description": "Patch Code (Fibra)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 18,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-01T13:03:59.004Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-01T13:03:59.004Z",
+      "updatedAt": "2026-07-01T13:03:59.004Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3812,6 +3839,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782911039016_r5rrjt",
+      "itemId": "item_1782911039004_afhtxm",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 18,
+      "previousQuantity": 0,
+      "newQuantity": 18,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T13:03:59.004Z"
+    },
     {
       "id": "mov_1782910825570_ewfj6w",
       "itemId": "item_1782910825555_jvs4aw",
@@ -5075,25 +5118,41 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:01:25.515Z"
-    },
-    {
-      "id": "mov_1781279873101_xbyfal",
-      "itemId": "item_1781279873093_3t5d2j",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T15:57:53.093Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782911039027_n5hrfj",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782911039004_afhtxm",
+      "entityLabel": "Patch Code (Fibra)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 18,
+        "type": "material"
+      },
+      "createdAt": "2026-07-01T13:03:59.027Z"
+    },
+    {
+      "id": "audit_1782911019448_cjhepi",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017242526_bim07d",
+      "entityLabel": "Patch Code (1,5m)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 7,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:03:39.448Z"
+    },
     {
       "id": "audit_1782910979146_asy3ey",
       "action": "inventory_item_updated",
