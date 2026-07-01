@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:32:47.189Z"
+    "importedAt": "2026-07-01T12:34:08.138Z"
   },
   "users": [
     {
@@ -1756,8 +1756,8 @@
       "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
-      "name": "Alicate Volver",
-      "description": "Alicate Volver",
+      "name": "Tesoura de Eletroduto",
+      "description": "Tesoura de Eletroduto",
       "sku": "",
       "serialNumber": "",
       "quantity": 1,
@@ -1771,7 +1771,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T17:00:36.965Z",
-      "updatedAt": "2026-06-09T17:00:36.965Z",
+      "updatedAt": "2026-07-01T12:34:08.082Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
