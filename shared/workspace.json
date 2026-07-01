@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:06:20.540Z"
+    "importedAt": "2026-07-01T13:07:20.362Z"
   },
   "users": [
     {
@@ -437,7 +437,7 @@
       "description": "Unidute",
       "sku": "",
       "serialNumber": "",
-      "quantity": 55,
+      "quantity": 77,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -448,7 +448,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:39:48.756Z",
-      "updatedAt": "2026-06-09T14:39:48.756Z",
+      "updatedAt": "2026-07-01T13:06:38.990Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -2259,7 +2259,7 @@
       "activityHighlightAt": "2026-06-12T16:27:27.347Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:27:27.347Z",
-      "updatedAt": "2026-06-12T16:27:27.347Z",
+      "updatedAt": "2026-07-01T13:07:09.245Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -5166,6 +5166,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782911229253_by4zxp",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781281647347_cgcz05",
+      "entityLabel": "Patch Code Fibra Óptica",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 20,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:07:09.253Z"
+    },
+    {
+      "id": "audit_1782911198998_q4erfg",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015988756_o56ka0",
+      "entityLabel": "Unidute",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 77,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:06:38.998Z"
+    },
     {
       "id": "audit_1782911170823_grzpah",
       "action": "inventory_item_deletion_requested",
