@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:05:20.117Z"
+    "importedAt": "2026-07-01T13:06:20.540Z"
   },
   "users": [
     {
@@ -956,12 +956,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782911170823_nbiztg",
+      "pendingDeletionRequestedAt": "2026-07-01T13:06:10.823Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T15:03:14.117Z",
-      "updatedAt": "2026-06-09T15:03:14.117Z",
+      "updatedAt": "2026-07-01T13:06:10.823Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3342,6 +3342,33 @@
       "updatedAt": "2026-07-01T13:03:59.004Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1782911147510_xniob0",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "RJ45",
+      "description": "RJ45",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 18,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-01T13:05:47.510Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-01T13:05:47.510Z",
+      "updatedAt": "2026-07-01T13:05:47.510Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3836,9 +3863,43 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781024683918_0z62tu\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Kit de Brocas\",\"description\":\"Kit de Brocas\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T17:04:43.918Z\",\"updatedAt\":\"2026-06-09T17:04:43.918Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782911170823_nbiztg",
+      "requestType": "item",
+      "itemId": "item_1781017394117_ifqu7y",
+      "itemName": "Tesoura",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-01T13:06:10.823Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781017394117_ifqu7y\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Tesoura\",\"description\":\"Tesoura\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":4,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:03:14.117Z\",\"updatedAt\":\"2026-06-09T15:03:14.117Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782911147523_qzf18v",
+      "itemId": "item_1782911147510_xniob0",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 18,
+      "previousQuantity": 0,
+      "newQuantity": 18,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T13:05:47.510Z"
+    },
     {
       "id": "mov_1782911039016_r5rrjt",
       "itemId": "item_1782911039004_afhtxm",
@@ -5102,25 +5163,42 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:02:54.475Z"
-    },
-    {
-      "id": "mov_1781280085523_usp4y8",
-      "itemId": "item_1781280085515_oqfwui",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:01:25.515Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782911170823_grzpah",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782911170823_nbiztg",
+      "entityLabel": "Tesoura",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "requestId": "delreq_1782911170823_nbiztg",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-01T13:06:10.823Z"
+    },
+    {
+      "id": "audit_1782911147533_chp0ug",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782911147510_xniob0",
+      "entityLabel": "RJ45",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 18,
+        "type": "material"
+      },
+      "createdAt": "2026-07-01T13:05:47.533Z"
+    },
     {
       "id": "audit_1782911102073_d9ujnn",
       "action": "inventory_item_updated",
