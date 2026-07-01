@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:01:20.122Z"
+    "importedAt": "2026-07-01T13:02:19.732Z"
   },
   "users": [
     {
@@ -464,7 +464,7 @@
       "description": "Luva",
       "sku": "",
       "serialNumber": "",
-      "quantity": 14,
+      "quantity": 8,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -475,7 +475,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:41:00.005Z",
-      "updatedAt": "2026-06-11T17:49:38.135Z",
+      "updatedAt": "2026-07-01T13:01:41.049Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -1706,7 +1706,7 @@
       "description": "Keystone",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 31,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1717,7 +1717,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:59:04.284Z",
-      "updatedAt": "2026-06-09T16:59:04.284Z",
+      "updatedAt": "2026-07-01T13:02:12.372Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -1820,12 +1820,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782910883900_ibdg6g",
+      "pendingDeletionRequestedAt": "2026-07-01T13:01:23.900Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T17:04:43.918Z",
-      "updatedAt": "2026-06-09T17:04:43.918Z",
+      "updatedAt": "2026-07-01T13:01:23.900Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3791,6 +3791,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781024095579_kzu7do\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Espelhos RJ45\",\"description\":\"Espelhos RJ45\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":2,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T16:54:55.579Z\",\"updatedAt\":\"2026-06-09T16:54:55.579Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782910883900_ibdg6g",
+      "requestType": "item",
+      "itemId": "item_1781024683918_0z62tu",
+      "itemName": "Kit de Brocas",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-01T13:01:23.900Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781024683918_0z62tu\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Kit de Brocas\",\"description\":\"Kit de Brocas\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T17:04:43.918Z\",\"updatedAt\":\"2026-06-09T17:04:43.918Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -5076,6 +5094,55 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910932380_wcpvt9",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024344284_yxced2",
+      "entityLabel": "Keystone",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 31,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:02:12.380Z"
+    },
+    {
+      "id": "audit_1782910901057_iym0vr",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016060005_7il9pb",
+      "entityLabel": "Luva",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 8,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:01:41.057Z"
+    },
+    {
+      "id": "audit_1782910883900_5w734r",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782910883900_ibdg6g",
+      "entityLabel": "Kit de Brocas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "requestId": "delreq_1782910883900_ibdg6g",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-01T13:01:23.900Z"
+    },
     {
       "id": "audit_1782910825580_z5b8l0",
       "action": "inventory_item_created",
