@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:56:15.505Z"
+    "importedAt": "2026-07-01T12:57:15.981Z"
   },
   "users": [
     {
@@ -599,7 +599,7 @@
       "description": "Eletroduto",
       "sku": "",
       "serialNumber": "",
-      "quantity": 5,
+      "quantity": 4,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -610,7 +610,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:45:06.572Z",
-      "updatedAt": "2026-06-11T17:50:00.736Z",
+      "updatedAt": "2026-07-01T12:56:38.457Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -2590,7 +2590,7 @@
     {
       "id": "item_1781283257212_j5q7xc",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
       "name": "•Kit 4 Pilhas Palitos Recarregáveis",
@@ -2607,10 +2607,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T16:54:17.212Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-01T12:57:09.639Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:54:17.212Z",
-      "updatedAt": "2026-06-12T16:54:17.212Z",
+      "updatedAt": "2026-07-01T12:57:09.639Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3740,6 +3740,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782910629639_bzpswc",
+      "itemId": "item_1781283257212_j5q7xc",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:57:09.639Z"
+    },
     {
       "id": "mov_1782909486943_iurdqb",
       "itemId": "item_1781018239624_lqfpp7",
@@ -5003,25 +5019,46 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T15:52:31.875Z"
-    },
-    {
-      "id": "mov_1781200313407_58qvl4",
-      "itemId": "item_1781200313400_g38n9n",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 2,
-      "previousQuantity": 0,
-      "newQuantity": 2,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-11T17:51:53.400Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910629639_ccaftl",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782910629639_bzpswc",
+      "entityLabel": "•Kit 4 Pilhas Palitos Recarregáveis",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:57:09.639Z"
+    },
+    {
+      "id": "audit_1782910598465_egi2y7",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016306572_v796jn",
+      "entityLabel": "Eletroduto",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:56:38.465Z"
+    },
     {
       "id": "audit_1782910517689_sng6px",
       "action": "inventory_item_updated",
