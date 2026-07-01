@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:37:49.163Z"
+    "importedAt": "2026-07-01T12:38:49.253Z"
   },
   "users": [
     {
@@ -1159,7 +1159,7 @@
     {
       "id": "item_1781018002387_0jzz3t",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "ferramenta",
       "category": "",
       "name": "Alicate Decapador",
@@ -1177,11 +1177,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:13:22.387Z",
-      "updatedAt": "2026-06-09T15:18:53.347Z",
+      "updatedAt": "2026-07-01T12:38:02.685Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-01T12:38:02.685Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781018040150_5teswn",
@@ -1267,7 +1267,7 @@
     {
       "id": "item_1781018182846_ued2to",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "ferramenta",
       "category": "",
       "name": "Alicate Universal",
@@ -1285,16 +1285,16 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:16:22.846Z",
-      "updatedAt": "2026-07-01T12:19:31.589Z",
+      "updatedAt": "2026-07-01T12:37:51.407Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-01T12:37:51.407Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781018239624_lqfpp7",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "ferramenta",
       "category": "",
       "name": "Alicate de Crimpar",
@@ -1312,11 +1312,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:17:19.624Z",
-      "updatedAt": "2026-06-09T15:17:19.624Z",
+      "updatedAt": "2026-07-01T12:38:06.942Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-01T12:38:06.942Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781018268159_rz8qeq",
@@ -1375,7 +1375,7 @@
     {
       "id": "item_1781018373645_hko91n",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "ferramenta",
       "category": "",
       "name": "Alicate Decapador de Fibra",
@@ -1393,11 +1393,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:19:33.645Z",
-      "updatedAt": "2026-06-09T15:19:33.645Z",
+      "updatedAt": "2026-07-01T12:37:58.938Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-01T12:37:58.938Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781018397329_zsmb3u",
@@ -3705,6 +3705,70 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1782909486943_iurdqb",
+      "itemId": "item_1781018239624_lqfpp7",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:38:06.943Z"
+    },
+    {
+      "id": "mov_1782909482685_inst7t",
+      "itemId": "item_1781018002387_0jzz3t",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:38:02.685Z"
+    },
+    {
+      "id": "mov_1782909478938_2o1203",
+      "itemId": "item_1781018373645_hko91n",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:37:58.938Z"
+    },
+    {
+      "id": "mov_1782909471407_aeay5m",
+      "itemId": "item_1781018182846_ued2to",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:37:51.407Z"
+    },
+    {
       "id": "mov_1782909468224_2tgse8",
       "itemId": "item_1781018078855_03eflr",
       "movementType": "transferencia",
@@ -4919,73 +4983,93 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-11T17:51:53.400Z"
-    },
-    {
-      "id": "mov_1781058662893_tn9h3v",
-      "itemId": "item_1781016951306_f273c4",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-10T02:31:02.893Z"
-    },
-    {
-      "id": "mov_1781058654273_huyecd",
-      "itemId": "item_1781016951306_f273c4",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-10T02:30:54.273Z"
-    },
-    {
-      "id": "mov_1781055213548_ylu2kg",
-      "itemId": "item_patch_cord",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 80,
-      "previousQuantity": 80,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-10T01:33:33.548Z"
-    },
-    {
-      "id": "mov_1781055209145_wzp6p6",
-      "itemId": "item_patch_cord",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 80,
-      "previousQuantity": 80,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-10T01:33:29.145Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782909486943_1ewe5v",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782909486943_iurdqb",
+      "entityLabel": "Alicate de Crimpar",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:38:06.942Z"
+    },
+    {
+      "id": "audit_1782909482685_x8zehq",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782909482685_inst7t",
+      "entityLabel": "Alicate Decapador",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:38:02.685Z"
+    },
+    {
+      "id": "audit_1782909478938_bdu5zs",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782909478938_2o1203",
+      "entityLabel": "Alicate Decapador de Fibra",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:37:58.938Z"
+    },
+    {
+      "id": "audit_1782909471407_e7cey3",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782909471407_aeay5m",
+      "entityLabel": "Alicate Universal",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:37:51.407Z"
+    },
     {
       "id": "audit_1782909468224_fm71dx",
       "action": "movement_transferencia",
