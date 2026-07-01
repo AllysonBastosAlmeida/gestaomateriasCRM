@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:47:12.169Z"
+    "importedAt": "2026-07-01T12:50:07.724Z"
   },
   "users": [
     {
@@ -713,12 +713,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782910207267_ke5ysf",
+      "pendingDeletionRequestedAt": "2026-07-01T12:50:07.267Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T14:48:57.955Z",
-      "updatedAt": "2026-06-09T14:48:57.955Z",
+      "updatedAt": "2026-07-01T12:50:07.267Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3701,6 +3701,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781018311114_m6pdqm\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Alicate de Corte (Precisão)\",\"description\":\"Alicate de Corte (Precisão)\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":0,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:18:31.114Z\",\"updatedAt\":\"2026-07-01T12:18:45.992Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782910207267_ke5ysf",
+      "requestType": "item",
+      "itemId": "item_1781016537955_axxlrx",
+      "itemName": "Conjunto Isolador de Porcelana",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-01T12:50:07.267Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781016537955_axxlrx\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Conjunto Isolador de Porcelana\",\"description\":\"Conjunto Isolador de Porcelana\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":3,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T14:48:57.955Z\",\"updatedAt\":\"2026-06-09T14:48:57.955Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -4986,6 +5004,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910207267_qqyx9g",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782910207267_ke5ysf",
+      "entityLabel": "Conjunto Isolador de Porcelana",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "requestId": "delreq_1782910207267_ke5ysf",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-01T12:50:07.267Z"
+    },
     {
       "id": "audit_1782909989735_uzt4wp",
       "action": "inventory_item_updated",
