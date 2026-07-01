@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:28:14.602Z"
+    "importedAt": "2026-07-01T12:29:16.167Z"
   },
   "users": [
     {
@@ -1544,7 +1544,7 @@
       "description": "Martelete",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1555,7 +1555,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:26:26.739Z",
-      "updatedAt": "2026-07-01T12:27:53.173Z",
+      "updatedAt": "2026-07-01T12:28:21.681Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -4941,6 +4941,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782908901692_ro2wgn",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018786739_tgihs4",
+      "entityLabel": "Martelete",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:28:21.692Z"
+    },
     {
       "id": "audit_1782908873180_ufbnj4",
       "action": "inventory_item_updated",
