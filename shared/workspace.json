@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:07:20.362Z"
+    "importedAt": "2026-07-01T13:08:20.221Z"
   },
   "users": [
     {
@@ -3322,8 +3322,8 @@
       "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
-      "name": "Patch Code (Fibra)",
-      "description": "Patch Code (Fibra)",
+      "name": "Patch Code Fibra Óptica",
+      "description": "Patch Code Fibra Óptica",
       "sku": "",
       "serialNumber": "",
       "quantity": 18,
@@ -3339,7 +3339,7 @@
       "activityHighlightAt": "2026-07-01T13:03:59.004Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-01T13:03:59.004Z",
-      "updatedAt": "2026-07-01T13:03:59.004Z",
+      "updatedAt": "2026-07-01T13:07:56.157Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -5166,6 +5166,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782911276166_6k703d",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782911039004_afhtxm",
+      "entityLabel": "Patch Code Fibra Óptica",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 18,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:07:56.166Z"
+    },
     {
       "id": "audit_1782911229253_by4zxp",
       "action": "inventory_item_updated",
