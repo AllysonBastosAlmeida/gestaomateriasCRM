@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:22:07.058Z"
+    "importedAt": "2026-07-01T12:23:05.175Z"
   },
   "users": [
     {
@@ -2104,7 +2104,7 @@
     {
       "id": "item_1781280424091_4598bj",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Etiquetadora",
@@ -2121,10 +2121,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T16:07:04.091Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-01T12:22:58.083Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:07:04.091Z",
-      "updatedAt": "2026-06-12T16:07:04.091Z",
+      "updatedAt": "2026-07-01T12:22:58.083Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3606,6 +3606,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1782908578083_mj5bq4",
+      "itemId": "item_1781280424091_4598bj",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:22:58.083Z"
+    },
+    {
       "id": "mov_1782908527009_0krogs",
       "itemId": "item_1781279779547_t8syyk",
       "movementType": "transferencia",
@@ -4868,25 +4884,30 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-02T19:49:28.682Z"
-    },
-    {
-      "id": "mov_1780429304984_r3i8cy",
-      "itemId": "item_nvr_16",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 3,
-      "previousQuantity": 3,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:41:44.984Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782908578083_yu3ewc",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782908578083_mj5bq4",
+      "entityLabel": "Etiquetadora",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:22:58.083Z"
+    },
     {
       "id": "audit_1782908527009_0kazt5",
       "action": "movement_transferencia",
