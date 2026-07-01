@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:08:20.221Z"
+    "importedAt": "2026-07-01T13:09:20.643Z"
   },
   "users": [
     {
@@ -448,7 +448,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:39:48.756Z",
-      "updatedAt": "2026-07-01T13:06:38.990Z",
+      "updatedAt": "2026-07-01T13:08:27.326Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -5166,6 +5166,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782911307335_hyq515",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015988756_o56ka0",
+      "entityLabel": "Unidute",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 77,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:08:27.335Z"
+    },
     {
       "id": "audit_1782911276166_6k703d",
       "action": "inventory_item_updated",
