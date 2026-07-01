@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:22:35.507Z"
+    "importedAt": "2026-07-01T13:23:30.442Z"
   },
   "users": [
     {
@@ -619,7 +619,7 @@
     {
       "id": "item_1781016370332_dfeah5",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
       "name": "Fita Dupla Faces",
@@ -637,11 +637,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:46:10.332Z",
-      "updatedAt": "2026-06-09T14:46:10.332Z",
+      "updatedAt": "2026-07-01T13:23:11.971Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-01T13:23:11.971Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781016410942_gx7s5n",
@@ -1699,7 +1699,7 @@
     {
       "id": "item_1781024344284_yxced2",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
       "name": "Keystone",
@@ -1717,11 +1717,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:59:04.284Z",
-      "updatedAt": "2026-07-01T13:02:12.372Z",
+      "updatedAt": "2026-07-01T13:23:28.923Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-01T13:23:28.923Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781024384839_3i32yf",
@@ -3292,7 +3292,7 @@
     {
       "id": "item_1782910825555_jvs4aw",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
       "name": "Fita Isolante",
@@ -3309,10 +3309,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-01T13:00:25.555Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-01T13:23:02.262Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-07-01T13:00:25.555Z",
-      "updatedAt": "2026-07-01T13:00:25.555Z",
+      "updatedAt": "2026-07-01T13:23:02.262Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3884,6 +3884,54 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782912208923_cudqq7",
+      "itemId": "item_1781024344284_yxced2",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 31,
+      "previousQuantity": 31,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T13:23:28.923Z"
+    },
+    {
+      "id": "mov_1782912191971_tmw50f",
+      "itemId": "item_1781016370332_dfeah5",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T13:23:11.971Z"
+    },
+    {
+      "id": "mov_1782912182262_hbac4l",
+      "itemId": "item_1782910825555_jvs4aw",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 6,
+      "previousQuantity": 6,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T13:23:02.262Z"
+    },
     {
       "id": "mov_1782911147523_qzf18v",
       "itemId": "item_1782911147510_xniob0",
@@ -5115,57 +5163,72 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:06:23.061Z"
-    },
-    {
-      "id": "mov_1781280357930_r5n1ot",
-      "itemId": "item_1781280357922_6uc64t",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:05:57.922Z"
-    },
-    {
-      "id": "mov_1781280270735_evem7p",
-      "itemId": "item_1781280270726_5unjhf",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:04:30.726Z"
-    },
-    {
-      "id": "mov_1781280174483_b4e83c",
-      "itemId": "item_1781280174475_uy3p1a",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:02:54.475Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782912208923_i5fanh",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782912208923_cudqq7",
+      "entityLabel": "Keystone",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 31,
+        "previousQuantity": 31,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T13:23:28.923Z"
+    },
+    {
+      "id": "audit_1782912191971_4oqlrr",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782912191971_tmw50f",
+      "entityLabel": "Fita Dupla Faces",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T13:23:11.971Z"
+    },
+    {
+      "id": "audit_1782912182262_26y3i8",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782912182262_hbac4l",
+      "entityLabel": "Fita Isolante",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 6,
+        "previousQuantity": 6,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T13:23:02.262Z"
+    },
     {
       "id": "audit_1782911307335_hyq515",
       "action": "inventory_item_updated",
