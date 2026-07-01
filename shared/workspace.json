@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:26:17.747Z"
+    "importedAt": "2026-07-01T12:27:10.762Z"
   },
   "users": [
     {
@@ -3207,6 +3207,33 @@
       "updatedAt": "2026-07-01T12:24:55.306Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1782908802614_szmmws",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "OTDR",
+      "description": "OTDR",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-01T12:26:42.614Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-01T12:26:42.614Z",
+      "updatedAt": "2026-07-01T12:26:42.614Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3632,6 +3659,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782908802624_p9jki4",
+      "itemId": "item_1782908802614_szmmws",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:26:42.614Z"
+    },
     {
       "id": "mov_1782908578083_mj5bq4",
       "itemId": "item_1781280424091_4598bj",
@@ -4895,25 +4938,25 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-03T00:50:21.431Z"
-    },
-    {
-      "id": "mov_1780429768682_5db5oc",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780427001685_wzi4zo",
-      "sourceUnitId": "unit_1780427001685_wzi4zo",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:49:28.682Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782908802634_iango7",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782908802614_szmmws",
+      "entityLabel": "OTDR",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-01T12:26:42.634Z"
+    },
     {
       "id": "audit_1782908695314_zargrz",
       "action": "inventory_item_updated",
