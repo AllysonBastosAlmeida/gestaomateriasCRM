@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:04:20.008Z"
+    "importedAt": "2026-07-01T13:05:20.117Z"
   },
   "users": [
     {
@@ -1187,7 +1187,7 @@
       "id": "item_1781018040150_5teswn",
       "clientId": "client_beta",
       "unitId": "unit_beta_e",
-      "type": "material",
+      "type": "ferramenta",
       "category": "",
       "name": "Punch Down",
       "description": "Punch Down",
@@ -1204,7 +1204,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:14:00.150Z",
-      "updatedAt": "2026-06-09T15:14:00.150Z",
+      "updatedAt": "2026-07-01T13:05:02.067Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -5121,6 +5121,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782911102073_d9ujnn",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018040150_5teswn",
+      "entityLabel": "Punch Down",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T13:05:02.073Z"
+    },
     {
       "id": "audit_1782911039027_n5hrfj",
       "action": "inventory_item_created",
