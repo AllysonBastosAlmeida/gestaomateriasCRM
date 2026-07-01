@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:18:46.048Z"
+    "importedAt": "2026-07-01T12:18:55.071Z"
   },
   "users": [
     {
@@ -4887,6 +4887,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782908326000_74rfk8",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018311114_m6pdqm",
+      "entityLabel": "Alicate de Corte (Precisão)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 0,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:18:46.000Z"
+    },
     {
       "id": "audit_1782908020593_rf4o4c",
       "action": "auth_login",
