@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:19:55.130Z"
+    "importedAt": "2026-07-01T12:22:07.058Z"
   },
   "users": [
     {
@@ -1942,7 +1942,7 @@
     {
       "id": "item_1781279779547_t8syyk",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Chave Fenda",
@@ -1959,10 +1959,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T15:56:19.547Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-01T12:22:07.008Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T15:56:19.547Z",
-      "updatedAt": "2026-06-12T15:56:19.547Z",
+      "updatedAt": "2026-07-01T12:22:07.008Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3606,6 +3606,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1782908527009_0krogs",
+      "itemId": "item_1781279779547_t8syyk",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T12:22:07.009Z"
+    },
+    {
       "id": "mov_1782124761067_1bp1ss",
       "itemId": "item_1782124761058_bi7ldd",
       "movementType": "entrada",
@@ -4868,25 +4884,30 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-02T19:41:44.984Z"
-    },
-    {
-      "id": "mov_1780427006864_1sryp4",
-      "itemId": "item_torquimetro",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_1780427001685_wzi4zo",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-02T19:03:26.864Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782908527009_0kazt5",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782908527009_0krogs",
+      "entityLabel": "Chave Fenda",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T12:22:07.008Z"
+    },
     {
       "id": "audit_1782908371596_d7ko61",
       "action": "inventory_item_updated",
