@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T13:24:31.563Z"
+    "importedAt": "2026-07-01T13:25:35.353Z"
   },
   "users": [
     {
@@ -3346,7 +3346,7 @@
     {
       "id": "item_1782911147510_xniob0",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
       "name": "RJ45",
@@ -3363,10 +3363,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-01T13:05:47.510Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-01T13:24:47.169Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-07-01T13:05:47.510Z",
-      "updatedAt": "2026-07-01T13:05:47.510Z",
+      "updatedAt": "2026-07-01T13:24:47.169Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -3884,6 +3884,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1782912287169_r225dg",
+      "itemId": "item_1782911147510_xniob0",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 18,
+      "previousQuantity": 18,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-01T13:24:47.169Z"
+    },
     {
       "id": "mov_1782912266004_s68g4x",
       "itemId": "item_1781016951306_f273c4",
@@ -5147,25 +5163,30 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:21:52.544Z"
-    },
-    {
-      "id": "mov_1781281189256_6zyxi5",
-      "itemId": "item_1781281189247_gl6ywa",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:19:49.247Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782912287169_08khuk",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1782912287169_r225dg",
+      "entityLabel": "RJ45",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 18,
+        "previousQuantity": 18,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-01T13:24:47.169Z"
+    },
     {
       "id": "audit_1782912266004_cn15ga",
       "action": "movement_transferencia",
