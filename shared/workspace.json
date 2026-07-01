@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:53:40.589Z"
+    "importedAt": "2026-07-01T12:54:10.857Z"
   },
   "users": [
     {
@@ -1631,12 +1631,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1782910429720_1440kj",
+      "pendingDeletionRequestedAt": "2026-07-01T12:53:49.720Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T16:54:55.579Z",
-      "updatedAt": "2026-06-09T16:54:55.579Z",
+      "updatedAt": "2026-07-01T12:53:49.720Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -3719,6 +3719,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781016537955_axxlrx\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Conjunto Isolador de Porcelana\",\"description\":\"Conjunto Isolador de Porcelana\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":3,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T14:48:57.955Z\",\"updatedAt\":\"2026-06-09T14:48:57.955Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1782910429720_1440kj",
+      "requestType": "item",
+      "itemId": "item_1781024095579_kzu7do",
+      "itemName": "Espelhos RJ45",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-01T12:53:49.720Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781024095579_kzu7do\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Espelhos RJ45\",\"description\":\"Espelhos RJ45\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":2,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T16:54:55.579Z\",\"updatedAt\":\"2026-06-09T16:54:55.579Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -5004,6 +5022,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910429720_5quf1a",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1782910429720_1440kj",
+      "entityLabel": "Espelhos RJ45",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "requestId": "delreq_1782910429720_1440kj",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-01T12:53:49.720Z"
+    },
     {
       "id": "audit_1782910207267_qqyx9g",
       "action": "inventory_item_deletion_requested",
