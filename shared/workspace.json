@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:24:31.838Z"
+    "importedAt": "2026-07-01T12:25:05.169Z"
   },
   "users": [
     {
@@ -3187,8 +3187,8 @@
       "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
-      "name": "Kit brocas",
-      "description": "Kit brocas",
+      "name": "Kit Brocas",
+      "description": "Kit Brocas",
       "sku": "",
       "serialNumber": "",
       "quantity": 1,
@@ -3204,7 +3204,7 @@
       "activityHighlightAt": "2026-07-01T12:24:31.771Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-01T12:24:31.771Z",
-      "updatedAt": "2026-07-01T12:24:31.771Z",
+      "updatedAt": "2026-07-01T12:24:55.306Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -4914,6 +4914,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782908695314_zargrz",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782908671771_bx7mdt",
+      "entityLabel": "Kit Brocas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:24:55.314Z"
+    },
     {
       "id": "audit_1782908578083_yu3ewc",
       "action": "movement_transferencia",
