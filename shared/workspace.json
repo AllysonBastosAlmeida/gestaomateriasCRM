@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:54:10.857Z"
+    "importedAt": "2026-07-01T12:55:14.643Z"
   },
   "users": [
     {
@@ -379,8 +379,8 @@
       "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
-      "name": "Tampa Cega (Condoletes)",
-      "description": "Tampa Cega (Condoletes)",
+      "name": "Espelho Cego (Condoletes)",
+      "description": "Espelho Cego (Condoletes)",
       "sku": "",
       "serialNumber": "",
       "quantity": 29,
@@ -394,7 +394,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:38:01.139Z",
-      "updatedAt": "2026-06-09T14:49:57.108Z",
+      "updatedAt": "2026-07-01T12:54:43.033Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -5022,6 +5022,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1782910483041_v31u76",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015881139_g5c5sn",
+      "entityLabel": "Espelho Cego (Condoletes)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 29,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-01T12:54:43.041Z"
+    },
     {
       "id": "audit_1782910429720_5quf1a",
       "action": "inventory_item_deletion_requested",
