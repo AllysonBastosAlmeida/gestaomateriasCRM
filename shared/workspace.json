@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-01T12:23:05.175Z"
+    "importedAt": "2026-07-01T12:24:31.838Z"
   },
   "users": [
     {
@@ -3180,6 +3180,33 @@
       "updatedAt": "2026-06-22T10:39:21.058Z",
       "createdBy": "user_admin",
       "updatedBy": "user_admin"
+    },
+    {
+      "id": "item_1782908671771_bx7mdt",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Kit brocas",
+      "description": "Kit brocas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-01T12:24:31.771Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-01T12:24:31.771Z",
+      "updatedAt": "2026-07-01T12:24:31.771Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
