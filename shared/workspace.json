@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:33:11.727Z"
+    "importedAt": "2026-07-24T13:33:26.247Z"
   },
   "users": [
     {
@@ -4227,6 +4227,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784899991667_fz7agz",
+      "itemId": "item_1784899991654_s1vyrb",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:33:11.654Z"
+    },
+    {
       "id": "mov_1784899661748_hlx8zn",
       "itemId": "item_1784899661740_xs9sjm",
       "movementType": "entrada",
@@ -5489,25 +5505,25 @@
       "notes": "",
       "performedBy": "user_operador2",
       "performedAt": "2026-06-15T11:49:07.337Z"
-    },
-    {
-      "id": "mov_1781524100444_xyc1va",
-      "itemId": "item_1781281312544_ff0cyt",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_c",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador2",
-      "performedAt": "2026-06-15T11:48:20.445Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899991677_taoo41",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784899991654_s1vyrb",
+      "entityLabel": "Abraçadeira",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:33:11.677Z"
+    },
     {
       "id": "audit_1784899804281_9t6zrg",
       "action": "auth_login",
