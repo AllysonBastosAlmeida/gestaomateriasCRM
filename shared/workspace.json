@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:08:48.105Z"
+    "importedAt": "2026-07-24T13:09:48.200Z"
   },
   "users": [
     {
@@ -3342,6 +3342,60 @@
       "updatedAt": "2026-07-24T13:08:18.250Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784898546565_g21l9h",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate Universal",
+      "description": "Alicate Universal",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:09:06.565Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:09:06.565Z",
+      "updatedAt": "2026-07-24T13:09:06.565Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784898575346_8f929i",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate de Corte",
+      "description": "Alicate de Corte",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:09:35.346Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:09:35.346Z",
+      "updatedAt": "2026-07-24T13:09:35.346Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3857,6 +3911,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784898575358_u67zax",
+      "itemId": "item_1784898575346_8f929i",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:09:35.346Z"
+    },
+    {
+      "id": "mov_1784898546578_0wce8b",
+      "itemId": "item_1784898546565_g21l9h",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:09:06.565Z"
+    },
     {
       "id": "mov_1784898498259_ip3mwe",
       "itemId": "item_1784898498250_w16mf2",
@@ -5104,41 +5190,41 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:38:36.098Z"
-    },
-    {
-      "id": "mov_1781282292464_tkvvu9",
-      "itemId": "item_1781282292455_a56yr3",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 4,
-      "previousQuantity": 0,
-      "newQuantity": 4,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:38:12.455Z"
-    },
-    {
-      "id": "mov_1781282186780_oifpcn",
-      "itemId": "item_1781282186772_n7v7k1",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 13,
-      "previousQuantity": 0,
-      "newQuantity": 13,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:36:26.772Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784898575369_n3n6j8",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784898575346_8f929i",
+      "entityLabel": "Alicate de Corte",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-24T13:09:35.369Z"
+    },
+    {
+      "id": "audit_1784898546588_zf5ujk",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784898546565_g21l9h",
+      "entityLabel": "Alicate Universal",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-24T13:09:06.588Z"
+    },
     {
       "id": "audit_1784898498267_qsasy0",
       "action": "inventory_item_created",
