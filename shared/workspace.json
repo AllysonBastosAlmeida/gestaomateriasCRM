@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:28:41.336Z"
+    "importedAt": "2026-07-24T13:29:45.679Z"
   },
   "users": [
     {
@@ -1051,14 +1051,14 @@
     {
       "id": "item_1781017934043_bn2crr",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_beta_c",
       "type": "material",
       "category": "",
       "name": "Pote de Parafusos e Buchas",
       "description": "Pote de Parafusos e Buchas",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1069,11 +1069,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:12:14.043Z",
-      "updatedAt": "2026-06-09T17:01:04.293Z",
+      "updatedAt": "2026-07-24T13:29:07.775Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-24T13:28:40.666Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781017973217_3rbvdx",
@@ -5481,6 +5481,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899747782_i509tb",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017934043_bn2crr",
+      "entityLabel": "Pote de Parafusos e Buchas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:29:07.782Z"
+    },
     {
       "id": "audit_1784899661756_559l6z",
       "action": "inventory_item_created",
