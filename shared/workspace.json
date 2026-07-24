@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:07:30.796Z"
+    "importedAt": "2026-07-24T13:08:48.105Z"
   },
   "users": [
     {
@@ -28,8 +28,8 @@
       "role": "funcionario",
       "active": true,
       "createdAt": "2026-06-02T12:00:00Z",
-      "updatedAt": "2026-07-24T13:03:58.119Z",
-      "lastLoginAt": "2026-07-24T13:03:58.119Z",
+      "updatedAt": "2026-07-24T13:07:59.458Z",
+      "lastLoginAt": "2026-07-24T13:07:59.458Z",
       "password": "102030"
     },
     {
@@ -3315,6 +3315,33 @@
       "updatedAt": "2026-07-24T13:07:22.830Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784898498250_w16mf2",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate Punch Down",
+      "description": "Alicate Punch Down",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:08:18.250Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:08:18.250Z",
+      "updatedAt": "2026-07-24T13:08:18.250Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3830,6 +3857,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784898498259_ip3mwe",
+      "itemId": "item_1784898498250_w16mf2",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:08:18.250Z"
+    },
     {
       "id": "mov_1784898442842_mwbpxy",
       "itemId": "item_1784898442830_8i0e4t",
@@ -5093,25 +5136,40 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:36:26.772Z"
-    },
-    {
-      "id": "mov_1781281942278_jgbb7g",
-      "itemId": "item_1781281942268_o6dd2u",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 18,
-      "previousQuantity": 0,
-      "newQuantity": 18,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:32:22.268Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784898498267_qsasy0",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784898498250_w16mf2",
+      "entityLabel": "Alicate Punch Down",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-24T13:08:18.267Z"
+    },
+    {
+      "id": "audit_1784898479474_4n08xx",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Rodrigo de Farias Barbosa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "05"
+      },
+      "createdAt": "2026-07-24T13:07:59.474Z"
+    },
     {
       "id": "audit_1784898442851_i12gpr",
       "action": "inventory_item_created",
