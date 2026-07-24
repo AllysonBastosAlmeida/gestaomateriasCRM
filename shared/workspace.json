@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:44:10.430Z"
+    "importedAt": "2026-07-24T13:45:14.323Z"
   },
   "users": [
     {
@@ -1321,7 +1321,7 @@
     {
       "id": "item_1781018397329_zsmb3u",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Pincel",
@@ -1339,10 +1339,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:19:57.329Z",
-      "updatedAt": "2026-07-01T12:36:14.520Z",
+      "updatedAt": "2026-07-24T13:44:46.082Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T12:36:14.520Z",
+      "activityHighlightAt": "2026-07-24T13:44:46.082Z",
       "activityHighlightType": "moved"
     },
     {
@@ -1645,7 +1645,7 @@
     {
       "id": "item_1781024436965_vs8goz",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Tesoura de Eletroduto",
@@ -1663,10 +1663,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T17:00:36.965Z",
-      "updatedAt": "2026-07-01T12:36:04.766Z",
+      "updatedAt": "2026-07-24T13:45:10.851Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T12:36:04.766Z",
+      "activityHighlightAt": "2026-07-24T13:45:10.851Z",
       "activityHighlightType": "moved"
     },
     {
@@ -1996,7 +1996,7 @@
     {
       "id": "item_1781280619906_dnmybq",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Passador de Cabos",
@@ -2013,10 +2013,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T16:10:19.906Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-24T13:44:39.036Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:10:19.906Z",
-      "updatedAt": "2026-06-12T16:10:19.906Z",
+      "updatedAt": "2026-07-24T13:44:39.036Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -4245,6 +4245,54 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900710851_mks9i0",
+      "itemId": "item_1781024436965_vs8goz",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:45:10.851Z"
+    },
+    {
+      "id": "mov_1784900686082_xvx9iy",
+      "itemId": "item_1781018397329_zsmb3u",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:44:46.082Z"
+    },
+    {
+      "id": "mov_1784900679036_ukesl2",
+      "itemId": "item_1781280619906_dnmybq",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:44:39.036Z"
+    },
+    {
       "id": "mov_1784900639894_vj0lbi",
       "itemId": "item_1781017817086_6cin1n",
       "movementType": "transferencia",
@@ -5475,57 +5523,72 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:31:59.435Z"
-    },
-    {
-      "id": "mov_1782908802624_p9jki4",
-      "itemId": "item_1782908802614_szmmws",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:26:42.614Z"
-    },
-    {
-      "id": "mov_1782908578083_mj5bq4",
-      "itemId": "item_1781280424091_4598bj",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:22:58.083Z"
-    },
-    {
-      "id": "mov_1782908527009_0krogs",
-      "itemId": "item_1781279779547_t8syyk",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:22:07.009Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900710851_vve8f3",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900710851_mks9i0",
+      "entityLabel": "Tesoura de Eletroduto",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:45:10.851Z"
+    },
+    {
+      "id": "audit_1784900686082_5mz7hk",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900686082_xvx9iy",
+      "entityLabel": "Pincel",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:44:46.082Z"
+    },
+    {
+      "id": "audit_1784900679036_hq9fma",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900679036_ukesl2",
+      "entityLabel": "Passador de Cabos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:44:39.036Z"
+    },
     {
       "id": "audit_1784900639894_jbq30n",
       "action": "movement_transferencia",
