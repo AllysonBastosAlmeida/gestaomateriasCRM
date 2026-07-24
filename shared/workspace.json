@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:46:14.611Z"
+    "importedAt": "2026-07-24T13:47:14.606Z"
   },
   "users": [
     {
@@ -1078,7 +1078,7 @@
     {
       "id": "item_1781017973217_3rbvdx",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Cinta de Ferramentas",
@@ -1096,10 +1096,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:12:53.217Z",
-      "updatedAt": "2026-07-01T12:37:29.322Z",
+      "updatedAt": "2026-07-24T13:46:50.327Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T12:37:29.322Z",
+      "activityHighlightAt": "2026-07-24T13:46:50.327Z",
       "activityHighlightType": "moved"
     },
     {
@@ -4245,6 +4245,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900810327_t2pjv5",
+      "itemId": "item_1781017973217_3rbvdx",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:46:50.327Z"
+    },
+    {
       "id": "mov_1784900728397_jqqynq",
       "itemId": "item_1781017683103_4vhukt",
       "movementType": "transferencia",
@@ -5507,25 +5523,30 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:35:59.466Z"
-    },
-    {
-      "id": "mov_1782909351829_0s9u9o",
-      "itemId": "item_1781018113153_e0wmwc",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:35:51.829Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900810327_cnt2dq",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900810327_t2pjv5",
+      "entityLabel": "Cinta de Ferramentas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:46:50.327Z"
+    },
     {
       "id": "audit_1784900728397_j0cyj7",
       "action": "movement_transferencia",
