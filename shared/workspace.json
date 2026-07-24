@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:14:11.285Z"
+    "importedAt": "2026-07-24T13:15:29.713Z"
   },
   "users": [
     {
@@ -3305,14 +3305,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1784898869446_un05e1",
+      "pendingDeletionRequestedAt": "2026-07-24T13:14:29.446Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-07-24T13:07:22.830Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-24T13:07:22.830Z",
-      "updatedAt": "2026-07-24T13:07:22.830Z",
+      "updatedAt": "2026-07-24T13:14:29.446Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3961,6 +3961,24 @@
       "reviewedAt": "2026-07-07T21:56:23.882Z",
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781017394117_ifqu7y\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Tesoura\",\"description\":\"Tesoura\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":4,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:03:14.117Z\",\"updatedAt\":\"2026-06-09T15:03:14.117Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1784898869446_un05e1",
+      "requestType": "item",
+      "itemId": "item_1784898442830_8i0e4t",
+      "itemName": "Alicate Punch Down",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-24T13:14:29.446Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1784898442830_8i0e4t\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_c\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Alicate Punch Down\",\"description\":\"Alicate Punch Down\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-07-24T13:07:22.830Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-07-24T13:07:22.830Z\",\"updatedAt\":\"2026-07-24T13:07:22.830Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
     }
   ],
@@ -5247,6 +5265,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784898869446_g1i1fh",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1784898869446_un05e1",
+      "entityLabel": "Alicate Punch Down",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "requestId": "delreq_1784898869446_un05e1",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-24T13:14:29.446Z"
+    },
     {
       "id": "audit_1784898603975_dctoo9",
       "action": "inventory_item_created",
