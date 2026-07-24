@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:43:08.946Z"
+    "importedAt": "2026-07-24T13:44:10.430Z"
   },
   "users": [
     {
@@ -1024,7 +1024,7 @@
     {
       "id": "item_1781017817086_6cin1n",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Martelo",
@@ -1042,10 +1042,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:10:17.086Z",
-      "updatedAt": "2026-07-01T12:36:22.857Z",
+      "updatedAt": "2026-07-24T13:43:59.894Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T12:36:22.857Z",
+      "activityHighlightAt": "2026-07-24T13:43:59.894Z",
       "activityHighlightType": "moved"
     },
     {
@@ -1274,7 +1274,7 @@
       "description": "Marreta de Borracha",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1285,7 +1285,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:17:48.159Z",
-      "updatedAt": "2026-07-01T12:36:35.057Z",
+      "updatedAt": "2026-07-24T13:43:51.318Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-01T12:36:35.057Z",
@@ -4245,6 +4245,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900639894_vj0lbi",
+      "itemId": "item_1781017817086_6cin1n",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:43:59.894Z"
+    },
+    {
       "id": "mov_1784900581403_hdl1yk",
       "itemId": "item_1782908671771_bx7mdt",
       "movementType": "transferencia",
@@ -5507,25 +5523,46 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:22:07.009Z"
-    },
-    {
-      "id": "mov_1782124761067_1bp1ss",
-      "itemId": "item_1782124761058_bi7ldd",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 200,
-      "previousQuantity": 0,
-      "newQuantity": 200,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:39:21.058Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900639894_jbq30n",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900639894_vj0lbi",
+      "entityLabel": "Martelo",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:43:59.894Z"
+    },
+    {
+      "id": "audit_1784900631327_tqqk13",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018268159_rz8qeq",
+      "entityLabel": "Marreta de Borracha",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:43:51.327Z"
+    },
     {
       "id": "audit_1784900581403_5ir4mj",
       "action": "movement_transferencia",
