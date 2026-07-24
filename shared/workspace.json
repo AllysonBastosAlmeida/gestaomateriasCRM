@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:20:45.389Z"
+    "importedAt": "2026-07-24T13:23:14.065Z"
   },
   "users": [
     {
@@ -1726,7 +1726,7 @@
     {
       "id": "item_1781200313400_g38n9n",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_beta_c",
       "type": "material",
       "category": "",
       "name": "Roldana de Plástico",
@@ -1743,10 +1743,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-11T17:51:53.400Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-24T13:21:26.556Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-11T17:51:53.400Z",
-      "updatedAt": "2026-06-11T17:51:53.400Z",
+      "updatedAt": "2026-07-24T13:21:26.556Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3538,8 +3538,8 @@
       "unitId": "unit_beta_c",
       "type": "material",
       "category": "",
-      "name": "Uniduti",
-      "description": "Uniduti",
+      "name": "Unidute",
+      "description": "Unidute",
       "sku": "",
       "serialNumber": "",
       "quantity": 2,
@@ -3555,7 +3555,7 @@
       "activityHighlightAt": "2026-07-24T13:20:31.187Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-24T13:20:31.187Z",
-      "updatedAt": "2026-07-24T13:20:31.187Z",
+      "updatedAt": "2026-07-24T13:20:51.463Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -4091,6 +4091,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784899286557_kgdvv3",
+      "itemId": "item_1781200313400_g38n9n",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:21:26.557Z"
+    },
     {
       "id": "mov_1784899231199_barka9",
       "itemId": "item_1784899231187_1bj5ol",
@@ -5354,25 +5370,46 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:55:00.199Z"
-    },
-    {
-      "id": "mov_1781283257223_0jzbgq",
-      "itemId": "item_1781283257212_j5q7xc",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:54:17.212Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899286557_h8wyyt",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784899286557_kgdvv3",
+      "entityLabel": "Roldana de Plástico",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:21:26.556Z"
+    },
+    {
+      "id": "audit_1784899251471_g69q6a",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784899231187_1bj5ol",
+      "entityLabel": "Unidute",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 2,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:20:51.471Z"
+    },
     {
       "id": "audit_1784899231209_nc8phm",
       "action": "inventory_item_created",
