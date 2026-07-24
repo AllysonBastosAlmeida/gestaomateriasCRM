@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:24:29.461Z"
+    "importedAt": "2026-07-24T13:25:31.942Z"
   },
   "users": [
     {
@@ -1591,7 +1591,7 @@
     {
       "id": "item_1781024344284_yxced2",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_c",
       "type": "material",
       "category": "",
       "name": "Keystone",
@@ -1609,10 +1609,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:59:04.284Z",
-      "updatedAt": "2026-07-01T13:23:28.923Z",
+      "updatedAt": "2026-07-24T13:25:03.696Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T13:23:28.923Z",
+      "activityHighlightAt": "2026-07-24T13:25:03.696Z",
       "activityHighlightType": "moved"
     },
     {
@@ -3585,6 +3585,33 @@
       "updatedAt": "2026-07-24T13:23:26.449Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784899476243_fcsmt4",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "Switch",
+      "description": "Switch",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:24:36.243Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:24:36.243Z",
+      "updatedAt": "2026-07-24T13:24:36.243Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4118,6 +4145,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784899503696_1htjkx",
+      "itemId": "item_1781024344284_yxced2",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 31,
+      "previousQuantity": 31,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:25:03.696Z"
+    },
+    {
+      "id": "mov_1784899476255_qer28y",
+      "itemId": "item_1784899476243_fcsmt4",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:24:36.243Z"
+    },
     {
       "id": "mov_1784899406462_tk7ong",
       "itemId": "item_1784899406449_8xictq",
@@ -5365,41 +5424,46 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:56:38.795Z"
-    },
-    {
-      "id": "mov_1781283371063_42ubxa",
-      "itemId": "item_1781283371052_71cm5c",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 2,
-      "previousQuantity": 0,
-      "newQuantity": 2,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:56:11.052Z"
-    },
-    {
-      "id": "mov_1781283338415_qrq2qf",
-      "itemId": "item_1781283338405_yrqcaj",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:55:38.405Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899503696_iswyau",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784899503696_1htjkx",
+      "entityLabel": "Keystone",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 31,
+        "previousQuantity": 31,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:25:03.696Z"
+    },
+    {
+      "id": "audit_1784899476265_xm7au2",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784899476243_fcsmt4",
+      "entityLabel": "Switch",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:24:36.265Z"
+    },
     {
       "id": "audit_1784899406471_etz2vc",
       "action": "inventory_item_created",
