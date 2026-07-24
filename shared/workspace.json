@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:42:05.510Z"
+    "importedAt": "2026-07-24T13:43:08.946Z"
   },
   "users": [
     {
@@ -1969,7 +1969,7 @@
     {
       "id": "item_1781280424091_4598bj",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Etiquetadora",
@@ -1986,10 +1986,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-01T12:37:13.861Z",
+      "activityHighlightAt": "2026-07-24T13:42:32.928Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:07:04.091Z",
-      "updatedAt": "2026-07-01T12:37:13.861Z",
+      "updatedAt": "2026-07-24T13:42:32.928Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3049,7 +3049,7 @@
     {
       "id": "item_1782908671771_bx7mdt",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Kit Brocas",
@@ -3066,10 +3066,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-01T12:36:47.867Z",
+      "activityHighlightAt": "2026-07-24T13:43:01.403Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-07-01T12:24:31.771Z",
-      "updatedAt": "2026-07-01T12:36:47.867Z",
+      "updatedAt": "2026-07-24T13:43:01.403Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -4244,6 +4244,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784900581403_hdl1yk",
+      "itemId": "item_1782908671771_bx7mdt",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:43:01.403Z"
+    },
+    {
+      "id": "mov_1784900552928_t2erbg",
+      "itemId": "item_1781280424091_4598bj",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:42:32.928Z"
+    },
     {
       "id": "mov_1784900489905_d4iioc",
       "itemId": "item_1781280270726_5unjhf",
@@ -5491,41 +5523,51 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-22T10:39:21.058Z"
-    },
-    {
-      "id": "mov_1782124723147_2g9a4p",
-      "itemId": "item_1782124723138_0ztlfm",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:38:43.138Z"
-    },
-    {
-      "id": "mov_1782124709334_c153wt",
-      "itemId": "item_1782124709326_imt352",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 9,
-      "previousQuantity": 0,
-      "newQuantity": 9,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:38:29.326Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900581403_5ir4mj",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900581403_hdl1yk",
+      "entityLabel": "Kit Brocas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:43:01.403Z"
+    },
+    {
+      "id": "audit_1784900552928_d0sk99",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900552928_t2erbg",
+      "entityLabel": "Etiquetadora",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:42:32.928Z"
+    },
     {
       "id": "audit_1784900489905_f1ezsi",
       "action": "movement_transferencia",
