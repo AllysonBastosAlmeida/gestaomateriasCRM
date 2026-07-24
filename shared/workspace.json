@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:25:31.942Z"
+    "importedAt": "2026-07-24T13:26:31.132Z"
   },
   "users": [
     {
@@ -1594,11 +1594,11 @@
       "unitId": "unit_beta_c",
       "type": "material",
       "category": "",
-      "name": "Keystone",
-      "description": "Keystone",
+      "name": "Keystone CAT5e",
+      "description": "Keystone CAT5e",
       "sku": "",
       "serialNumber": "",
-      "quantity": 31,
+      "quantity": 25,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1609,7 +1609,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:59:04.284Z",
-      "updatedAt": "2026-07-24T13:25:03.696Z",
+      "updatedAt": "2026-07-24T13:26:02.970Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-24T13:25:03.696Z",
@@ -5427,6 +5427,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899562977_fn766s",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024344284_yxced2",
+      "entityLabel": "Keystone CAT5e",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 25,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:26:02.977Z"
+    },
     {
       "id": "audit_1784899503696_iswyau",
       "action": "movement_transferencia",
