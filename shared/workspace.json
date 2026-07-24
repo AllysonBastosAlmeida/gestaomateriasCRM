@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T14:05:10.016Z"
+    "importedAt": "2026-07-24T14:06:22.377Z"
   },
   "users": [
     {
@@ -3826,6 +3826,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-24T14:03:04.840Z",
       "updatedAt": "2026-07-24T14:03:04.840Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784901982301_lks7ar",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "Corrugado",
+      "description": "Corrugado",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T14:06:22.301Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T14:06:22.301Z",
+      "updatedAt": "2026-07-24T14:06:22.301Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
