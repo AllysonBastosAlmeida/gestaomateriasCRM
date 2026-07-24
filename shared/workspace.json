@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:31:26.303Z"
+    "importedAt": "2026-07-24T13:33:11.727Z"
   },
   "users": [
     {
@@ -3664,6 +3664,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-24T13:27:41.740Z",
       "updatedAt": "2026-07-24T13:27:41.740Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784899991654_s1vyrb",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "Abraçadeira",
+      "description": "Abraçadeira",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:33:11.654Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:33:11.654Z",
+      "updatedAt": "2026-07-24T13:33:11.654Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
