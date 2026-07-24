@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:55:39.089Z"
+    "importedAt": "2026-07-24T13:56:45.026Z"
   },
   "users": [
     {
@@ -3747,6 +3747,33 @@
       "updatedAt": "2026-07-24T13:54:45.582Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784901365224_drcb57",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Fita Helleman Grande (Pacote)",
+      "description": "Fita Helleman Grande (Pacote)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:56:05.224Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:56:05.224Z",
+      "updatedAt": "2026-07-24T13:56:05.224Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4298,6 +4325,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784901365237_px48sp",
+      "itemId": "item_1784901365224_drcb57",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:56:05.224Z"
+    },
     {
       "id": "mov_1784901311307_jxarl2",
       "itemId": "item_1781016951306_f273c4",
@@ -5561,25 +5604,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:36:14.520Z"
-    },
-    {
-      "id": "mov_1782909371813_s9h0jy",
-      "itemId": "item_1781017363362_56diw8",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:11.813Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784901365248_y59gfy",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784901365224_drcb57",
+      "entityLabel": "Fita Helleman Grande (Pacote)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:56:05.248Z"
+    },
     {
       "id": "audit_1784901311307_bapiex",
       "action": "movement_transferencia",
