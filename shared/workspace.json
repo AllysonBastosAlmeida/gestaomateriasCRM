@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:17:42.701Z"
+    "importedAt": "2026-07-24T13:18:44.249Z"
   },
   "users": [
     {
@@ -3477,6 +3477,33 @@
       "updatedAt": "2026-07-24T13:16:51.498Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784899071881_c2fb6t",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "Luvas",
+      "description": "Luvas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 6,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:17:51.881Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:17:51.881Z",
+      "updatedAt": "2026-07-24T13:17:51.881Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4010,6 +4037,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784899071893_q233wt",
+      "itemId": "item_1784899071881_c2fb6t",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 6,
+      "previousQuantity": 0,
+      "newQuantity": 6,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:17:51.881Z"
+    },
     {
       "id": "mov_1784899011512_c50lrx",
       "itemId": "item_1784899011498_1x4trk",
@@ -5273,25 +5316,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:52:35.190Z"
-    },
-    {
-      "id": "mov_1781283092445_48igun",
-      "itemId": "item_1781283092436_237vc6",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 2,
-      "previousQuantity": 0,
-      "newQuantity": 2,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:51:32.436Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899071902_0nvfyu",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784899071881_c2fb6t",
+      "entityLabel": "Luvas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 6,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:17:51.902Z"
+    },
     {
       "id": "audit_1784899011522_uhmz3h",
       "action": "inventory_item_created",
