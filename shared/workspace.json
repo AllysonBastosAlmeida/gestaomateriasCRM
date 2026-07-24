@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:26:31.132Z"
+    "importedAt": "2026-07-24T13:27:34.887Z"
   },
   "users": [
     {
@@ -3612,6 +3612,33 @@
       "updatedAt": "2026-07-24T13:24:36.243Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784899619557_2uq4jk",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "Abraçadeira de Poste",
+      "description": "Abraçadeira de Poste",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 6,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:26:59.557Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:26:59.557Z",
+      "updatedAt": "2026-07-24T13:26:59.557Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4145,6 +4172,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784899619570_spqvc5",
+      "itemId": "item_1784899619557_2uq4jk",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 6,
+      "previousQuantity": 0,
+      "newQuantity": 6,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:26:59.557Z"
+    },
     {
       "id": "mov_1784899503696_1htjkx",
       "itemId": "item_1781024344284_yxced2",
@@ -5408,25 +5451,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:59:30.334Z"
-    },
-    {
-      "id": "mov_1781283398805_wvv083",
-      "itemId": "item_1781283398795_8lt6ui",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 7,
-      "previousQuantity": 0,
-      "newQuantity": 7,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:56:38.795Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899619580_ectqit",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784899619557_2uq4jk",
+      "entityLabel": "Abraçadeira de Poste",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 6,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:26:59.580Z"
+    },
     {
       "id": "audit_1784899562977_fn766s",
       "action": "inventory_item_updated",
