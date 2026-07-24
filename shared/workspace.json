@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:53:13.506Z"
+    "importedAt": "2026-07-24T13:54:33.560Z"
   },
   "users": [
     {
@@ -3704,7 +3704,7 @@
       "description": "Keystone CAT6",
       "sku": "",
       "serialNumber": "",
-      "quantity": 1,
+      "quantity": 11,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -3717,7 +3717,7 @@
       "activityHighlightAt": "2026-07-24T13:53:13.428Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-24T13:53:13.428Z",
-      "updatedAt": "2026-07-24T13:53:13.428Z",
+      "updatedAt": "2026-07-24T13:53:30.494Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -5553,6 +5553,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784901210501_j651ty",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784901193428_azusgx",
+      "entityLabel": "Keystone CAT6",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 11,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:53:30.501Z"
+    },
     {
       "id": "audit_1784900933629_bh862l",
       "action": "movement_transferencia",
