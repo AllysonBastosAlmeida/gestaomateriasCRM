@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:54:33.560Z"
+    "importedAt": "2026-07-24T13:55:39.089Z"
   },
   "users": [
     {
@@ -754,14 +754,14 @@
     {
       "id": "item_1781016951306_f273c4",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
       "name": "Fita Helleman Pequeno (Pacote)",
       "description": "Fita Helleman Pequeno (Pacote)",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -772,10 +772,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:55:51.306Z",
-      "updatedAt": "2026-07-01T13:24:26.004Z",
+      "updatedAt": "2026-07-24T13:55:34.684Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T13:24:26.004Z",
+      "activityHighlightAt": "2026-07-24T13:55:11.307Z",
       "activityHighlightType": "moved"
     },
     {
@@ -3720,6 +3720,33 @@
       "updatedAt": "2026-07-24T13:53:30.494Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784901285582_ox0g95",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "RJ45",
+      "description": "RJ45",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 8,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:54:45.582Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:54:45.582Z",
+      "updatedAt": "2026-07-24T13:54:45.582Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4271,6 +4298,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784901311307_jxarl2",
+      "itemId": "item_1781016951306_f273c4",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:55:11.307Z"
+    },
+    {
+      "id": "mov_1784901285595_jcm0v4",
+      "itemId": "item_1784901285582_ox0g95",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 8,
+      "previousQuantity": 0,
+      "newQuantity": 8,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:54:45.582Z"
+    },
     {
       "id": "mov_1784900933629_k7v6nr",
       "itemId": "item_1781283300199_768bvx",
@@ -5518,41 +5577,46 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:36:11.813Z"
-    },
-    {
-      "id": "mov_1782909367253_p4b0l0",
-      "itemId": "item_1782909119435_s3zvcg",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 4,
-      "previousQuantity": 4,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:07.253Z"
-    },
-    {
-      "id": "mov_1782909364766_6cfcnh",
-      "itemId": "item_1781024436965_vs8goz",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:04.766Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784901311307_bapiex",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784901311307_jxarl2",
+      "entityLabel": "Fita Helleman Pequeno (Pacote)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:55:11.307Z"
+    },
+    {
+      "id": "audit_1784901285605_ibxiug",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784901285582_ox0g95",
+      "entityLabel": "RJ45",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 8,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:54:45.605Z"
+    },
     {
       "id": "audit_1784901210501_j651ty",
       "action": "inventory_item_updated",
