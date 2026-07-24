@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:33:26.247Z"
+    "importedAt": "2026-07-24T13:37:09.966Z"
   },
   "users": [
     {
@@ -1186,7 +1186,7 @@
     {
       "id": "item_1781018113153_e0wmwc",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Alicate de Bico",
@@ -1204,10 +1204,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:15:13.153Z",
-      "updatedAt": "2026-07-01T12:35:51.828Z",
+      "updatedAt": "2026-07-24T13:37:09.912Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T12:35:51.828Z",
+      "activityHighlightAt": "2026-07-24T13:37:09.912Z",
       "activityHighlightType": "moved"
     },
     {
@@ -4227,6 +4227,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900229913_ragkah",
+      "itemId": "item_1781018113153_e0wmwc",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:37:09.913Z"
+    },
+    {
       "id": "mov_1784899991667_fz7agz",
       "itemId": "item_1784899991654_s1vyrb",
       "movementType": "entrada",
@@ -5489,25 +5505,30 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-16T17:04:58.995Z"
-    },
-    {
-      "id": "mov_1781524147337_9o8d08",
-      "itemId": "item_1781281312544_ff0cyt",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_c",
-      "sourceUnitId": "unit_beta_c",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador2",
-      "performedAt": "2026-06-15T11:49:07.337Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900229913_bkwb50",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900229913_ragkah",
+      "entityLabel": "Alicate de Bico",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:37:09.912Z"
+    },
     {
       "id": "audit_1784899991677_taoo41",
       "action": "inventory_item_created",
