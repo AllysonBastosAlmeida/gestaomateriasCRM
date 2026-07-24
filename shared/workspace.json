@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:15:29.713Z"
+    "importedAt": "2026-07-24T13:16:28.981Z"
   },
   "users": [
     {
@@ -727,14 +727,14 @@
     {
       "id": "item_1781016875219_r09zvr",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_c",
       "type": "material",
       "category": "",
       "name": "Fita Helleman Grande (Pacote)",
       "description": "Fita Helleman Grande (Pacote)",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -745,10 +745,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:54:35.219Z",
-      "updatedAt": "2026-07-01T13:24:21.187Z",
+      "updatedAt": "2026-07-24T13:16:15.415Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T13:24:21.187Z",
+      "activityHighlightAt": "2026-07-24T13:16:01.443Z",
       "activityHighlightType": "moved"
     },
     {
@@ -3984,6 +3984,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784898961443_wfiu1f",
+      "itemId": "item_1781016875219_r09zvr",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:16:01.443Z"
+    },
+    {
       "id": "mov_1784898603962_hm02od",
       "itemId": "item_1784898603949_unioar",
       "movementType": "entrada",
@@ -5246,25 +5262,46 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:49:11.774Z"
-    },
-    {
-      "id": "mov_1781282356517_5rgnpk",
-      "itemId": "item_1781282356508_uvvs2r",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 2,
-      "previousQuantity": 0,
-      "newQuantity": 2,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:39:16.508Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784898975420_mple6n",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016875219_r09zvr",
+      "entityLabel": "Fita Helleman Grande (Pacote)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:16:15.420Z"
+    },
+    {
+      "id": "audit_1784898961443_fx57as",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784898961443_wfiu1f",
+      "entityLabel": "Fita Helleman Grande (Pacote)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:16:01.443Z"
+    },
     {
       "id": "audit_1784898869446_g1i1fh",
       "action": "inventory_item_deletion_requested",
