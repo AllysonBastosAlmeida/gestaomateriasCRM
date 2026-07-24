@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:18:44.249Z"
+    "importedAt": "2026-07-24T13:19:45.662Z"
   },
   "users": [
     {
@@ -3504,6 +3504,33 @@
       "updatedAt": "2026-07-24T13:17:51.881Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784899136661_eugxgm",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "Curva Grande",
+      "description": "Curva Grande",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:18:56.661Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:18:56.661Z",
+      "updatedAt": "2026-07-24T13:18:56.661Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4037,6 +4064,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784899136674_qtlrt0",
+      "itemId": "item_1784899136661_eugxgm",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:18:56.661Z"
+    },
     {
       "id": "mov_1784899071893_q233wt",
       "itemId": "item_1784899071881_c2fb6t",
@@ -5300,25 +5343,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:53:42.110Z"
-    },
-    {
-      "id": "mov_1781283155200_wtxpjf",
-      "itemId": "item_1781283155190_tppak7",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 2,
-      "previousQuantity": 0,
-      "newQuantity": 2,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:52:35.190Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899136684_ra8r8t",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784899136661_eugxgm",
+      "entityLabel": "Curva Grande",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:18:56.684Z"
+    },
     {
       "id": "audit_1784899071902_0nvfyu",
       "action": "inventory_item_created",
