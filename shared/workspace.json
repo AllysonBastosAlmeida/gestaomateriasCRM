@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:10:49.234Z"
+    "importedAt": "2026-07-24T13:14:11.285Z"
   },
   "users": [
     {
@@ -3421,6 +3421,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-24T13:10:03.949Z",
       "updatedAt": "2026-07-24T13:10:03.949Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784898851213_3meq8i",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Alicate Decapador",
+      "description": "Alicate Decapador",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:14:11.213Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:14:11.213Z",
+      "updatedAt": "2026-07-24T13:14:11.213Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
