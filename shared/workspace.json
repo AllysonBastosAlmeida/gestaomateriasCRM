@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:09:48.200Z"
+    "importedAt": "2026-07-24T13:10:49.234Z"
   },
   "users": [
     {
@@ -3396,6 +3396,33 @@
       "updatedAt": "2026-07-24T13:09:35.346Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784898603949_unioar",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Marreta de Borracha",
+      "description": "Marreta de Borracha",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:10:03.949Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:10:03.949Z",
+      "updatedAt": "2026-07-24T13:10:03.949Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -3911,6 +3938,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784898603962_hm02od",
+      "itemId": "item_1784898603949_unioar",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:10:03.949Z"
+    },
     {
       "id": "mov_1784898575358_u67zax",
       "itemId": "item_1784898575346_8f929i",
@@ -5174,25 +5217,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:39:16.508Z"
-    },
-    {
-      "id": "mov_1781282316108_1rlyds",
-      "itemId": "item_1781282316098_xapumu",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 4,
-      "previousQuantity": 0,
-      "newQuantity": 4,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:38:36.098Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784898603975_dctoo9",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784898603949_unioar",
+      "entityLabel": "Marreta de Borracha",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-24T13:10:03.975Z"
+    },
     {
       "id": "audit_1784898575369_n3n6j8",
       "action": "inventory_item_created",
