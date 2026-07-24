@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:48:14.869Z"
+    "importedAt": "2026-07-24T13:49:16.923Z"
   },
   "users": [
     {
@@ -2482,7 +2482,7 @@
     {
       "id": "item_1781283300199_768bvx",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
       "name": "Pacote de Parafusos/Porcas/Brocas",
@@ -2499,10 +2499,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T16:55:00.199Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-24T13:48:53.629Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:55:00.199Z",
-      "updatedAt": "2026-06-12T16:55:00.199Z",
+      "updatedAt": "2026-07-24T13:48:53.629Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2536,7 +2536,7 @@
     {
       "id": "item_1781283371052_71cm5c",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "material",
       "category": "",
       "name": "Fita Dupla Face",
@@ -2553,10 +2553,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T16:56:11.052Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-24T13:48:23.216Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:56:11.052Z",
-      "updatedAt": "2026-07-24T13:48:14.174Z",
+      "updatedAt": "2026-07-24T13:48:23.216Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -4245,6 +4245,38 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900933629_k7v6nr",
+      "itemId": "item_1781283300199_768bvx",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:48:53.629Z"
+    },
+    {
+      "id": "mov_1784900903216_4tn0gu",
+      "itemId": "item_1781283371052_71cm5c",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:48:23.216Z"
+    },
+    {
       "id": "mov_1784900810327_t2pjv5",
       "itemId": "item_1781017973217_3rbvdx",
       "movementType": "transferencia",
@@ -5491,41 +5523,51 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:36:04.766Z"
-    },
-    {
-      "id": "mov_1782909362277_lsjm5f",
-      "itemId": "item_1781017560159_3ee3ax",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:02.277Z"
-    },
-    {
-      "id": "mov_1782909359466_qgghwt",
-      "itemId": "item_1781017683103_4vhukt",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:35:59.466Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900933629_bh862l",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900933629_k7v6nr",
+      "entityLabel": "Pacote de Parafusos/Porcas/Brocas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:48:53.629Z"
+    },
+    {
+      "id": "audit_1784900903216_agyp0b",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900903216_4tn0gu",
+      "entityLabel": "Fita Dupla Face",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:48:23.216Z"
+    },
     {
       "id": "audit_1784900810327_cnt2dq",
       "action": "movement_transferencia",
