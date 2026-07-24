@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:57:56.588Z"
+    "importedAt": "2026-07-24T14:03:04.919Z"
   },
   "users": [
     {
@@ -3799,6 +3799,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-24T13:57:18.481Z",
       "updatedAt": "2026-07-24T13:57:18.481Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784901784840_7ukfaf",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Bucha de Redução",
+      "description": "Bucha de Redução",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T14:03:04.840Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T14:03:04.840Z",
+      "updatedAt": "2026-07-24T14:03:04.840Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
