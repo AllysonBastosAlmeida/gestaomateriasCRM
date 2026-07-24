@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:19:45.662Z"
+    "importedAt": "2026-07-24T13:20:45.389Z"
   },
   "users": [
     {
@@ -3531,6 +3531,33 @@
       "updatedAt": "2026-07-24T13:18:56.661Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784899231187_1bj5ol",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "material",
+      "category": "",
+      "name": "Uniduti",
+      "description": "Uniduti",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:20:31.187Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:20:31.187Z",
+      "updatedAt": "2026-07-24T13:20:31.187Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4064,6 +4091,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784899231199_barka9",
+      "itemId": "item_1784899231187_1bj5ol",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:20:31.187Z"
+    },
     {
       "id": "mov_1784899136674_qtlrt0",
       "itemId": "item_1784899136661_eugxgm",
@@ -5327,25 +5370,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-06-12T16:54:17.212Z"
-    },
-    {
-      "id": "mov_1781283222118_ejsebh",
-      "itemId": "item_1781283222110_xgqcbm",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-06-12T16:53:42.110Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784899231209_nc8phm",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784899231187_1bj5ol",
+      "entityLabel": "Uniduti",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:20:31.209Z"
+    },
     {
       "id": "audit_1784899136684_ra8r8t",
       "action": "inventory_item_created",
