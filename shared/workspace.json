@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:37:48.979Z"
+    "importedAt": "2026-07-24T13:38:54.040Z"
   },
   "users": [
     {
@@ -1112,7 +1112,7 @@
       "description": "Alicate Decapador",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1123,10 +1123,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:13:22.387Z",
-      "updatedAt": "2026-07-24T13:37:24.389Z",
+      "updatedAt": "2026-07-24T13:38:40.007Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-24T13:37:24.389Z",
+      "activityHighlightAt": "2026-07-24T13:38:40.007Z",
       "activityHighlightType": "moved"
     },
     {
@@ -1247,7 +1247,7 @@
       "description": "Alicate de Crimpar",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1258,7 +1258,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:17:19.624Z",
-      "updatedAt": "2026-07-24T13:37:31.878Z",
+      "updatedAt": "2026-07-24T13:38:05.341Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-24T13:37:31.878Z",
@@ -4227,6 +4227,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900320008_d9ht4h",
+      "itemId": "item_1781018002387_0jzz3t",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:38:40.008Z"
+    },
+    {
       "id": "mov_1784900264514_rh1ydu",
       "itemId": "item_1781018078855_03eflr",
       "movementType": "transferencia",
@@ -5489,25 +5505,62 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-22T10:35:37.899Z"
-    },
-    {
-      "id": "mov_1782124515048_86tcjy",
-      "itemId": "item_1782124515040_5ijqkg",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 229,
-      "previousQuantity": 0,
-      "newQuantity": 229,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:35:15.040Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900320008_u5y2ry",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900320008_d9ht4h",
+      "entityLabel": "Alicate Decapador",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:38:40.007Z"
+    },
+    {
+      "id": "audit_1784900314469_n2xuxe",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018002387_0jzz3t",
+      "entityLabel": "Alicate Decapador",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:38:34.469Z"
+    },
+    {
+      "id": "audit_1784900285350_kyt6gi",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018239624_lqfpp7",
+      "entityLabel": "Alicate de Crimpar",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:38:05.350Z"
+    },
     {
       "id": "audit_1784900264514_3xz764",
       "action": "movement_transferencia",
