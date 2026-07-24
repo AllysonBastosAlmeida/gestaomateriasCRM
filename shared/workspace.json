@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:38:54.040Z"
+    "importedAt": "2026-07-24T13:39:59.570Z"
   },
   "users": [
     {
@@ -1139,7 +1139,7 @@
       "description": "Punch Down",
       "sku": "",
       "serialNumber": "",
-      "quantity": 4,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1150,7 +1150,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:14:00.150Z",
-      "updatedAt": "2026-07-01T13:05:02.067Z",
+      "updatedAt": "2026-07-24T13:39:52.829Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -1166,7 +1166,7 @@
       "description": "Alicates de Corte",
       "sku": "",
       "serialNumber": "",
-      "quantity": 3,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1177,7 +1177,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:14:38.855Z",
-      "updatedAt": "2026-07-24T13:37:44.514Z",
+      "updatedAt": "2026-07-24T13:39:30.278Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-24T13:37:44.514Z",
@@ -1220,7 +1220,7 @@
       "description": "Alicate Universal",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1231,10 +1231,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:16:22.846Z",
-      "updatedAt": "2026-07-24T13:37:38.501Z",
+      "updatedAt": "2026-07-24T13:39:14.992Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-24T13:37:38.501Z",
+      "activityHighlightAt": "2026-07-24T13:39:14.992Z",
       "activityHighlightType": "moved"
     },
     {
@@ -4227,6 +4227,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900354992_frhy5s",
+      "itemId": "item_1781018182846_ued2to",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:39:14.992Z"
+    },
+    {
       "id": "mov_1784900320008_d9ht4h",
       "itemId": "item_1781018002387_0jzz3t",
       "movementType": "transferencia",
@@ -5489,25 +5505,62 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-22T10:35:52.183Z"
-    },
-    {
-      "id": "mov_1782124537908_llcknk",
-      "itemId": "item_1782124537899_jmjqvz",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 24,
-      "previousQuantity": 0,
-      "newQuantity": 24,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:35:37.899Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900370286_7wfoax",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018078855_03eflr",
+      "entityLabel": "Alicates de Corte",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:39:30.286Z"
+    },
+    {
+      "id": "audit_1784900354992_f9xf4e",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900354992_frhy5s",
+      "entityLabel": "Alicate Universal",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:39:14.992Z"
+    },
+    {
+      "id": "audit_1784900348471_ter8d5",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781018182846_ued2to",
+      "entityLabel": "Alicate Universal",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-24T13:39:08.471Z"
+    },
     {
       "id": "audit_1784900320008_u5y2ry",
       "action": "movement_transferencia",
