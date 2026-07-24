@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:56:45.026Z"
+    "importedAt": "2026-07-24T13:57:56.588Z"
   },
   "users": [
     {
@@ -3774,6 +3774,33 @@
       "updatedAt": "2026-07-24T13:56:05.224Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1784901438481_gselaf",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Fita Isolante",
+      "description": "Fita Isolante",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-24T13:57:18.481Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-24T13:57:18.481Z",
+      "updatedAt": "2026-07-24T13:57:18.481Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4325,6 +4352,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1784901438494_tz1br4",
+      "itemId": "item_1784901438481_gselaf",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:57:18.481Z"
+    },
     {
       "id": "mov_1784901365237_px48sp",
       "itemId": "item_1784901365224_drcb57",
@@ -5588,25 +5631,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:36:17.352Z"
-    },
-    {
-      "id": "mov_1782909374520_c6v3j5",
-      "itemId": "item_1781018397329_zsmb3u",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:14.520Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784901438504_fkuip4",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1784901438481_gselaf",
+      "entityLabel": "Fita Isolante",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-07-24T13:57:18.504Z"
+    },
     {
       "id": "audit_1784901365248_y59gfy",
       "action": "inventory_item_created",
