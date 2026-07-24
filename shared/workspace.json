@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-24T13:39:59.570Z"
+    "importedAt": "2026-07-24T13:41:04.053Z"
   },
   "users": [
     {
@@ -1375,7 +1375,7 @@
     {
       "id": "item_1781018461147_mztd2a",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Canetão",
@@ -1393,10 +1393,10 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:21:01.147Z",
-      "updatedAt": "2026-07-01T12:37:39.789Z",
+      "updatedAt": "2026-07-24T13:40:49.584Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "2026-07-01T12:37:39.789Z",
+      "activityHighlightAt": "2026-07-24T13:40:49.584Z",
       "activityHighlightType": "moved"
     },
     {
@@ -1807,7 +1807,7 @@
     {
       "id": "item_1781279779547_t8syyk",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Chave Fenda",
@@ -1824,10 +1824,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-01T12:37:36.460Z",
+      "activityHighlightAt": "2026-07-24T13:40:58.337Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-06-12T15:56:19.547Z",
-      "updatedAt": "2026-07-01T12:37:36.460Z",
+      "updatedAt": "2026-07-24T13:40:58.337Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2023,7 +2023,7 @@
     {
       "id": "item_1781281013284_1gylo3",
       "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
+      "unitId": "unit_beta_e",
       "type": "ferramenta",
       "category": "",
       "name": "Beijamim",
@@ -2040,10 +2040,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-06-12T16:16:53.284Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-24T13:40:13.591Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:16:53.284Z",
-      "updatedAt": "2026-06-12T16:16:53.284Z",
+      "updatedAt": "2026-07-24T13:40:13.591Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -4227,6 +4227,54 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1784900458337_a0edgg",
+      "itemId": "item_1781279779547_t8syyk",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:40:58.337Z"
+    },
+    {
+      "id": "mov_1784900449584_irayxh",
+      "itemId": "item_1781018461147_mztd2a",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:40:49.584Z"
+    },
+    {
+      "id": "mov_1784900413591_jmvgqk",
+      "itemId": "item_1781281013284_1gylo3",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "unit_1780422089296_cf0vpa",
+      "destinationUnitId": "unit_beta_e",
+      "quantity": 2,
+      "previousQuantity": 2,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-24T13:40:13.591Z"
+    },
+    {
       "id": "mov_1784900354992_frhy5s",
       "itemId": "item_1781018182846_ued2to",
       "movementType": "transferencia",
@@ -5457,57 +5505,72 @@
       "notes": "",
       "performedBy": "user_admin",
       "performedAt": "2026-06-22T10:38:09.215Z"
-    },
-    {
-      "id": "mov_1782124676554_z2dcju",
-      "itemId": "item_1782124676546_2xu1o3",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 2,
-      "previousQuantity": 0,
-      "newQuantity": 2,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:37:56.546Z"
-    },
-    {
-      "id": "mov_1782124659221_fwlnqq",
-      "itemId": "item_1782124659213_o6ykwk",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:37:39.213Z"
-    },
-    {
-      "id": "mov_1782124552191_ww7arc",
-      "itemId": "item_1782124552183_ilg2pr",
-      "movementType": "entrada",
-      "clientId": "client_alpha",
-      "unitId": "unit_alpha_a",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 24,
-      "previousQuantity": 0,
-      "newQuantity": 24,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_admin",
-      "performedAt": "2026-06-22T10:35:52.183Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1784900458337_koryw3",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900458337_a0edgg",
+      "entityLabel": "Chave Fenda",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:40:58.337Z"
+    },
+    {
+      "id": "audit_1784900449584_39xuyl",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900449584_irayxh",
+      "entityLabel": "Canetão",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:40:49.584Z"
+    },
+    {
+      "id": "audit_1784900413591_1oyusm",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1784900413591_jmvgqk",
+      "entityLabel": "Beijamim",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "previousQuantity": 2,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_1780422089296_cf0vpa",
+        "destinationUnitId": "unit_beta_e",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-24T13:40:13.591Z"
+    },
     {
       "id": "audit_1784900370286_7wfoax",
       "action": "inventory_item_updated",
