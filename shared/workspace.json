@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:21:26.238Z"
+    "importedAt": "2026-07-28T14:22:13.949Z"
   },
   "users": [
     {
@@ -4758,6 +4758,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1785248486169_uzatnc",
+      "itemId": "item_1785248486156_inp712",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:21:26.156Z"
+    },
+    {
       "id": "mov_1785248265669_sq72g4",
       "itemId": "item_1785248265656_tqecwr",
       "movementType": "entrada",
@@ -6020,25 +6036,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:37:32.262Z"
-    },
-    {
-      "id": "mov_1782909449322_ese088",
-      "itemId": "item_1781017973217_3rbvdx",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:37:29.322Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785248486180_5jo59d",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785248486156_inp712",
+      "entityLabel": "Keystone",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T14:21:26.180Z"
+    },
     {
       "id": "audit_1785248265680_euoxtd",
       "action": "inventory_item_created",
