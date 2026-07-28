@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T13:56:32.966Z"
+    "importedAt": "2026-07-28T13:57:32.736Z"
   },
   "users": [
     {
@@ -3889,8 +3889,8 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "Caixa de Cabo de Rede",
-      "description": "Caixa de Cabo de Rede",
+      "name": "Caixa de Cabo de Rede - 104m",
+      "description": "Caixa de Cabo de Rede - 104m",
       "sku": "",
       "serialNumber": "",
       "quantity": 104,
@@ -3906,7 +3906,7 @@
       "activityHighlightAt": "2026-07-28T13:55:15.859Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-28T13:55:15.859Z",
-      "updatedAt": "2026-07-28T13:55:15.859Z",
+      "updatedAt": "2026-07-28T13:56:38.328Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -5742,6 +5742,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785246998336_p15yko",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785246915859_64pz56",
+      "entityLabel": "Caixa de Cabo de Rede - 104m",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 104,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T13:56:38.336Z"
+    },
     {
       "id": "audit_1785246964069_s8l6jh",
       "action": "inventory_item_updated",
