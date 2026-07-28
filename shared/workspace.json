@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T13:55:32.024Z"
+    "importedAt": "2026-07-28T13:56:32.966Z"
   },
   "users": [
     {
@@ -3862,8 +3862,8 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "Caixa de cabo de rede –",
-      "description": "Caixa de cabo de rede –",
+      "name": "Caixa de Cabo de Rede - 65m",
+      "description": "Caixa de Cabo de Rede - 65m",
       "sku": "",
       "serialNumber": "",
       "quantity": 65,
@@ -3879,7 +3879,7 @@
       "activityHighlightAt": "2026-07-28T13:52:59.600Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-28T13:52:59.600Z",
-      "updatedAt": "2026-07-28T13:52:59.600Z",
+      "updatedAt": "2026-07-28T13:56:04.061Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -5742,6 +5742,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785246964069_s8l6jh",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785246779600_3bh7vw",
+      "entityLabel": "Caixa de Cabo de Rede - 65m",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 65,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T13:56:04.069Z"
+    },
     {
       "id": "audit_1785246915882_tkx6v8",
       "action": "inventory_item_created",
