@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:44:01.182Z"
+    "importedAt": "2026-07-28T14:44:06.878Z"
   },
   "users": [
     {
@@ -4911,6 +4911,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1785249841114_iidng7",
+      "itemId": "item_1785249841099_advl1p",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:44:01.099Z"
+    },
+    {
       "id": "mov_1785249694721_n71lg4",
       "itemId": "item_1785249694712_t5ydub",
       "movementType": "entrada",
@@ -6173,25 +6189,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:37:51.407Z"
-    },
-    {
-      "id": "mov_1782909468224_2tgse8",
-      "itemId": "item_1781018078855_03eflr",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 3,
-      "previousQuantity": 3,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:37:48.224Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785249841126_hp2v7v",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785249841099_advl1p",
+      "entityLabel": "Chave de Fenda",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-28T14:44:01.126Z"
+    },
     {
       "id": "audit_1785249694729_amrgrh",
       "action": "inventory_item_created",
