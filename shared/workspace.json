@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:14:44.659Z"
+    "importedAt": "2026-07-28T14:16:00.445Z"
   },
   "users": [
     {
@@ -4069,6 +4069,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-28T14:12:17.774Z",
       "updatedAt": "2026-07-28T14:12:17.774Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785248160366_ie8fjo",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Pacote Fita Hellermann",
+      "description": "Pacote Fita Hellermann",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:16:00.366Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:16:00.366Z",
+      "updatedAt": "2026-07-28T14:16:00.366Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
