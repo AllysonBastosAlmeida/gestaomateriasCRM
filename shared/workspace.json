@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:42:05.443Z"
+    "importedAt": "2026-07-28T14:44:01.182Z"
   },
   "users": [
     {
@@ -4258,6 +4258,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-28T14:41:34.712Z",
       "updatedAt": "2026-07-28T14:41:34.712Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785249841099_advl1p",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Chave de Fenda",
+      "description": "Chave de Fenda",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:44:01.099Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:44:01.099Z",
+      "updatedAt": "2026-07-28T14:44:01.099Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
