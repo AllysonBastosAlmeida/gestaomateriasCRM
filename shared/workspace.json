@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:36:15.987Z"
+    "importedAt": "2026-07-28T14:37:16.446Z"
   },
   "users": [
     {
@@ -865,8 +865,8 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "Patch Code de Rede (1,5m)",
-      "description": "Patch Code de Rede (1,5m)",
+      "name": "Patch Cord de Rede (1,5m)",
+      "description": "Patch Cord de Rede (1,5m)",
       "sku": "",
       "serialNumber": "",
       "quantity": 7,
@@ -880,7 +880,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:00:42.526Z",
-      "updatedAt": "2026-07-28T14:36:00.514Z",
+      "updatedAt": "2026-07-28T14:37:11.689Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-01T13:23:58.215Z",
@@ -4186,8 +4186,8 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "Patch Cord de rede",
-      "description": "Patch Cord de rede",
+      "name": "Patch Cord de Rede",
+      "description": "Patch Cord de Rede",
       "sku": "",
       "serialNumber": "",
       "quantity": 21,
@@ -4203,7 +4203,7 @@
       "activityHighlightAt": "2026-07-28T14:23:39.049Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-28T14:23:39.049Z",
-      "updatedAt": "2026-07-28T14:23:39.049Z",
+      "updatedAt": "2026-07-28T14:36:18.568Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -6138,6 +6138,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785249431697_y3eyjn",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017242526_bim07d",
+      "entityLabel": "Patch Cord de Rede (1,5m)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 7,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:37:11.697Z"
+    },
+    {
+      "id": "audit_1785249378577_ko63c0",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785248619049_9f7hag",
+      "entityLabel": "Patch Cord de Rede",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 21,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:36:18.577Z"
+    },
     {
       "id": "audit_1785249360521_yz394u",
       "action": "inventory_item_updated",
