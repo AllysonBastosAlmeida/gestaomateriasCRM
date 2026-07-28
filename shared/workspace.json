@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:33:12.726Z"
+    "importedAt": "2026-07-28T14:35:25.471Z"
   },
   "users": [
     {
@@ -2117,14 +2117,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1785249325397_14uwc0",
+      "pendingDeletionRequestedAt": "2026-07-28T14:35:25.397Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-07-01T13:24:11.768Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:27:27.347Z",
-      "updatedAt": "2026-07-01T13:24:11.768Z",
+      "updatedAt": "2026-07-28T14:35:25.397Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -4835,6 +4835,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781283570334_yv4jn4\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Eletrodutos\",\"description\":\"Eletrodutos\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":4,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T16:59:30.334Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T16:59:30.334Z\",\"updatedAt\":\"2026-06-12T16:59:30.334Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1785249325397_14uwc0",
+      "requestType": "item",
+      "itemId": "item_1781281647347_cgcz05",
+      "itemName": "Patch Code Fibra Óptica",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-28T14:35:25.397Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781281647347_cgcz05\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Patch Code Fibra Óptica\",\"description\":\"Patch Code Fibra Óptica\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":38,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-07-01T13:24:11.768Z\",\"activityHighlightType\":\"moved\",\"createdAt\":\"2026-06-12T16:27:27.347Z\",\"updatedAt\":\"2026-07-01T13:24:11.768Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -6120,6 +6138,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785249325397_etjdgk",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1785249325397_14uwc0",
+      "entityLabel": "Patch Code Fibra Óptica",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1785249325397_14uwc0",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-28T14:35:25.397Z"
+    },
     {
       "id": "audit_1785249002005_npohd5",
       "action": "inventory_item_created",
