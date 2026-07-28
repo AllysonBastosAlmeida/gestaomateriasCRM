@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:46:07.240Z"
+    "importedAt": "2026-07-28T14:47:08.245Z"
   },
   "users": [
     {
@@ -4287,6 +4287,33 @@
       "updatedAt": "2026-07-28T14:44:01.099Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785249990874_47z3m4",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Caneta (Telefonia)",
+      "description": "Caneta (Telefonia)",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:46:30.874Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:46:30.874Z",
+      "updatedAt": "2026-07-28T14:46:30.874Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4910,6 +4937,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785249990890_om6bdn",
+      "itemId": "item_1785249990874_47z3m4",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:46:30.874Z"
+    },
     {
       "id": "mov_1785249841114_iidng7",
       "itemId": "item_1785249841099_advl1p",
@@ -6173,25 +6216,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:37:58.938Z"
-    },
-    {
-      "id": "mov_1782909471407_aeay5m",
-      "itemId": "item_1781018182846_ued2to",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:37:51.407Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785249990901_c9nujx",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785249990874_47z3m4",
+      "entityLabel": "Caneta (Telefonia)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-28T14:46:30.901Z"
+    },
     {
       "id": "audit_1785249907476_idoyij",
       "action": "inventory_item_updated",
