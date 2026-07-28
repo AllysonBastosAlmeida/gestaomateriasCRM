@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:22:13.949Z"
+    "importedAt": "2026-07-28T14:23:14.811Z"
   },
   "users": [
     {
@@ -4152,6 +4152,33 @@
       "updatedAt": "2026-07-28T14:21:26.156Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785248567699_ejr05f",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Pacotes de Buchas e Parafusos",
+      "description": "Pacotes de Buchas e Parafusos",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:22:47.699Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:22:47.699Z",
+      "updatedAt": "2026-07-28T14:22:47.699Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4757,6 +4784,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785248567711_hn5z7e",
+      "itemId": "item_1785248567699_ejr05f",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:22:47.699Z"
+    },
     {
       "id": "mov_1785248486169_uzatnc",
       "itemId": "item_1785248486156_inp712",
@@ -6020,25 +6063,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:37:36.460Z"
-    },
-    {
-      "id": "mov_1782909452262_94v0vk",
-      "itemId": "item_1781017652002_tlb4uk",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 4,
-      "previousQuantity": 4,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:37:32.262Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785248567723_8giej0",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785248567699_ejr05f",
+      "entityLabel": "Pacotes de Buchas e Parafusos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T14:22:47.723Z"
+    },
     {
       "id": "audit_1785248486180_5jo59d",
       "action": "inventory_item_created",
