@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T13:55:15.938Z"
+    "importedAt": "2026-07-28T13:55:32.024Z"
   },
   "users": [
     {
@@ -4461,6 +4461,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1785246915872_jaydhw",
+      "itemId": "item_1785246915859_64pz56",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 104,
+      "previousQuantity": 0,
+      "newQuantity": 104,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T13:55:15.859Z"
+    },
+    {
       "id": "mov_1785246779613_ogxgpl",
       "itemId": "item_1785246779600_3bh7vw",
       "movementType": "entrada",
@@ -5723,25 +5739,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:36:35.057Z"
-    },
-    {
-      "id": "mov_1782909390330_y2dr7y",
-      "itemId": "item_1781018786739_tgihs4",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:30.330Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785246915882_tkx6v8",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785246915859_64pz56",
+      "entityLabel": "Caixa de Cabo de Rede",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 104,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T13:55:15.882Z"
+    },
     {
       "id": "audit_1785246794307_dxojw7",
       "action": "inventory_item_updated",
