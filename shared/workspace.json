@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T13:50:33.130Z"
+    "importedAt": "2026-07-28T13:52:22.342Z"
   },
   "users": [
     {
@@ -2458,8 +2458,8 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "•Kit 4 Pilhas Palitos Recarregáveis",
-      "description": "•Kit 4 Pilhas Palitos Recarregáveis",
+      "name": "Kit 4 Pilhas Palitos Recarregáveis",
+      "description": "Kit 4 Pilhas Palitos Recarregáveis",
       "sku": "",
       "serialNumber": "",
       "quantity": 1,
@@ -2475,7 +2475,7 @@
       "activityHighlightAt": "2026-07-01T12:57:50.995Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-06-12T16:54:17.212Z",
-      "updatedAt": "2026-07-01T12:57:50.995Z",
+      "updatedAt": "2026-07-28T13:51:06.534Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -5688,6 +5688,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785246666541_srjeqv",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781283257212_j5q7xc",
+      "entityLabel": "Kit 4 Pilhas Palitos Recarregáveis",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T13:51:06.541Z"
+    },
     {
       "id": "audit_1784901982323_0g84mo",
       "action": "inventory_item_created",
