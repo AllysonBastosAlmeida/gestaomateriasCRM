@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T13:59:35.084Z"
+    "importedAt": "2026-07-28T14:00:36.948Z"
   },
   "users": [
     {
@@ -3963,6 +3963,33 @@
       "updatedAt": "2026-07-28T13:59:01.176Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785247176490_s2j4xe",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Caixas de Passagem CFTV",
+      "description": "Caixas de Passagem CFTV",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 7,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T13:59:36.490Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T13:59:36.490Z",
+      "updatedAt": "2026-07-28T13:59:36.490Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4514,6 +4541,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785247176503_78dkkm",
+      "itemId": "item_1785247176490_s2j4xe",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 7,
+      "previousQuantity": 0,
+      "newQuantity": 7,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T13:59:36.490Z"
+    },
     {
       "id": "mov_1785247141189_eufub6",
       "itemId": "item_1785247141176_yf9hx7",
@@ -5777,25 +5820,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:36:47.867Z"
-    },
-    {
-      "id": "mov_1782909404992_t53ahi",
-      "itemId": "item_1781017729801_2k48is",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:44.992Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785247176513_ty3r9v",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785247176490_s2j4xe",
+      "entityLabel": "Caixas de Passagem CFTV",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 7,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T13:59:36.513Z"
+    },
     {
       "id": "audit_1785247141199_8oh4pn",
       "action": "inventory_item_created",
