@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:35:25.471Z"
+    "importedAt": "2026-07-28T14:36:15.987Z"
   },
   "users": [
     {
@@ -865,8 +865,8 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "Patch Code (1,5m)",
-      "description": "Patch Code (1,5m)",
+      "name": "Patch Code de Rede (1,5m)",
+      "description": "Patch Code de Rede (1,5m)",
       "sku": "",
       "serialNumber": "",
       "quantity": 7,
@@ -880,7 +880,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T15:00:42.526Z",
-      "updatedAt": "2026-07-01T13:23:58.215Z",
+      "updatedAt": "2026-07-28T14:36:00.514Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-01T13:23:58.215Z",
@@ -6138,6 +6138,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785249360521_yz394u",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781017242526_bim07d",
+      "entityLabel": "Patch Code de Rede (1,5m)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 7,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:36:00.521Z"
+    },
     {
       "id": "audit_1785249325397_etjdgk",
       "action": "inventory_item_deletion_requested",
