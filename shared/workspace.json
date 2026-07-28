@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:44:06.878Z"
+    "importedAt": "2026-07-28T14:45:06.768Z"
   },
   "users": [
     {
@@ -4186,11 +4186,11 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "Patch Cord de Rede",
-      "description": "Patch Cord de Rede",
+      "name": "Patch Cord de Rede (2,5m)",
+      "description": "Patch Cord de Rede (2,5m)",
       "sku": "",
       "serialNumber": "",
-      "quantity": 21,
+      "quantity": 13,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -4203,7 +4203,7 @@
       "activityHighlightAt": "2026-07-28T14:23:39.049Z",
       "activityHighlightType": "created",
       "createdAt": "2026-07-28T14:23:39.049Z",
-      "updatedAt": "2026-07-28T14:36:18.568Z",
+      "updatedAt": "2026-07-28T14:44:55.987Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -6192,6 +6192,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785249895996_vjtsm0",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785248619049_9f7hag",
+      "entityLabel": "Patch Cord de Rede (2,5m)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 13,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:44:55.996Z"
+    },
+    {
+      "id": "audit_1785249881427_nkxbum",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785248619049_9f7hag",
+      "entityLabel": "Patch Cord de Rede (2,5m)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 21,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:44:41.427Z"
+    },
     {
       "id": "audit_1785249841126_hp2v7v",
       "action": "inventory_item_created",
