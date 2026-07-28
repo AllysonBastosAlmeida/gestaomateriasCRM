@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:13:39.443Z"
+    "importedAt": "2026-07-28T14:14:44.659Z"
   },
   "users": [
     {
@@ -626,7 +626,7 @@
       "description": "Fita Dupla Faces",
       "sku": "",
       "serialNumber": "",
-      "quantity": 2,
+      "quantity": 3,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -637,7 +637,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:46:10.332Z",
-      "updatedAt": "2026-07-01T13:23:11.971Z",
+      "updatedAt": "2026-07-28T14:13:47.907Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-01T13:23:11.971Z",
@@ -3164,7 +3164,7 @@
       "description": "Fita Isolante",
       "sku": "",
       "serialNumber": "",
-      "quantity": 6,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -3177,7 +3177,7 @@
       "activityHighlightAt": "2026-07-01T13:23:02.262Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-07-01T13:00:25.555Z",
-      "updatedAt": "2026-07-01T13:23:02.262Z",
+      "updatedAt": "2026-07-28T14:14:26.600Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -5958,6 +5958,38 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785248066608_wppee6",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782910825555_jvs4aw",
+      "entityLabel": "Fita Isolante",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:14:26.608Z"
+    },
+    {
+      "id": "audit_1785248027915_rfjxc7",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016370332_dfeah5",
+      "entityLabel": "Fita Dupla Faces",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 3,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:13:47.915Z"
+    },
     {
       "id": "audit_1785247992437_1tdrit",
       "action": "inventory_item_deletion_requested",
