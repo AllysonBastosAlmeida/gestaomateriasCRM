@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:23:14.811Z"
+    "importedAt": "2026-07-28T14:29:10.317Z"
   },
   "users": [
     {
@@ -4179,6 +4179,33 @@
       "updatedAt": "2026-07-28T14:22:47.699Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785248619049_9f7hag",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Patch Cord de rede",
+      "description": "Patch Cord de rede",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 21,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:23:39.049Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:23:39.049Z",
+      "updatedAt": "2026-07-28T14:23:39.049Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4784,6 +4811,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785248619063_c3nr4c",
+      "itemId": "item_1785248619049_9f7hag",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 21,
+      "previousQuantity": 0,
+      "newQuantity": 21,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:23:39.049Z"
+    },
     {
       "id": "mov_1785248567711_hn5z7e",
       "itemId": "item_1785248567699_ejr05f",
@@ -6047,25 +6090,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:37:39.789Z"
-    },
-    {
-      "id": "mov_1782909456460_6ydp0g",
-      "itemId": "item_1781279779547_t8syyk",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:37:36.460Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785248619075_oavmbx",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785248619049_9f7hag",
+      "entityLabel": "Patch Cord de rede",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 21,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T14:23:39.075Z"
+    },
     {
       "id": "audit_1785248567723_8giej0",
       "action": "inventory_item_created",
