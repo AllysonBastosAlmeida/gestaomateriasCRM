@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:53:14.934Z"
+    "importedAt": "2026-07-28T14:54:14.898Z"
   },
   "users": [
     {
@@ -4426,7 +4426,7 @@
     {
       "id": "item_1785250329770_zqwzmq",
       "clientId": "client_beta",
-      "unitId": "unit_beta_c",
+      "unitId": "unit_1780422089296_cf0vpa",
       "type": "ferramenta",
       "category": "",
       "name": "Pendrives",
@@ -4443,10 +4443,37 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-28T14:52:09.770Z",
-      "activityHighlightType": "created",
+      "activityHighlightAt": "2026-07-28T14:53:54.197Z",
+      "activityHighlightType": "moved",
       "createdAt": "2026-07-28T14:52:09.770Z",
-      "updatedAt": "2026-07-28T14:52:09.770Z",
+      "updatedAt": "2026-07-28T14:53:54.197Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785250417966_m8lhe5",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Tester",
+      "description": "Tester",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:53:37.966Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:53:37.966Z",
+      "updatedAt": "2026-07-28T14:53:37.966Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
@@ -5126,6 +5153,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785250434198_ex2ec4",
+      "itemId": "item_1785250329770_zqwzmq",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:53:54.198Z"
+    },
+    {
+      "id": "mov_1785250417976_5hmuec",
+      "itemId": "item_1785250417966_m8lhe5",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:53:37.966Z"
+    },
     {
       "id": "mov_1785250329785_z71z9z",
       "itemId": "item_1785250329770_zqwzmq",
@@ -6373,41 +6432,46 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T13:03:59.004Z"
-    },
-    {
-      "id": "mov_1782910825570_ewfj6w",
-      "itemId": "item_1782910825555_jvs4aw",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 6,
-      "previousQuantity": 0,
-      "newQuantity": 6,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:00:25.555Z"
-    },
-    {
-      "id": "mov_1782910728064_2g8myz",
-      "itemId": "item_1782910728051_ngcop2",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 1,
-      "previousQuantity": 0,
-      "newQuantity": 1,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:58:48.051Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785250434198_kvc8rt",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1785250434198_ex2ec4",
+      "entityLabel": "Pendrives",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 3,
+        "previousQuantity": 3,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_c",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-28T14:53:54.197Z"
+    },
+    {
+      "id": "audit_1785250417987_h7x185",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785250417966_m8lhe5",
+      "entityLabel": "Tester",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-28T14:53:37.987Z"
+    },
     {
       "id": "audit_1785250368153_vh2fzy",
       "action": "inventory_item_deletion_requested",
