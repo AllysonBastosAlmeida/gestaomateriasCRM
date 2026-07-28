@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:29:10.317Z"
+    "importedAt": "2026-07-28T14:33:12.726Z"
   },
   "users": [
     {
@@ -4206,6 +4206,33 @@
       "updatedAt": "2026-07-28T14:23:39.049Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785249001983_ogijr0",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Patch Cord Opticos",
+      "description": "Patch Cord Opticos",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 35,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:30:01.982Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:30:01.982Z",
+      "updatedAt": "2026-07-28T14:30:01.982Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4811,6 +4838,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785249001995_y6jm4p",
+      "itemId": "item_1785249001983_ogijr0",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 35,
+      "previousQuantity": 0,
+      "newQuantity": 35,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:30:01.982Z"
+    },
     {
       "id": "mov_1785248619063_c3nr4c",
       "itemId": "item_1785248619049_9f7hag",
@@ -6074,25 +6117,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:37:42.984Z"
-    },
-    {
-      "id": "mov_1782909459789_w1p4qk",
-      "itemId": "item_1781018461147_mztd2a",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:37:39.789Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785249002005_npohd5",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785249001983_ogijr0",
+      "entityLabel": "Patch Cord Opticos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 35,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T14:30:02.005Z"
+    },
     {
       "id": "audit_1785248619075_oavmbx",
       "action": "inventory_item_created",
