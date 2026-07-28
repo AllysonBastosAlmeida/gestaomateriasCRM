@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:11:37.672Z"
+    "importedAt": "2026-07-28T14:12:37.322Z"
   },
   "users": [
     {
@@ -4044,6 +4044,33 @@
       "updatedAt": "2026-07-28T14:10:14.201Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785247937774_w5hmt3",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "DIO",
+      "description": "DIO",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:12:17.774Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:12:17.774Z",
+      "updatedAt": "2026-07-28T14:12:17.774Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4631,6 +4658,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785247937788_y6oikh",
+      "itemId": "item_1785247937774_w5hmt3",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:12:17.774Z"
+    },
     {
       "id": "mov_1785247801922_iw3d4d",
       "itemId": "item_1785247801911_jo7pfx",
@@ -5894,25 +5937,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:37:10.996Z"
-    },
-    {
-      "id": "mov_1782909425193_na45mo",
-      "itemId": "item_1781018786739_tgihs4",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:37:05.193Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785247937799_p41cme",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785247937774_w5hmt3",
+      "entityLabel": "DIO",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T14:12:17.799Z"
+    },
     {
       "id": "audit_1785247891664_sze1fz",
       "action": "inventory_item_updated",
