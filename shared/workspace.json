@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:54:14.898Z"
+    "importedAt": "2026-07-28T14:55:16.023Z"
   },
   "users": [
     {
@@ -1868,7 +1868,7 @@
       "description": "Punch Down",
       "sku": "",
       "serialNumber": "",
-      "quantity": 1,
+      "quantity": 2,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1881,7 +1881,7 @@
       "activityHighlightAt": "2026-06-12T16:01:25.515Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:01:25.515Z",
-      "updatedAt": "2026-06-12T16:01:25.515Z",
+      "updatedAt": "2026-07-28T14:54:31.572Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -3110,7 +3110,7 @@
       "description": "Tesoura",
       "sku": "",
       "serialNumber": "",
-      "quantity": 4,
+      "quantity": 5,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -3123,7 +3123,7 @@
       "activityHighlightAt": "2026-07-01T12:36:07.253Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-07-01T12:31:59.435Z",
-      "updatedAt": "2026-07-01T12:36:07.253Z",
+      "updatedAt": "2026-07-28T14:54:49.845Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -4443,10 +4443,10 @@
       "pendingDeletionRequestId": "",
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
-      "activityHighlightAt": "2026-07-28T14:53:54.197Z",
+      "activityHighlightAt": "2026-07-28T14:54:55.590Z",
       "activityHighlightType": "moved",
       "createdAt": "2026-07-28T14:52:09.770Z",
-      "updatedAt": "2026-07-28T14:53:54.197Z",
+      "updatedAt": "2026-07-28T14:54:55.590Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -5153,6 +5153,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785250495591_nbucmx",
+      "itemId": "item_1785250329770_zqwzmq",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "unit_beta_c",
+      "destinationUnitId": "unit_1780422089296_cf0vpa",
+      "quantity": 3,
+      "previousQuantity": 3,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:54:55.591Z"
+    },
     {
       "id": "mov_1785250434198_ex2ec4",
       "itemId": "item_1785250329770_zqwzmq",
@@ -6416,25 +6432,62 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T13:05:47.510Z"
-    },
-    {
-      "id": "mov_1782911039016_r5rrjt",
-      "itemId": "item_1782911039004_afhtxm",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 18,
-      "previousQuantity": 0,
-      "newQuantity": 18,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:03:59.004Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785250495591_kpyxjq",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1785250495591_nbucmx",
+      "entityLabel": "Pendrives",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 3,
+        "previousQuantity": 3,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_c",
+        "destinationUnitId": "unit_1780422089296_cf0vpa",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-28T14:54:55.590Z"
+    },
+    {
+      "id": "audit_1785250489854_vkkdtj",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1782909119435_s3zvcg",
+      "entityLabel": "Tesoura",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 5,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:54:49.854Z"
+    },
+    {
+      "id": "audit_1785250471582_934xzf",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781280085515_oqfwui",
+      "entityLabel": "Punch Down",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:54:31.582Z"
+    },
     {
       "id": "audit_1785250434198_kvc8rt",
       "action": "movement_transferencia",
