@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:51:12.513Z"
+    "importedAt": "2026-07-28T14:52:13.894Z"
   },
   "users": [
     {
@@ -4395,6 +4395,60 @@
       "updatedAt": "2026-07-28T14:49:52.501Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785250282625_xhmn1m",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Passa Fio",
+      "description": "Passa Fio",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:51:22.625Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:51:22.625Z",
+      "updatedAt": "2026-07-28T14:51:38.333Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785250329770_zqwzmq",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Pendrives",
+      "description": "Pendrives",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:52:09.770Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:52:09.770Z",
+      "updatedAt": "2026-07-28T14:52:09.770Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -5054,6 +5108,38 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785250329785_z71z9z",
+      "itemId": "item_1785250329770_zqwzmq",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 3,
+      "previousQuantity": 0,
+      "newQuantity": 3,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:52:09.770Z"
+    },
+    {
+      "id": "mov_1785250282640_txe7xw",
+      "itemId": "item_1785250282625_xhmn1m",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:51:22.625Z"
+    },
     {
       "id": "mov_1785250192516_gvxr8m",
       "itemId": "item_1785250192501_0a7m8o",
@@ -6301,41 +6387,57 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:58:48.051Z"
-    },
-    {
-      "id": "mov_1782910670995_g14jxa",
-      "itemId": "item_1781283257212_j5q7xc",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:57:50.995Z"
-    },
-    {
-      "id": "mov_1782910629639_bzpswc",
-      "itemId": "item_1781283257212_j5q7xc",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_1780422089296_cf0vpa",
-      "sourceUnitId": "unit_1780422089296_cf0vpa",
-      "destinationUnitId": "unit_beta_e",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:57:09.639Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785250329797_gpbk0k",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785250329770_zqwzmq",
+      "entityLabel": "Pendrives",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_c",
+      "metadata": {
+        "quantity": 3,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-28T14:52:09.797Z"
+    },
+    {
+      "id": "audit_1785250298341_ueypiw",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785250282625_xhmn1m",
+      "entityLabel": "Passa Fio",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:51:38.341Z"
+    },
+    {
+      "id": "audit_1785250282652_8wr4c1",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785250282625_xhmn1m",
+      "entityLabel": "Passa de Fio",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-28T14:51:22.652Z"
+    },
     {
       "id": "audit_1785250214567_03i65r",
       "action": "inventory_item_deletion_requested",
