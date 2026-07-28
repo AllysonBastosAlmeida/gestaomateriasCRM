@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:52:13.894Z"
+    "importedAt": "2026-07-28T14:53:14.934Z"
   },
   "users": [
     {
@@ -929,12 +929,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1785250368153_swrt5g",
+      "pendingDeletionRequestedAt": "2026-07-28T14:52:48.153Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T15:06:00.159Z",
-      "updatedAt": "2026-07-01T12:36:02.277Z",
+      "updatedAt": "2026-07-28T14:52:48.153Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-01T12:36:02.277Z",
@@ -5105,6 +5105,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781017729801_2k48is\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Linha de Pedreiro\",\"description\":\"Linha de Pedreiro\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:08:49.801Z\",\"updatedAt\":\"2026-07-01T12:36:44.992Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"2026-07-01T12:36:44.992Z\",\"activityHighlightType\":\"moved\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1785250368153_swrt5g",
+      "requestType": "item",
+      "itemId": "item_1781017560159_3ee3ax",
+      "itemName": "Tester (Patch Cord)",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-28T14:52:48.153Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781017560159_3ee3ax\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Tester (Patch Cord)\",\"description\":\"Tester (Patch Cord)\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:06:00.159Z\",\"updatedAt\":\"2026-07-01T12:36:02.277Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"2026-07-01T12:36:02.277Z\",\"activityHighlightType\":\"moved\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -6390,6 +6408,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785250368153_vh2fzy",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1785250368153_swrt5g",
+      "entityLabel": "Tester (Patch Cord)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1785250368153_swrt5g",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-28T14:52:48.153Z"
+    },
     {
       "id": "audit_1785250329797_gpbk0k",
       "action": "inventory_item_created",
