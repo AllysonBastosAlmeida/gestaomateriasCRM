@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:50:09.188Z"
+    "importedAt": "2026-07-28T14:51:12.513Z"
   },
   "users": [
     {
@@ -1010,12 +1010,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1785250214567_oq7teb",
+      "pendingDeletionRequestedAt": "2026-07-28T14:50:14.566Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T15:08:49.801Z",
-      "updatedAt": "2026-07-01T12:36:44.992Z",
+      "updatedAt": "2026-07-28T14:50:14.566Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "2026-07-01T12:36:44.992Z",
@@ -5033,6 +5033,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781279737220_ujadav\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Espatula\",\"description\":\"Espatula\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T15:55:37.220Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T15:55:37.220Z\",\"updatedAt\":\"2026-06-12T15:55:37.220Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1785250214567_oq7teb",
+      "requestType": "item",
+      "itemId": "item_1781017729801_2k48is",
+      "itemName": "Linha de Pedreiro",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-28T14:50:14.566Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781017729801_2k48is\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Linha de Pedreiro\",\"description\":\"Linha de Pedreiro\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:08:49.801Z\",\"updatedAt\":\"2026-07-01T12:36:44.992Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"2026-07-01T12:36:44.992Z\",\"activityHighlightType\":\"moved\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -6318,6 +6336,23 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785250214567_03i65r",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1785250214567_oq7teb",
+      "entityLabel": "Linha de Pedreiro",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1785250214567_oq7teb",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-28T14:50:14.567Z"
+    },
     {
       "id": "audit_1785250192528_0i4yvt",
       "action": "inventory_item_created",
