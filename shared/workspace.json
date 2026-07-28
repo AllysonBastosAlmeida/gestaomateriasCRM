@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:10:37.252Z"
+    "importedAt": "2026-07-28T14:11:37.672Z"
   },
   "users": [
     {
@@ -2252,14 +2252,14 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1785247868320_okfnbj",
+      "pendingDeletionRequestedAt": "2026-07-28T14:11:08.320Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "activityHighlightAt": "2026-06-12T16:38:36.098Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:38:36.098Z",
-      "updatedAt": "2026-06-12T16:38:36.098Z",
+      "updatedAt": "2026-07-28T14:11:08.320Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -2269,8 +2269,8 @@
       "unitId": "unit_1780422089296_cf0vpa",
       "type": "material",
       "category": "",
-      "name": "Curvinha",
-      "description": "Curvinha",
+      "name": "Curva Pequena",
+      "description": "Curva Pequena",
       "sku": "",
       "serialNumber": "",
       "quantity": 2,
@@ -2286,7 +2286,7 @@
       "activityHighlightAt": "2026-06-12T16:39:16.508Z",
       "activityHighlightType": "created",
       "createdAt": "2026-06-12T16:39:16.508Z",
-      "updatedAt": "2026-06-12T16:39:16.508Z",
+      "updatedAt": "2026-07-28T14:11:31.659Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     },
@@ -4610,6 +4610,24 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1785247801911_jo7pfx\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Condulete\",\"description\":\"Condulete\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-07-28T14:10:01.911Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-07-28T14:10:01.911Z\",\"updatedAt\":\"2026-07-28T14:10:01.911Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1785247868320_okfnbj",
+      "requestType": "item",
+      "itemId": "item_1781282316098_xapumu",
+      "itemName": "Curvas Grande",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-28T14:11:08.320Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781282316098_xapumu\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"material\",\"category\":\"\",\"name\":\"Curvas Grande\",\"description\":\"Curvas Grande\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":4,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"activityHighlightAt\":\"2026-06-12T16:38:36.098Z\",\"activityHighlightType\":\"created\",\"createdAt\":\"2026-06-12T16:38:36.098Z\",\"updatedAt\":\"2026-06-12T16:38:36.098Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
@@ -5895,6 +5913,39 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785247891664_sze1fz",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781282356508_uvvs2r",
+      "entityLabel": "Curva Pequena",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-28T14:11:31.664Z"
+    },
+    {
+      "id": "audit_1785247868320_3vdbnu",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1785247868320_okfnbj",
+      "entityLabel": "Curvas Grande",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "requestId": "delreq_1785247868320_okfnbj",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-28T14:11:08.320Z"
+    },
     {
       "id": "audit_1785247814201_yisg52",
       "action": "inventory_item_deletion_requested",
