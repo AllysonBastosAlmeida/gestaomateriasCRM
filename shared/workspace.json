@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:48:08.171Z"
+    "importedAt": "2026-07-28T14:49:08.670Z"
   },
   "users": [
     {
@@ -4341,6 +4341,33 @@
       "updatedAt": "2026-07-28T14:47:11.895Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785250125527_fhq3ob",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Etiquetadora",
+      "description": "Etiquetadora",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:48:45.527Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:48:45.527Z",
+      "updatedAt": "2026-07-28T14:48:45.527Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4982,6 +5009,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785250125542_obtxvn",
+      "itemId": "item_1785250125527_fhq3ob",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:48:45.527Z"
+    },
     {
       "id": "mov_1785250031910_5kg6sp",
       "itemId": "item_1785250031895_ah6asc",
@@ -6245,25 +6288,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:38:06.943Z"
-    },
-    {
-      "id": "mov_1782909482685_inst7t",
-      "itemId": "item_1781018002387_0jzz3t",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:38:02.685Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785250125554_fvt78u",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785250125527_fhq3ob",
+      "entityLabel": "Etiquetadora",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-28T14:48:45.554Z"
+    },
     {
       "id": "audit_1785250043000_zhmift",
       "action": "inventory_item_deletion_requested",
