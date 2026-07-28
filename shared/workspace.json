@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T14:49:08.670Z"
+    "importedAt": "2026-07-28T14:50:09.188Z"
   },
   "users": [
     {
@@ -4368,6 +4368,33 @@
       "updatedAt": "2026-07-28T14:48:45.527Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785250192501_0a7m8o",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "ferramenta",
+      "category": "",
+      "name": "Kit de Brocas",
+      "description": "Kit de Brocas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 1,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T14:49:52.501Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T14:49:52.501Z",
+      "updatedAt": "2026-07-28T14:49:52.501Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -5009,6 +5036,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785250192516_gvxr8m",
+      "itemId": "item_1785250192501_0a7m8o",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 1,
+      "previousQuantity": 0,
+      "newQuantity": 1,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T14:49:52.501Z"
+    },
     {
       "id": "mov_1785250125542_obtxvn",
       "itemId": "item_1785250125527_fhq3ob",
@@ -6272,25 +6315,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:57:09.639Z"
-    },
-    {
-      "id": "mov_1782909486943_iurdqb",
-      "itemId": "item_1781018239624_lqfpp7",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:38:06.943Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785250192528_0i4yvt",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785250192501_0a7m8o",
+      "entityLabel": "Kit de Brocas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 1,
+        "type": "ferramenta"
+      },
+      "createdAt": "2026-07-28T14:49:52.528Z"
+    },
     {
       "id": "audit_1785250125554_fvt78u",
       "action": "inventory_item_created",
