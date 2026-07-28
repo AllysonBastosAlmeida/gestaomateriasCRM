@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-28T13:58:34.938Z"
+    "importedAt": "2026-07-28T13:59:35.084Z"
   },
   "users": [
     {
@@ -3936,6 +3936,33 @@
       "updatedAt": "2026-07-28T13:58:16.422Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785247141176_yf9hx7",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "type": "material",
+      "category": "",
+      "name": "Caixas de Emenda",
+      "description": "Caixas de Emenda",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 2,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-28T13:59:01.176Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-28T13:59:01.176Z",
+      "updatedAt": "2026-07-28T13:59:01.176Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -4487,6 +4514,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785247141189_eufub6",
+      "itemId": "item_1785247141176_yf9hx7",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 2,
+      "previousQuantity": 0,
+      "newQuantity": 2,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-28T13:59:01.176Z"
+    },
     {
       "id": "mov_1785247096435_i1xpup",
       "itemId": "item_1785247096422_tjzjfj",
@@ -5750,25 +5793,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T12:36:44.992Z"
-    },
-    {
-      "id": "mov_1782909398168_cgfnwp",
-      "itemId": "item_1781017074086_teubul",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 1,
-      "previousQuantity": 1,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T12:36:38.168Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785247141199_8oh4pn",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785247141176_yf9hx7",
+      "entityLabel": "Caixas de Emenda",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_1780422089296_cf0vpa",
+      "metadata": {
+        "quantity": 2,
+        "type": "material"
+      },
+      "createdAt": "2026-07-28T13:59:01.199Z"
+    },
     {
       "id": "audit_1785247096446_tss60x",
       "action": "inventory_item_created",
