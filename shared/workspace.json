@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:35:11.101Z"
+    "importedAt": "2026-07-29T16:35:53.308Z"
   },
   "users": [
     {
@@ -356,7 +356,7 @@
       "description": "Condoletes",
       "sku": "",
       "serialNumber": "",
-      "quantity": 23,
+      "quantity": 21,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -367,7 +367,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:28:35.653Z",
-      "updatedAt": "2026-06-09T16:52:35.923Z",
+      "updatedAt": "2026-07-29T16:35:36.720Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -6489,6 +6489,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785342936728_xb2vao",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015315653_90rlvu",
+      "entityLabel": "Condoletes",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 21,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-29T16:35:36.728Z"
+    },
     {
       "id": "audit_1785342811107_wy8mxu",
       "action": "inventory_item_created",
