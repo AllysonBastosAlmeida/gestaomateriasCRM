@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:53:06.266Z"
+    "importedAt": "2026-07-29T16:54:35.805Z"
   },
   "users": [
     {
@@ -4638,6 +4638,33 @@
       "updatedAt": "2026-07-29T16:47:16.219Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785344012447_9mhls0",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Luvas Metálicas",
+      "description": "Luvas Metálicas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-29T16:53:32.447Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-29T16:53:32.447Z",
+      "updatedAt": "2026-07-29T16:53:32.447Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -5333,6 +5360,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785344012460_yz6pfi",
+      "itemId": "item_1785344012447_9mhls0",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 3,
+      "previousQuantity": 0,
+      "newQuantity": 3,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-29T16:53:32.447Z"
+    },
     {
       "id": "mov_1785343636232_vspooh",
       "itemId": "item_1785343636219_bksvb0",
@@ -6596,25 +6639,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T13:24:21.187Z"
-    },
-    {
-      "id": "mov_1782912251770_4zm9qx",
-      "itemId": "item_1782911039004_afhtxm",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 18,
-      "previousQuantity": 18,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:24:11.770Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785344012471_7gzo2m",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785344012447_9mhls0",
+      "entityLabel": "Luvas Metálicas",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 3,
+        "type": "material"
+      },
+      "createdAt": "2026-07-29T16:53:32.471Z"
+    },
     {
       "id": "audit_1785343874729_40q28j",
       "action": "inventory_item_updated",
