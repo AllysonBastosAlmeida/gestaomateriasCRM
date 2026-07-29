@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:56:12.844Z"
+    "importedAt": "2026-07-29T16:57:13.738Z"
   },
   "users": [
     {
@@ -437,7 +437,7 @@
       "description": "Unidute",
       "sku": "",
       "serialNumber": "",
-      "quantity": 77,
+      "quantity": 73,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -448,7 +448,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:39:48.756Z",
-      "updatedAt": "2026-07-01T13:08:27.326Z",
+      "updatedAt": "2026-07-29T16:56:41.044Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -6642,6 +6642,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785344201052_pui6z1",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015988756_o56ka0",
+      "entityLabel": "Unidute",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 73,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-29T16:56:41.052Z"
+    },
     {
       "id": "audit_1785344104578_7c5nwv",
       "action": "inventory_item_updated",
