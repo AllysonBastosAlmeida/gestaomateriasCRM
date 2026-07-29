@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:32:47.081Z"
+    "importedAt": "2026-07-29T16:33:48.576Z"
   },
   "users": [
     {
@@ -4476,6 +4476,33 @@
       "updatedAt": "2026-07-28T14:53:37.966Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785342811083_rxn4ky",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Caixa de Cabo de Rede - 305mt",
+      "description": "Caixa de Cabo de Rede - 305mt",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 305,
+      "minQuantity": 0,
+      "unitMeasure": "Mt",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-29T16:33:31.083Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-29T16:33:31.083Z",
+      "updatedAt": "2026-07-29T16:33:31.083Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -5153,6 +5180,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785342811097_l7cbxx",
+      "itemId": "item_1785342811083_rxn4ky",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 305,
+      "previousQuantity": 0,
+      "newQuantity": 305,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-29T16:33:31.083Z"
+    },
     {
       "id": "mov_1785250495591_nbucmx",
       "itemId": "item_1785250329770_zqwzmq",
@@ -6416,25 +6459,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T13:23:02.262Z"
-    },
-    {
-      "id": "mov_1782911147523_qzf18v",
-      "itemId": "item_1782911147510_xniob0",
-      "movementType": "entrada",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "",
-      "destinationUnitId": "",
-      "quantity": 18,
-      "previousQuantity": 0,
-      "newQuantity": 18,
-      "reason": "Cadastro inicial do item",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:05:47.510Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785342811107_wy8mxu",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785342811083_rxn4ky",
+      "entityLabel": "Caixa de Cabo de Rede - 305mt",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 305,
+        "type": "material"
+      },
+      "createdAt": "2026-07-29T16:33:31.107Z"
+    },
     {
       "id": "audit_1785342748009_zg76tn",
       "action": "inventory_item_updated",
