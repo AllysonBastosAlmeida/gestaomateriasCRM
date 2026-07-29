@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:35:53.308Z"
+    "importedAt": "2026-07-29T16:36:55.521Z"
   },
   "users": [
     {
@@ -673,7 +673,7 @@
     {
       "id": "item_1781016487416_lpuc2p",
       "clientId": "client_beta",
-      "unitId": "unit_beta_e",
+      "unitId": "unit_beta_c",
       "type": "material",
       "category": "",
       "name": "Caixa de Passagem",
@@ -691,11 +691,11 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:48:07.416Z",
-      "updatedAt": "2026-06-11T17:48:38.893Z",
+      "updatedAt": "2026-07-29T16:35:56.538Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
-      "activityHighlightAt": "",
-      "activityHighlightType": ""
+      "activityHighlightAt": "2026-07-29T16:35:56.538Z",
+      "activityHighlightType": "moved"
     },
     {
       "id": "item_1781016742320_2nvlij",
@@ -1712,12 +1712,12 @@
       "status": "disponivel",
       "internalLocation": "",
       "notes": "",
-      "pendingDeletion": false,
-      "pendingDeletionRequestId": "",
-      "pendingDeletionRequestedAt": "",
-      "pendingDeletionRequestedBy": "",
+      "pendingDeletion": true,
+      "pendingDeletionRequestId": "delreq_1785342969836_ni1kzc",
+      "pendingDeletionRequestedAt": "2026-07-29T16:36:09.836Z",
+      "pendingDeletionRequestedBy": "user_operador1",
       "createdAt": "2026-06-09T17:05:39.510Z",
-      "updatedAt": "2026-06-09T17:05:39.510Z",
+      "updatedAt": "2026-07-29T16:36:09.836Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -4530,6 +4530,33 @@
       "updatedAt": "2026-07-29T16:35:11.015Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785343005872_vsh62c",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Conduletes Metálicos",
+      "description": "Conduletes Metálicos",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-29T16:36:45.872Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-29T16:36:45.872Z",
+      "updatedAt": "2026-07-29T16:36:45.872Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -5204,9 +5231,59 @@
       "reviewNotes": "",
       "itemSnapshotJson": "{\"id\":\"item_1781017560159_3ee3ax\",\"clientId\":\"client_beta\",\"unitId\":\"unit_1780422089296_cf0vpa\",\"type\":\"ferramenta\",\"category\":\"\",\"name\":\"Tester (Patch Cord)\",\"description\":\"Tester (Patch Cord)\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T15:06:00.159Z\",\"updatedAt\":\"2026-07-01T12:36:02.277Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"2026-07-01T12:36:02.277Z\",\"activityHighlightType\":\"moved\"}",
       "unitSnapshotJson": ""
+    },
+    {
+      "id": "delreq_1785342969836_ni1kzc",
+      "requestType": "item",
+      "itemId": "item_1781024739510_ctru2h",
+      "itemName": "Cat6 10m",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "status": "pendente",
+      "requestedBy": "user_operador1",
+      "requestedByName": "Rodrigo de Farias Barbosa",
+      "requestedAt": "2026-07-29T16:36:09.836Z",
+      "reviewedBy": "",
+      "reviewedByName": "",
+      "reviewedAt": "",
+      "reviewNotes": "",
+      "itemSnapshotJson": "{\"id\":\"item_1781024739510_ctru2h\",\"clientId\":\"client_beta\",\"unitId\":\"unit_beta_e\",\"type\":\"material\",\"category\":\"\",\"name\":\"Cat6 10m\",\"description\":\"Cat6 10m\",\"sku\":\"\",\"serialNumber\":\"\",\"quantity\":1,\"minQuantity\":0,\"unitMeasure\":\"un\",\"status\":\"disponivel\",\"internalLocation\":\"\",\"notes\":\"\",\"pendingDeletion\":false,\"pendingDeletionRequestId\":\"\",\"pendingDeletionRequestedAt\":\"\",\"pendingDeletionRequestedBy\":\"\",\"createdAt\":\"2026-06-09T17:05:39.510Z\",\"updatedAt\":\"2026-06-09T17:05:39.510Z\",\"createdBy\":\"user_operador1\",\"updatedBy\":\"user_operador1\",\"activityHighlightAt\":\"\",\"activityHighlightType\":\"\"}",
+      "unitSnapshotJson": ""
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785343005886_gjkt3j",
+      "itemId": "item_1785343005872_vsh62c",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 3,
+      "previousQuantity": 0,
+      "newQuantity": 3,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-29T16:36:45.872Z"
+    },
+    {
+      "id": "mov_1785342956539_jzbq6o",
+      "itemId": "item_1781016487416_lpuc2p",
+      "movementType": "transferencia",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "unit_beta_e",
+      "destinationUnitId": "unit_beta_c",
+      "quantity": 1,
+      "previousQuantity": 1,
+      "newQuantity": 0,
+      "reason": "Transferencia por arrastar e soltar",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-29T16:35:56.539Z"
+    },
     {
       "id": "mov_1785342811097_l7cbxx",
       "itemId": "item_1785342811083_rxn4ky",
@@ -6454,41 +6531,63 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T13:23:28.923Z"
-    },
-    {
-      "id": "mov_1782912191971_tmw50f",
-      "itemId": "item_1781016370332_dfeah5",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 2,
-      "previousQuantity": 2,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:23:11.971Z"
-    },
-    {
-      "id": "mov_1782912182262_hbac4l",
-      "itemId": "item_1782910825555_jvs4aw",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 6,
-      "previousQuantity": 6,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:23:02.262Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785343005897_tlnohv",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785343005872_vsh62c",
+      "entityLabel": "Conduletes Metálicos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 3,
+        "type": "material"
+      },
+      "createdAt": "2026-07-29T16:36:45.897Z"
+    },
+    {
+      "id": "audit_1785342969837_6pcprq",
+      "action": "inventory_item_deletion_requested",
+      "entityType": "inventoryDeletionRequest",
+      "entityId": "delreq_1785342969836_ni1kzc",
+      "entityLabel": "Cat6 10m",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "requestId": "delreq_1785342969836_ni1kzc",
+        "requestStatus": "pendente",
+        "requestType": "item"
+      },
+      "createdAt": "2026-07-29T16:36:09.837Z"
+    },
+    {
+      "id": "audit_1785342956539_rrw89g",
+      "action": "movement_transferencia",
+      "entityType": "movement",
+      "entityId": "mov_1785342956539_jzbq6o",
+      "entityLabel": "Caixa de Passagem",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "previousQuantity": 1,
+        "newQuantity": 0,
+        "sourceUnitId": "unit_beta_e",
+        "destinationUnitId": "unit_beta_c",
+        "reason": "Transferencia por arrastar e soltar",
+        "notes": ""
+      },
+      "createdAt": "2026-07-29T16:35:56.538Z"
+    },
     {
       "id": "audit_1785342936728_xb2vao",
       "action": "inventory_item_updated",
