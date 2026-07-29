@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:36:55.521Z"
+    "importedAt": "2026-07-29T16:38:10.645Z"
   },
   "users": [
     {
@@ -4555,6 +4555,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-29T16:36:45.872Z",
       "updatedAt": "2026-07-29T16:36:45.872Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785343090563_6wdn7m",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Curvas Grandes Metálicas",
+      "description": "Curvas Grandes Metálicas",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-29T16:38:10.563Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-29T16:38:10.563Z",
+      "updatedAt": "2026-07-29T16:38:10.563Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
