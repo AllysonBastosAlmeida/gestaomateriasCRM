@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:47:16.302Z"
+    "importedAt": "2026-07-29T16:48:18.148Z"
   },
   "users": [
     {
@@ -5334,6 +5334,22 @@
   ],
   "stockMovements": [
     {
+      "id": "mov_1785343636232_vspooh",
+      "itemId": "item_1785343636219_bksvb0",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 4,
+      "previousQuantity": 0,
+      "newQuantity": 4,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-29T16:47:16.219Z"
+    },
+    {
       "id": "mov_1785343243400_os1zjd",
       "itemId": "item_1785343243387_p9m1sb",
       "movementType": "entrada",
@@ -6596,25 +6612,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T13:24:11.770Z"
-    },
-    {
-      "id": "mov_1782912238215_0b3xf2",
-      "itemId": "item_1781017242526_bim07d",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 7,
-      "previousQuantity": 7,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:23:58.215Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785343636242_cc80fz",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785343636219_bksvb0",
+      "entityLabel": "Espelhos Metálicos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 4,
+        "type": "material"
+      },
+      "createdAt": "2026-07-29T16:47:16.242Z"
+    },
     {
       "id": "audit_1785343276138_oasnjq",
       "action": "inventory_item_updated",
