@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:48:18.148Z"
+    "importedAt": "2026-07-29T16:49:21.843Z"
   },
   "users": [
     {
@@ -383,7 +383,7 @@
       "description": "Espelho Cego (Condoletes)",
       "sku": "",
       "serialNumber": "",
-      "quantity": 31,
+      "quantity": 29,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -394,7 +394,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:38:01.139Z",
-      "updatedAt": "2026-07-01T12:55:17.682Z",
+      "updatedAt": "2026-07-29T16:49:07.105Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -6615,6 +6615,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785343747113_m4b0vl",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781015881139_g5c5sn",
+      "entityLabel": "Espelho Cego (Condoletes)",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 29,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-29T16:49:07.113Z"
+    },
     {
       "id": "audit_1785343636242_cc80fz",
       "action": "inventory_item_created",
