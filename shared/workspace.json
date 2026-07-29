@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:51:14.789Z"
+    "importedAt": "2026-07-29T16:53:06.266Z"
   },
   "users": [
     {
@@ -6615,6 +6615,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785343874729_40q28j",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016060005_7il9pb",
+      "entityLabel": "Luva",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 38,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-29T16:51:14.729Z"
+    },
     {
       "id": "audit_1785343747113_m4b0vl",
       "action": "inventory_item_updated",
