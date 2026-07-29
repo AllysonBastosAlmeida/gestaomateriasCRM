@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:42:07.583Z"
+    "importedAt": "2026-07-29T16:47:16.302Z"
   },
   "users": [
     {
@@ -4609,6 +4609,33 @@
       "activityHighlightType": "created",
       "createdAt": "2026-07-29T16:40:43.387Z",
       "updatedAt": "2026-07-29T16:40:43.387Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785343636219_bksvb0",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Espelhos Metálicos",
+      "description": "Espelhos Metálicos",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 4,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-29T16:47:16.219Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-29T16:47:16.219Z",
+      "updatedAt": "2026-07-29T16:47:16.219Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
     }
