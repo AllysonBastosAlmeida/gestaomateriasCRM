@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:54:35.805Z"
+    "importedAt": "2026-07-29T16:56:12.844Z"
   },
   "users": [
     {
@@ -545,7 +545,7 @@
       "description": "Mata Junta Externa",
       "sku": "",
       "serialNumber": "",
-      "quantity": 8,
+      "quantity": 1,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -556,7 +556,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T14:43:39.362Z",
-      "updatedAt": "2026-06-09T14:43:39.362Z",
+      "updatedAt": "2026-07-29T16:55:04.572Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -6642,6 +6642,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785344104578_7c5nwv",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781016219362_7ph8qk",
+      "entityLabel": "Mata Junta Externa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 1,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-29T16:55:04.578Z"
+    },
     {
       "id": "audit_1785344012471_7gzo2m",
       "action": "inventory_item_created",
