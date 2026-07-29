@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:40:03.147Z"
+    "importedAt": "2026-07-29T16:41:02.959Z"
   },
   "users": [
     {
@@ -4584,6 +4584,33 @@
       "updatedAt": "2026-07-29T16:38:10.563Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1"
+    },
+    {
+      "id": "item_1785343243387_p9m1sb",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "type": "material",
+      "category": "",
+      "name": "Eletrodutos Metálicos",
+      "description": "Eletrodutos Metálicos",
+      "sku": "",
+      "serialNumber": "",
+      "quantity": 3,
+      "minQuantity": 0,
+      "unitMeasure": "un",
+      "status": "disponivel",
+      "internalLocation": "",
+      "notes": "",
+      "pendingDeletion": false,
+      "pendingDeletionRequestId": "",
+      "pendingDeletionRequestedAt": "",
+      "pendingDeletionRequestedBy": "",
+      "activityHighlightAt": "2026-07-29T16:40:43.387Z",
+      "activityHighlightType": "created",
+      "createdAt": "2026-07-29T16:40:43.387Z",
+      "updatedAt": "2026-07-29T16:40:43.387Z",
+      "createdBy": "user_operador1",
+      "updatedBy": "user_operador1"
     }
   ],
   "inventoryDeletionRequests": [
@@ -5279,6 +5306,22 @@
     }
   ],
   "stockMovements": [
+    {
+      "id": "mov_1785343243400_os1zjd",
+      "itemId": "item_1785343243387_p9m1sb",
+      "movementType": "entrada",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "sourceUnitId": "",
+      "destinationUnitId": "",
+      "quantity": 3,
+      "previousQuantity": 0,
+      "newQuantity": 3,
+      "reason": "Cadastro inicial do item",
+      "notes": "",
+      "performedBy": "user_operador1",
+      "performedAt": "2026-07-29T16:40:43.387Z"
+    },
     {
       "id": "mov_1785343005886_gjkt3j",
       "itemId": "item_1785343005872_vsh62c",
@@ -6542,25 +6585,25 @@
       "notes": "",
       "performedBy": "user_operador1",
       "performedAt": "2026-07-01T13:23:58.215Z"
-    },
-    {
-      "id": "mov_1782912208923_cudqq7",
-      "itemId": "item_1781024344284_yxced2",
-      "movementType": "transferencia",
-      "clientId": "client_beta",
-      "unitId": "unit_beta_e",
-      "sourceUnitId": "unit_beta_e",
-      "destinationUnitId": "unit_1780422089296_cf0vpa",
-      "quantity": 31,
-      "previousQuantity": 31,
-      "newQuantity": 0,
-      "reason": "Transferencia por arrastar e soltar",
-      "notes": "",
-      "performedBy": "user_operador1",
-      "performedAt": "2026-07-01T13:23:28.923Z"
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785343243410_y9ys1n",
+      "action": "inventory_item_created",
+      "entityType": "inventoryItem",
+      "entityId": "item_1785343243387_p9m1sb",
+      "entityLabel": "Eletrodutos Metálicos",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 3,
+        "type": "material"
+      },
+      "createdAt": "2026-07-29T16:40:43.410Z"
+    },
     {
       "id": "audit_1785343151989_1cje57",
       "action": "inventory_item_updated",
