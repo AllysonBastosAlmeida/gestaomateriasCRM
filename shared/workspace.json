@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-07-29T16:38:56.151Z"
+    "importedAt": "2026-07-29T16:40:03.147Z"
   },
   "users": [
     {
@@ -1517,7 +1517,7 @@
       "description": "Curva pequena",
       "sku": "",
       "serialNumber": "",
-      "quantity": 1,
+      "quantity": 21,
       "minQuantity": 0,
       "unitMeasure": "un",
       "status": "disponivel",
@@ -1528,7 +1528,7 @@
       "pendingDeletionRequestedAt": "",
       "pendingDeletionRequestedBy": "",
       "createdAt": "2026-06-09T16:53:25.958Z",
-      "updatedAt": "2026-06-09T17:07:18.037Z",
+      "updatedAt": "2026-07-29T16:39:11.980Z",
       "createdBy": "user_operador1",
       "updatedBy": "user_operador1",
       "activityHighlightAt": "",
@@ -6561,6 +6561,22 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1785343151989_1cje57",
+      "action": "inventory_item_updated",
+      "entityType": "inventoryItem",
+      "entityId": "item_1781024005958_l7ad6h",
+      "entityLabel": "Curva pequena",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "client_beta",
+      "unitId": "unit_beta_e",
+      "metadata": {
+        "quantity": 21,
+        "status": "disponivel"
+      },
+      "createdAt": "2026-07-29T16:39:11.989Z"
+    },
     {
       "id": "audit_1785343125636_ihecx9",
       "action": "inventory_item_updated",
