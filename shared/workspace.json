@@ -3,7 +3,7 @@
     "version": 4,
     "initializedAt": "2026-06-03T20:18:48.838Z",
     "lastUpdatedAt": "2026-06-03T21:18:12.301Z",
-    "importedAt": "2026-08-11T13:38:56.569Z"
+    "importedAt": "2026-08-11T13:41:09.638Z"
   },
   "users": [
     {
@@ -6669,6 +6669,21 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "audit_1786455536523_pem5br",
+      "action": "auth_login",
+      "entityType": "session",
+      "entityId": "user_operador1",
+      "entityLabel": "Rodrigo de Farias Barbosa",
+      "userId": "user_operador1",
+      "userName": "Rodrigo de Farias Barbosa",
+      "clientId": "",
+      "unitId": "",
+      "metadata": {
+        "username": "05"
+      },
+      "createdAt": "2026-08-11T13:38:56.523Z"
+    },
     {
       "id": "audit_1785344514365_v5uol1",
       "action": "movement_transferencia",
